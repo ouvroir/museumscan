@@ -59,9 +59,17 @@
                 <country></country>
                 <!-- ogs: Country -->
                 <district type="economical">District économique</district>
-                <email></email>
+                <email>e</email>
             </address>
             <!-- @todo liste de contacts pour l’enquête ? -->
+            <demographics>
+                <distance></distance>
+                <density></density>
+                <bdoica></bdoica>
+                <arc></arc>
+                <idusr></idusr>
+                <cnsilb></cnsilb>
+            <demographics>
             <accessibility>
                 <admission>Free | Paid | Temporarly close | Permanently closed | Information needed</admission><!-- ogs: Admission (if Galleries and Museums) ajouter pour le RCIP sur rdv et prévoir un fallback -->
                 <saisonnial>
@@ -70,27 +78,17 @@
                     <end></end>
                 </saisonnial>
             </accessibility>
-            <availability>
-                <!-- @todo revoir pour l’historicisation et la documentation des lincences telles qu’elles apparaissent sur le site -->
-                <openData when="">
-                    <size></size>
-                    <note><p></p></note>
-                    <licence></licence>
-                    <idno></idno>
-                </openData>
-                <collectionOnline when="">
-                    <size></size>
-                    <note><p></p></note>
-                    <licence></licence>
-                    <idno></idno>
-                    <!-- ogs: Total nb de substituts numériques ouverts publiés sur la plateforme -->
-                </collectionOnline>
-                <wikidata when="">
-                    <size></size>
-                    <note><p></p></note>
-                    <idno></idno>
-                </wikidata>
-            </availability>
+            <online>
+                <!-- RCIP : offre en ligne @todo pb clarifier avec le RCIP valeurs booléennes, idéalement lien avec commentaire mais complexe et peu déterminé -->
+                <exhibitions/>
+                <education/>
+                <specialized/>
+                <social>
+                    <idno type=""></network>
+                </social>
+                <idno type="website">https://www.mbam.qc.ca</idno>
+                <!-- ogs: Website -->
+            </online>
             <desc type="collections" xml:lang="en">
                 <p>Thanks to the generosity of many donors, the MMFA’s collections today comprise
                     some 47,000 works, of which over 6,000 can be viewed online.</p>
@@ -147,14 +145,54 @@
                 <p>Pour toute question ou demande, prière de contacter le service de presse du MBAM.</p>
                 <idno>https://www.mbam.qc.ca/fr/salle-de-presse/</idno>
             </desc>
-            <idno type="website">https://www.mbam.qc.ca</idno>
-            <!-- ogs: Website -->
-            <idno type="collection">https://www.mbam.qc.ca/en/collections/</idno>
-            <idno type="opendata" />
-            <idno type="wikidata" />
-            <!-- ogs: Wikidata -->
-            <idno type="wikipedia" />
-            <!-- ogs: ENG Wikipedia -->
+            
+            <availability>
+                <!-- @todo revoir pour l’historicisation et la documentation des licences telles qu’elles apparaissent sur le site -->
+                <scope></scope>
+                <note>
+                    <p></p>
+                    <!-- ogs: open access scope -->
+                </note>
+                <!-- artefacts | novamuse | saskCollections | git | api | iiif (pb version) -->
+                <dissemination type="openData" when="">
+                    <scope></scope>
+                    <volume></volume><!-- ogs: volume -->
+                    <note><p></p></note>
+                    <licence></licence><!-- ogs:openAccessPolicy faire un archivage -->
+                    <idno></idno>
+                </dissemination>
+                <dissemination type="collectionsOnline" when="">
+                    <scope></scope>
+                    <volume></volume><!-- ogs: volume -->
+                    <note><p></p></note>
+                    <licence></licence>
+                    <idno></idno>
+                    <!-- ogs: Total nb de substituts numériques ouverts publiés sur la plateforme -->
+                    <!-- @quest comment distinguer partie domaine public de non domaine public ? -->
+                    <!-- @quest metadata machine-readable format -->
+                    <!-- @quest TK & TCE -->
+                    <!-- @quest consistance -->
+                    <!-- @quest iiif -->
+                    <!-- @quest SGBD -->
+                </dissemination>
+            </availability>
+            <wikimedia>
+                <scope></scope>
+                <note><p></p></note>
+                <idno></idno><!-- wikiproject -->
+                <dissemination type="wikidata" when="">
+                    <scope></scope>
+                    <volume></volume>
+                    <note><p></p></note>
+                    <idno></idno>
+                </dissemination>
+                <dissemination type="wikicommons" when="">
+                    <scope></scope>
+                    <volume></volume>
+                    <note><p></p></note>
+                    <idno></idno>
+                </dissemination>
+            </wikimedia>
             <meta>
                 <changes>
                     <change>
