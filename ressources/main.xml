@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<museumscan
+    xmlns="http://ouvroir.umontreal.ca/ns/museumscan"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://ouvroir.umontreal.ca/ns/museumscan schema/museumscan.xsd">
+    <!-- https://museums.ca/site/aboutthecma/services/canadianmuseumdirectory -->
+    <!-- reprendre RCIP à partir de site web et OpenGLAM survey first open access instance -->
+    <header>
+        <title xml:lang="fr">Panorama des collections en ligne au Canada</title>
+        <title xml:lang="en">Landscape of Museums Collections Online in Canada</title>
+        <publication>
+            <date>2026</date>
+            <publisher>Ouvroir d’histoire de l’art et de muséologie numériques</publisher>
+            <publisher>Réseau canadien d’information sur le patrimoine (RCIP)</publisher>
+            <publisher>Canadian heritage information network (CHIN)</publisher>
+        </publication>
+        <idno>https://ouvroir.umontreal.ca/museumscan</idno>
+        <source><p>ce fichier...</p></source>
+        <changes>
+            <change version="0.1" when="2026-05">création du fichier</change>
+        </changes>
+    </header>
+    <body>
+        <listOrg>
+            <head>Québec</head>
+            <org>
+                
+            </org>
+        </listOrg>
+        <listOrg>
+            <head>Alberta</head>
+        </listOrg>
+    </body>
+</museumscan>
