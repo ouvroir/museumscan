@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<museumscan xmlns="http://ouvroir/museums">
+<museumscan 
+  xmlns="http://ouvroir.umontreal.ca/ns/museumscan" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://ouvroir.umontreal.ca/ns/museumscan schema/museumscan.xsd">
 <!-- https://museums.ca/site/aboutthecma/services/canadianmuseumdirectory -->
  <!-- reprendre RCIP à partir de site web et OpenGLAM survey first open access instance -->
 <header>
@@ -11,9 +14,8 @@
         <publisher>Réseau canadien d’information sur le patrimoine (RCIP)</publisher>
         <publisher>Canadian heritage information network (CHIN)</publisher>
     </publication>
-    <source>
-        <p>Ce fichier dérive d’un jeu de données publié par le RCIP</p>
-    </source>
+    <idno>a</idno>
+    <source><p>ce fichier...</p></source>
     <changes>
         <change version="0.1" when="2026-05">création du fichier</change>
     </changes>
@@ -24,31 +26,36 @@
         <org xml:id="muse0000">
             <orgName xml:lang="fr">Musée des beaux-arts de Montréal</orgName>
             <!-- ogs: Institution -->
-            <acronym></acronym>
-            <orgName xml:lang="en">Montreal Museum of Fine Arts</orgName>
+            <acronym>e</acronym>
+            <orgName xml:lang="en">Montréal Museum of Fine Arts</orgName>
             <!-- ogs: ENG -->
             <operational>
-                    <budget when="">
+                <budget when="">
                     <note>
-                        <p></p>
+                        <p>a</p>
                     </note>
-                    <source></source>
+                    <source>
+                        <p>eae</p>
+                    </source>
                 </budget>
                 <administration></administration>
+                 <!-- définir les modalités d'administration ex: financement pv etc. -->
             </operational>
             <!-- pour les regroupements <listOrg></listOrg> -->
-            <orgType>
-                <!-- ogs: Type -->
-                 aggregator | archive | corporation | gallery | library | government | museum | private collection | repository | research institution | university | visitor attraction | other
-            </orgType>
+            <orgType>aggregator</orgType>
+            <!-- ogs: Type 
+                 aggregator | archive | corporation | gallery | library | government | museum | private collection | repository | research institution | university | visitor attraction | other -->
             <fields>
-                <field></field>
+                <field>archeology</field>
+                <field>ethnography</field>
+                <!-- archeology | decorative arts and design | ethnography | fine arts | history | military | natural sciences | sciences and technology | social and community studies -->
+                <!-- + voir les définitions de la doc du RCIP -->
             </fields>
             <holdings><!-- optionnel. true or false dans RCIP -->
                 <size></size>
-                <category><!-- répétable -->
-                    documents et livres d’archives | artefacts décoratifs et mobilier | artefacts et traditions intangibles | artefacts médiatiques et dtic | artefacts naturels | peintures | performances et arts de la performance | photographies | céramiques | impressions plurielles ....
-                </category>
+                <category>media and ICT technology</category>
+                <category>intangible artefacts and traditions</category>
+                <!-- documents et livres d’archives | artefacts décoratifs et mobilier | artefacts et traditions intangibles | artefacts médiatiques et dtic | artefacts naturels | peintures | performances et arts de la performance | photographies | céramiques | impressions plurielles ....-->
             </holdings>
             <address>
                 <street><num>30</num> rue...</street>
@@ -58,8 +65,6 @@
                 <region>Québec</region>
                 <country></country>
                 <!-- ogs: Country -->
-                <district type="economical">District économique</district>
-                <email>e</email>
             </address>
             <!-- @todo liste de contacts pour l’enquête ? -->
             <demographics>
@@ -69,13 +74,17 @@
                 <arc></arc>
                 <idusr></idusr>
                 <cnsilb></cnsilb>
-            <demographics>
+            </demographics>
             <accessibility>
-                <admission>Free | Paid | Temporarly close | Permanently closed | Information needed</admission><!-- ogs: Admission (if Galleries and Museums) ajouter pour le RCIP sur rdv et prévoir un fallback -->
+                <admission>free</admission>
+                <!-- 
+                Free | Paid | Temporarly closed | Permanently closed | Information needed
+                -->
+                <!-- ogs: Admission (if Galleries and Museums) ajouter pour le RCIP sur rdv et prévoir un fallback -->
                 <saisonnial>
                     <!-- optionnel -->
-                    <start></start>
-                    <end></end>
+                    <start>01</start>
+                    <end>12</end>
                 </saisonnial>
             </accessibility>
             <online>
@@ -84,7 +93,7 @@
                 <education/>
                 <specialized/>
                 <social>
-                    <idno type=""></network>
+                    <idno type=""/>
                 </social>
                 <idno type="website">https://www.mbam.qc.ca</idno>
                 <!-- ogs: Website -->
@@ -180,7 +189,7 @@
                 <scope></scope>
                 <note><p></p></note>
                 <idno></idno><!-- wikiproject -->
-                <dissemination type="wikidata" when="">
+                <dissemination type="wikidata" when="2026">
                     <scope></scope>
                     <volume></volume>
                     <note><p></p></note>
@@ -370,7 +379,5 @@
             <region>Yukon</region>
         </org>
     </listOrg>
-    </div>
 </body>
-</text>
-</TEI>
+</museumscan>

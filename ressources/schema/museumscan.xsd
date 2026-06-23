@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Schema for Museumscan
+  @author: emchateau (Ouvroir)
+  @since: 2025-05-18
+  @licence: gnu gpl > 3
+
+  @todo date interval
+  @todo bilinguism
+  @todo add definitions fr and en
+-->
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xml="http://www.w3.org/XML/1998/namespace"
+  xmlns="http://ouvroir.umontreal.ca/ns/museumscan"
+  targetNamespace="http://ouvroir.umontreal.ca/ns/museumscan"
+  elementFormDefault="qualified">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace"
+    schemaLocation="http://www.w3.org/2001/xml.xsd" />
+
+  <xs:attributeGroup name="globalAtts">
+    <xs:attribute ref="xml:lang" />
+    <xs:attribute ref="xml:id" />
+  </xs:attributeGroup>
+
+  <xs:simpleType name="dateValue">
+    <xs:union>
+      <xs:simpleType>
+        <xs:restriction base="xs:date" />
+      </xs:simpleType>
+      <xs:simpleType>
+        <xs:restriction base="xs:gYearMonth" />
+      </xs:simpleType>
+      <xs:simpleType>
+        <xs:restriction base="xs:gYear" />
+      </xs:simpleType>
+    </xs:union>
+  </xs:simpleType>
+
+  <xs:element name="museumscan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="header" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="body" minOccurs="1" maxOccurs="1" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- macrostructure -->
+  <xs:element name="header">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element ref="publication" minOccurs="0" maxOccurs="1" />
+        <xs:element ref="idno" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element ref="source" minOccurs="0" maxOccurs="1" />
+        <xs:element ref="changes" minOccurs="0" maxOccurs="1"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="publication">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="date" minOccurs="1" />
+        <xs:element name="publisher" minOccurs="1" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="date" type="dateValue" />
+
+  <xs:element name="source">
+    <xs:complexType mixed="true">
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="p" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="changes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="change" minOccurs="1" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="change">
+    <xs:complexType mixed="true">
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="p" />
+      </xs:sequence>
+      <xs:attribute name="when" type="dateValue" use="required" />
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="body">
+    <xs:complexType>
+      <xs:sequence minOccurs="1" maxOccurs="unbounded">
+        <xs:element ref="listOrg"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="listOrg">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="head" />
+        <xs:element ref="org" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="orgName">
+    <xs:complexType mixed="true">
+      <xs:group ref="pLike" minOccurs="0" maxOccurs="unbounded" />
+      <xs:attributeGroup ref="globalAtts" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="org">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="orgName" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element name="acronym" minOccurs="0" maxOccurs="1" type="xs:string" />
+        <xs:element ref="operational" minOccurs="0" maxOccurs="1" />
+        <xs:element ref="orgType" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="fields" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="holdings" minOccurs="0" maxOccurs="1" />
+        <xs:element ref="address" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element ref="demographics" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="accessibility" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="online" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="desc" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="availability" minOccurs="1" maxOccurs="unbounded"></xs:element>
+        <xs:element ref="wikimedia" minOccurs="1" maxOccurs="1" />
+      </xs:choice>
+      <xs:attributeGroup ref="globalAtts" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="acronym">
+    <xs:complexType mixed="true">
+      <xs:group ref="pLike" minOccurs="0" maxOccurs="unbounded" />
+      <xs:attributeGroup ref="globalAtts" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="operational">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="budget" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element ref="administration" minOccurs="0" maxOccurs="1" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="budget">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="note" minOccurs="0" maxOccurs="1" />
+        <xs:element ref="source" minOccurs="0" maxOccurs="1" />
+      </xs:choice>
+      <xs:attribute name="when" />
+    </xs:complexType>
+  </xs:element>
+
+  <!-- @todo -->
+  <xs:element name="administration"></xs:element>
+
+  <xs:element name="orgType">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="aggregator" />
+        <xs:enumeration value="archive" />
+        <xs:enumeration value="corporation" />
+        <xs:enumeration value="gallery" />
+        <xs:enumeration value="government" />
+        <xs:enumeration value="library" />
+        <xs:enumeration value="museum" />
+        <xs:enumeration value="private collection" />
+        <xs:enumeration value="repository" />
+        <xs:enumeration value="research institution" />
+        <xs:enumeration value="university" />
+        <xs:enumeration value="visitor attraction" />
+        <xs:enumeration value="other" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="fields">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="field" minOccurs="1" maxOccurs="unbounded">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <!-- @todo add defs from rcip -->
+              <xs:enumeration value="archeology" />
+              <xs:enumeration value="decorative arts and design" />
+              <xs:enumeration value="ethnography" />
+              <xs:enumeration value="fine arts" />
+              <xs:enumeration value="history" />
+              <xs:enumeration value="military" />
+              <xs:enumeration value="natural sciences" />
+              <xs:enumeration value="sciences and technology" />
+              <xs:enumeration value="social and community studies" />
+              <xs:enumeration value="other" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="holdings">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="unbounded">
+        <xs:element name="size" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xs:element ref="category" minOccurs="1 " maxOccurs="unbounded" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="category">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="archival documents and books">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Records, documents, books, or other materials considered
+              to be of historical or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr">Dossiers, documents, livres ou autres documents
+              considérés comme d’intérêt et de valeur historiques ou culturels.</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="decorative artefacts and furnishings">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Tangible objects whose primary purpose prior to entering
+              the collection was that of functionality, comfort, or adornment in the context of an
+              interior setting, and are considered to be of historical and/or cultural interest and
+              value.</xs:documentation>
+            <xs:documentation xml:lang="fr">Objets tangibles dont la fonction principale avant
+              d’entrer dans la collection en était une de fonctionnalité, de confort ou de parure
+              dans un contexte mobilier, et qui sont considérés comme d’intérêt et de valeur
+              historiques et/ou culturels.</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="intangible artefacts and traditions">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Intangible creations, works, practices, expressions,
+              representations or skills as well as intellectual heritage such as folklore, customs,
+              beliefs, languages or knowledge that communities, groups, or individuals consider to
+              be of historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr">Créations, œuvres, pratiques, expressions,
+              représentations ou compétences intangibles de même que patrimoines intellectuels tels
+              que le folklore, les coutumes, les croyances, les langues ou les connaissances que les
+              communautés, les groupes ou les individus considèrent comme d’intérêt et de valeur
+              historiques et/ou culturels.</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="media and ICT technology">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Objects whose primary medium is of a moving,
+              technological or digital nature (e.g. videos and movies, online contents, data
+              objects, etc.) and are not printed or printable in their entirety (i.e. not
+              photography or prints), and are considered to be of historical and/or cultural
+              interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr">Objets dont le support principal est de nature mobile,
+              technologique ou numérique (p. ex. vidéos et films, contenus en ligne, objets de
+              données, etc.) et qui ne sont pas imprimés ou imprimables dans leur intégralité
+              (c’est-à-dire pas de photographie ou d’imprimés), et qui sont considérés comme étant
+              de l’intérêt et de la valeur historiques et/ou culturels.</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="natural artefacts">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Tangible things that are not human-made (e.g. fossils,
+              specimens, biological remains, etc.), and are considered to be of historical and/or
+              cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr">Choses tangibles qui ne sont pas fabriquées par l’homme
+              (p. ex. fossiles, spécimens, restes biologiques, etc.), et qui sont considérées comme
+              d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="painting">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Tangible creations whose primary medium or formal
+              characteristic is paint (e.g. oil paint, watercolours, ink, etc.) applied to a
+              secondary support (e.g. canvas, cardboard, paper, etc.), and which are considered to
+              be of historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr">Créations tangibles dont le médium ou la caractéristique
+              principal·e est la peinture (p. ex. peinture à l’huile, aquarelles, encre, etc.)
+              appliquée à un soutien secondaire (p. ex. toile, carton, papier, etc.), et qui sont
+              considérées comme d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="performing and performance arts">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Intangible creations whose primary formal
+              characteristics are their performance by beings (e.g. theatre, music, dance, art
+              happening, etc.), and which are considered to be of historical and/or cultural
+              interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr">Créations intangibles dont la principale caractéristique
+              formelle est la performance par les êtres (p. ex. théâtre, musique, danse, happening,
+              etc.), et qui sont considérées comme d’intérêt et de valeur historiques et/ou
+              culturels.</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="photography">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Creations whose primary formal characteristic derives
+              from recording light (i.e. electronically or chemically), and whose entirety is
+              intended to be rendered in two dimensions (e.g. photographic film, digital pictures,
+              etc.), and which are considered to be of historical and/or cultural interest and
+              value.</xs:documentation>
+            <xs:documentation xml:lang="fr">Créations dont la caractéristique formelle principale
+              découle de l’enregistrement de la lumière (c’est-à-dire électroniquement ou
+              chimiquement), et dont l’intégralité est destinée à être rendue en deux dimensions (p.
+              ex. film photographique, images numériques, etc.), et qui sont considérées comme
+              d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="ceramics">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Objects primarily made of inorganic baked materials that
+              are not metallic (e.g. porcelain, tile, earthenware, etc.) and whose primary purpose
+              when entering the collection is artistic or archæological, and are considered to be of
+              historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr">Objets principalement fabriqués de matériaux
+              inorganiques cuits au four qui ne sont pas métalliques (p. ex. porcelaine, tuile,
+              terre cuite, etc.) et dont le but principal lors de l’introduction dans la collection
+              est artistique ou archéologique, et qui sont considérés comme d’intérêt et de valeur
+              historiques et/ou culturels.</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="prints and drawings">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Tangible creations whose primary formal characteristic
+              derives from manual processes that result in works whose entirety is intended to be
+              rendered in two dimensions (e.g. calligraphic renderings, aquatints, line
+              representations, etc.), and which are considered to be of historical and/or cultural
+              interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr">Créations tangibles dont la caractéristique formelle
+              principale dérive de processus manuels qui se traduisent par des œuvres dont
+              l’intégralité est destinée à être rendue en deux dimensions (p. ex. rendus
+              calligraphiques, aquatintes, dessins au trait, etc.), et qui sont considérés comme
+              d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="sculpture">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Tangible creations whose primary medium or formal
+              characteristic is non-moving three-dimensionality (e.g. carvings, 3D prints,
+              assemblages, etc.), and which are considered to be of historical and/or cultural
+              interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr">Créations tangibles dont le principal médium
+              caractéristique formelle est la tridimensionnalité non mobile (p. ex. sculptures,
+              imprimés 3D, assemblages, etc.), et qui sont considérés comme d’intérêt et de valeur
+              historiques et/ou culturels.</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="tools and equipments">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Supplies originally created to manage, oversee, capture,
+              harvest, or collect resources, and/or to transform or modify particular raw or
+              processed materials, and which are considered to be of historical and/or cultural
+              interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr">Fournitures à l’origine créées pour gérer, superviser,
+              capturer, récolter ou collecter des ressources, et/ou pour transformer ou modifier des
+              matériaux bruts ou traités particuliers, et qui sont considérés comme d’intérêt et de
+              valeur historiques et/ou culturels.</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="actors lives and stories">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Recorded accounts of specific people or groups of people
+              who are considered to be of historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr">Récits enregistrés de personnes ou de groupes
+              spécifiques de personnes qui sont considérées comme d’intérêt et de valeur historiques
+              et/ou culturels.</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="clothing and adornment">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Tangible objects whose primary purpose prior to entering
+              the collection was that of functionality, comfort, or adornment intended for an
+              individual (e.g. clothes, jewelry, handbags, etc.), and are considered to be of
+              historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr">Objets tangibles dont la fonction principale avant
+              d’entrer dans la collection en était une de fonctionnalité, de confort ou de parure
+              pour un individu (p. ex. vêtements, bijoux, sacs à main, etc.), et qui sont considérés
+              comme d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="unspecified">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Elements of a collection whose primary characteristics
+              or nature are not described or readily available.</xs:documentation>
+            <xs:documentation xml:lang="fr">Éléments d’une collection dont la nature ou les
+              caractéristiques principales ne sont pas décrites ou facilement accessibles.</xs:documentation>
+          </xs:annotation>
+        </xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="address">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="unbounded">
+        <xs:element name="street" minOccurs="0" maxOccurs="1">
+          <xs:complexType mixed="true">
+            <xs:choice minOccurs="1" maxOccurs="unbounded">
+              <xs:element name="num" minOccurs="0" maxOccurs="1" type="xs:string" />
+              <xs:group ref="pLike" minOccurs="1" maxOccurs="unbounded" />
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="district" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element name="settlement" minOccurs="1" maxOccurs="1" type="xs:string" />
+        <xs:element name="postCode" minOccurs="1" maxOccurs="1" type="xs:string" />
+        <xs:element name="region" minOccurs="1" maxOccurs="1" type="xs:string" />
+        <xs:element name="country" minOccurs="1" maxOccurs="1" type="xs:string" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="district">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:group ref="pLike" minOccurs="0" maxOccurs="unbounded" />
+      </xs:choice>
+      <xs:attribute name="type" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+
+  <!-- @todo revoir -->
+  <!-- 
+  <sch:rule context="address">
+  <sch:assert test="district[@type='economical']">
+    Un district de type "economical" est obligatoire dans address.
+  </sch:assert>
+</sch:rule>
+-->
+
+  <xs:element name="demographics">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="distance" minOccurs="0" maxOccurs="1" type="xs:string" />
+        <xs:element name="density" minOccurs="0" maxOccurs="1" type="xs:string" />
+        <xs:element name="bdoica" minOccurs="0" maxOccurs="1" type="xs:string" />
+        <xs:element name="arc" minOccurs="0" maxOccurs="1" type="xs:string" />
+        <xs:element name="idusr" minOccurs="0" maxOccurs="1" type="xs:string" />
+        <xs:element name="cnsilb" minOccurs="0" maxOccurs="1" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="accessibility">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="admission" minOccurs="1" maxOccurs="1">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="free" />
+              <xs:enumeration value="paid" />
+              <xs:enumeration value="temporarly closed" />
+              <xs:enumeration value="permanently closed" />
+              <xs:enumeration value="on appointment" />
+              <!-- only for CHIN, add a fallback for ogs -->
+              <xs:enumeration value="information needed"></xs:enumeration>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="saisonnial" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:choice minOccurs="1" maxOccurs="2">
+              <xs:element name="start" minOccurs="1" maxOccurs="1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="0[1-9]|1[0-2]" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="end" minOccurs="1" maxOccurs="1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="0[1-9]|1[0-2]" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="online">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="unbounded">
+        <xs:element name="exhibitions" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xs:element name="education" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xs:element name="specialized" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xs:element name="social" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence minOccurs="1" maxOccurs="unbounded">
+              <xs:element ref="idno"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="idno" minOccurs="0" maxOccurs="1" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="desc">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="unbounded">
+        <xs:element ref="p" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element ref="idno"/>
+      </xs:choice>
+      <xs:attribute name="type" type="xs:string"/>
+      <!-- @todo rendre le type obligatoire et prédéfinir les valeurs -->
+      <xs:attribute name="when" type="dateValue"/>
+      <xs:attribute ref="xml:lang"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="availability">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="unbounded">
+        <xs:element ref="scope" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="volume" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="note" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="dissemination" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="licence"  minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="idno"  minOccurs="1" maxOccurs="unbounded"/>
+      </xs:choice>
+      <xs:attribute name="when"  type="dateValue"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="dissemination">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="unbounded">
+        <xs:element ref="scope" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="note" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="dissemination" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="volume" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="licence"  minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="idno"  minOccurs="1" maxOccurs="unbounded"/>
+      </xs:choice>
+      <xs:attribute name="type"  type="xs:string"/>
+      <!-- @todo add values -->
+      <xs:attribute name="when"  type="dateValue"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="wikimedia">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="unbounded">
+        <xs:element ref="scope" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="volume" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="note" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="dissemination" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="licence"  minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="idno"  minOccurs="1" maxOccurs="unbounded"/>
+      </xs:choice>
+      <xs:attribute name="when"  type="dateValue"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="scope">
+    <xs:complexType mixed="true">
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="p" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="volume" type="xs:integer">
+  </xs:element>
+
+  <xs:element name="licence">
+    <xs:complexType mixed="true">
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="p" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="div">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="head" />
+        <xs:element ref="p" />
+        <xs:element ref="list" />
+      </xs:choice>
+      <xs:attributeGroup ref="globalAtts" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="note">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="p" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+      <xs:attributeGroup ref="globalAtts" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="list">
+    <xs:complexType>
+      <xs:sequence minOccurs="1" maxOccurs="unbounded">
+        <xs:element ref="li" />
+      </xs:sequence>
+      <xs:attributeGroup ref="globalAtts" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="pLike">
+    <xs:choice>
+      <xs:element name="ref" type="xs:string" />
+      <xs:element name="sup" type="xs:string" />
+      <xs:element ref="em" />
+      <xs:element ref="strong" />
+    </xs:choice>
+  </xs:group>
+
+  <xs:element name="title">
+    <xs:complexType mixed="true">
+      <xs:group ref="pLike" minOccurs="0" maxOccurs="unbounded" />
+      <xs:attributeGroup ref="globalAtts" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="head">
+    <xs:complexType mixed="true">
+      <xs:group ref="pLike" minOccurs="0" maxOccurs="unbounded" />
+      <xs:attributeGroup ref="globalAtts" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="li">
+    <xs:complexType mixed="true">
+      <xs:group ref="pLike" minOccurs="0" maxOccurs="unbounded" />
+      <xs:attributeGroup ref="globalAtts" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="p">
+    <xs:complexType mixed="true">
+      <xs:group ref="pLike" minOccurs="0" maxOccurs="unbounded" />
+      <xs:attributeGroup ref="globalAtts" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="em">
+    <xs:complexType mixed="true">
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="sup" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="strong">
+    <xs:complexType mixed="true">
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="sup" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="idno">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:anyURI">
+          <xs:attribute name="type" type="xs:string" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ref">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:anyURI">
+          <xs:attribute name="href" type="xs:anyURI" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
