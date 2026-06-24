@@ -224,6 +224,7 @@
   </xs:element>
 
   <xs:element name="category">
+      <!-- pourquoi simpleType alors que "fiedls est complexType?" -->
     <xs:simpleType>
       <xs:restriction base="xs:string">
         <xs:enumeration value="archival documents and books">

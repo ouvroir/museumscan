@@ -23,8 +23,79 @@
     <body>
         <listOrg>
             <head>Québec</head>
-            <org>
-                
+            <org xml:id="muse0022">
+                <orgName xml:lang="fr">Musée de la civilisation</orgName>
+               <!-- conserver la dénomination française, ne pas traduire même en anglais-->
+                <acronym>MCQ</acronym>
+                <operational>
+                    <budget when="2024-2025">
+                        <note>
+                            <p>30 682 161 dollars canadiens</p>
+                            <p>il s'agit seulement du fonds d'exploitation du musée</p>
+                        </note>
+                         <!-- la valeur du budget n'est pas typée, idem pour la devise (CAD), peut être pas besoin de paragraphes-->
+                          <source>
+                            <p>https://mcq.org/wp-content/uploads/2025/10/rapport-annuel-2024-2025.pdf</p>
+                            <p>États financiers du rapport annuel du musée 2024-2025, p.96.</p>
+                          </source>
+                    </budget>
+                    <administration>Musée national</administration>
+                </operational>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>archeology</field>
+                    <field>history</field>
+                    <field>ethnography</field>
+                    <field>natural sciences</field>
+                </fields>
+                <holdings>
+                   <size></size>
+                   <!-- size correspond au nombre d'objets dans la collection?-->
+                    <category>natural artefacts</category>
+                    <category>archival documents and books</category>
+                    <category>clothing and adornment</category>
+                    <category>tools and equipments</category>
+                    <category>sculpture</category>
+                    <category>decorative artefacts and furnishings</category>
+                    <category>ceramics</category>
+                    <category>photography</category>
+                    <category>prints and drawings</category>
+                    <category>painting</category>
+                </holdings>
+                <address>
+                    <street><num>85</num>rue Dalhousie</street>
+                    <settlement>Québec City</settlement>
+                    <postCode>G1K8R2</postCode>
+                    <region>Québec</region>
+                    <country>Canada</country>
+                </address>
+                <demographics>
+                    <distance>0.43</distance>
+                    <!-- typer la valeur (en km)pas assez explicite sur la valeur à renseigner + définition explicite : La distance, en kilomètres, entre l'institution et son voisin institutionnel le plus proche (c.-à-d. l'institution la plus proche dans la liste (donc valeur sûrement éronnée car on travaille pas sur toutes les institutions de la liste -->
+                    <density>34</density>
+                    <!-- typer la valeur again (un entier), pas assez explicite sur la valeur à renseigner + définition explicite svp : Le nombre d'institutions dans la liste qui sont à l'intérieur d'un rayon de 100km de l'institution concernée. + valeur sûrement éronnée car encore une fois on travaille pas sur l'intégralité des institutions de la liste -->
+                    <bdoica>5548</bdoica>
+                    <!-- il faut préciser ici que le nombre du champ bdoica est un id, est-ce qu'il serait préférable de le typer?-->
+                     <arc>true</arc>
+                    <!-- pas sûre que ce soit la bonne valeur à renseigner mais il faut donner une définition de la valeur attendue, d'après la doc du RCIP ici il s'agit de dire si le musée est enregistré comme organisme de bienfaisance auprès de l'ARC-->
+                     <idusr>2423027</idusr>
+                     <!-- il faut typer la valeur attendue + donner une définition explicite : Fournit l'identifiant unique de la subdivision de recensement de l'institution. Les données de cet attribut sont générées par analyse spatiale : l'institution est située dans une subdivision de recensement sur la base du Fichier des limites des subdivisions de recensement (2022) maintenu par Statistique Canada. -->
+                      <cnsilb>QC46790712</cnsilb>
+                    <!-- il faut typer la valeur attendue (C'est un idenfiant unique) et donner une définition explicite : Fournit l'identifiant unique (HEXuid) de la Carte nationale des services Internet à large bande associé à la localisation de l'institution. -->
+               </demographics>
+               <accessibility>
+                <admission>paid</admission>
+               </accessibility>
+               <online>
+                <!-- rien mis pour exhibitions, education, specialized car il faut spécifier avec le RCIP ses valeurs booléennes, cf documentation -->
+                 <social>
+                    <idno type="facebook">https://www.facebook.com/mcqorg/</idno>
+                    <idno type="instagram">https://www.instagram.com/mcqorg/</idno>
+                    <idno type="youtube">https://www.youtube.com/user/mcqpromo</idno>
+                 </social>
+                 <idno type="website">https://www.mcq.org/</idno>
+               </online>
+               <!-- ici description-->
             </org>
         </listOrg>
         <listOrg>
