@@ -35,7 +35,7 @@
                         </note>
                          <!-- la valeur du budget n'est pas typée, idem pour la devise (CAD), peut être pas besoin de paragraphes-->
                           <source>
-                            <p>https://mcq.org/wp-content/uploads/2025/10/rapport-annuel-2024-2025.pdf</p>
+                            <p>https://www.musee-mccord-stewart.ca/app/uploads/2025/10/musee-mccord-stewart-rapport-annuel-2024-2025.pdf</p>
                             <p>États financiers du rapport annuel du musée 2024-2025, p.96.</p>
                           </source>
                     </budget>
@@ -49,8 +49,9 @@
                     <field>natural sciences</field>
                 </fields>
                 <holdings>
-                   <size></size>
-                   <!-- size correspond au nombre d'objets dans la collection?-->
+                   <size>25 000</size>
+                   <!-- size correspond au nombre d'objets dans la collection-->
+                    <!-- le jeu de données du RCIP indique 25 000 objets, ce qui semble peu-->
                     <category>natural artefacts</category>
                     <category>archival documents and books</category>
                     <category>clothing and adornment</category>
@@ -69,6 +70,7 @@
                     <region>Québec</region>
                     <country>Canada</country>
                 </address>
+                <!-- ici voir si on veut renseigner une adresse courriel -->
                 <demographics>
                     <distance>0.43</distance>
                     <!-- typer la valeur (en km)pas assez explicite sur la valeur à renseigner + définition explicite : La distance, en kilomètres, entre l'institution et son voisin institutionnel le plus proche (c.-à-d. l'institution la plus proche dans la liste (donc valeur sûrement éronnée car on travaille pas sur toutes les institutions de la liste -->
@@ -87,7 +89,9 @@
                 <admission>paid</admission>
                </accessibility>
                <online>
-                <!-- rien mis pour exhibitions, education, specialized car il faut spécifier avec le RCIP ses valeurs booléennes, cf documentation -->
+                <exhibitions>https://mcq.org/decouvrir/expositions/</exhibitions>
+                <education>https://mcq.org/decouvrir/programmations-speciales/famille/</education>
+                <specialized/>
                  <social>
                     <idno type="facebook">https://www.facebook.com/mcqorg/</idno>
                     <idno type="instagram">https://www.instagram.com/mcqorg/</idno>
@@ -95,7 +99,188 @@
                  </social>
                  <idno type="website">https://www.mcq.org/</idno>
                </online>
-               <!-- ici description-->
+              <desc type="collections" xml:lang="en">
+                <p>à remplir</p>
+              </desc>
+              <desc type="copyright" xml:lang="en">
+                <p>à remplir</p>
+              </desc>
+              <!-- à completer-->
+
+            <availability>
+                <scope></scope>
+                <note>
+                    <p></p>
+                </note>
+            <!-- voir ce que l'on veut ici pour scope qui fait réf dans ogs a deux valeurs : some eligible data, all eligible data-->    
+             <dissemination type="collectionsOnline" when="2024-2025">
+                <scope>fiches d'objets, de documents et de livres</scope>
+                <volume>682758</volume>
+                <note><p/>États financiers du rapport annuel du musée 2024-2025, p.37</note>
+                <idno>https://collections.mcq.org</idno>
+                <!-- à compléter aussi selon ce qu'on decide dans le model pour Opendata ect -->
+             </dissemination>
+            </availability>
+            <wikimedia>
+                <note><p>Institution et collection distinguées sur Wikidata.</p></note>
+                <idno type="institution">http://www.wikidata.org/entity/Q1705530</idno>
+                <idno type="collection">http://www.wikidata.org/entity/Q112194818</idno>
+                <dissemination type="wikidata" when="2026-07-08">
+                    <scope>notices rattachées à l'institution et à la collection</scope>
+                    <volume>15</volume>
+                    <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres de la collection qui ont une notice Wikidata</p></note>
+                </dissemination>
+                <dissemination type="wikicommons" when="2026-07-14">
+                    <scope>images sur wikicommons rattachées aux notices des œuvres de la collection</scope>
+                    <volume>9</volume>
+                    <note><p>requête SPARQL sur Wikidata listant toutes les œuvres du Musée de la civilisation (par collection, collection-musée ou localisation) qui ont une image, hors événements, avec leur titre, une image et leurs types.</p></note>
+                    <idno>https://commons.wikimedia.org/wiki/Institution:Musée_de_la_civilisation</idno>
+                </dissemination>
+            </wikimedia>
+            </org>
+            <org xml:id="muse1313">
+                <orgName xml:lang="fr">Musée McCord Stewart </orgName>
+                <orgName xml:lang="en">McCord Stewart Museum</orgName>
+                <operational>
+                    <budget when="2024-2025">
+                        <note>
+                            <p>10 000 000 dollars canadiens</p>
+                        </note>
+                         <!-- la valeur du budget n'est pas typée, idem pour la devise (CAD), peut être pas besoin de paragraphes-->
+                          <source>
+                            <p>il s'agit de la valeur donnée par le RCIP, on ne connaît pas l'année</p>
+                        <!-- aller regarder le RA + définir ce que l'on considère comme le budget annuel du musée-->
+                          </source>
+                    </budget>
+                    <administration>Musée privé à but non lucratif</administration>
+                    <!-- peut être faire une typologie des musées ? -->
+                </operational>
+                <orgType>museum</orgType>
+                <fields>
+                <!-- équivalent au champ disciplines du RCIP-->
+                    <field>archeology</field>
+                    <field>ethnography</field>
+                    <field>history</field>
+                </fields>
+                <holdings>
+                   <size>2 353 500</size>
+                   <!-- ce nombre correspond à celui du RCIP datant 2022, on ne connait pas la source-->
+                    <!-- categoy correspond au type d'objets dans le jeu de données du RCIP -->
+                    <category>painting</category>
+                    <category>decorative artefacts and furnishings</category>
+                    <category>archival documents and books</category>
+                    <category>photography</category>
+                    <category>media and ICT technology</category>
+                    <category>natural artefacts</category>
+                    <category>prints and drawings</category>
+                    <category>clothing and adornment</category>
+                </holdings>
+                <address>
+                    <street><num>2175</num>rue Victoria</street>
+                    <settlement>Montréal</settlement>
+                    <postCode>H2A 2A3</postCode>
+                    <region>Québec</region>
+                    <country>Canada</country>
+                </address>
+                <!-- ici voir si on veut renseigner une adresse courriel -->
+                <demographics>
+                    <distance>0.32</distance>
+                    <!-- typer la valeur (en km) pas assez explicite sur la valeur à renseigner + définition explicite : La distance, en kilomètres, entre l'institution et son voisin institutionnel le plus proche (c.-à-d. l'institution la plus proche dans la liste (donc valeur sûrement éronnée car on travaille pas sur toutes les institutions de la liste -->
+                    <density>112</density>
+                    <!-- typer la valeur again (un entier), pas assez explicite sur la valeur à renseigner + définition explicite svp : Le nombre d'institutions dans la liste qui sont à l'intérieur d'un rayon de 100km de l'institution concernée. + valeur sûrement éronnée car encore une fois on travaille pas sur l'intégralité des institutions de la liste -->
+                    <bdoica>false</bdoica>
+                    <!-- il faut préciser ici que le nombre du champ bdoica est un id, est-ce qu'il serait préférable de le typer? -->
+                     <!-- qu'est ce qu'on renseigne quand la valeur est nulle? en gros, il n'a pas d'identifiant dans bdoica-->
+                     <arc>true</arc>
+                    <!-- pas sûre que ce soit la bonne valeur à renseigner mais il faut donner une définition de la valeur attendue, d'après la doc du RCIP ici il s'agit de dire si le musée est enregistré comme organisme de bienfaisance auprès de l'ARC-->
+                     <idusr>2466023</idusr>
+                     <!-- il faut typer la valeur attendue + donner une définition explicite : Fournit l'identifiant unique de la subdivision de recensement de l'institution. Les données de cet attribut sont générées par analyse spatiale : l'institution est située dans une subdivision de recensement sur la base du Fichier des limites des subdivisions de recensement (2022) maintenu par Statistique Canada. -->
+                      <cnsilb>QC45510736</cnsilb>
+                    <!-- il faut typer la valeur attendue (C'est un idenfiant unique) et donner une définition explicite : Fournit l'identifiant unique (HEXuid) de la Carte nationale des services Internet à large bande associé à la localisation de l'institution. -->
+               </demographics>
+               <accessibility>
+                <admission>paid</admission>
+               </accessibility>
+               <online>
+                <exhibitions>https://www.musee-mccord-stewart.ca/expositions/</exhibitions>
+                <education>https://www.musee-mccord-stewart.ca/familles/</education>
+                <!-- familles contient des ressources pédagogiques, je pense que c'est ok de le documenter comme contenu éducatif ?-->
+                <specialized>https://www.musee-mccord-stewart.ca/blogue/</specialized>
+                <!-- si on se refère à la définition donnée par le RCIP, "contenus spécialisés ou de recherche", je pense que c'est ok de documenter le blogue comme contenu spécialisé -->
+                <!-- pourquoi on fait comme ça et comme pour social ? avec un <idno>type="exhibitions">URL</idno> ?-->
+                 <social>
+                    <idno type="facebook">https://www.facebook.com/museemccordstewart</idno>
+                    <idno type="instagram">https://www.instagram.com/museemccordstewart</idno>
+                    <idno type="youtube">https://www.youtube.com/c/MuséeMcCordStewartMuseum</idno>
+                 </social>
+                 <idno type="website">https://www.musee-mccord-stewart.ca/</idno>
+               </online>
+              <desc when="2026-07" type="collections" xml:lang="en">
+                <p>For over one hundred years, the Museum has been building its rich collections of images, objects, 
+                    documents and works of art that bear witness to the social history of Montreal, 
+                    the city’s place within Quebec and Canada, and the vitality of Indigenous cultures.</p>
+                <idno>https://www.musee-mccord-stewart.ca/en/collections/</idno>    
+              </desc>
+              <desc when="2026-07" type="collections" xml:lang="fr">
+                <p>Depuis plus de 100 ans, le Musée enrichit ses vastes collections d'images, d'objets, 
+                    de documents et d'œuvres d’art qui témoignent de l’histoire sociale de la ville de Montréal, 
+                    de sa place au sein du Québec et du Canada, et qui reflètent la vitalité des cultures autochtones.</p>
+                <idno>https://www.musee-mccord-stewart.ca/fr/collections/</idno>
+              </desc>
+              <desc when="2026-07" type="copyright" xml:lang="en">
+                <p>The McCord Stewart Museum authorizes the free use of all images from archives and objects reputed to be in the public domain, 
+                    digitized and accessible online. These images are offered free of charge, 
+                    and this, without restriction, according to the associated indications</p>
+                <p>The Museum’s online collections include over 185,000 objects, photographs and archival documents. 
+                    Approximately 155,000 royalty-free images may be downloaded in the highest resolution available.</p>
+                <p>It is possible to request the use or digitization of images of objects 
+                    and archival documents still under copyright protection.</p>
+                <idno>https://www.musee-mccord-stewart.ca/en/collections/photographic-services-and-copyright/</idno>
+              </desc>
+              <desc when="2026-07" type="copyright" xml:lang="fr">
+                <p>Le Musée McCord Stewart autorise la libre utilisation de toutes les images d’archives et d’objets réputées faire partie du domaine public, 
+                    numérisées et accessibles en ligne. Ces images sont offertes gratuitement, 
+                    et ce, sans restriction, selon les indications associées</p>
+                <p>Les collections en ligne regroupent plus de 185 000 objets, photographies et documents d’archives. 
+                    Près de 155 000 images libres de droits sont téléchargeables dans la plus haute résolution disponible.</p>
+                <p>Il est possible de faire une demande d’utilisation ou de numérisation des images d’objets 
+                    et de documents d’archives encore sous la protection du droit d’auteur.</p>
+                <idno>https://www.musee-mccord-stewart.ca/fr/collections/services-photographiques-et-droits-auteur/</idno>
+              </desc>
+            <availability>
+                <scope></scope>
+                <note>
+                    <p></p>
+                </note>
+            <!-- voir ce que l'on veut ici scope fait réf dans ogs a deux valeurs : some eligible data, all eligible data--> 
+             <dissemination type="openData"></dissemination>
+             <!-- pas compris ce que l'on veut ici -->
+             <dissemination type="collectionsOnline" when="2026-07">
+                <volume>160615</volume>
+                <scope>objets, photographies, documents d'archives</scope>
+                <idno>https://collections.musee-mccord-stewart.ca/objects/</idno>
+                <!-- l'ensemble des objets disponibles en ligne avec et sans images-->
+                <!-- à compléter aussi selon ce qu'on decide dans le model pour Opendata ect -->
+             </dissemination>
+             <!-- ici - pour la suite le bloc dissemination, trouver une stratégie pour renseigner les différentes licences des objets (domaine public, droits d'auteur ect, voir aussi pour la question des droits autochtones-->
+            <!-- idem pour les différentes plateformes ou sont diffusés les objets cf RCIP-->
+            </availability>
+            <wikimedia>
+                <note><p>Institution et collection distinguées sur Wikidata.</p></note>
+                <idno type="institution">http://www.wikidata.org/entity/Q1128578</idno>
+                <idno type="collection"/>
+                <dissemination type="wikidata" when="2026-07-14">
+                    <scope>notices rattachées à l'institution</scope>
+                    <volume>21</volume>
+                    <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres de la collection qui ont une notice Wikidata</p></note>
+                </dissemination>
+                <dissemination type="wikicommons" when="2026-07-14">
+                    <scope>images sur wikicommons rattachées aux notices des œuvres de la collection</scope>
+                    <volume>22</volume>
+                    <note><p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (collection-musée ou localisation) qui ont une image, hors événements, avec leur titre, une image et leurs types.</p></note>
+                    <idno>https://commons.wikimedia.org/wiki/Institution:McCord_Stewart_Museum</idno>
+                </dissemination>
+            </wikimedia>
             </org>
         </listOrg>
         <listOrg>
