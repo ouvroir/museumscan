@@ -247,23 +247,83 @@
                     et de documents d’archives encore sous la protection du droit d’auteur.</p>
                 <idno>https://www.musee-mccord-stewart.ca/fr/collections/services-photographiques-et-droits-auteur/</idno>
               </desc>
-            <availability>
-                <scope></scope>
+            <availability when="2022">
+            <!-- "when"= Première instance de l'Open Access selon l'OGS + bien distinguer l'ouverture des données et les images-->
+                <scope>Some eligible data/scope>
+             <!-- ogs: Open Access Scope — le Musée McCord Stewart ouvre une partie de sa collection numérisée, essentiellement les œuvres du domaine public et les collections d'archives photographiques Notman -->
                 <note>
-                    <p></p>
+                    <p>Compliance : Open. Le Musée McCord Stewart applique 
+                        majoritairement des licences Creative Commons 
+                        (CC0 pour le domaine public, CC BY-NC pour certaines collections) et documente ses conditions de réutilisation via une politique d'accès ouvert publiée sur son site.</p>
                 </note>
             <!-- voir ce que l'on veut ici scope fait réf dans ogs a deux valeurs : some eligible data, all eligible data--> 
-             <dissemination type="openData"></dissemination>
-             <!-- pas compris ce que l'on veut ici -->
+             <dissemination type="openData" when="">
+             <!-- pour les données je suppose?-->
+              </dissemination>
              <dissemination type="collectionsOnline" when="2026-07">
                 <volume>160615</volume>
-                <scope>objets, photographies, documents d'archives</scope>
+                <scope>Objets, photographies, documents d'archives</scope>
+            <!-- l'ensemble des objets disponibles en ligne avec et sans images-->
+                <note>
+                    <p>CC0 1.0 Universal (pour les œuvres du domaine public)</p>
+                    <p>In Copyright (InC), pour les œuvres sous droits d'auteur identifiés et non libérés.</p>
+                    <p>Copyright Undetermined (UND), pour les œuvres dont le statut de droits n'a pu être établi avec certitude.</p>
+                </note>
+                <licence>https://creativecommons.org/publicdomain/zero/1.0/</licence>
+                <licence>https://rightsstatements.org/page/InC/1.0/</licence>
+                <licence>https://rightsstatements.org/page/UND/1.0/</licence>
                 <idno>https://collections.musee-mccord-stewart.ca/objects/</idno>
-                <!-- l'ensemble des objets disponibles en ligne avec et sans images-->
-                <!-- à compléter aussi selon ce qu'on decide dans le model pour Opendata ect -->
-             </dissemination>
-             <!-- ici - pour la suite le bloc dissemination, trouver une stratégie pour renseigner les différentes licences des objets (domaine public, droits d'auteur ect, voir aussi pour la question des droits autochtones-->
-            <!-- idem pour les différentes plateformes ou sont diffusés les objets cf RCIP-->
+            </dissemination type="api">
+             <scope>Non disponible</scope>
+             <!-- on veut le scope ou le volume ou les deux? y'a un truc ou les deux sont pas clairs-->
+             <note>
+                <p>Pas d'API publique documentée identifiée à ce jour sur le site institutionnel.</p>
+             </note>
+             <dissemination>
+
+            <dissemination type="Artefacts Canada">
+            <!-- @todo : trouver la date -->
+                <scope>Non disponible</scope>
+                <note>
+                    <p>Artefacts Canada est en train de refondre sa plateforme</p>
+                </note>
+            </dissemination>
+
+            <dissemination type="flickrCommons" when="2008">
+                 <scope>Substituts numériques d'archives photographiques versés sur Flickr Commons </scope>
+                 <volume>689</volume>
+                 <note>
+                    <p>No known copyright restrictions (Flickr Commons), équivalent au NKC de RightsStatements.org.</p>
+                    <p>Le musée n'affirme pas positivement que les œuvres relèvent du domaine public, mais déclare ne connaître aucune restriction de droits.</p>
+                    <p>Le McCord Stewart participe à Flickr Commons depuis 2008, ce qui en fait l'un des premiers musées canadiens engagés dans ce programme.</p>
+                 </note>
+                <licence>https://www.flickr.com/commons/usage/</licence>
+                <idno type="platform">https://www.flickr.com/photos/museemccordmuseum/</idno>
+            </dissemination>
+            
+             <dissemination type="iiif">
+                <scope>Non disponible</scope>
+                 <note>
+                 <p>Pas de manifeste IIIF identifié à ce jour sur la plateforme du Musée McCord Stewart.</p>
+                </note>
+            </dissemination>
+    
+            <dissemination type="git">
+            <scope>Non disponible</scope>
+            <note>
+            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+            </note>
+            </dissemination>
+
+            <dissemination type="DonnéesQuébec">
+            <scope>Non disponible</scope>
+                <note>
+                    <p>Aucun jeu de données institutionnel identifié à ce jour sur la plateforme Données Québec.</p>
+                </note>
+            </dissemination>
+            <!-- mettre les commentaires pour lister d'ou viennent les différents champs-->
+            <!-- reste TK et TCE, SGBD, metadata et consistance -->
+
             </availability>
             <wikimedia>
                 <note><p>Institution et collection distinguées sur Wikidata.</p></note>
