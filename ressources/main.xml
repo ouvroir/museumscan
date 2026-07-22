@@ -89,7 +89,8 @@
                 <admission>paid</admission>
                </accessibility>
                <online>
-                <exhibitions>https://mcq.org/decouvrir/expositions/</exhibitions>
+                <exhibitions>https://imagesdanslapierre.mcq.org</exhibitions>
+                <!-- documenter les expositions en ligne, pas le renvoi vers l'onglet des expositions-->
                 <education>https://mcq.org/decouvrir/programmations-speciales/famille/</education>
                 <specialized/>
                  <social>
@@ -202,12 +203,9 @@
                 <admission>paid</admission>
                </accessibility>
                <online>
-                <exhibitions>https://www.musee-mccord-stewart.ca/expositions/</exhibitions>
-                <education>https://www.musee-mccord-stewart.ca/familles/</education>
-                <!-- familles contient des ressources pédagogiques, je pense que c'est ok de le documenter comme contenu éducatif ?-->
                 <specialized>https://www.musee-mccord-stewart.ca/blogue/</specialized>
                 <!-- si on se refère à la définition donnée par le RCIP, "contenus spécialisés ou de recherche", je pense que c'est ok de documenter le blogue comme contenu spécialisé -->
-                <!-- pourquoi on fait comme ça et comme pour social ? avec un <idno>type="exhibitions">URL</idno> ?-->
+                <!-- pourquoi on fait comme ça et pas comme pour social ? avec un <idno>type="exhibitions">URL</idno> ?-->
                  <social>
                     <idno type="facebook">https://www.facebook.com/museemccordstewart</idno>
                     <idno type="instagram">https://www.instagram.com/museemccordstewart</idno>
@@ -249,20 +247,28 @@
               </desc>
             <availability when="2022">
             <!-- "when"= Première instance de l'Open Access selon l'OGS + bien distinguer l'ouverture des données et les images-->
-                <scope>Some eligible data/scope>
+                <scope>Some eligible data</scope>
              <!-- ogs: Open Access Scope — le Musée McCord Stewart ouvre une partie de sa collection numérisée, essentiellement les œuvres du domaine public et les collections d'archives photographiques Notman -->
-                <note>
-                    <p>Compliance : Open. Le Musée McCord Stewart applique 
+                    <note><p>Compliance : Open. Le Musée McCord Stewart applique 
                         majoritairement des licences Creative Commons 
-                        (CC0 pour le domaine public, CC BY-NC pour certaines collections) et documente ses conditions de réutilisation via une politique d'accès ouvert publiée sur son site.</p>
-                </note>
+                        (CC0 pour le domaine public, CC BY-NC pour certaines collections) et 
+                        documente ses conditions de réutilisation via une politique d'accès ouvert publiée sur son site.
+                    </p>
+                    </note>
             <!-- voir ce que l'on veut ici scope fait réf dans ogs a deux valeurs : some eligible data, all eligible data--> 
-             <dissemination type="openData" when="">
-             <!-- pour les données je suppose?-->
-              </dissemination>
+            <dissemination type="openData">
+                <scope>Non disponible</scope>
+                <!-- pour les données je suppose, comment faire la distinction avec Données Québec?-->
+            </dissemination>
+            <dissemination type="api">
+                <scope>Non disponible</scope>
+                <note>
+                    <p>Pas d'API publique documentée identifiée à ce jour sur le site institutionnel.</p>
+                </note>
+            </dissemination>
              <dissemination type="collectionsOnline" when="2026-07">
-                <volume>160615</volume>
                 <scope>Objets, photographies, documents d'archives</scope>
+                <volume>160615</volume>
             <!-- l'ensemble des objets disponibles en ligne avec et sans images-->
                 <note>
                     <p>CC0 1.0 Universal (pour les œuvres du domaine public)</p>
@@ -273,7 +279,7 @@
                 <licence>https://rightsstatements.org/page/InC/1.0/</licence>
                 <licence>https://rightsstatements.org/page/UND/1.0/</licence>
                 <idno>https://collections.musee-mccord-stewart.ca/objects/</idno>
-            </dissemination type="api">
+            <dissemination type="api">
              <scope>Non disponible</scope>
              <!-- on veut le scope ou le volume ou les deux? y'a un truc ou les deux sont pas clairs-->
              <note>
@@ -321,7 +327,9 @@
                     <p>Aucun jeu de données institutionnel identifié à ce jour sur la plateforme Données Québec.</p>
                 </note>
             </dissemination>
-            <!-- mettre les commentaires pour lister d'ou viennent les différents champs-->
+
+            </dissemination>
+            <!-- mettre les commentaires pour lister d'oú viennent les différents champs-->
             <!-- reste TK et TCE, SGBD, metadata et consistance -->
 
             </availability>
@@ -339,6 +347,431 @@
                     <volume>22</volume>
                     <note><p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (collection-musée ou localisation) qui ont une image, hors événements, avec leur titre, une image et leurs types.</p></note>
                     <idno>https://commons.wikimedia.org/wiki/Institution:McCord_Stewart_Museum</idno>
+                </dissemination>
+            </wikimedia>
+            </org>
+             <org xml:id="muse0695">
+                <orgName xml:lang="fr">Musée National des Beaux-Arts du Québec</orgName>
+                 <!-- conserver la dénomination française, ne pas traduire même en anglais-->
+                  <acronym>MNBAQ</acronym>
+                <operational>
+                    <budget when="2024-2025">
+                        <note>
+                            <p> 112 990038 dollars canadiens</p>
+                           <p>il s'agit seulement des charges totales de l'année 2025 </p>
+                        </note>
+                         <!-- la valeur du budget n'est pas typée, idem pour la devise (CAD), peut être pas besoin de paragraphes-->
+                          <source>
+                            <p>https://www.mnbaq.org/a-propos/le-musee/rapport-de-gestion-2024-2025</p>
+                            <p>États financiers du rapport annuel du musée 2024-2025, p.83.</p>
+                          </source>
+                    </budget>
+                    <administration>Musée national</administration>
+                    <!-- peut être faire une typologie des musées ? -->
+                </operational>
+                <orgType>museum</orgType>
+                <fields>
+                <!-- équivalent au champ disciplines du RCIP -->
+                    <field>fine arts</field>
+                    <field>ethnography</field>
+                    <field>archeology</field>
+                    <field>history</field>
+                    <field>decorative arts and design</field>
+                </fields>
+                <holdings>
+                   <size>42 500</size>
+                   <!--  il faudrait pouvoir documenter d'où vient ce nombre, ici en l'occurence c'est lRA 2024-2025 p.73-->
+                    <!-- categoy correspond au type d'objets dans le jeu de données du RCIP F, H, K, L, N-->
+                    <category>painting</category>
+                    <category>photography</category>
+                    <category>sculpture</category>
+                    <category>photography</category>
+                    <category>tools and technology</category>
+                    <category>clothing and adornment</category>
+                </holdings>
+                <address>
+                    <street><num>179</num>Grande Allée Ouest</street>
+                    <settlement>Québec City</settlement>
+                    <postCode>G1R 2H1</postCode>
+                    <region>Québec</region>
+                    <country>Canada</country>
+                </address>
+                <!-- ici voir si on veut renseigner une adresse courriel -->
+                <demographics>
+                    <distance>0.19</distance>
+                    <!-- typer la valeur (en km) pas assez explicite sur la valeur à renseigner + définition explicite : La distance, en kilomètres, entre l'institution et son voisin institutionnel le plus proche (c.-à-d. l'institution la plus proche dans la liste (donc valeur sûrement éronnée car on travaille pas sur toutes les institutions de la liste -->
+                    <density>34</density>
+                    <!-- typer la valeur again (un entier), pas assez explicite sur la valeur à renseigner + définition explicite svp : Le nombre d'institutions dans la liste qui sont à l'intérieur d'un rayon de 100km de l'institution concernée. + valeur sûrement éronnée car encore une fois on travaille pas sur l'intégralité des institutions de la liste -->
+                    <bdoica>6657</bdoica>
+                    <!-- il faut préciser ici que le nombre du champ bdoica est un id, est-ce qu'il serait préférable de le typer? -->
+                     <!-- qu'est ce qu'on renseigne quand la valeur est nulle? en gros, il n'a pas d'identifiant dans bdoica-->
+                     <arc>true</arc>
+                    <!-- pas sûre que ce soit la bonne valeur à renseigner mais il faut donner une définition de la valeur attendue, d'après la doc du RCIP ici il s'agit de dire si le musée est enregistré comme organisme de bienfaisance auprès de l'ARC-->
+                     <idusr>2423027</idusr>
+                     <!-- il faut typer la valeur attendue + donner une définition explicite : Fournit l'identifiant unique de la subdivision de recensement de l'institution. Les données de cet attribut sont générées par analyse spatiale : l'institution est située dans une subdivision de recensement sur la base du Fichier des limites des subdivisions de recensement (2022) maintenu par Statistique Canada. -->
+                      <cnsilb>QC46790712</cnsilb>
+                    <!-- il faut typer la valeur attendue (C'est un idenfiant unique) et donner une définition explicite : Fournit l'identifiant unique (HEXuid) de la Carte nationale des services Internet à large bande associé à la localisation de l'institution. -->
+               </demographics>
+               <accessibility>
+                <admission>paid</admission>
+               </accessibility>
+               <online>
+                <education>https://www.mnbaq.org/art-dans-ma-classe</education>
+                <!--peut-être ajouter un p pour faire la documentation du projet + pouvoir le dater-->
+                <!-- familles contient des ressources pédagogiques, je pense que c'est ok de le documenter comme contenu éducatif ?-->
+                 <social>
+                    <idno type="facebook">https://www.facebook.com/mnbaq</idno>
+                    <idno type="instagram">https://www.instagram.com/mnbaq</idno>
+                    <idno type="youtube">https://www.youtube.com/mnbaqorg</idno>
+                 </social>
+                 <idno type="website">https://www.mnbaq.org</idno>
+               </online>
+              <desc when="2026-07" type="collections" xml:lang="en">
+                <p>With over 42,000 works, our collections tell the story of Québec art, past and present. 
+                    Get ready for an artistic journey from New France to the present day. Happy exploring!</p>
+                <idno>https://www.mnbaq.org/collections</idno>    
+              </desc>
+              <desc when="2026-07" type="collections" xml:lang="fr">
+                <p>Riches de plus de 42 000 œuvres, nos collections racontent l’histoire de l’art du Québec au passé comme au présent. 
+                    Un voyage artistique de la Nouvelle-France à aujourd’hui vous attend. Belles découvertes!</p>
+                <idno>https://www.mnbaq.org/collections</idno>
+              </desc>
+              <desc when="2026-07" type="copyright" xml:lang="en">
+                <p>The Musée national des beaux-arts du Québec uses RightsStatements.org rights statements, Creative Commons licenses, and the Creative Commons Public Domain Mark or Public Domain Mark Canada. 
+                    Content that is clearly identified with such a rights statement may be used according to the specific conditions of that statement. 
+                    A person must contact the Museum or the rights holder when use requires prior written permission (license).</p>
+                    <p>For all authorized use of the content, the user must mention the name of the artist or creator (if known) and the source (“Musée national des beaux-arts du Québec”), 
+                        preferably with the inventory number, the name of the artist, the title of the work, the year it was created, the dimensions, or the URL of the content. </p>
+                <idno>https://www.mnbaq.org/en/legal/terms-of-use</idno>
+              </desc>
+              <desc when="2026-07" type="copyright" xml:lang="fr">
+                <p>Le Musée national des beaux-arts du Québec a recours à des déclarations de droits du consortium RightsStatements.org, à des licences de l’organisation Creative Commons et à la mention « Domaine public ou Domaine public au Canada » de celle-ci. 
+                    Les contenus qui sont clairement identifiés avec une telle mention de droits peuvent être utilisés selon les conditions spécifiques de cette mention. 
+                    Une personne doit communiquer avec le Musée ou avec le ou la titulaire des droits lorsqu’une utilisation nécessite une autorisation écrite préalable (licence).</p>
+                <p>Pour n’importe quelle utilisation autorisée des contenus, la personne doit mentionner le nom de l’artiste ou de la créatrice ou du créateur (s’il est connu) et mentionner la source (« Musée national des beaux-arts du Québec »), 
+                    préférablement avec le numéro d’inventaire, le nom de l’artiste, le titre de l’œuvre, l’année de production, les dimensions ou l’URL des contenus utilisés. </p>
+                <idno>https://www.mnbaq.org/legal/conditions-utilisation</idno>
+              </desc>
+            <availability when="2016-09-26">
+            <!-- "when"= Première instance de l'Open Access selon l'OGS + bien distinguer l'ouverture des données et les images-->
+            <!-- première diffusion des données en libre accès (2015-09-22) et (2016-09-26) pour diffusion d'une partie de leurs images dans un jeu de données, comment faire apparaître les deux ?-->
+                <scope>Some eligible data</scope>
+             <!-- ogs: Open Access Scope — le Musée national des beaux-arts du Québec ouvre
+            les métadonnées de sa collection (versements sur Données Québec) ainsi que
+            les reproductions des œuvres appartenant au domaine public,
+            téléchargeables en haute résolution depuis le site des collections -->
+               <note>
+            <p>Compliance : Open, sous réserve. Métadonnées de collection sous CC BY 4.0
+            (Données Québec, depuis le 22 septembre 2015). Images du domaine public
+            offertes gratuitement en haute résolution sous déclaration CC0 1.0, mais
+            avec mention obligatoire de l'artiste et de la source, et interdiction de
+            compiler les images pour répliquer un service concurrent. Œuvres protégées
+             et contenu éditorial du site soumis à autorisation préalable.</p>
+            </note>         
+            <!-- voir ce que l'on veut ici scope fait réf dans ogs a deux valeurs : some eligible data, all eligible data--> 
+             <dissemination type="openData" when="2015-09-22">
+             <!-- la première diffusion des données c'est fait sur Données Québec, comment le documenter, ajouter d'un p ?-->
+              </dissemination>
+             <dissemination type="collectionsOnline" when="2026-07">
+                <volume>43 554</volume>
+                <scope>Objets, photographies, documents d'archives</scope>
+            <!-- l'ensemble des objets disponibles en ligne avec et sans images-->
+            <note>
+                <!-- ogs: Open Access Scope — le MNBAQ ouvre les métadonnées de sa collection
+     et les reproductions des œuvres du domaine public, en haute résolution -->
+            <note>
+                <p>CC0 1.0 Universal, pour les œuvres du domaine public : téléchargement gratuit en haute résolution, mais mention obligatoire de l'artiste et de la source, et interdiction de compiler les images pour répliquer un service concurrent.</p>
+                <p>In Copyright (InC), pour les œuvres sous droits d'auteur identifiés et non libérés.</p>
+                <p>In Copyright – Rights-holder(s) Unlocatable or Unidentifiable (InC-RUU), pour les œuvres dont le titulaire des droits est introuvable.</p>
+                <p>Copyright Not Evaluated (CNE), pour les œuvres dont le statut de droits n'a pas été validé.</p>
+            </note>
+            <licence>https://creativecommons.org/publicdomain/zero/1.0/</licence>
+            <licence>https://rightsstatements.org/page/InC/1.0/</licence>
+            <licence>https://rightsstatements.org/page/InC-RUU/1.0/</licence>
+            <licence>https://rightsstatements.org/page/CNE/1.0/</licence>
+            <idno>https://www.mnbaq.org/collections</idno>
+
+            </dissemination type="api">
+             <scope>Non disponible</scope>
+             <!-- on veut le scope ou le volume ou les deux? y'a un truc ou les deux sont pas clairs-->
+             <note>
+                <p>Pas d'API publique documentée identifiée à ce jour sur le site institutionnel.</p>
+             </note>
+             <dissemination>
+
+            <dissemination type="Artefacts Canada">
+            <!-- @todo : trouver la date -->
+                <scope>Non disponible</scope>
+                <note>
+                    <p>Artefacts Canada est en train de refondre sa plateforme</p>
+                </note>
+            </dissemination>
+
+            <dissemination type="flickrCommons" when="2008">
+                 <scope>Non disponible</scope>
+                 <note>
+                    <p>Le MNBAQ ne verse pas ses images dans Flickr Commons</p>
+                 </note>
+            </dissemination>
+            
+             <dissemination type="iiif">
+                <scope>Non disponible</scope>
+                 <note>
+                 <p>Pas de manifeste IIIF identifié à ce jour sur la plateforme du Musée McCord Stewart.</p>
+                </note>
+            </dissemination>
+    
+            <dissemination type="git">
+            <scope>Non disponible</scope>
+            <note>
+            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+            </note>
+            </dissemination>
+
+            <dissemination type="DonnéesQuébec">
+            <scope>Disponible</scope>
+            <note>
+            <p>Trois jeux de données de collection diffusés sous licence CC BY 4.0 depuis le 22 septembre 2015, non mis à jour depuis 2016.</p>
+            </note>
+            <ref type="dataset" target="https://www.donneesquebec.ca/recherche/dataset/collections-du-musee-national-des-beaux-arts-du-quebec">Collections du Musée national des beaux-arts du Québec</ref>
+            <ref type="dataset" target="https://www.donneesquebec.ca/recherche/dataset/collections-du-musee-national-des-beaux-arts-du-quebec-avec-une-image">Collections du Musée national des beaux-arts du Québec avec une image</ref>
+            <ref type="dataset" target="https://www.donneesquebec.ca/recherche/dataset/oeuvres-theme-montreal-avec-lien-vers-une-image">Collections du MNBAQ ayant le thème de la ville de Montréal</ref>
+            <licence>https://creativecommons.org/licenses/by/4.0/</licence>
+             </dissemination>
+            <!-- corrections ici -->
+            <!-- mettre les commentaires pour lister d'oú viennent les différents champs-->
+            <!-- reste TK et TCE, SGBD, metadata et consistance -->
+
+            </availability>
+            <wikimedia>
+                <note><p>Institution et collection distinguées sur Wikidata.</p></note>
+                <idno type="institution">http://www.wikidata.org/entity/Q2338135</idno>
+                <idno type="collection"/
+                <dissemination type="wikidata" when="2026-07-22">
+                    <scope>notices rattachées à l'institution</scope>
+                    <volume>3828</volume>
+                    <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres de la collection qui ont une notice Wikidata</p></note>
+                </dissemination>
+                <dissemination type="wikicommons" when="2026-07-22">
+                    <scope>images sur wikicommons rattachées aux notices des œuvres de la collection</scope>
+                    <volume>95</volume>
+                    <note><p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (collection-musée ou localisation) qui ont une image, hors événements, avec leur titre, une image et leurs types.</p></note>
+                    <idno>https://commons.wikimedia.org/wiki/Institution:Musée_national_des_beaux-arts_du_Québec</idno>
+                    <idno>https://commons.wikimedia.org/wiki/Category:Collections_of_the_Musée_national_des_beaux-arts_du_Québec</idno>
+                </dissemination>
+            </wikimedia>
+            </org>
+            <org xml:id="muse0023">
+                <orgName xml:lang="fr">Musée des beaux-arts de Montréal</orgName>
+                <orgName xml:lang="en">Montreal Museum of Fine Arts</orgName>
+                <acronym xml:lang="fr">MBAM</acronym>
+                <acronym xml:lang="en">MMFA</acronym>
+                <operational>
+                    <budget when="2024-2025">
+                        <note>
+                            <p> 53 134 818 dollars canadiens</p>
+                           <p>il s'agit seulement des charges totales de l'année 2025 </p>
+                        </note>
+                         <!-- la valeur du budget n'est pas typée, idem pour la devise (CAD), peut être pas besoin de paragraphes-->
+                          <source>
+                            <p>https://www.mbam.qc.ca/workspace/uploads/files/mbam-rapportannuel2025_complet_final_fr_web.pdf</p>
+                            <p>États financiers du rapport annuel du musée 2024-2025, p.86.</p>
+                          </source>
+                    </budget>
+                    <administration>Personne morale sans but lucratif</administration>
+                    <!-- à vérifier société sans but lucratif de type mixte-->
+                    <!-- peut être faire une typologie des musées ? -->
+                </operational>
+                <orgType>museum</orgType>
+                <fields>
+                <!-- équivalent au champ disciplines du RCIP ADEB-->
+                    <field>archeology</field>
+                    <field>fine arts</field>
+                    <field>history</field>
+                    <field>decorative arts and design</field>
+                </fields>
+                <holdings>
+                   <size>47 000</size>
+                   <!--  il faudrait pouvoir documenter d'où vient ce nombre info : https://www.mbam.qc.ca/fr/collections/-->
+                    <!-- categoy correspond au type d'objets dans le jeu de données du RCIP -->
+                    <category>archival documents and books</category>
+                    <category>decorative arts and design</category>
+                    <category>media and ICT technology</category>
+                    <category>natural artefacts</category>
+                    <category>painting</category>
+                    <category>photography</category>
+                    <category>ceramics</category>
+                    <category>prints and drawings</category>
+                </holdings>
+                <address>
+                    <street><num>1380</num>rue Sherbrooke Ouest</street>
+                    <settlement>Montréal</settlement>
+                    <postCode>H3G 1J5</postCode>
+                    <region>Québec</region>
+                    <country>Canada</country>
+                </address>
+                <!-- ici voir si on veut renseigner une adresse courriel -->
+                <demographics>
+                    <distance>0.06</distance>
+                    <!-- typer la valeur (en km) pas assez explicite sur la valeur à renseigner + définition explicite : La distance, en kilomètres, entre l'institution et son voisin institutionnel le plus proche (c.-à-d. l'institution la plus proche dans la liste (donc valeur sûrement éronnée car on travaille pas sur toutes les institutions de la liste -->
+                    <density>112</density>
+                    <!-- typer la valeur again (un entier), pas assez explicite sur la valeur à renseigner + définition explicite svp : Le nombre d'institutions dans la liste qui sont à l'intérieur d'un rayon de 100km de l'institution concernée. + valeur sûrement éronnée car encore une fois on travaille pas sur l'intégralité des institutions de la liste -->
+                    <bdoica>false</bdoica>
+                    <!-- il faut préciser ici que le nombre du champ bdoica est un id, est-ce qu'il serait préférable de le typer? -->
+                     <!-- qu'est ce qu'on renseigne quand la valeur est nulle? en gros, il n'a pas d'identifiant dans bdoica-->
+                     <arc>true</arc>
+                    <!-- pas sûre que ce soit la bonne valeur à renseigner mais il faut donner une définition de la valeur attendue, d'après la doc du RCIP ici il s'agit de dire si le musée est enregistré comme organisme de bienfaisance auprès de l'ARC-->
+                     <idusr>2466023</idusr>
+                     <!-- il faut typer la valeur attendue + donner une définition explicite : Fournit l'identifiant unique de la subdivision de recensement de l'institution. Les données de cet attribut sont générées par analyse spatiale : l'institution est située dans une subdivision de recensement sur la base du Fichier des limites des subdivisions de recensement (2022) maintenu par Statistique Canada. -->
+                      <cnsilb>QC45510736</cnsilb>
+                    <!-- il faut typer la valeur attendue (C'est un idenfiant unique) et donner une définition explicite : Fournit l'identifiant unique (HEXuid) de la Carte nationale des services Internet à large bande associé à la localisation de l'institution. -->
+               </demographics>
+               <accessibility>
+                <admission>paid</admission>
+               </accessibility>
+               <online>
+                <education>https://educart.ca/</education>
+                <education>https://www.mbam.qc.ca/fr/education/prisme-la-boite-a-outils-numerique/</education>
+                <!--peut-être ajouter un p pour faire la documentation du projet + pouvoir le dater-->
+                <!-- plusieurs projets éduacatifs numériques, mais pas un lien qui les regroupent tous, comment documenter l'ensemble ?-->
+                 <social>
+                    <idno type="facebook">https://www.facebook.com/mbamtl</idno>
+                    <idno type="instagram">hhttps://www.instagram.com/mbamtl/</idno>
+                    <idno type="youtube">https://www.youtube.com/user/MBAMMMFA</idno>
+                 </social>
+                 <idno type="website">https://www.mbam.qc.ca/</idno>
+               </online>
+              <desc when="2026-07" type="collections" xml:lang="fr">
+                <p>La collection du MBAM donne à découvrir le patrimoine québécois et canadien, l’art autochtone et l’art international, dans une perspective actuelle et novatrice. 
+                    Elle rassemble près de 47 000 peintures, sculptures, œuvres d’art graphiques, photographies, installations multimédias et objets d’arts décoratifs, de l’Antiquité à nos jours. 
+                    Ses expositions comme sa programmation culturelle offrent une vision renouvelée de l’histoire de l’art</p>
+                <idno>https://www.mbam.qc.ca/fr/le-musee/a-propos-du-musee/</idno>    
+              </desc>
+              <desc when="2026-07" type="collections" xml:lang="en">
+                <p>The MMFA’s collection showcases Quebec and Canadian heritage, Indigenous art and international art from a progressive and innovative perspective. 
+                    It comprises close to 47,000 paintings, sculptures, graphic artworks, photographs, multimedia installations and decorative art objects dating from antiquity to the present. 
+                    The MMFA’s exhibitions and cultural programming aim to inspire new ways of looking at art and the history of art.</p>
+                <idno>https://www.mbam.qc.ca/en/the-museum/about-the-museum/</idno>
+              </desc>
+              <desc when="2026-07" type="copyright" xml:lang="en">
+                <p>The Museum’s Photography Services manages a bank of over 50,000 images of the artworks in the MMFA collection, which are available to students, researchers and publishers.</p>
+                    <p>All requests concerning the reproduction of an artwork must be sent in writing to the Photography Services technician. Service and copyright fees may apply.</p>
+                <idno>https://www.mbam.qc.ca/en/the-museum/photography-services-and-copyright/</idno>
+              </desc>
+              <desc when="2026-07" type="copyright" xml:lang="fr">
+                <p>Les Services photographiques du MBAM gèrent une banque d’images contenant plus de 50 000 clichés des œuvres de la collection. 
+                    Ce matériel est mis à la disposition des étudiants, des chercheurs et des éditeurs.</p>
+                <p>Toute demande concernant la reproduction d’une œuvre de la collection doit être acheminée par écrit à la technicienne aux Services photographiques. 
+                    Des frais d’administration et de droits d’auteur peuvent s’appliquer.</p>
+                <idno>https://www.mbam.qc.ca/fr/le-musee/services-photographiques-et-droits-dauteur/</idno>
+              </desc>
+            <availability when="2016-06-26">
+            <!-- "when"= Première instance de l'Open Access selon l'OGS + bien distinguer l'ouverture des données et les images-->
+            <!-- première diffusion des données en libre accès sur Données Québec -->
+                <scope>?</scope>
+            <!-- ici pour la suite-->
+             <!-- ogs: Open Access Scope — le Musée national des beaux-arts du Québec ouvre
+            les métadonnées de sa collection (versements sur Données Québec) ainsi que
+            les reproductions des œuvres appartenant au domaine public,
+            téléchargeables en haute résolution depuis le site des collections -->
+               <note>
+            <p>Compliance : Open, sous réserve. Métadonnées de collection sous CC BY 4.0
+            (Données Québec, depuis le 22 septembre 2015). Images du domaine public
+            offertes gratuitement en haute résolution sous déclaration CC0 1.0, mais
+            avec mention obligatoire de l'artiste et de la source, et interdiction de
+            compiler les images pour répliquer un service concurrent. Œuvres protégées
+             et contenu éditorial du site soumis à autorisation préalable.</p>
+            </note>         
+            <!-- voir ce que l'on veut ici scope fait réf dans ogs a deux valeurs : some eligible data, all eligible data--> 
+             <dissemination type="openData" when="2015-09-22">
+             <!-- la première diffusion des données c'est fait sur Données Québec, comment le documenter, ajouter d'un p ?-->
+              </dissemination>
+             <dissemination type="collectionsOnline" when="2026-07">
+                <volume>43 554</volume>
+                <scope>Objets, photographies, documents d'archives</scope>
+            <!-- l'ensemble des objets disponibles en ligne avec et sans images-->
+            <note>
+                <!-- ogs: Open Access Scope — le MNBAQ ouvre les métadonnées de sa collection
+     et les reproductions des œuvres du domaine public, en haute résolution -->
+            <note>
+                <p>CC0 1.0 Universal, pour les œuvres du domaine public : téléchargement gratuit en haute résolution, mais mention obligatoire de l'artiste et de la source, et interdiction de compiler les images pour répliquer un service concurrent.</p>
+                <p>In Copyright (InC), pour les œuvres sous droits d'auteur identifiés et non libérés.</p>
+                <p>In Copyright – Rights-holder(s) Unlocatable or Unidentifiable (InC-RUU), pour les œuvres dont le titulaire des droits est introuvable.</p>
+                <p>Copyright Not Evaluated (CNE), pour les œuvres dont le statut de droits n'a pas été validé.</p>
+            </note>
+            <licence>https://creativecommons.org/publicdomain/zero/1.0/</licence>
+            <licence>https://rightsstatements.org/page/InC/1.0/</licence>
+            <licence>https://rightsstatements.org/page/InC-RUU/1.0/</licence>
+            <licence>https://rightsstatements.org/page/CNE/1.0/</licence>
+            <idno>https://www.mnbaq.org/collections</idno>
+
+            </dissemination type="api">
+             <scope>Non disponible</scope>
+             <!-- on veut le scope ou le volume ou les deux? y'a un truc ou les deux sont pas clairs-->
+             <note>
+                <p>Pas d'API publique documentée identifiée à ce jour sur le site institutionnel.</p>
+             </note>
+             <dissemination>
+
+            <dissemination type="Artefacts Canada">
+            <!-- @todo : trouver la date -->
+                <scope>Non disponible</scope>
+                <note>
+                    <p>Artefacts Canada est en train de refondre sa plateforme</p>
+                </note>
+            </dissemination>
+
+            <dissemination type="flickrCommons" when="2008">
+                 <scope>Non disponible</scope>
+                 <note>
+                    <p>Le MNBAQ ne verse pas ses images dans Flickr Commons</p>
+                 </note>
+            </dissemination>
+            
+             <dissemination type="iiif">
+                <scope>Non disponible</scope>
+                 <note>
+                 <p>Pas de manifeste IIIF identifié à ce jour sur la plateforme du Musée McCord Stewart.</p>
+                </note>
+            </dissemination>
+    
+            <dissemination type="git">
+            <scope>Non disponible</scope>
+            <note>
+            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+            </note>
+            </dissemination>
+
+            <dissemination type="DonnéesQuébec">
+            <scope>Disponible</scope>
+            <note>
+            <p>Trois jeux de données de collection diffusés sous licence CC BY 4.0 depuis le 22 septembre 2015, non mis à jour depuis 2016.</p>
+            </note>
+            <ref type="dataset" target="https://www.donneesquebec.ca/recherche/dataset/collections-du-musee-national-des-beaux-arts-du-quebec">Collections du Musée national des beaux-arts du Québec</ref>
+            <ref type="dataset" target="https://www.donneesquebec.ca/recherche/dataset/collections-du-musee-national-des-beaux-arts-du-quebec-avec-une-image">Collections du Musée national des beaux-arts du Québec avec une image</ref>
+            <ref type="dataset" target="https://www.donneesquebec.ca/recherche/dataset/oeuvres-theme-montreal-avec-lien-vers-une-image">Collections du MNBAQ ayant le thème de la ville de Montréal</ref>
+            <licence>https://creativecommons.org/licenses/by/4.0/</licence>
+             </dissemination>
+            <!-- corrections ici -->
+            <!-- mettre les commentaires pour lister d'oú viennent les différents champs-->
+            <!-- reste TK et TCE, SGBD, metadata et consistance -->
+
+            </availability>
+            <wikimedia>
+                <note><p>Institution et collection distinguées sur Wikidata.</p></note>
+                <idno type="institution">http://www.wikidata.org/entity/Q2338135</idno>
+                <idno type="collection"/
+                <dissemination type="wikidata" when="2026-07-22">
+                    <scope>notices rattachées à l'institution</scope>
+                    <volume>3828</volume>
+                    <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres de la collection qui ont une notice Wikidata</p></note>
+                </dissemination>
+                <dissemination type="wikicommons" when="2026-07-22">
+                    <scope>images sur wikicommons rattachées aux notices des œuvres de la collection</scope>
+                    <volume>95</volume>
+                    <note><p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (collection-musée ou localisation) qui ont une image, hors événements, avec leur titre, une image et leurs types.</p></note>
+                    <idno>https://commons.wikimedia.org/wiki/Institution:Musée_national_des_beaux-arts_du_Québec</idno>
+                    <idno>https://commons.wikimedia.org/wiki/Category:Collections_of_the_Musée_national_des_beaux-arts_du_Québec</idno>
                 </dissemination>
             </wikimedia>
             </org>
