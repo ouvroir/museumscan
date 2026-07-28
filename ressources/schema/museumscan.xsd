@@ -369,7 +369,11 @@
         par @xml:id.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <!-- Order below follows the consistent order observed across all
+           org records in main.xml: orgName(s), acronym(s), operational,
+           orgType, fields, holdings, address(es), demographics,
+           accessibility, online, desc(s), availability(ies), wikimedia. -->
+      <xs:sequence>
         <xs:element ref="orgName" minOccurs="1" maxOccurs="unbounded" />
         <xs:element ref="acronym" minOccurs="0" maxOccurs="unbounded" />
         <xs:element ref="operational" minOccurs="0" maxOccurs="1" />
@@ -380,10 +384,10 @@
         <xs:element ref="demographics" minOccurs="1" maxOccurs="1" />
         <xs:element ref="accessibility" minOccurs="1" maxOccurs="1" />
         <xs:element ref="online" minOccurs="1" maxOccurs="1" />
-        <xs:element ref="desc" minOccurs="1" maxOccurs="1" />
-        <xs:element ref="availability" minOccurs="1" maxOccurs="unbounded"></xs:element>
+        <xs:element ref="desc" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element ref="availability" minOccurs="1" maxOccurs="unbounded" />
         <xs:element ref="wikimedia" minOccurs="1" maxOccurs="1" />
-      </xs:choice>
+      </xs:sequence>
       <xs:attributeGroup ref="globalAtts" />
     </xs:complexType>
   </xs:element>
@@ -411,10 +415,10 @@
         administration).</xs:documentation>
     </xs:annotation>
     <xs:complexType mixed="true">
-      <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:sequence>
         <xs:element ref="budget" minOccurs="1" maxOccurs="unbounded" />
         <xs:element ref="administration" minOccurs="0" maxOccurs="1" />
-      </xs:choice>
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
 
@@ -437,10 +441,10 @@
         directement comparable de façon automatisée.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element ref="note" minOccurs="0" maxOccurs="1" />
+      <xs:sequence>
+        <xs:element ref="note" minOccurs="0" maxOccurs="unbounded" />
         <xs:element ref="source" minOccurs="0" maxOccurs="1" />
-      </xs:choice>
+      </xs:sequence>
       <xs:attribute name="when">
         <xs:annotation>
           <xs:documentation xml:lang="en">Year (or more precise date) the
@@ -689,7 +693,7 @@
         une collection ?) ; son absence à « faux ».</xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <xs:choice minOccurs="1" maxOccurs="unbounded">
+      <xs:sequence>
         <xs:element name="size" type="xs:string" minOccurs="0" maxOccurs="1">
           <xs:annotation>
             <xs:documentation xml:lang="en">Number of objects held in the
@@ -702,8 +706,8 @@
               est inconnu).</xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element ref="category" minOccurs="1 " maxOccurs="unbounded" />
-      </xs:choice>
+        <xs:element ref="category" minOccurs="1" maxOccurs="unbounded" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
 
@@ -918,7 +922,11 @@
         museumscan.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <xs:choice minOccurs="1" maxOccurs="unbounded">
+      <!-- Order below follows main.xml, where every address is
+           street, settlement, postCode, region, country; district (not
+           yet attested in main.xml, only sketched in model.xml) is
+           slotted in right after street. -->
+      <xs:sequence>
         <xs:element name="street" minOccurs="0" maxOccurs="1">
           <xs:annotation>
             <xs:documentation xml:lang="en">Street name and number.
@@ -933,7 +941,7 @@
             </xs:choice>
           </xs:complexType>
         </xs:element>
-        <xs:element ref="district" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element ref="district" minOccurs="0" maxOccurs="unbounded" />
         <xs:element name="settlement" minOccurs="1" maxOccurs="1" type="xs:string">
           <xs:annotation>
             <xs:documentation xml:lang="en">City or town where the
@@ -987,7 +995,7 @@
               « Country ».</xs:documentation>
           </xs:annotation>
         </xs:element>
-      </xs:choice>
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
 
@@ -1267,8 +1275,12 @@
         présence sur les médias sociaux et le web.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <xs:choice minOccurs="1" maxOccurs="unbounded">
-        <xs:element name="exhibitions" type="xs:string" minOccurs="0" maxOccurs="1">
+      <!-- Order below follows main.xml: exhibitions, education,
+           specialized, social, idno(website). exhibitions/education/
+           specialized are repeatable (an org may list more than one link
+           of the same kind, as MBAM does for education). -->
+      <xs:sequence>
+        <xs:element name="exhibitions" type="xs:string" minOccurs="0" maxOccurs="unbounded">
           <xs:annotation>
             <xs:documentation xml:lang="en">Link to an online exhibition.
               Source: OpenGLAM Survey, "Online Offers" value A
@@ -1281,7 +1293,7 @@
               ou ailleurs).</xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="education" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:element name="education" type="xs:string" minOccurs="0" maxOccurs="unbounded">
           <xs:annotation>
             <xs:documentation xml:lang="en">Link to educational content.
               Source: OpenGLAM Survey, "Online Offers" value B
@@ -1294,7 +1306,7 @@
               événements).</xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="specialized" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:element name="specialized" type="xs:string" minOccurs="0" maxOccurs="unbounded">
           <xs:annotation>
             <xs:documentation xml:lang="en">Link to specialized/research
               content. Source: OpenGLAM Survey, "Online Offers" value C
@@ -1328,8 +1340,8 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element ref="idno" minOccurs="0" maxOccurs="1" />
-      </xs:choice>
+        <xs:element ref="idno" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
 
@@ -1348,10 +1360,13 @@
         jeu de données publié.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <xs:choice minOccurs="1" maxOccurs="unbounded">
+      <!-- Order below follows main.xml: one or more p, then an optional
+           trailing idno (some placeholder desc blocks in main.xml have
+           no idno yet). -->
+      <xs:sequence>
         <xs:element ref="p" minOccurs="1" maxOccurs="unbounded"/>
-        <xs:element ref="idno"/>
-      </xs:choice>
+        <xs:element ref="idno" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
       <xs:attribute name="type" type="xs:string">
         <xs:annotation>
           <xs:documentation xml:lang="en">Topic of the description (e.g.
@@ -1395,14 +1410,19 @@
         dissemination).</xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <xs:choice minOccurs="1" maxOccurs="unbounded">
+      <!-- Order below follows main.xml: scope, note, dissemination(s).
+           volume/licence/idno are not used directly under availability in
+           current data (they appear inside the nested dissemination
+           breakdown instead) but remain available here, after
+           dissemination, should a top-level summary ever be needed. -->
+      <xs:sequence>
         <xs:element ref="scope" minOccurs="0" maxOccurs="1"/>
-        <xs:element ref="volume" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="note" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element ref="dissemination" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="volume" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="licence"  minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="idno"  minOccurs="1" maxOccurs="unbounded"/>
-      </xs:choice>
+        <xs:element ref="idno"  minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
       <xs:attribute name="when"  type="dateValue">
         <xs:annotation>
           <xs:documentation xml:lang="en">Date this availability snapshot
@@ -1458,14 +1478,24 @@
         qu’une énumération formelle (voir @todo ci-dessous).</xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <xs:choice minOccurs="1" maxOccurs="unbounded">
+      <!-- Order below follows the dominant pattern in main.xml: scope,
+           volume, note, licence(s), idno — e.g. wikidata/wikicommons/
+           flickrCommons dissemination blocks are all scope-volume-note(-
+           licence)(-idno). Two collectionsOnline blocks in main.xml put
+           volume before scope, against their own siblings' pattern and
+           against every other dissemination in the file; that looks like
+           a data slip rather than the intended order, so the majority
+           pattern was kept here. Nested dissemination (self-reference)
+           is not currently used cleanly in main.xml; it is kept, slotted
+           after note, for future hierarchical breakdowns. -->
+      <xs:sequence>
         <xs:element ref="scope" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="volume" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="note" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element ref="dissemination" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="volume" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="licence"  minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="idno"  minOccurs="1" maxOccurs="unbounded"/>
-      </xs:choice>
+        <xs:element ref="idno"  minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
       <xs:attribute name="type"  type="xs:string">
         <xs:annotation>
           <xs:documentation xml:lang="en">Which channel/platform this
@@ -1514,14 +1544,19 @@
         « Platform ».</xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <xs:choice minOccurs="1" maxOccurs="unbounded">
+      <!-- Order below follows main.xml, where every wikimedia block is
+           note, idno(s), dissemination(s); scope/volume/licence are not
+           used directly under wikimedia in current data (only inside its
+           nested dissemination breakdown) but are kept available, before
+           note, for a future top-level summary. -->
+      <xs:sequence>
         <xs:element ref="scope" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="volume" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="note" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="idno"  minOccurs="0" maxOccurs="unbounded"/>
         <xs:element ref="dissemination" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element ref="licence"  minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="idno"  minOccurs="0" maxOccurs="unbounded"/>
-      </xs:choice>
+      </xs:sequence>
       <xs:attribute name="when"  type="dateValue">
         <xs:annotation>
           <xs:documentation xml:lang="en">Date this Wikimedia presence
