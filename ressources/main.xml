@@ -25,17 +25,15 @@
             <head>Québec</head>
             <org xml:id="muse0022">
                 <orgName xml:lang="fr">Musée de la civilisation</orgName>
-               <!-- conserver la dénomination française, ne pas traduire même en anglais-->
-                <acronym>MCQ</acronym>
+                <acronym xml:lang="fr">MCQ</acronym>
                 <operational>
-                    <budget when="2024-2025">
+                    <budget from="2024" to="2025">
                         <note>
                             <p>30 682 161 dollars canadiens</p>
-                            <p>il s'agit seulement du fonds d'exploitation du musée</p>
+                            <p>Portée : fonds d'exploitation du musée seulement.</p>
                         </note>
-                         <!-- la valeur du budget n'est pas typée, idem pour la devise (CAD), peut être pas besoin de paragraphes-->
                           <source>
-                            <p>https://www.musee-mccord-stewart.ca/app/uploads/2025/10/musee-mccord-stewart-rapport-annuel-2024-2025.pdf</p>
+                            <p>https://mcq.org/wp-content/uploads/2025/10/rapport-annuel-2024-2025.pdf</p>
                             <p>États financiers du rapport annuel du musée 2024-2025, p.96.</p>
                           </source>
                     </budget>
@@ -52,6 +50,7 @@
                    <size>25 000</size>
                    <!-- size correspond au nombre d'objets dans la collection-->
                     <!-- le jeu de données du RCIP indique 25 000 objets, ce qui semble peu-->
+                    <!-- 682 758 objets selon le site des collections en ligne-->
                     <category>natural artefacts</category>
                     <category>archival documents and books</category>
                     <category>clothing and adornment</category>
@@ -100,41 +99,113 @@
                  </social>
                  <idno type="website">https://www.mcq.org/</idno>
                </online>
-              <desc type="collections" xml:lang="en">
-                <p>à remplir</p>
+               <desc when="2026-07" type="collections" xml:lang="fr">
+                <p> Musée met à disposition l’ensemble de ses collections patrimoniales : plus d’un quart de million d’objets, des archives d’une valeur inestimable et une bibliothèque d’ouvrages rares et anciens. Porteuses d’une histoire dynamique, les remarquables collections du Musée de la civilisation alimentent la réflexion sur l’évolution de notre société et la place du Québec dans le monde.</p>
+                <idno>https://collections.mcq.org/faq</idno>
+               </desc>
+              <desc when="2026-07" type="collections" xml:lang="en">
+                <p>The Museum gives you access to all its heritage collections, including over a quarter million objects, priceless archives, and a library of rare and ancient works. Musée de la civilisation’s remarkable collections attest to a rich and vibrant history, offering insight into how our society has evolved over the years and Québec's place in the world.</p>
+                <idno>https://collections.mcq.org/faq</idno>
               </desc>
-              <desc type="copyright" xml:lang="en">
-                <p>à remplir</p>
+              <desc when="2026-07" type="copyright" xml:lang="fr">
+                 <p>Le contenu des Collections en ligne (données, images et autres contenus) est à disposition pour des 
+                fins personnelles et de recherche, selon les termes de la licence Creative Commons Attribution - 
+                Utilisation non commerciale 4.0 International (CC BY-NC 4.0). Les fichiers numériques du portail 
+                sont téléchargeables gratuitement au format JPG, sous réserve des conditions d'utilisation.</p>
+                <p>Le Musée de la civilisation autorise les usagers à partager (copier, distribuer et communiquer le 
+                matériel par tous moyens et sous tous formats) et à adapter (remixer, transformer et créer à partir 
+                du matériel).</p>
+                <p>Sous réserve de respecter les conditions suivantes : Attribution (créditer l'œuvre, intégrer un lien 
+                vers la licence et indiquer si des modifications ont été effectuées, sans suggérer que le Musée 
+                soutient l'usage qui en est fait); Pas d'Utilisation Commerciale; Pas de restrictions complémentaires 
+                (ne pas appliquer de conditions légales ou de mesures techniques qui restreindraient l'usage permis 
+                par la licence).</p>
+                <p>La licence ne s'applique pas aux éléments relevant du domaine public ni aux usages couverts par une 
+                exception. Aucune garantie n'est donnée : d'autres droits (droits moraux, droit des données 
+                 personnelles, droit à l'image) sont susceptibles de limiter l'utilisation.</p>
+                <p>Tout utilisateur doit indiquer la source : « Musée de la civilisation » et le lien vers le portail; 
+                pour une image, reprendre le libellé de mention et ajouter le numéro de l'objet. L'obtention d'un 
+                fichier au format TIFF passe par une demande tarifée selon sa nature.</p>
+                <idno>https://collections.mcq.org/faq#conditions</idno>
               </desc>
-              <!-- à completer-->
+              <desc when="2026-07" type="copyright" xml:lang="en">
+                <p>The content of the online Collections (data, images and other content) is made available for personal 
+                and research purposes under the Creative Commons Attribution - NonCommercial 4.0 International licence 
+                (CC BY-NC 4.0). Digital files from the portal may be downloaded free of charge in JPG format, subject 
+                to the terms of use.</p>
+                <p>The Musée de la civilisation permits users to share (copy and redistribute the material in any medium 
+                or format) and to adapt (remix, transform and build upon the material).</p>
+                <p>Subject to the following conditions: Attribution (give appropriate credit, provide a link to the 
+                licence and indicate if changes were made, without suggesting the Museum endorses the use); 
+                 NonCommercial (no commercial use); No additional restrictions (do not apply legal terms or 
+                technological measures that restrict others from what the licence permits).</p>
+                <p>The licence does not apply to public-domain elements or to uses covered by an exception. No warranties 
+                are given: other rights (moral rights, personal-data protection, image rights) may limit use.</p>
+                <p>Users must cite the source: "Musée de la civilisation" with a link to the portal; for an image, 
+                reproduce the credit label and add the object number. High-resolution or TIFF files require a 
+                separate, priced request.</p>
+                <idno>https://collections.mcq.org/faq#conditions</idno>
+              </desc>
 
-            <availability>
-                <scope></scope>
-                <note>
-                    <p></p>
-                </note>
-            <!-- voir ce que l'on veut ici pour scope qui fait réf dans ogs a deux valeurs : some eligible data, all eligible data-->    
-             <dissemination type="collectionsOnline" when="2024-2025">
+            <availability when="2026-07">
+                <scope>some eligible data</scope>
+                    
+             <dissemination type="collectionsOnline" from="2024" to="2025">
                 <scope>fiches d'objets, de documents et de livres</scope>
                 <volume>682758</volume>
                 <note><p/>États financiers du rapport annuel du musée 2024-2025, p.37</note>
                 <idno>https://collections.mcq.org</idno>
                 <!-- à compléter aussi selon ce qu'on decide dans le model pour Opendata ect -->
              </dissemination>
+
+                <dissemination type="openData">
+                <note>
+                    <p>Non disponible</p>
+                    <p>Aucun jeu de données ouvert identifié à ce jour, ni sur le site institutionnel ni sur Données Québec</p>
+                </note>
+                </dissemination>
+                <dissemination type="api">
+                    <note>
+                        <p>Non disponible</p>
+                        <p>Pas d'API publique documentée identifiée à ce jour sur le site institutionnel.</p>
+                    </note>
+                </dissemination>
+
+                <dissemination type="artefactsCanada">
+                    <note>
+                        <p>Non disponible</p>
+                        <p>Artefacts Canada est en train de refondre sa plateforme</p>
+                    </note>
+                </dissemination>
+
+                <dissemination type="git">
+                    <note>
+                        <p>Non disponible</p>
+                        <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                    </note>
+                </dissemination>
+
+                <dissemination type="iiif">
+                    <note>
+                        <p>Non disponible</p>
+                        <p>Pas de manifeste IIIF identifié à ce jour sur la plateforme des collectionsdu Musée de la civilisation.</p>
+                    </note>
+                </dissemination>
+
             </availability>
             <wikimedia>
                 <note><p>Institution et collection distinguées sur Wikidata.</p></note>
                 <idno type="institution">http://www.wikidata.org/entity/Q1705530</idno>
                 <idno type="collection">http://www.wikidata.org/entity/Q112194818</idno>
                 <dissemination type="wikidata" when="2026-07-08">
-                    <scope>notices rattachées à l'institution et à la collection</scope>
                     <volume>15</volume>
-                    <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres de la collection qui ont une notice Wikidata</p></note>
+                    <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres de la collection qui ont une notice Wikidata</p>
+                    <p>notices rattachées à l'institution et à la collection</p></note>
                 </dissemination>
                 <dissemination type="wikicommons" when="2026-07-14">
-                    <scope>images sur wikicommons rattachées aux notices des œuvres de la collection</scope>
                     <volume>9</volume>
-                    <note><p>requête SPARQL sur Wikidata listant toutes les œuvres du Musée de la civilisation (par collection, collection-musée ou localisation) qui ont une image, hors événements, avec leur titre, une image et leurs types.</p></note>
+                    <note><p>requête SPARQL sur Wikidata listant toutes les œuvres du Musée de la civilisation (par collection, collection-musée ou localisation) qui ont une image, hors événements, avec leur titre, une image et leurs types.</p>
+                    <p>images sur wikicommons rattachées aux notices des œuvres de la collection</p></note>
                     <idno>https://commons.wikimedia.org/wiki/Institution:Musée_de_la_civilisation</idno>
                 </dissemination>
             </wikimedia>
@@ -245,8 +316,7 @@
                     et de documents d’archives encore sous la protection du droit d’auteur.</p>
                 <idno>https://www.musee-mccord-stewart.ca/fr/collections/services-photographiques-et-droits-auteur/</idno>
               </desc>
-            <availability when="2022">
-            <!-- "when"= Première instance de l'Open Access selon l'OGS + bien distinguer l'ouverture des données et les images-->
+            <availability when="2026-07">
                 <scope>Some eligible data</scope>
              <!-- ogs: Open Access Scope — le Musée McCord Stewart ouvre une partie de sa collection numérisée, essentiellement les œuvres du domaine public et les collections d'archives photographiques Notman -->
                     <note><p>Compliance : Open. Le Musée McCord Stewart applique 
@@ -255,19 +325,7 @@
                         documente ses conditions de réutilisation via une politique d'accès ouvert publiée sur son site.
                     </p>
                     </note>
-            <!-- voir ce que l'on veut ici scope fait réf dans ogs a deux valeurs : some eligible data, all eligible data--> 
-            <dissemination type="openData">
-                <scope>Non disponible</scope>
-                <!-- pour les données je suppose, comment faire la distinction avec Données Québec?-->
-            </dissemination>
-            <dissemination type="api">
-                <scope>Non disponible</scope>
-                <note>
-                    <p>Pas d'API publique documentée identifiée à ce jour sur le site institutionnel.</p>
-                </note>
-            </dissemination>
-             <dissemination type="collectionsOnline" when="2026-07">
-                <scope>Objets, photographies, documents d'archives</scope>
+             <dissemination type="collectionsOnline">
                 <volume>160615</volume>
             <!-- l'ensemble des objets disponibles en ligne avec et sans images-->
                 <note>
@@ -279,26 +337,33 @@
                 <licence>https://rightsstatements.org/page/InC/1.0/</licence>
                 <licence>https://rightsstatements.org/page/UND/1.0/</licence>
                 <idno>https://collections.musee-mccord-stewart.ca/objects/</idno>
-            <dissemination type="api">
-             <scope>Non disponible</scope>
-             <!-- on veut le scope ou le volume ou les deux? y'a un truc ou les deux sont pas clairs-->
-             <note>
-                <p>Pas d'API publique documentée identifiée à ce jour sur le site institutionnel.</p>
-             </note>
-             <dissemination>
+            </dissemination>
 
-            <dissemination type="Artefacts Canada">
-            <!-- @todo : trouver la date -->
-                <scope>Non disponible</scope>
+            <dissemination type="openData">
                 <note>
+                    <p>Non disponible</p>
+                    <p>Aucun jeu de données ouvert identifié à ce jour, ni sur le site institutionnel ni sur Données Québec</p>
+                </note>
+            </dissemination>
+
+            <dissemination type="api">
+                <note>
+                    <p>Non disponible</p>
+                    <p>Pas d'API publique documentée identifiée à ce jour sur le site institutionnel.</p>
+                </note>
+            </dissemination>
+
+            <dissemination type="artefactsCanada">
+                <note>
+                    <p>Non disponible</p>
                     <p>Artefacts Canada est en train de refondre sa plateforme</p>
                 </note>
             </dissemination>
 
             <dissemination type="flickrCommons" when="2008">
-                 <scope>Substituts numériques d'archives photographiques versés sur Flickr Commons </scope>
                  <volume>689</volume>
                  <note>
+                    <p>Substituts numériques d'archives photographiques versés sur Flickr Commons</p>
                     <p>No known copyright restrictions (Flickr Commons), équivalent au NKC de RightsStatements.org.</p>
                     <p>Le musée n'affirme pas positivement que les œuvres relèvent du domaine public, mais déclare ne connaître aucune restriction de droits.</p>
                     <p>Le McCord Stewart participe à Flickr Commons depuis 2008, ce qui en fait l'un des premiers musées canadiens engagés dans ce programme.</p>
@@ -308,44 +373,33 @@
             </dissemination>
             
              <dissemination type="iiif">
-                <scope>Non disponible</scope>
-                 <note>
-                 <p>Pas de manifeste IIIF identifié à ce jour sur la plateforme du Musée McCord Stewart.</p>
+                <note>
+                    <p>Non disponible</p>
+                    <p>Pas de manifeste IIIF identifié à ce jour sur la plateforme du Musée McCord Stewart.</p>
                 </note>
             </dissemination>
     
             <dissemination type="git">
-            <scope>Non disponible</scope>
-            <note>
-            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
-            </note>
-            </dissemination>
-
-            <dissemination type="DonnéesQuébec">
-            <scope>Non disponible</scope>
                 <note>
-                    <p>Aucun jeu de données institutionnel identifié à ce jour sur la plateforme Données Québec.</p>
+                <p>Non disponible</p>
+                <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
                 </note>
             </dissemination>
+        </availability>
 
-            </dissemination>
-            <!-- mettre les commentaires pour lister d'oú viennent les différents champs-->
-            <!-- reste TK et TCE, SGBD, metadata et consistance -->
-
-            </availability>
             <wikimedia>
                 <note><p>Institution et collection distinguées sur Wikidata.</p></note>
                 <idno type="institution">http://www.wikidata.org/entity/Q1128578</idno>
                 <idno type="collection"/>
                 <dissemination type="wikidata" when="2026-07-14">
-                    <scope>notices rattachées à l'institution</scope>
                     <volume>21</volume>
-                    <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres de la collection qui ont une notice Wikidata</p></note>
+                    <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres de la collection qui ont une notice Wikidata</p>
+                    <p>notices rattachées à l'institution</p></note>
                 </dissemination>
                 <dissemination type="wikicommons" when="2026-07-14">
-                    <scope>images sur wikicommons rattachées aux notices des œuvres de la collection</scope>
                     <volume>22</volume>
-                    <note><p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (collection-musée ou localisation) qui ont une image, hors événements, avec leur titre, une image et leurs types.</p></note>
+                    <note><p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (collection-musée ou localisation) qui ont une image, hors événements, avec leur titre, une image et leurs types.</p>
+                    <p>images sur wikicommons rattachées aux notices des œuvres de la collection</p></note>
                     <idno>https://commons.wikimedia.org/wiki/Institution:McCord_Stewart_Museum</idno>
                 </dissemination>
             </wikimedia>
@@ -353,12 +407,12 @@
              <org xml:id="muse0695">
                 <orgName xml:lang="fr">Musée National des Beaux-Arts du Québec</orgName>
                  <!-- conserver la dénomination française, ne pas traduire même en anglais-->
-                  <acronym>MNBAQ</acronym>
+                  <acronym xml:lang="fr">MNBAQ</acronym>
                 <operational>
-                    <budget when="2024-2025">
+                    <budget from="2024" to="2025">
                         <note>
-                            <p> 112 990038 dollars canadiens</p>
-                           <p>il s'agit seulement des charges totales de l'année 2025 </p>
+                            <p> 104 009 678 dollars canadiens</p>
+                           <p>il s'agit seulement des charges sur le fonds des opérations 2025 </p>
                         </note>
                          <!-- la valeur du budget n'est pas typée, idem pour la devise (CAD), peut être pas besoin de paragraphes-->
                           <source>
@@ -381,12 +435,12 @@
                 <holdings>
                    <size>42 500</size>
                    <!--  il faudrait pouvoir documenter d'où vient ce nombre, ici en l'occurence c'est lRA 2024-2025 p.73-->
-                    <!-- categoy correspond au type d'objets dans le jeu de données du RCIP F, H, K, L, N-->
+                    <!-- categoy correspond au type d'objets dans le jeu de données du RCIP-->
                     <category>painting</category>
                     <category>photography</category>
                     <category>sculpture</category>
                     <category>photography</category>
-                    <category>tools and technology</category>
+                    <category>tools and equipments</category>
                     <category>clothing and adornment</category>
                 </holdings>
                 <address>
@@ -417,8 +471,6 @@
                </accessibility>
                <online>
                 <education>https://www.mnbaq.org/art-dans-ma-classe</education>
-                <!--peut-être ajouter un p pour faire la documentation du projet + pouvoir le dater-->
-                <!-- familles contient des ressources pédagogiques, je pense que c'est ok de le documenter comme contenu éducatif ?-->
                  <social>
                     <idno type="facebook">https://www.facebook.com/mnbaq</idno>
                     <idno type="instagram">https://www.instagram.com/mnbaq</idno>
@@ -452,14 +504,8 @@
                     préférablement avec le numéro d’inventaire, le nom de l’artiste, le titre de l’œuvre, l’année de production, les dimensions ou l’URL des contenus utilisés. </p>
                 <idno>https://www.mnbaq.org/legal/conditions-utilisation</idno>
               </desc>
-            <availability when="2016-09-26">
-            <!-- "when"= Première instance de l'Open Access selon l'OGS + bien distinguer l'ouverture des données et les images-->
-            <!-- première diffusion des données en libre accès (2015-09-22) et (2016-09-26) pour diffusion d'une partie de leurs images dans un jeu de données, comment faire apparaître les deux ?-->
+            <availability when="2026-07">
                 <scope>Some eligible data</scope>
-             <!-- ogs: Open Access Scope — le Musée national des beaux-arts du Québec ouvre
-            les métadonnées de sa collection (versements sur Données Québec) ainsi que
-            les reproductions des œuvres appartenant au domaine public,
-            téléchargeables en haute résolution depuis le site des collections -->
                <note>
             <p>Compliance : Open, sous réserve. Métadonnées de collection sous CC BY 4.0
             (Données Québec, depuis le 22 septembre 2015). Images du domaine public
@@ -467,18 +513,24 @@
             avec mention obligatoire de l'artiste et de la source, et interdiction de
             compiler les images pour répliquer un service concurrent. Œuvres protégées
              et contenu éditorial du site soumis à autorisation préalable.</p>
-            </note>         
-            <!-- voir ce que l'on veut ici scope fait réf dans ogs a deux valeurs : some eligible data, all eligible data--> 
-             <dissemination type="openData" when="2015-09-22">
-             <!-- la première diffusion des données c'est fait sur Données Québec, comment le documenter, ajouter d'un p ?-->
-              </dissemination>
-             <dissemination type="collectionsOnline" when="2026-07">
-                <volume>43 554</volume>
-                <scope>Objets, photographies, documents d'archives</scope>
+                </note>          
+             <dissemination type="openData" when="2016-09-20">
+                <note>
+                    <p>Première diffusion de données ouvertes du musée, sur Données Québec. Un jeu de données disponible sous licence CC BY 4.0 depuis le 20 septembre 2016.</p>
+                </note>
+                <idno type="dataset">https://www.donneesquebec.ca/recherche/dataset/collections-du-musee-national-des-beaux-arts-du-quebec</idno>
+                <idno type="dataset">https://www.donneesquebec.ca/recherche/dataset/collections-du-musee-national-des-beaux-arts-du-quebec-avec-une-image</idno>
+                <idno type="dataset">https://www.donneesquebec.ca/recherche/dataset/oeuvres-theme-montreal-avec-lien-vers-une-image</idno>
+                <licence>https://creativecommons.org/licenses/by/4.0/</licence>
+             </dissemination>
+
+             <dissemination type="collectionsOnline">
+                <volume>43554</volume>
+                <note>
+                    <p>Objets, photographies, documents d'archives</p>
+                </note>
             <!-- l'ensemble des objets disponibles en ligne avec et sans images-->
-            <note>
-                <!-- ogs: Open Access Scope — le MNBAQ ouvre les métadonnées de sa collection
-     et les reproductions des œuvres du domaine public, en haute résolution -->
+            <!-- ogs: Open Access Scope — le MNBAQ ouvre les métadonnées de sa collection et les reproductions des œuvres du domaine public, en haute résolution -->
             <note>
                 <p>CC0 1.0 Universal, pour les œuvres du domaine public : téléchargement gratuit en haute résolution, mais mention obligatoire de l'artiste et de la source, et interdiction de compiler les images pour répliquer un service concurrent.</p>
                 <p>In Copyright (InC), pour les œuvres sous droits d'auteur identifiés et non libérés.</p>
@@ -490,72 +542,56 @@
             <licence>https://rightsstatements.org/page/InC-RUU/1.0/</licence>
             <licence>https://rightsstatements.org/page/CNE/1.0/</licence>
             <idno>https://www.mnbaq.org/collections</idno>
+            </dissemination>
 
-            </dissemination type="api">
-             <scope>Non disponible</scope>
-             <!-- on veut le scope ou le volume ou les deux? y'a un truc ou les deux sont pas clairs-->
+            <dissemination type="api">
              <note>
+                <p>Non disponible</p>
                 <p>Pas d'API publique documentée identifiée à ce jour sur le site institutionnel.</p>
              </note>
-             <dissemination>
+            </dissemination>
 
             <dissemination type="Artefacts Canada">
-            <!-- @todo : trouver la date -->
-                <scope>Non disponible</scope>
                 <note>
+                    <p>Non disponible</p>
                     <p>Artefacts Canada est en train de refondre sa plateforme</p>
                 </note>
             </dissemination>
 
-            <dissemination type="flickrCommons" when="2008">
-                 <scope>Non disponible</scope>
+            <dissemination type="flickrCommons">
                  <note>
+                    <p>Non disponible</p>
                     <p>Le MNBAQ ne verse pas ses images dans Flickr Commons</p>
                  </note>
             </dissemination>
             
              <dissemination type="iiif">
-                <scope>Non disponible</scope>
                  <note>
-                 <p>Pas de manifeste IIIF identifié à ce jour sur la plateforme du Musée McCord Stewart.</p>
+                 <p>Non disponible</p>
+                 <p>Pas de manifeste IIIF identifié à ce jour.</p>
                 </note>
             </dissemination>
     
             <dissemination type="git">
-            <scope>Non disponible</scope>
             <note>
+            <p>Non disponible</p>
             <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
             </note>
             </dissemination>
-
-            <dissemination type="DonnéesQuébec">
-            <scope>Disponible</scope>
-            <note>
-            <p>Trois jeux de données de collection diffusés sous licence CC BY 4.0 depuis le 22 septembre 2015, non mis à jour depuis 2016.</p>
-            </note>
-            <ref type="dataset" target="https://www.donneesquebec.ca/recherche/dataset/collections-du-musee-national-des-beaux-arts-du-quebec">Collections du Musée national des beaux-arts du Québec</ref>
-            <ref type="dataset" target="https://www.donneesquebec.ca/recherche/dataset/collections-du-musee-national-des-beaux-arts-du-quebec-avec-une-image">Collections du Musée national des beaux-arts du Québec avec une image</ref>
-            <ref type="dataset" target="https://www.donneesquebec.ca/recherche/dataset/oeuvres-theme-montreal-avec-lien-vers-une-image">Collections du MNBAQ ayant le thème de la ville de Montréal</ref>
-            <licence>https://creativecommons.org/licenses/by/4.0/</licence>
-             </dissemination>
-            <!-- corrections ici -->
-            <!-- mettre les commentaires pour lister d'oú viennent les différents champs-->
-            <!-- reste TK et TCE, SGBD, metadata et consistance -->
-
             </availability>
+
             <wikimedia>
-                <note><p>Institution et collection distinguées sur Wikidata.</p></note>
+                <note><p>Institution distinguée sur Wikidata. La collection n'est pas une identitée propre.</p></note>
                 <idno type="institution">http://www.wikidata.org/entity/Q2338135</idno>
-                <idno type="collection"/
                 <dissemination type="wikidata" when="2026-07-22">
-                    <scope>notices rattachées à l'institution</scope>
                     <volume>3828</volume>
-                    <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres de la collection qui ont une notice Wikidata</p></note>
+                    <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres de la collection qui ont une notice Wikidata</p>
+                    <p>notices rattachées à l'institution</p></note>
                 </dissemination>
                 <dissemination type="wikicommons" when="2026-07-22">
-                    <scope>images sur wikicommons rattachées aux notices des œuvres de la collection</scope>
                     <volume>95</volume>
-                    <note><p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (collection-musée ou localisation) qui ont une image, hors événements, avec leur titre, une image et leurs types.</p></note>
+                    <note><p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (collection-musée ou localisation) qui ont une image, hors événements, avec leur titre, une image et leurs types.</p>
+                    <p>images sur wikicommons rattachées aux notices des œuvres de la collection</p></note>
                     <idno>https://commons.wikimedia.org/wiki/Institution:Musée_national_des_beaux-arts_du_Québec</idno>
                     <idno>https://commons.wikimedia.org/wiki/Category:Collections_of_the_Musée_national_des_beaux-arts_du_Québec</idno>
                 </dissemination>
@@ -567,12 +603,11 @@
                 <acronym xml:lang="fr">MBAM</acronym>
                 <acronym xml:lang="en">MMFA</acronym>
                 <operational>
-                    <budget when="2024-2025">
+                    <budget from="2024" to="2025">
                         <note>
-                            <p> 53 134 818 dollars canadiens</p>
-                           <p>il s'agit seulement des charges totales de l'année 2025 </p>
+                        <p> 47 016 052 dollars canadiens</p>
+                           <p>il s'agit seulement des charges totales de l'année 2025 - les fonds d'immobilisations</p>
                         </note>
-                         <!-- la valeur du budget n'est pas typée, idem pour la devise (CAD), peut être pas besoin de paragraphes-->
                           <source>
                             <p>https://www.mbam.qc.ca/workspace/uploads/files/mbam-rapportannuel2025_complet_final_fr_web.pdf</p>
                             <p>États financiers du rapport annuel du musée 2024-2025, p.86.</p>
@@ -595,7 +630,7 @@
                    <!--  il faudrait pouvoir documenter d'où vient ce nombre info : https://www.mbam.qc.ca/fr/collections/-->
                     <!-- categoy correspond au type d'objets dans le jeu de données du RCIP -->
                     <category>archival documents and books</category>
-                    <category>decorative arts and design</category>
+                    <category>decorative artefacts and furnishings</category>
                     <category>media and ICT technology</category>
                     <category>natural artefacts</category>
                     <category>painting</category>
@@ -632,8 +667,6 @@
                <online>
                 <education>https://educart.ca/</education>
                 <education>https://www.mbam.qc.ca/fr/education/prisme-la-boite-a-outils-numerique/</education>
-                <!--peut-être ajouter un p pour faire la documentation du projet + pouvoir le dater-->
-                <!-- plusieurs projets éduacatifs numériques, mais pas un lien qui les regroupent tous, comment documenter l'ensemble ?-->
                  <social>
                     <idno type="facebook">https://www.facebook.com/mbamtl</idno>
                     <idno type="instagram">hhttps://www.instagram.com/mbamtl/</idno>
@@ -665,113 +698,231 @@
                     Des frais d’administration et de droits d’auteur peuvent s’appliquer.</p>
                 <idno>https://www.mbam.qc.ca/fr/le-musee/services-photographiques-et-droits-dauteur/</idno>
               </desc>
-            <availability when="2016-06-26">
-            <!-- "when"= Première instance de l'Open Access selon l'OGS + bien distinguer l'ouverture des données et les images-->
-            <!-- première diffusion des données en libre accès sur Données Québec -->
-                <scope>?</scope>
-            <!-- ici pour la suite-->
-             <!-- ogs: Open Access Scope — le Musée national des beaux-arts du Québec ouvre
-            les métadonnées de sa collection (versements sur Données Québec) ainsi que
-            les reproductions des œuvres appartenant au domaine public,
-            téléchargeables en haute résolution depuis le site des collections -->
-               <note>
-            <p>Compliance : Open, sous réserve. Métadonnées de collection sous CC BY 4.0
-            (Données Québec, depuis le 22 septembre 2015). Images du domaine public
-            offertes gratuitement en haute résolution sous déclaration CC0 1.0, mais
-            avec mention obligatoire de l'artiste et de la source, et interdiction de
-            compiler les images pour répliquer un service concurrent. Œuvres protégées
-             et contenu éditorial du site soumis à autorisation préalable.</p>
-            </note>         
-            <!-- voir ce que l'on veut ici scope fait réf dans ogs a deux valeurs : some eligible data, all eligible data--> 
-             <dissemination type="openData" when="2015-09-22">
-             <!-- la première diffusion des données c'est fait sur Données Québec, comment le documenter, ajouter d'un p ?-->
-              </dissemination>
-             <dissemination type="collectionsOnline" when="2026-07">
-                <volume>43 554</volume>
-                <scope>Objets, photographies, documents d'archives</scope>
-            <!-- l'ensemble des objets disponibles en ligne avec et sans images-->
-            <note>
-                <!-- ogs: Open Access Scope — le MNBAQ ouvre les métadonnées de sa collection
-     et les reproductions des œuvres du domaine public, en haute résolution -->
-            <note>
-                <p>CC0 1.0 Universal, pour les œuvres du domaine public : téléchargement gratuit en haute résolution, mais mention obligatoire de l'artiste et de la source, et interdiction de compiler les images pour répliquer un service concurrent.</p>
-                <p>In Copyright (InC), pour les œuvres sous droits d'auteur identifiés et non libérés.</p>
-                <p>In Copyright – Rights-holder(s) Unlocatable or Unidentifiable (InC-RUU), pour les œuvres dont le titulaire des droits est introuvable.</p>
-                <p>Copyright Not Evaluated (CNE), pour les œuvres dont le statut de droits n'a pas été validé.</p>
-            </note>
-            <licence>https://creativecommons.org/publicdomain/zero/1.0/</licence>
-            <licence>https://rightsstatements.org/page/InC/1.0/</licence>
-            <licence>https://rightsstatements.org/page/InC-RUU/1.0/</licence>
-            <licence>https://rightsstatements.org/page/CNE/1.0/</licence>
-            <idno>https://www.mnbaq.org/collections</idno>
 
+            <availability when="2026-07">
+                <scope>Some eligible data</scope>
+                <note><p>Compliance : Ouverture partielle. Métadonnées de collection sous CC BY 4.0
+                (Données Québec, un seul jeu diffusé le 23 septembre 2016 et non mis à jour
+                depuis). Images non diffusées sous licence ouverte : aucune déclaration CC0
+                ni mention de domaine public au niveau des notices, même pour les œuvres libres
+                de droits</p>
+                </note>
+            
+                
+             <dissemination type="openData" when="2016-09-20">
+                <note>
+                    <p>Première diffusion de données ouvertes du musée, sur Données Québec. Un jeu de données disponible sous licence CC BY 4.0 depuis le 20 septembre 2016.</p>
+                </note>
+                <idno type="dataset">https://www.donneesquebec.ca/recherche/dataset/base-de-donnees-sur-les-oeuvres-de-la-collection-du-musee-des-beaux-arts-de-montreal</idno>
+                <licence>https://creativecommons.org/licenses/by/4.0/</licence>
+              </dissemination>
+             
+              <dissemination type="collectionsOnline">
+                <volume>6401</volume>
+                <note><p>Aucune mention de licences, ni de domaine publics sur les notices des œuvres de collections en ligne</p></note>
+            </dissemination>
+           
+        
             </dissemination type="api">
-             <scope>Non disponible</scope>
-             <!-- on veut le scope ou le volume ou les deux? y'a un truc ou les deux sont pas clairs-->
              <note>
+                <p>Non disponible</p>
                 <p>Pas d'API publique documentée identifiée à ce jour sur le site institutionnel.</p>
              </note>
              <dissemination>
 
-            <dissemination type="Artefacts Canada">
-            <!-- @todo : trouver la date -->
-                <scope>Non disponible</scope>
+            <dissemination type="artefactsCanada">
                 <note>
+                    <p>Non disponible</p>
                     <p>Artefacts Canada est en train de refondre sa plateforme</p>
                 </note>
             </dissemination>
 
-            <dissemination type="flickrCommons" when="2008">
-                 <scope>Non disponible</scope>
+            <dissemination type="flickrCommons">
                  <note>
-                    <p>Le MNBAQ ne verse pas ses images dans Flickr Commons</p>
+                    <p>Non disponible</p>
+                    <p>Le MBAM ne verse pas ses images dans Flickr Commons</p>
                  </note>
             </dissemination>
             
              <dissemination type="iiif">
-                <scope>Non disponible</scope>
                  <note>
-                 <p>Pas de manifeste IIIF identifié à ce jour sur la plateforme du Musée McCord Stewart.</p>
+                    <p>Non disponible</p>
+                 <p>Pas de manifeste IIIF identifié à ce jour.</p>
                 </note>
             </dissemination>
     
             <dissemination type="git">
-            <scope>Non disponible</scope>
             <note>
+            <p>Non disponible</p>
             <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
             </note>
             </dissemination>
+            </availability>
 
-            <dissemination type="DonnéesQuébec">
-            <scope>Disponible</scope>
-            <note>
-            <p>Trois jeux de données de collection diffusés sous licence CC BY 4.0 depuis le 22 septembre 2015, non mis à jour depuis 2016.</p>
-            </note>
-            <ref type="dataset" target="https://www.donneesquebec.ca/recherche/dataset/collections-du-musee-national-des-beaux-arts-du-quebec">Collections du Musée national des beaux-arts du Québec</ref>
-            <ref type="dataset" target="https://www.donneesquebec.ca/recherche/dataset/collections-du-musee-national-des-beaux-arts-du-quebec-avec-une-image">Collections du Musée national des beaux-arts du Québec avec une image</ref>
-            <ref type="dataset" target="https://www.donneesquebec.ca/recherche/dataset/oeuvres-theme-montreal-avec-lien-vers-une-image">Collections du MNBAQ ayant le thème de la ville de Montréal</ref>
-            <licence>https://creativecommons.org/licenses/by/4.0/</licence>
-             </dissemination>
-            <!-- corrections ici -->
-            <!-- mettre les commentaires pour lister d'oú viennent les différents champs-->
-            <!-- reste TK et TCE, SGBD, metadata et consistance -->
-
+            <wikimedia>
+                <note><p>Institution distinguée sur Wikidata. La collection n'est pas une identitée propre.</p></note>
+                <idno type="institution">https://www.wikidata.org/wiki/Q860812</idno>
+                <dissemination type="wikidata" when="2026-07-29">
+                    <volume>297</volume>
+                    <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres de la collection qui ont une notice Wikidata</p>
+                    <p>notices rattachées à l'institution</p></note>
+                </dissemination>
+                <dissemination type="wikicommons" when="2026-07-29">
+                    <volume>188</volume>
+                    <note><p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (collection-musée ou localisation) qui ont une image, hors événements, avec leur titre, une image et leurs types.</p>
+                    <p> images sur wikicommons rattachées aux notices des œuvres de la collection</p></note>
+                    <idno>https://commons.wikimedia.org/wiki/Institution:Musée_des_beaux-arts_de_Montréal</idno>
+                </dissemination>
+            </wikimedia>
+            </org>
+            <org xml:id="muse1323">
+                <orgName xml:lang="fr">Musée d'Art contemporain</orgName>
+                <acronym xml:lang="fr">MAC</acronym>
+                <operational>
+                    <budget from="2024" to="2025">
+                        <note>
+                        <p> 15 146 022 dollars canadiens</p>
+                           <p>il s'agit seulement des charges totales de l'année 2025 - les fonds d'immobilisations</p>
+                        </note>
+                          <source>
+                            <p>https://macm.org/app/uploads/2025/10/Rapport_Annuel_2024-2025.pdf</p>
+                            <p>États financiers du rapport annuel du musée 2024-2025, p.200.</p>
+                          </source>
+                    </budget>
+                    <administration>musée national</administration>
+                </operational>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>fine arts</field>
+                </fields>
+                <holdings>
+                   <size>8000</size>
+                    <category>painting</category>
+                    <category>media and ICT technology</category>
+                    <category>sculpture</category>
+                    <category>prints and drawings</category>
+                    <category>photography</category>
+                </holdings>
+                <adress>
+                    <street><num>1</num>Place Ville Marie</street>
+                    <settlement>Montréal</settlement>
+                    <postCode>H3B 3Y1</postCode>
+                    <region>Québec</region>
+                    <country>Canada</country>
+                </adress>
+                <demographics>
+                    <distance>0.46</distance>
+                    <density>112</density>
+                    <bdoica>false</bdoica>
+                    <arc>false</arc>
+                    <idusr>2466023</idusr>
+                    <cnsilb>QC45510736</cnsilb>
+                </demographics>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <education>https://macm.org/education/</education>
+                    <social>
+                        <idno type="facebook">https://www.facebook.com/macmontreal</idno>
+                        <idno type="instagram">https://www.instagram.com/macmontreal</idno>
+                        <idno type="youtube">https://www.youtube.com/user/MACMvideos</idno>
+                    </social>
+                    <idno type="website">https://macm.org/</idno>
+                </online>
+                <desc when="2026-07" type="collections" xml:lang="fr">
+                    <p>Depuis sa fondation en 1964, le Musée d’art contemporain de Montréal s’est doté de plus de 8 000 œuvres réalisées par des artistes québécois, canadiens et internationaux. Cette collection constitue un héritage social ainsi qu’un patrimoine commun dont la force réside dans sa pluridisciplinarité, sa diversité ainsi que sa profondeur.</p>
+                    <idno>https://macm.org/collection/</idno>
+                </desc>
+                <desc when="2026-07" type="collections" xml:lang="en">
+                    <p>Since it was founded, in 1964, the Musée d’art contemporain de Montréal has accumulated more than 8,000 works by Québec, Canadian, and international artists. This collection constitutes a social legacy and a shared heritage that stands out for its wide variety of disciplines, its diversity, and its depth.</p>
+                    <idno>https://macm.org/collection/</idno>
+                </desc>
+                <desc when="2026-07" type="copyright" xml:lang="fr">
+                    <p>Le MAC diffuse des images d’œuvres d’art sur son site Internet, dont la majorité est soumise aux droits d’auteur. Pour respecter ces droits, le Musée demande aux utilisatrices et utilisateurs de ne pas reproduire les images publiées sur son site pour des utilisations autres qu’une utilisation équitable comme prévue par la Loi sur le droit d’auteur (notamment aux fins d’étude privée, de recherche ou d’éducation). Dans ces cas particuliers, le Musée demande aux utilisatrices et utilisateurs d’indiquer la mention de provenance complète de l’œuvre (nom de l’artiste, titre de l’œuvre et toute autre mention indiquée).</p>
+                    <p>Les modifications des images pouvant porter atteinte à l’intégrité de l’œuvre ne sont pas permises (p. ex. recadrage de l’image, ajouts d’éléments étrangers à l’œuvre, modification de couleurs).</p>
+                    <p>Le Musée ne doit jamais être associé à une marque, un produit, un projet ou une entreprise en lien avec l’utilisation d’une image publiée sur son site. De plus, toute reproduction pour une autre utilisation qu’une utilisation équitable au sens de la Loi sur le droit d’auteur est interdite sans avoir reçu une autorisation préalable du Musée à cet effet.</p>
+                    <p>Toute demande de reproduction doit être adressée à : reproductions@macm.org</p>
+                    <p>Le Musée ne peut pas être tenu responsable d’une utilisation par des tiers d’images provenant de son site Internet et qui contreviendrait aux lois sur le droit d’auteur.</p>
+                    <idno>https://macm.org/conditions-utilisation/</idno>
+                </desc>
+                <desc when="2026-07" type="copyright" xml:lang="en">
+                    <p>Most of the artwork images that the MAC makes available on its website are protected by copyright. To ensure full protection of its rights, the MAC requests that users not reproduce any of the images posted on its website for any uses other than fair dealing as provided under the Copyright Act, notably for the purpose of private study, research or education. In such cases, the Musée requests that users fully credit the work with the artist’s name, the title of the work and any other indications.</p>
+                    <p>Any modifications to an images likely to compromise the integrity of the artwork, such as cropping the image, adding extraneous elements or altering the colours, are prohibited.</p>
+                    <p>Under no circumstances may the Musée be associated with a brand, product, project or undertaking via the use of an image available on its website. Moreover, any reproduction for a use other than fair dealing as defined in the Copyright Act is forbidden without the prior written consent of the Musée to that effect.</p>
+                    <p>All requests for reproductions must be addressed to: reproductions@macm.org</p>
+                    <p>The Musée may not be held liable for any third-party use of images drawn from its website which would contravene any copyright legislation.</p>
+                    <idno>https://macm.org/en/legal-notices-and-privacy-policy/</idno>
+                </desc>
+                <availability when="2026-07">
+                    <scope>Some eligible data</scope>
+                    <note><p>Compliance : Ouverture avancée. Métadonnées de collection (œuvres, artistes, événements, publications) diffusées en données ouvertes sous CC BY 4.0, à la fois par une interface navigable et une API (macrepertoire.macm.org/api) et sur Données Québec, en JSON et CSV; images non incluses dans ce jeu général. Le MAC diffuse en outre deux jeux distincts d'œuvres réputées libres de droits avec leurs images (Données Québec, JSON et CSV) : l'un sous la marque du domaine public de Creative Commons (Public Domain Mark 1.0), l'autre sous la mention « Domaine public au Canada ». Ces œuvres peuvent être copiées, modifiées et rediffusées, y compris à des fins commerciales, sans autorisation, sous réserve des droits moraux persistants. Le statut de droits est signalé au niveau des notices au moyen de ces deux marques. Images des œuvres encore sous droits reproductibles uniquement aux fins permises par la Loi sur le droit d'auteur (recherche, étude privée); toute autre diffusion ou reproduction soumise à l'autorisation préalable de la Direction de la gestion des collections et ressources documentaires du MAC.</p>
+                    </note>
+                <dissemination type="openData" when="2015-09-24">
+                    <note><p>Le Musée d’art contemporain de Montréal (MAC) met librement à disposition les contenus de son MACrépertoire en données ouvertes afin de favoriser le rayonnement de l’art contemporain dans l’espace numérique ainsi que l'accessibilité et la réutilisation créative des données dans des projets innovants en lien avec les collections (visualisation de données, applications, etc.).</p></note>
+                    <idno>https://macrepertoire.macm.org/donnees-ouvertes</idno>
+                    <note><p>Première diffusion des données ouvertes du musée, sur Données Québec. Plusieurs jeux de données sont disponibles : "MAC : données sur les œuvres de la collection relevant du domaine public (avec images)" et "Données du MACrépertoire (œuvres, artistes, évènvements et publications)".</p></note>
+                    <idno type="dataset">https://www.donneesquebec.ca/recherche/dataset/collection-musee-art-contemporain-de-montreal-oeuvres-du-domaine-public</idno>
+                    <idno when="2022-11-19" type="dataset">https://www.donneesquebec.ca/recherche/dataset/macrepertoire</idno>
+                    <licence>https://creativecommons.org/licenses/by/4.0/</licence>
+                </dissemination>
+                <dissemination type="collectionsOnline">
+                    <volume>7934</volume>
+                    <note>
+                        <p>Public Domain Mark 1.0 (marque du domaine public de Creative Commons), pour les œuvres réputées libres de restrictions de droits d'auteur : copie, modification, distribution et diffusion permises, y compris à des fins commerciales, sans autorisation (sous réserve des droits moraux, qui peuvent persister dans certaines juridictions).</p>
+                        <p>"Domaine public au Canada", mention créée par le MAC, pour les œuvres libres de restrictions selon la Loi sur le droit d'auteur du Canada (L.R.C. (1985), ch. C-42), mais susceptibles d'être encore protégées dans d'autres juridictions.</p>
+                        <p>Œuvres protégées par le droit d'auteur : reproduction limitée aux fins permises par la loi (recherche, étude privée); toute autre diffusion ou reproduction exige l'autorisation préalable de la Direction de la gestion des collections et ressources documentaires du MAC.</p>
+                        <licence>https://creativecommons.org/publicdomain/mark/1.0/deed.fr</licence>
+                        <idno>https://macrepertoire.macm.org/conditions-utilisation/</idno>
+                        <idno>https://macrepertoire.macm.org/oeuvre/</idno>
+                    </note>
+                </dissemination>
+                <dissemination when="2022" type="api">
+                    <note><p>Les contenus et les données sont rendus disponibles via une interface Web navigable, qui permet d’en déduire facilement le fonctionnement.</p>
+                    </note>
+                    <idno>https://macrepertoire.macm.org/donnees-ouvertes/</idno>
+                    <idno>https://macrepertoire.macm.org/api/</idno>
+                </dissemination>
+                <dissemination type="artefactsCanada">
+                    <note>
+                        <p>Non disponible</p>
+                        <p>Artefacts Canada est en train de refondre sa plateforme.</p>
+                    </note>
+                </dissemination>
+                <dissemination type="flickrCommons">
+                    <note><p>Le MAC ne verse pas ses images dans FlickrCommons.</p></note>
+                </dissemination>
+                <dissemination type="iiif">
+                   <note><p>Non disponible</p>
+                   <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                   </note>
+                </dissemination>
+                <dissemination type="git">
+                    <note>
+                        <p>Non disponible</p>
+                        <p>Aucun dépôt GitHub institutionnel identifié à ce jour</p>
+                     </note>
+                </dissemination>
             </availability>
             <wikimedia>
-                <note><p>Institution et collection distinguées sur Wikidata.</p></note>
-                <idno type="institution">http://www.wikidata.org/entity/Q2338135</idno>
-                <idno type="collection"/
-                <dissemination type="wikidata" when="2026-07-22">
-                    <scope>notices rattachées à l'institution</scope>
-                    <volume>3828</volume>
-                    <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres de la collection qui ont une notice Wikidata</p></note>
+                <note>
+                    <p>Institution et collection distinguées sur Wikidata.</p>
+                </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q2235294</idno>
+                    <idno type="collection">https://www.wikidata.org/wiki/Q115676811</idno>
+                <dissemination type="wikidata" when="2026-07-29">
+                    <note><p>notices rattachées à l'institution</p></note>
+                    <volume>851</volume>
+                    <note><p>reqûete SPARQL sur Wikidata pour voir le nombre d'œuvres de la la collection qui ont une notice sur Wikidata.</p>
+                    <p>Le MAC a initié un wikiprojet a pour but d'accroitre la découvrabilité des artistes québécois de la collection du Musée sur le Web </p></note>
+                    <idno type="wikiprojet">https://www.wikidata.org/wiki/Wikidata:WikiProject_Musée_d%27art_contemporain_de_Montréal</idno>
                 </dissemination>
-                <dissemination type="wikicommons" when="2026-07-22">
-                    <scope>images sur wikicommons rattachées aux notices des œuvres de la collection</scope>
-                    <volume>95</volume>
+                <dissemination type="wikicommons" when="2026-07-29">
+                    <note><p>images sur Wikicommons rattachées aux notices des œuvres de la collection</p></note>
+                    <volume>2</volume>
                     <note><p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (collection-musée ou localisation) qui ont une image, hors événements, avec leur titre, une image et leurs types.</p></note>
-                    <idno>https://commons.wikimedia.org/wiki/Institution:Musée_national_des_beaux-arts_du_Québec</idno>
-                    <idno>https://commons.wikimedia.org/wiki/Category:Collections_of_the_Musée_national_des_beaux-arts_du_Québec</idno>
+                    <idno>https://commons.wikimedia.org/wiki/Category:Collections_of_the_Musée_d%27art_contemporain_de_Montréal</idno>
+                    <idno>https://commons.wikimedia.org/wiki/Category:Musée_d%27art_contemporain_de_Montréal</idno>
                 </dissemination>
             </wikimedia>
             </org>

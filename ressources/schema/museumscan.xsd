@@ -166,9 +166,12 @@
       <xs:attribute name="when" />
     </xs:complexType>
   </xs:element>
+  <!-- add amount pour le budget-->
+  <!-- add from="2024" to="2025"-->
 
   <!-- @todo -->
   <xs:element name="administration"></xs:element>
+  <!-- faire une liste (ouverte ou fermée?) des différents types de musée : musée national, personne morale à but non lucratif -->
 
   <xs:element name="orgType">
     <xs:simpleType>
@@ -557,6 +560,8 @@
       <xs:attribute name="when"  type="dateValue"/>
     </xs:complexType>
   </xs:element>
+   <!-- mettre les commentaires pour lister d'oú viennent les différents champs-->
+    <!-- reste TK et TCE, SGBD, metadata et consistance -->
 
   <xs:element name="wikimedia">
     <xs:complexType>
