@@ -1,287 +1,154 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Schema for Museumscan
-  @author: emchateau (Ouvroir)
-  @since: 2025-05-18
-  @licence: gnu gpl > 3
-
-  @todo date interval
-  @todo bilinguism
--->
-<xs:schema
-  xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:xml="http://www.w3.org/XML/1998/namespace"
+<?xml version="1.0" encoding="UTF-8"?> <!-- Schema for Museumscan @author: emchateau (Ouvroir) @since: 2025-05-18 @licence: gnu gpl > 3 @todo date interval @todo bilinguism -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns="http://ouvroir.umontreal.ca/ns/museumscan"
-  targetNamespace="http://ouvroir.umontreal.ca/ns/museumscan"
-  elementFormDefault="qualified">
+  xmlns:html="http://www.w3.org/1999/xhtml"
+  targetNamespace="http://ouvroir.umontreal.ca/ns/museumscan" elementFormDefault="qualified">
   <xs:import namespace="http://www.w3.org/XML/1998/namespace"
-    schemaLocation="http://www.w3.org/2001/xml.xsd" />
-
+    schemaLocation="http://www.w3.org/2001/xml.xsd"/>
   <xs:annotation>
-    <xs:documentation xml:lang="en">
-      Museumscan cross-references and adapts two source datasets on Canadian
-      heritage institutions: (1) the "Landscape of Museum Collections Online"
-      (LMCO) dataset produced by the Canadian Heritage Information Network
-      (CHIN/RCIP), documented in doc/lmco_ogp_technicaldocumentation_en.txt;
-      and (2) the OpenGLAM Survey, whose methodology is published at
-      https://survey.glamelab.org/methodology/. Throughout this schema,
-      element- and attribute-level documentation indicates, where a clear
-      correspondence exists, which source attribute a given museumscan
-      element is derived from ("Source: LMCO ..." / "Source: OpenGLAM
-      Survey ..."). Elements without such a line are specific to museumscan,
-      introduced to structure information that the source datasets leave
-      flat, free-text, or absent.
-      Two general adaptation conventions apply across the schema: (a) where
-      LMCO/OpenGLAM Survey record a boolean flag ("has a Facebook account",
-      "has a website"), museumscan often prefers recording the concrete
-      value (the URL itself, via idno/@type) rather than a plain boolean, so
-      the presence flag can be recovered simply by testing for the
-      element’s existence; (b) where the source datasets carry a
-      language-variant column (e.g. OpenGLAM Survey’s "ENG" field next to
-      "Name"), museumscan uses a single repeatable element distinguished by
-      @xml:lang instead of a dedicated column per language.
-    </xs:documentation>
-    <xs:documentation xml:lang="fr">
-      Museumscan met en correspondance et adapte deux jeux de données
-      source portant sur les institutions patrimoniales canadiennes : (1)
-      le « Panorama des collections de musées en ligne » (PCMEC), produit
-      par le Réseau canadien d’information sur le patrimoine (RCIP/CHIN) et
-      documenté dans doc/pcmec_ogp_documentationtechnique_fr.txt ; (2)
-      l’OpenGLAM Survey, dont la méthodologie est publiée à
-      https://survey.glamelab.org/methodology/ (site unilingue anglais).
-      Dans ce schéma, la documentation associée à chaque élément ou
-      attribut indique, lorsqu’une correspondance claire existe, l’attribut
-      source dont il est dérivé (« Source : PCMEC ... » / « Source :
-      OpenGLAM Survey ... »). Les éléments sans cette mention sont propres
-      à museumscan, introduits pour structurer une information que les
-      jeux de données source laissent plate, en texte libre, ou absente.
-      Deux conventions générales d’adaptation s’appliquent dans tout le
-      schéma : (a) là où le PCMEC/OpenGLAM Survey enregistrent un indicateur
-      booléen (« a un compte Facebook », « a un site web »), museumscan
-      préfère souvent enregistrer la valeur concrète (l’URL elle-même, via
-      idno/@type) plutôt qu’un simple booléen, la présence de l’indicateur
-      pouvant alors se déduire de la simple existence de l’élément ; (b) là
-      où les jeux de données source portent une colonne de variante
-      linguistique (p. ex. le champ « ENG » de l’OpenGLAM Survey à côté de
-      « Name »), museumscan utilise un élément unique répétable distingué
-      par @xml:lang plutôt qu’une colonne dédiée par langue.
-    </xs:documentation>
+    <xs:documentation xml:lang="en"
+      > Museumscan cross-references and adapts two source datasets on Canadian heritage institutions: (1) the "Landscape of Museum Collections Online" (LMCO) dataset produced by the Canadian Heritage Information Network (CHIN/RCIP), documented in doc/lmco_ogp_technicaldocumentation_en.txt; and (2) the OpenGLAM Survey, whose methodology is published at https://survey.glamelab.org/methodology/. Throughout this schema, element- and attribute-level documentation indicates, where a clear correspondence exists, which source attribute a given museumscan element is derived from ("Source: LMCO ..." / "Source: OpenGLAM Survey ..."). Elements without such a line are specific to museumscan, introduced to structure information that the source datasets leave flat, free-text, or absent. Two general adaptation conventions apply across the schema: (a) where LMCO/OpenGLAM Survey record a boolean flag ("has a Facebook account", "has a website"), museumscan often prefers recording the concrete value (the URL itself, via idno/@type) rather than a plain boolean, so the presence flag can be recovered simply by testing for the element’s existence; (b) where the source datasets carry a language-variant column (e.g. OpenGLAM Survey’s <html:code>ENG</html:code> field next to <html:code>Name</html:code>), museumscan uses a single repeatable element distinguished by @xml:lang instead of a dedicated column per language. </xs:documentation>
+    <xs:documentation xml:lang="fr"
+      > Museumscan met en correspondance et adapte deux jeux de données source portant sur les institutions patrimoniales canadiennes : (1) le « Panorama des collections de musées en ligne » (PCMEC), produit par le Réseau canadien d’information sur le patrimoine (RCIP/CHIN) et documenté dans doc/pcmec_ogp_documentationtechnique_fr.txt ; (2) l’OpenGLAM Survey, dont la méthodologie est publiée à https://survey.glamelab.org/methodology/ (site unilingue anglais). Dans ce schéma, la documentation associée à chaque élément ou attribut indique, lorsqu’une correspondance claire existe, l’attribut source dont il est dérivé (« Source : PCMEC ... » / « Source : OpenGLAM Survey ... »). Les éléments sans cette mention sont propres à museumscan, introduits pour structurer une information que les jeux de données source laissent plate, en texte libre, ou absente. Deux conventions générales d’adaptation s’appliquent dans tout le schéma : (a) là où le PCMEC/OpenGLAM Survey enregistrent un indicateur booléen (« a un compte Facebook », « a un site web »), museumscan préfère souvent enregistrer la valeur concrète (l’URL elle-même, via idno/@type) plutôt qu’un simple booléen, la présence de l’indicateur pouvant alors se déduire de la simple existence de l’élément ; (b) là où les jeux de données source portent une colonne de variante linguistique (p. ex. le champ <html:code>ENG</html:code> de l’OpenGLAM Survey à côté de <html:code>Name</html:code>), museumscan utilise un élément unique répétable distingué par @xml:lang plutôt qu’une colonne dédiée par langue. </xs:documentation>
   </xs:annotation>
+  <!-- 
+  TABLE OF CONTENTS / SOMMAIRE 
+  1. Shared types & groups / Types et groupes partagés — dateValue, globalAtts, proseContent 
+  2. Document macrostructure / Macrostructure du document — museumscan, header, publication, date, source, changes, change, body, listOrg 
+  3. Organization record / Fiche d'organisation — orgName, org, acronym, operational, budget, administration, orgType, fields, holdings, category, address, district, demographics, accessibility, online, desc 
+  4. Availability & dissemination / Disponibilité et diffusion — availability, dissemination, wikimedia, scope, volume, licence 
+  5. Generic text/markup vocabulary / Vocabulaire générique de texte — div, note, list, pLike, title, head, li, p, em, strong, idno, ref  -->
 
-  <!-- ============================================================
-       TABLE OF CONTENTS / SOMMAIRE
-       1. Shared types & groups / Types et groupes partagés
-          — dateValue, globalAtts, proseContent
-       2. Document macrostructure / Macrostructure du document
-          — museumscan, header, publication, date, source, changes,
-            change, body, listOrg
-       3. Organization record / Fiche d'organisation
-          — orgName, org, acronym, operational, budget, administration,
-            orgType, fields, holdings, category, address, district,
-            demographics, accessibility, online, desc
-       4. Availability & dissemination / Disponibilité et diffusion
-          — availability, dissemination, wikimedia, scope, volume, licence
-       5. Generic text/markup vocabulary / Vocabulaire générique de texte
-          — div, note, list, pLike, title, head, li, p, em, strong,
-            idno, ref
-       ============================================================ -->
-
-  <!-- ============ 1. SHARED TYPES & GROUPS / TYPES ET GROUPES PARTAGÉS ============ -->
-
+  <!-- 1. SHARED TYPES & GROUPS / TYPES ET GROUPES PARTAGÉS -->
   <xs:attributeGroup name="globalAtts">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Generic attributes available on most
-        structural and prose elements: @xml:lang marks the language of the
-        element’s content (used throughout museumscan instead of the
-        source datasets’ language-variant columns, e.g. OpenGLAM Survey’s
-        "ENG"), and @xml:id provides a stable, document-unique identifier
-        (used on org to hold the museumscan record id).</xs:documentation>
-      <xs:documentation xml:lang="fr">Attributs génériques disponibles sur
-        la plupart des éléments structurels et de texte libre : @xml:lang
-        indique la langue du contenu de l’élément (utilisé dans museumscan
-        à la place des colonnes de variante linguistique des jeux de
-        données source, p. ex. le champ « ENG » de l’OpenGLAM Survey), et
-        @xml:id fournit un identifiant stable, unique dans le document
-        (utilisé sur org pour porter l’identifiant d’enregistrement
-        museumscan).</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Generic attributes available on most structural and prose elements: @xml:lang marks the language of the element’s content (used throughout museumscan instead of the source datasets’ language-variant columns, e.g. OpenGLAM Survey’s <html:code>ENG</html:code>), and @xml:id provides a stable, document-unique identifier (used on org to hold the museumscan record id).</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Attributs génériques disponibles sur la plupart des éléments structurels et de texte libre : @xml:lang indique la langue du contenu de l’élément (utilisé dans museumscan à la place des colonnes de variante linguistique des jeux de données source, p. ex. le champ <html:code>ENG</html:code> de l’OpenGLAM Survey), et @xml:id fournit un identifiant stable, unique dans le document (utilisé sur org pour porter l’identifiant d’enregistrement museumscan).</xs:documentation>
     </xs:annotation>
-    <xs:attribute ref="xml:lang" />
-    <xs:attribute ref="xml:id" />
+    <xs:attribute ref="xml:lang"/>
+    <xs:attribute ref="xml:id"/>
   </xs:attributeGroup>
-
   <xs:simpleType name="dateValue">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A date of variable precision: a full
-        calendar date, a year and month, or a year alone. This flexibility
-        is needed because the source datasets themselves mix precisions
-        for comparable information (e.g. LMCO’s "Timestamp" is a full
-        [YYYY-MM-DD] date while its "Budget Year" is a bare [YYYY]
-        year).</xs:documentation>
-      <xs:documentation xml:lang="fr">Une date de précision variable : une
-        date calendaire complète, une année-mois, ou une année seule. Cette
-        souplesse est nécessaire car les jeux de données source mêlent
-        eux-mêmes des précisions différentes pour une information
-        comparable (p. ex. l’« Estampille temporelle » du PCMEC est une
-        date complète [AAAA-MM-JJ] alors que son « Année du budget » est
-        une simple année [AAAA]).</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >A date of variable precision: a full calendar date, a year and month, or a year alone. This flexibility is needed because the source datasets themselves mix precisions for comparable information (e.g. LMCO’s <html:code>Timestamp</html:code> is a full [YYYY-MM-DD] date while its <html:code>Budget Year</html:code> is a bare [YYYY] year).</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Une date de précision variable : une date calendaire complète, une année-mois, ou une année seule. Cette souplesse est nécessaire car les jeux de données source mêlent eux-mêmes des précisions différentes pour une information comparable (p. ex. l’<html:code>Estampille temporelle</html:code> du PCMEC est une date complète [AAAA-MM-JJ] alors que son <html:code>Année du budget</html:code> est une simple année [AAAA]).</xs:documentation>
     </xs:annotation>
     <xs:union>
       <xs:simpleType>
-        <xs:restriction base="xs:date" />
+        <xs:restriction base="xs:date"/>
       </xs:simpleType>
       <xs:simpleType>
-        <xs:restriction base="xs:gYearMonth" />
+        <xs:restriction base="xs:gYearMonth"/>
       </xs:simpleType>
       <xs:simpleType>
-        <xs:restriction base="xs:gYear" />
+        <xs:restriction base="xs:gYear"/>
       </xs:simpleType>
     </xs:union>
   </xs:simpleType>
-
   <xs:complexType name="proseContent" mixed="true">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Shared content model for elements
-        holding a run of free-running, lightly-marked-up, language-tagged
-        text: inline markup via the pLike group, plus @xml:lang/@xml:id
-        via globalAtts. Used by orgName, acronym, title, head, li and p —
-        see each element's own documentation for what it specifically
-        represents.</xs:documentation>
-      <xs:documentation xml:lang="fr">Modèle de contenu partagé pour les
-        éléments portant un texte libre, légèrement balisé, étiqueté par
-        langue : balisage en ligne via le groupe pLike, plus
-        @xml:lang/@xml:id via globalAtts. Utilisé par orgName, acronym,
-        title, head, li et p — voir la documentation propre à chaque
-        élément pour ce qu'il représente spécifiquement.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Shared content model for elements holding a run of free-running, lightly-marked-up, language-tagged text: inline markup via the pLike group, plus @xml:lang/@xml:id via globalAtts. Used by orgName, acronym, title, head, li and p — see each element's own documentation for what it specifically represents.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Modèle de contenu partagé pour les éléments portant un texte libre, légèrement balisé, étiqueté par langue : balisage en ligne via le groupe pLike, plus @xml:lang/@xml:id via globalAtts. Utilisé par orgName, acronym, title, head, li et p — voir la documentation propre à chaque élément pour ce qu'il représente spécifiquement.</xs:documentation>
     </xs:annotation>
-    <xs:group ref="pLike" minOccurs="0" maxOccurs="unbounded" />
-    <xs:attributeGroup ref="globalAtts" />
+    <xs:group ref="pLike" minOccurs="0" maxOccurs="unbounded"/>
+    <xs:attributeGroup ref="globalAtts"/>
   </xs:complexType>
 
-  <!-- ============ 2. DOCUMENT MACROSTRUCTURE / MACROSTRUCTURE DU DOCUMENT ============ -->
-
+  <!-- 2. DOCUMENT MACROSTRUCTURE / MACROSTRUCTURE DU DOCUMENT -->
   <xs:element name="museumscan">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Root element of a museumscan document:
-        the whole survey of Canadian heritage institutions’ online
-        presence, combining a header (publication metadata) and a body
-        (the list of institutions).</xs:documentation>
-      <xs:documentation xml:lang="fr">Élément racine d’un document
-        museumscan : l’ensemble de l’enquête sur la présence en ligne des
-        institutions patrimoniales canadiennes, combinant un en-tête
-        (métadonnées de publication) et un corps (la liste des
-        institutions).</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Root element of a museumscan document: the whole survey of Canadian heritage institutions’ online presence, combining a header (publication metadata) and a body (the list of institutions).</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Élément racine d’un document museumscan : l’ensemble de l’enquête sur la présence en ligne des institutions patrimoniales canadiennes, combinant un en-tête (métadonnées de publication) et un corps (la liste des institutions).</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="header" minOccurs="1" maxOccurs="1" />
-        <xs:element ref="body" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="header" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="body" minOccurs="1" maxOccurs="1"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="header">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Publication metadata for the
-        museumscan document itself (title, publishers, identifier, source
-        note, change log). Specific to museumscan; has no counterpart in
-        LMCO or the OpenGLAM Survey, which do not publish their own
-        dataset-level metadata in machine-readable form alongside the
-        data.</xs:documentation>
-      <xs:documentation xml:lang="fr">Métadonnées de publication du
-        document museumscan lui-même (titre, éditeurs, identifiant, note
-        de source, journal des changements). Propre à museumscan ; n’a pas
-        d’équivalent dans le PCMEC ou l’OpenGLAM Survey, qui ne publient
-        pas leurs propres métadonnées de jeu de données sous forme
-        structurée aux côtés des données.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Publication metadata for the museumscan document itself (title, publishers, identifier, source note, change log). Specific to museumscan; has no counterpart in LMCO or the OpenGLAM Survey, which do not publish their own dataset-level metadata in machine-readable form alongside the data.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Métadonnées de publication du document museumscan lui-même (titre, éditeurs, identifiant, note de source, journal des changements). Propre à museumscan ; n’a pas d’équivalent dans le PCMEC ou l’OpenGLAM Survey, qui ne publient pas leurs propres métadonnées de jeu de données sous forme structurée aux côtés des données.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="title" minOccurs="1" maxOccurs="unbounded" />
-        <xs:element ref="publication" minOccurs="0" maxOccurs="1" />
-        <xs:element ref="idno" minOccurs="1" maxOccurs="unbounded" />
-        <xs:element ref="source" minOccurs="0" maxOccurs="1" />
-        <xs:element ref="changes" minOccurs="0" maxOccurs="1"></xs:element>
+        <xs:element ref="title" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element ref="publication" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="idno" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element ref="source" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="changes" minOccurs="0" maxOccurs="1"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="publication">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Publication statement for the
-        museumscan document: date and publishing organizations. Specific
-        to museumscan.</xs:documentation>
-      <xs:documentation xml:lang="fr">Mention de publication du document
-        museumscan : date et organismes éditeurs. Propre à
-        museumscan.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Publication statement for the museumscan document: date and publishing organizations. Specific to museumscan.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Mention de publication du document museumscan : date et organismes éditeurs. Propre à museumscan.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="date" minOccurs="1" />
-        <xs:element name="publisher" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element ref="date" minOccurs="1"/>
+        <xs:element name="publisher" minOccurs="1" maxOccurs="unbounded"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="date" type="dateValue">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A single date value, of variable
-        precision (see the dateValue type); used here for the document’s
-        publication date.</xs:documentation>
-      <xs:documentation xml:lang="fr">Une valeur de date, de précision
-        variable (voir le type dateValue) ; utilisée ici pour la date de
-        publication du document.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >A single date value, of variable precision (see the dateValue type); used here for the document’s publication date.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Une valeur de date, de précision variable (voir le type dateValue) ; utilisée ici pour la date de publication du document.</xs:documentation>
     </xs:annotation>
   </xs:element>
-
   <xs:element name="source">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Free-text note on the provenance of
-        the information asserted in the enclosing element (e.g. which
-        annual report, page, or dataset a budget figure or dissemination
-        volume was taken from). Specific to museumscan: neither LMCO nor
-        the OpenGLAM Survey record, in the published dataset, the precise
-        documentary source behind each value; museumscan adds this element
-        precisely to make such provenance auditable.</xs:documentation>
-      <xs:documentation xml:lang="fr">Note en texte libre sur la
-        provenance de l’information affirmée dans l’élément englobant (p.
-        ex. de quel rapport annuel, page, ou jeu de données un chiffre de
-        budget ou un volume de diffusion a été tiré). Propre à museumscan :
-        ni le PCMEC ni l’OpenGLAM Survey ne consignent, dans le jeu de
-        données publié, la source documentaire précise de chaque valeur ;
-        museumscan ajoute cet élément justement pour rendre cette
-        provenance vérifiable.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Free-text note on the provenance of the information asserted in the enclosing element (e.g. which annual report, page, or dataset a budget figure or dissemination volume was taken from). Specific to museumscan: neither LMCO nor the OpenGLAM Survey record, in the published dataset, the precise documentary source behind each value; museumscan adds this element precisely to make such provenance auditable.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Note en texte libre sur la provenance de l’information affirmée dans l’élément englobant (p. ex. de quel rapport annuel, page, ou jeu de données un chiffre de budget ou un volume de diffusion a été tiré). Propre à museumscan : ni le PCMEC ni l’OpenGLAM Survey ne consignent, dans le jeu de données publié, la source documentaire précise de chaque valeur ; museumscan ajoute cet élément justement pour rendre cette provenance vérifiable.</xs:documentation>
     </xs:annotation>
     <xs:complexType mixed="true">
       <xs:sequence minOccurs="0" maxOccurs="unbounded">
-        <xs:element ref="p" />
+        <xs:element ref="p"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="changes">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Change log for the museumscan
-        document. Specific to museumscan.</xs:documentation>
-      <xs:documentation xml:lang="fr">Journal des changements du document
-        museumscan. Propre à museumscan.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Change log for the museumscan document. Specific to museumscan.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Journal des changements du document museumscan. Propre à museumscan.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="change" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element ref="change" minOccurs="1" maxOccurs="unbounded"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="change">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A single dated entry in the change
-        log.</xs:documentation>
-      <xs:documentation xml:lang="fr">Une entrée datée du journal des
-        changements.</xs:documentation>
+      <xs:documentation xml:lang="en">A single dated entry in the change log.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Une entrée datée du journal des changements.</xs:documentation>
     </xs:annotation>
     <xs:complexType mixed="true">
       <xs:sequence minOccurs="0" maxOccurs="unbounded">
-        <xs:element ref="p" />
+        <xs:element ref="p"/>
       </xs:sequence>
       <xs:attribute name="when" type="dateValue" use="required">
         <xs:annotation>
@@ -291,22 +158,20 @@
       </xs:attribute>
       <xs:attribute name="version" type="xs:string">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Version number of the document
-            after this change.</xs:documentation>
-          <xs:documentation xml:lang="fr">Numéro de version du document
-            à la suite de ce changement.</xs:documentation>
+          <xs:documentation xml:lang="en"
+            >Version number of the document after this change.</xs:documentation>
+          <xs:documentation xml:lang="fr"
+            >Numéro de version du document à la suite de ce changement.</xs:documentation>
         </xs:annotation>
       </xs:attribute>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="body">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Container for the survey data
-        proper: one or more lists of institutions.</xs:documentation>
-      <xs:documentation xml:lang="fr">Conteneur pour les données d’enquête
-        proprement dites : une ou plusieurs listes
-        d’institutions.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Container for the survey data proper: one or more lists of institutions.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Conteneur pour les données d’enquête proprement dites : une ou plusieurs listes d’institutions.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence minOccurs="1" maxOccurs="unbounded">
@@ -314,362 +179,238 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="listOrg">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A list of institutions grouped under
-        a heading (in practice, one listOrg per province/territory).
-        museumscan uses this grouping instead of LMCO’s flat "Province/
-        Territory" column [Enum: AB, YT, NU, NT, BC, SK, MB, ON, QC, NB,
-        NS, NL] to organize records by section rather than by a repeated
-        field on every record.</xs:documentation>
-      <xs:documentation xml:lang="fr">Une liste d’institutions regroupées
-        sous un intitulé (en pratique, un listOrg par province ou
-        territoire). museumscan utilise ce regroupement au lieu de la
-        colonne plate « Province / Territoire » du PCMEC [Enum : AB, YT,
-        NU, NT, BC, SK, MB, ON, QC, NB, NS, NL] afin d’organiser les
-        enregistrements par section plutôt que par un champ répété sur
-        chaque enregistrement.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >A list of institutions grouped under a heading (in practice, one listOrg per province/territory). museumscan uses this grouping instead of LMCO’s flat <html:code>Province/ Territory</html:code> column [Enum: AB, YT, NU, NT, BC, SK, MB, ON, QC, NB, NS, NL] to organize records by section rather than by a repeated field on every record.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Une liste d’institutions regroupées sous un intitulé (en pratique, un listOrg par province ou territoire). museumscan utilise ce regroupement au lieu de la colonne plate <html:code>Province / Territoire</html:code> du PCMEC [Enum : AB, YT, NU, NT, BC, SK, MB, ON, QC, NB, NS, NL] afin d’organiser les enregistrements par section plutôt que par un champ répété sur chaque enregistrement.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element ref="head" />
-        <xs:element ref="org" />
+        <xs:element ref="head"/>
+        <xs:element ref="org"/>
       </xs:choice>
     </xs:complexType>
   </xs:element>
 
-  <!-- ============ 3. ORGANIZATION RECORD / FICHE D'ORGANISATION ============ -->
-
+  <!-- 3. ORGANIZATION RECORD / FICHE D’ORGANISATION -->
   <xs:element name="orgName" type="proseContent">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Full name of the institution, in the
-        language given by @xml:lang. Source: OpenGLAM Survey, field
-        "Name" (source-language form) and "ENG" (English form) — the two
-        columns are merged here into one repeatable element distinguished
-        by @xml:lang.</xs:documentation>
-      <xs:documentation xml:lang="fr">Nom complet de l’institution, dans
-        la langue indiquée par @xml:lang. Source : OpenGLAM Survey, champ
-        « Name » (forme en langue source) et « ENG » (forme anglaise) —
-        les deux colonnes sont fusionnées ici en un seul élément
-        répétable distingué par @xml:lang.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Full name of the institution, in the language given by @xml:lang. Source: OpenGLAM Survey, field <html:code>Name</html:code> (source-language form) and <html:code>ENG</html:code> (English form) — the two columns are merged here into one repeatable element distinguished by @xml:lang.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Nom complet de l’institution, dans la langue indiquée par @xml:lang. Source : OpenGLAM Survey, champ <html:code>Name</html:code> (forme en langue source) et <html:code>ENG</html:code> (forme anglaise) — les deux colonnes sont fusionnées ici en un seul élément répétable distingué par @xml:lang.</xs:documentation>
     </xs:annotation>
   </xs:element>
-
   <xs:element name="org">
     <xs:annotation>
-      <xs:documentation xml:lang="en">One heritage institution record —
-        corresponds to a single row in LMCO (keyed by its "ID" attribute)
-        and to a single record in the OpenGLAM Survey ("Name"). The
-        museumscan record id is carried on @xml:id.</xs:documentation>
-      <xs:documentation xml:lang="fr">Un enregistrement d’institution
-        patrimoniale — correspond à une ligne du PCMEC (identifiée par son
-        attribut « ID ») et à un enregistrement de l’OpenGLAM Survey
-        (« Name »). L’identifiant d’enregistrement museumscan est porté
-        par @xml:id.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >One heritage institution record — corresponds to a single row in LMCO (keyed by its <html:code>ID</html:code> attribute) and to a single record in the OpenGLAM Survey (<html:code>Name</html:code>). The museumscan record id is carried on @xml:id.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Un enregistrement d’institution patrimoniale — correspond à une ligne du PCMEC (identifiée par son attribut <html:code>ID</html:code>) et à un enregistrement de l’OpenGLAM Survey (<html:code>Name</html:code>). L’identifiant d’enregistrement museumscan est porté par @xml:id.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <!-- Order below follows the consistent order observed across all
-           org records in main.xml: orgName(s), acronym(s), operational,
-           orgType, fields, holdings, address(es), demographics,
-           accessibility, online, desc(s), availability(ies), wikimedia. -->
+      <!-- Order below follows the consistent order observed across all org records in main.xml: orgName(s), acronym(s), operational, orgType, fields, holdings, address(es), demographics, accessibility, online, desc(s), availability(ies), wikimedia. -->
       <xs:sequence>
-        <xs:element ref="orgName" minOccurs="1" maxOccurs="unbounded" />
-        <xs:element ref="acronym" minOccurs="0" maxOccurs="unbounded" />
-        <xs:element ref="operational" minOccurs="0" maxOccurs="1" />
-        <xs:element ref="orgType" minOccurs="1" maxOccurs="1" />
-        <xs:element ref="fields" minOccurs="1" maxOccurs="1" />
-        <xs:element ref="holdings" minOccurs="0" maxOccurs="1" />
-        <xs:element ref="address" minOccurs="1" maxOccurs="unbounded" />
-        <xs:element ref="demographics" minOccurs="1" maxOccurs="1" />
-        <xs:element ref="accessibility" minOccurs="1" maxOccurs="1" />
-        <xs:element ref="online" minOccurs="1" maxOccurs="1" />
-        <xs:element ref="desc" minOccurs="1" maxOccurs="unbounded" />
-        <xs:element ref="availability" minOccurs="1" maxOccurs="unbounded" />
-        <xs:element ref="wikimedia" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="orgName" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element ref="acronym" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="operational" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="orgType" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="fields" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="holdings" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="address" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element ref="demographics" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="accessibility" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="online" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="desc" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element ref="availability" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element ref="wikimedia" minOccurs="1" maxOccurs="1"/>
       </xs:sequence>
-      <xs:attributeGroup ref="globalAtts" />
+      <xs:attributeGroup ref="globalAtts"/>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="acronym" type="proseContent">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Acronym or initialism used for the
-        institution (e.g. "MBAM"). Specific to museumscan; not present in
-        LMCO or the OpenGLAM Survey, added for readability and as an
-        informal secondary identifier.</xs:documentation>
-      <xs:documentation xml:lang="fr">Sigle ou acronyme utilisé pour
-        l’institution (p. ex. « MBAM »). Propre à museumscan ; absent du
-        PCMEC comme de l’OpenGLAM Survey, ajouté pour la lisibilité et
-        comme identifiant secondaire informel.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Acronym or initialism used for the institution (e.g. "MBAM"). Specific to museumscan; not present in LMCO or the OpenGLAM Survey, added for readability and as an informal secondary identifier.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Sigle ou acronyme utilisé pour l’institution (p. ex. « MBAM »). Propre à museumscan ; absent du PCMEC comme de l’OpenGLAM Survey, ajouté pour la lisibilité et comme identifiant secondaire informel.</xs:documentation>
     </xs:annotation>
   </xs:element>
-
   <xs:element name="operational">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Container for information on how the
-        institution is funded and administered (budget,
-        administration).</xs:documentation>
-      <xs:documentation xml:lang="fr">Conteneur pour les informations sur
-        le financement et l’administration de l’institution (budget,
-        administration).</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Container for information on how the institution is funded and administered (budget, administration).</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Conteneur pour les informations sur le financement et l’administration de l’institution (budget, administration).</xs:documentation>
     </xs:annotation>
     <xs:complexType mixed="true">
       <xs:sequence>
-        <xs:element ref="budget" minOccurs="1" maxOccurs="unbounded" />
-        <xs:element ref="administration" minOccurs="0" maxOccurs="1" />
+        <xs:element ref="budget" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element ref="administration" minOccurs="0" maxOccurs="1"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="budget">
     <xs:annotation>
-      <xs:documentation xml:lang="en">The institution’s annual operating
-        budget for a given year, with supporting note and source. Source:
-        LMCO, attributes "Budget" (amount) and "Budget Year" (year) —
-        merged here into one element, with the year carried on @when and
-        the figure given in free text (note/source) rather than a typed
-        integer + currency, since sources rarely state amounts in a
-        directly machine-comparable form.</xs:documentation>
-      <xs:documentation xml:lang="fr">Le budget de fonctionnement annuel
-        de l’institution pour une année donnée, avec note et source à
-        l’appui. Source : PCMEC, attributs « Budget » (montant) et
-        « Année du budget » (année) — fusionnés ici en un seul élément,
-        l’année étant portée par @when et le chiffre donné en texte libre
-        (note/source) plutôt que comme un entier typé + devise, les
-        sources exprimant rarement les montants sous une forme
-        directement comparable de façon automatisée.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >The institution’s annual operating budget for a given year, with supporting note and source. Source: LMCO, attributes <html:code>Budget</html:code> (amount) and <html:code>Budget Year</html:code> (year) — merged here into one element, with the year carried on @when and the figure given in free text (note/source) rather than a typed integer + currency, since sources rarely state amounts in a directly machine-comparable form.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Le budget de fonctionnement annuel de l’institution pour une année donnée, avec note et source à l’appui. Source : PCMEC, attributs <html:code>Budget</html:code> (montant) et <html:code>Année du budget</html:code> (année) — fusionnés ici en un seul élément, l’année étant portée par @when et le chiffre donné en texte libre (note/source) plutôt que comme un entier typé + devise, les sources exprimant rarement les montants sous une forme directement comparable de façon automatisée.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="note" minOccurs="0" maxOccurs="unbounded" />
-        <xs:element ref="source" minOccurs="0" maxOccurs="1" />
+        <xs:element ref="note" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="source" minOccurs="0" maxOccurs="1"/>
       </xs:sequence>
       <xs:attribute name="when">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Year (or more precise date) the
-            budget figure applies to. Source: LMCO "Budget Year"
-            [YYYY].</xs:documentation>
-          <xs:documentation xml:lang="fr">Année (ou date plus précise) à
-            laquelle s’applique le chiffre de budget. Source : PCMEC
-            « Année du budget » [AAAA].</xs:documentation>
+          <xs:documentation xml:lang="en"
+            >Year (or more precise date) the budget figure applies to. Source: LMCO <html:code>Budget Year</html:code> [YYYY].</xs:documentation>
+          <xs:documentation xml:lang="fr"
+            >Année (ou date plus précise) à laquelle s’applique le chiffre de budget. Source : PCMEC <html:code>Année du budget</html:code> [AAAA].</xs:documentation>
         </xs:annotation>
       </xs:attribute>
     </xs:complexType>
   </xs:element>
+<<<<<<< HEAD
   <!-- add amount pour le budget-->
   <!-- add from="2024" to="2025"-->
 
+=======
+>>>>>>> 38e6f8a (feat: restructuration du schema)
   <!-- @todo -->
   <xs:element name="administration">
     <!-- faire une liste (ouverte ou fermée?) des différents types de musée : musée national, personne morale à but non lucratif -->
     <xs:annotation>
-      <xs:documentation xml:lang="en">Free-text note on the institution’s
-        legal/administrative status (e.g. "national museum", "non-profit
-        corporation"). Specific to museumscan. LMCO carries related but
-        narrower boolean flags not modelled here yet ("Volunteer
-        Management", "IT Staffing"); museumscan instead records the
-        institution’s own stated status as free text.</xs:documentation>
-      <xs:documentation xml:lang="fr">Note en texte libre sur le statut
-        juridique/administratif de l’institution (p. ex. « musée
-        national », « organisme à but non lucratif »). Propre à
-        museumscan. Le PCMEC porte des indicateurs booléens connexes mais
-        plus étroits, non encore modélisés ici (« Administration
-        bénévole », « Personnel TI ») ; museumscan enregistre à la place,
-        en texte libre, le statut tel que déclaré par l’institution
-        elle-même.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Free-text note on the institution’s legal/administrative status (e.g. "national museum", "non-profit corporation"). Specific to museumscan. LMCO carries related but narrower boolean flags not modelled here yet ("Volunteer Management", "IT Staffing"); museumscan instead records the institution’s own stated status as free text.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Note en texte libre sur le statut juridique/administratif de l’institution (p. ex. « musée national », « organisme à but non lucratif »). Propre à museumscan. Le PCMEC porte des indicateurs booléens connexes mais plus étroits, non encore modélisés ici (« Administration bénévole », « Personnel TI ») ; museumscan enregistre à la place, en texte libre, le statut tel que déclaré par l’institution elle-même.</xs:documentation>
     </xs:annotation>
   </xs:element>
-
   <xs:element name="orgType">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Category of institution. Source:
-        OpenGLAM Survey, field "Type" [Aggregator, Archive, Corporation,
-        Gallery, Government, Library, Museum, Other, Private Collection,
-        Repository, Research Institution, University, Visitor
-        Attraction].</xs:documentation>
-      <xs:documentation xml:lang="fr">Catégorie d’institution. Source :
-        OpenGLAM Survey, champ « Type » [Aggregator, Archive, Corporation,
-        Gallery, Government, Library, Museum, Other, Private Collection,
-        Repository, Research Institution, University, Visitor
-        Attraction].</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Category of institution. Source: OpenGLAM Survey, field <html:code>Type</html:code> [Aggregator, Archive, Corporation, Gallery, Government, Library, Museum, Other, Private Collection, Repository, Research Institution, University, Visitor Attraction].</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Catégorie d’institution. Source : OpenGLAM Survey, champ <html:code>Type</html:code> [Aggregator, Archive, Corporation, Gallery, Government, Library, Museum, Other, Private Collection, Repository, Research Institution, University, Visitor Attraction].</xs:documentation>
     </xs:annotation>
     <xs:simpleType>
       <xs:restriction base="xs:string">
-        <xs:enumeration value="aggregator" />
-        <xs:enumeration value="archive" />
-        <xs:enumeration value="corporation" />
-        <xs:enumeration value="gallery" />
-        <xs:enumeration value="government" />
-        <xs:enumeration value="library" />
-        <xs:enumeration value="museum" />
-        <xs:enumeration value="private collection" />
-        <xs:enumeration value="repository" />
-        <xs:enumeration value="research institution" />
-        <xs:enumeration value="university" />
-        <xs:enumeration value="visitor attraction" />
-        <xs:enumeration value="other" />
+        <xs:enumeration value="aggregator"/>
+        <xs:enumeration value="archive"/>
+        <xs:enumeration value="corporation"/>
+        <xs:enumeration value="gallery"/>
+        <xs:enumeration value="government"/>
+        <xs:enumeration value="library"/>
+        <xs:enumeration value="museum"/>
+        <xs:enumeration value="private collection"/>
+        <xs:enumeration value="repository"/>
+        <xs:enumeration value="research institution"/>
+        <xs:enumeration value="university"/>
+        <xs:enumeration value="visitor attraction"/>
+        <xs:enumeration value="other"/>
       </xs:restriction>
     </xs:simpleType>
   </xs:element>
-
   <xs:element name="fields">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Container for the institution’s
-        disciplinary field(s).</xs:documentation>
-      <xs:documentation xml:lang="fr">Conteneur pour le ou les domaines
-        disciplinaires de l’institution.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Container for the institution’s disciplinary field(s).</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Conteneur pour le ou les domaines disciplinaires de l’institution.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
         <xs:element name="field" minOccurs="1" maxOccurs="unbounded">
           <xs:annotation>
-            <xs:documentation xml:lang="en">A disciplinary field of the
-              institution’s collection or mandate (multi-value: an
-              institution may repeat this element). Source: LMCO,
-              attribute "Discipline(s)" [Enum: A-I]; museumscan adds the
-              "other" value, absent from LMCO’s controlled list, as a
-              fallback.</xs:documentation>
-            <xs:documentation xml:lang="fr">Un domaine disciplinaire de la
-              collection ou du mandat de l’institution (valeur multiple :
-              une institution peut répéter cet élément). Source : PCMEC,
-              attribut « Discipline(s) » [Enum : A-I] ; museumscan ajoute
-              la valeur « other », absente de la liste contrôlée du PCMEC,
-              en tant que valeur de repli.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >A disciplinary field of the institution’s collection or mandate (multi-value: an institution may repeat this element). Source: LMCO, attribute <html:code>Discipline(s)</html:code> [Enum: A-I]; museumscan adds the "other" value, absent from LMCO’s controlled list, as a fallback.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Un domaine disciplinaire de la collection ou du mandat de l’institution (valeur multiple : une institution peut répéter cet élément). Source : PCMEC, attribut <html:code>Discipline(s)</html:code> [Enum : A-I] ; museumscan ajoute la valeur « other », absente de la liste contrôlée du PCMEC, en tant que valeur de repli.</xs:documentation>
           </xs:annotation>
           <xs:simpleType>
             <xs:restriction base="xs:string">
               <xs:enumeration value="archeology">
                 <xs:annotation>
-                  <xs:documentation xml:lang="en">Study of (pre)historic
-                    peoples and their cultures through the analysis of
-                    their objects, inscriptions, monuments, remains, or
-                    other relevant tangible materials.</xs:documentation>
-                  <xs:documentation xml:lang="fr">Étude des peuples
-                    (pré)historiques et de leurs cultures à travers
-                    l’analyse de leurs objets, inscriptions, monuments,
-                    restes ou autres matériaux tangibles
-                    pertinents.</xs:documentation>
+                  <xs:documentation xml:lang="en"
+                    >Study of (pre)historic peoples and their cultures through the analysis of their objects, inscriptions, monuments, remains, or other relevant tangible materials.</xs:documentation>
+                  <xs:documentation xml:lang="fr"
+                    >Étude des peuples (pré)historiques et de leurs cultures à travers l’analyse de leurs objets, inscriptions, monuments, restes ou autres matériaux tangibles pertinents.</xs:documentation>
                 </xs:annotation>
               </xs:enumeration>
               <xs:enumeration value="decorative arts and design">
                 <xs:annotation>
-                  <xs:documentation xml:lang="en">Study of cultural and
-                    art forms (e.g. ceramics, furnishings, clothing, etc.)
-                    intended primarily for functional or utilitarian
-                    purposes.</xs:documentation>
-                  <xs:documentation xml:lang="fr">Étude des formes
-                    culturelles et artistiques (p. ex. céramiques, meubles,
-                    vêtements, etc.) dont la finalité est principalement
-                    fonctionnelle ou utilitaire.</xs:documentation>
+                  <xs:documentation xml:lang="en"
+                    >Study of cultural and art forms (e.g. ceramics, furnishings, clothing, etc.) intended primarily for functional or utilitarian purposes.</xs:documentation>
+                  <xs:documentation xml:lang="fr"
+                    >Étude des formes culturelles et artistiques (p. ex. céramiques, meubles, vêtements, etc.) dont la finalité est principalement fonctionnelle ou utilitaire.</xs:documentation>
                 </xs:annotation>
               </xs:enumeration>
               <xs:enumeration value="ethnography">
                 <xs:annotation>
-                  <xs:documentation xml:lang="en">Study of existing
-                    peoples and their cultures through the analysis of
-                    their social structures, languages, religions,
-                    technologies, objects, inscriptions, monuments,
-                    expressions, traditions, or other relevant
-                    materials.</xs:documentation>
-                  <xs:documentation xml:lang="fr">Étude des peuples
-                    actuels et de leurs cultures à travers l’analyse de
-                    leurs structures sociales, langues, religions,
-                    technologies, objets, inscriptions, monuments,
-                    expressions, traditions ou autres matériaux
-                    pertinents.</xs:documentation>
+                  <xs:documentation xml:lang="en"
+                    >Study of existing peoples and their cultures through the analysis of their social structures, languages, religions, technologies, objects, inscriptions, monuments, expressions, traditions, or other relevant materials.</xs:documentation>
+                  <xs:documentation xml:lang="fr"
+                    >Étude des peuples actuels et de leurs cultures à travers l’analyse de leurs structures sociales, langues, religions, technologies, objets, inscriptions, monuments, expressions, traditions ou autres matériaux pertinents.</xs:documentation>
                 </xs:annotation>
               </xs:enumeration>
               <xs:enumeration value="fine arts">
                 <xs:annotation>
-                  <xs:documentation xml:lang="en">Study of art forms (e.g.
-                    painting, sculpture, performance art, etc.) intended
-                    primarily for aesthetic or conceptual
-                    purposes.</xs:documentation>
-                  <xs:documentation xml:lang="fr">Étude des formes d’art
-                    (p. ex. peinture, sculpture, performance, etc.) dont
-                    la finalité est principalement esthétique ou
-                    conceptuelle.</xs:documentation>
+                  <xs:documentation xml:lang="en"
+                    >Study of art forms (e.g. painting, sculpture, performance art, etc.) intended primarily for aesthetic or conceptual purposes.</xs:documentation>
+                  <xs:documentation xml:lang="fr"
+                    >Étude des formes d’art (p. ex. peinture, sculpture, performance, etc.) dont la finalité est principalement esthétique ou conceptuelle.</xs:documentation>
                 </xs:annotation>
               </xs:enumeration>
               <xs:enumeration value="history">
                 <xs:annotation>
-                  <xs:documentation xml:lang="en">Study of the chronology
-                    and record of events of the life or development of a
-                    person or peoples, typically as it relates to a
-                    particular facet of their past (e.g. of a country, of
-                    an important figure, of a community,
-                    etc.).</xs:documentation>
-                  <xs:documentation xml:lang="fr">Étude et enregistrement
-                    de la chronologie et des événements de la vie ou du
-                    développement de personnes ou peuples en ce qui
-                    concerne une facette particulière de leur passé (p.
-                    ex. d’un pays, d’une figure importante, d’une
-                    communauté, etc.).</xs:documentation>
+                  <xs:documentation xml:lang="en"
+                    >Study of the chronology and record of events of the life or development of a person or peoples, typically as it relates to a particular facet of their past (e.g. of a country, of an important figure, of a community, etc.).</xs:documentation>
+                  <xs:documentation xml:lang="fr"
+                    >Étude et enregistrement de la chronologie et des événements de la vie ou du développement de personnes ou peuples en ce qui concerne une facette particulière de leur passé (p. ex. d’un pays, d’une figure importante, d’une communauté, etc.).</xs:documentation>
                 </xs:annotation>
               </xs:enumeration>
               <xs:enumeration value="military">
                 <xs:annotation>
-                  <xs:documentation xml:lang="en">Study of the chronology
-                    and record of events and development of armed forces
-                    as it relates to particular aspects of their past
-                    (e.g. wars, peacekeeping missions, interior
-                    operations, etc.).</xs:documentation>
-                  <xs:documentation xml:lang="fr">Étude et enregistrement
-                    de la chronologie et des événements et du
-                    développement des forces armées en ce qui concerne les
-                    aspects particuliers de leur passé (p. ex. guerres,
-                    missions de maintien de la paix, opérations
-                    intérieures, etc.).</xs:documentation>
+                  <xs:documentation xml:lang="en"
+                    >Study of the chronology and record of events and development of armed forces as it relates to particular aspects of their past (e.g. wars, peacekeeping missions, interior operations, etc.).</xs:documentation>
+                  <xs:documentation xml:lang="fr"
+                    >Étude et enregistrement de la chronologie et des événements et du développement des forces armées en ce qui concerne les aspects particuliers de leur passé (p. ex. guerres, missions de maintien de la paix, opérations intérieures, etc.).</xs:documentation>
                 </xs:annotation>
               </xs:enumeration>
               <xs:enumeration value="natural sciences">
                 <xs:annotation>
-                  <xs:documentation xml:lang="en">Study of the physical
-                    world and its phenomena (e.g. biology, geology,
-                    chemistry).</xs:documentation>
-                  <xs:documentation xml:lang="fr">Étude du monde physique
-                    et de ses phénomènes (p. ex. biologie, géologie,
-                    chimie).</xs:documentation>
+                  <xs:documentation xml:lang="en"
+                    >Study of the physical world and its phenomena (e.g. biology, geology, chemistry).</xs:documentation>
+                  <xs:documentation xml:lang="fr"
+                    >Étude du monde physique et de ses phénomènes (p. ex. biologie, géologie, chimie).</xs:documentation>
                 </xs:annotation>
               </xs:enumeration>
               <xs:enumeration value="sciences and technology">
                 <xs:annotation>
-                  <xs:documentation xml:lang="en">Study of the world, its
-                    phenomena, and human-made things using principles
-                    from the applied sciences (e.g. computer science,
-                    engineering, mathematics, etc.).</xs:documentation>
-                  <xs:documentation xml:lang="fr">Étude du monde, de ses
-                    phénomènes et des choses fabriquées par l’humain en
-                    utilisant les principes des sciences appliquées (p.
-                    ex. informatique, ingénierie, mathématiques,
-                    etc.).</xs:documentation>
+                  <xs:documentation xml:lang="en"
+                    >Study of the world, its phenomena, and human-made things using principles from the applied sciences (e.g. computer science, engineering, mathematics, etc.).</xs:documentation>
+                  <xs:documentation xml:lang="fr"
+                    >Étude du monde, de ses phénomènes et des choses fabriquées par l’humain en utilisant les principes des sciences appliquées (p. ex. informatique, ingénierie, mathématiques, etc.).</xs:documentation>
                 </xs:annotation>
               </xs:enumeration>
               <xs:enumeration value="social and community studies">
                 <xs:annotation>
-                  <xs:documentation xml:lang="en">Study and celebration,
-                    by a community, of its culture, customs, and mores
-                    through the analysis of its social structures,
-                    languages, religions, technologies, objects,
-                    inscriptions, monuments, expressions, traditions, or
-                    other relevant materials.</xs:documentation>
-                  <xs:documentation xml:lang="fr">Étude et célébration,
-                    par une communauté, de sa culture, de ses coutumes et
-                    de ses mœurs à travers l’analyse de ses structures
-                    sociales, langues, religions, technologies, objets,
-                    inscriptions, monuments, expressions, traditions ou
-                    autres matériaux pertinents.</xs:documentation>
+                  <xs:documentation xml:lang="en"
+                    >Study and celebration, by a community, of its culture, customs, and mores through the analysis of its social structures, languages, religions, technologies, objects, inscriptions, monuments, expressions, traditions, or other relevant materials.</xs:documentation>
+                  <xs:documentation xml:lang="fr"
+                    >Étude et célébration, par une communauté, de sa culture, de ses coutumes et de ses mœurs à travers l’analyse de ses structures sociales, langues, religions, technologies, objets, inscriptions, monuments, expressions, traditions ou autres matériaux pertinents.</xs:documentation>
                 </xs:annotation>
               </xs:enumeration>
               <xs:enumeration value="other">
                 <xs:annotation>
-                  <xs:documentation xml:lang="en">Fallback value, added by
-                    museumscan, for a disciplinary field not covered by
-                    LMCO’s controlled list.</xs:documentation>
-                  <xs:documentation xml:lang="fr">Valeur de repli, ajoutée
-                    par museumscan, pour un domaine disciplinaire non
-                    couvert par la liste contrôlée du PCMEC.</xs:documentation>
+                  <xs:documentation xml:lang="en"
+                    >Fallback value, added by museumscan, for a disciplinary field not covered by LMCO’s controlled list.</xs:documentation>
+                  <xs:documentation xml:lang="fr"
+                    >Valeur de repli, ajoutée par museumscan, pour un domaine disciplinaire non couvert par la liste contrôlée du PCMEC.</xs:documentation>
                 </xs:annotation>
               </xs:enumeration>
             </xs:restriction>
@@ -678,583 +419,361 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="holdings">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Container describing the
-        institution’s collection holdings (size and object types).
-        Optional: its presence corresponds to a "true" value for LMCO’s
-        boolean attribute "Collection" (does the institution manage a
-        collection?); its absence to "false".</xs:documentation>
-      <xs:documentation xml:lang="fr">Conteneur décrivant le fonds de la
-        collection de l’institution (taille et types d’objets). Optionnel :
-        sa présence correspond à une valeur « vrai » pour l’attribut
-        booléen « Collection » du PCMEC (l’institution administre-t-elle
-        une collection ?) ; son absence à « faux ».</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Container describing the institution’s collection holdings (size and object types). Optional: its presence corresponds to a "true" value for LMCO’s boolean attribute <html:code>Collection</html:code> (does the institution manage a collection?); its absence to "false".</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Conteneur décrivant le fonds de la collection de l’institution (taille et types d’objets). Optionnel : sa présence correspond à une valeur « vrai » pour l’attribut booléen <html:code>Collection</html:code> du PCMEC (l’institution administre-t-elle une collection ?) ; son absence à « faux ».</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
         <xs:element name="size" type="xs:string" minOccurs="0" maxOccurs="1">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Number of objects held in the
-              collection. Source: LMCO, attribute "Number of Objects"
-              (rounded up to the nearest 100 when the exact figure is
-              unknown).</xs:documentation>
-            <xs:documentation xml:lang="fr">Nombre d’objets que comprend
-              la collection. Source : PCMEC, attribut « Nombre d’objets »
-              (arrondi à la centaine supérieure lorsque le chiffre exact
-              est inconnu).</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Number of objects held in the collection. Source: LMCO, attribute <html:code>Number of Objects</html:code> (rounded up to the nearest 100 when the exact figure is unknown).</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Nombre d’objets que comprend la collection. Source : PCMEC, attribut <html:code>Nombre d’objets</html:code> (arrondi à la centaine supérieure lorsque le chiffre exact est inconnu).</xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element ref="category" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element ref="category" minOccurs="1" maxOccurs="unbounded"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="category">
-      <!-- pourquoi simpleType alors que "fiedls est complexType?" -->
+    <!-- pourquoi simpleType alors que "fiedls est complexType?" -->
     <xs:annotation>
-      <xs:documentation xml:lang="en">A type of object held in the
-        collection (multi-value: an institution may repeat this element).
-        Source: LMCO, attribute "Types of Object(s)" [Enum: A-O] — values
-        and definitions below are reproduced from the LMCO data
-        dictionary.</xs:documentation>
-      <xs:documentation xml:lang="fr">Un type d’objet que comprend la
-        collection (valeur multiple : une institution peut répéter cet
-        élément). Source : PCMEC, attribut « Type(s) d’objets » [Enum :
-        A-O] — les valeurs et définitions ci-dessous sont reprises du
-        dictionnaire de données du PCMEC.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >A type of object held in the collection (multi-value: an institution may repeat this element). Source: LMCO, attribute <html:code>Types of Object(s)</html:code> [Enum: A-O] — values and definitions below are reproduced from the LMCO data dictionary.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Un type d’objet que comprend la collection (valeur multiple : une institution peut répéter cet élément). Source : PCMEC, attribut <html:code>Type(s) d’objets</html:code> [Enum : A-O] — les valeurs et définitions ci-dessous sont reprises du dictionnaire de données du PCMEC.</xs:documentation>
     </xs:annotation>
     <xs:simpleType>
       <xs:restriction base="xs:string">
         <xs:enumeration value="archival documents and books">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Records, documents, books, or other materials considered
-              to be of historical or cultural interest and value.</xs:documentation>
-            <xs:documentation xml:lang="fr">Dossiers, documents, livres ou autres documents
-              considérés comme d’intérêt et de valeur historiques ou culturels.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Records, documents, books, or other materials considered to be of historical or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Dossiers, documents, livres ou autres documents considérés comme d’intérêt et de valeur historiques ou culturels.</xs:documentation>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="decorative artefacts and furnishings">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Tangible objects whose primary purpose prior to entering
-              the collection was that of functionality, comfort, or adornment in the context of an
-              interior setting, and are considered to be of historical and/or cultural interest and
-              value.</xs:documentation>
-            <xs:documentation xml:lang="fr">Objets tangibles dont la fonction principale avant
-              d’entrer dans la collection en était une de fonctionnalité, de confort ou de parure
-              dans un contexte mobilier, et qui sont considérés comme d’intérêt et de valeur
-              historiques et/ou culturels.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Tangible objects whose primary purpose prior to entering the collection was that of functionality, comfort, or adornment in the context of an interior setting, and are considered to be of historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Objets tangibles dont la fonction principale avant d’entrer dans la collection en était une de fonctionnalité, de confort ou de parure dans un contexte mobilier, et qui sont considérés comme d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="intangible artefacts and traditions">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Intangible creations, works, practices, expressions,
-              representations or skills as well as intellectual heritage such as folklore, customs,
-              beliefs, languages or knowledge that communities, groups, or individuals consider to
-              be of historical and/or cultural interest and value.</xs:documentation>
-            <xs:documentation xml:lang="fr">Créations, œuvres, pratiques, expressions,
-              représentations ou compétences intangibles de même que patrimoines intellectuels tels
-              que le folklore, les coutumes, les croyances, les langues ou les connaissances que les
-              communautés, les groupes ou les individus considèrent comme d’intérêt et de valeur
-              historiques et/ou culturels.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Intangible creations, works, practices, expressions, representations or skills as well as intellectual heritage such as folklore, customs, beliefs, languages or knowledge that communities, groups, or individuals consider to be of historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Créations, œuvres, pratiques, expressions, représentations ou compétences intangibles de même que patrimoines intellectuels tels que le folklore, les coutumes, les croyances, les langues ou les connaissances que les communautés, les groupes ou les individus considèrent comme d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="media and ICT technology">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Objects whose primary medium is of a moving,
-              technological or digital nature (e.g. videos and movies, online contents, data
-              objects, etc.) and are not printed or printable in their entirety (i.e. not
-              photography or prints), and are considered to be of historical and/or cultural
-              interest and value.</xs:documentation>
-            <xs:documentation xml:lang="fr">Objets dont le support principal est de nature mobile,
-              technologique ou numérique (p. ex. vidéos et films, contenus en ligne, objets de
-              données, etc.) et qui ne sont pas imprimés ou imprimables dans leur intégralité
-              (c’est-à-dire pas de photographie ou d’imprimés), et qui sont considérés comme étant
-              de l’intérêt et de la valeur historiques et/ou culturels.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Objects whose primary medium is of a moving, technological or digital nature (e.g. videos and movies, online contents, data objects, etc.) and are not printed or printable in their entirety (i.e. not photography or prints), and are considered to be of historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Objets dont le support principal est de nature mobile, technologique ou numérique (p. ex. vidéos et films, contenus en ligne, objets de données, etc.) et qui ne sont pas imprimés ou imprimables dans leur intégralité (c’est-à-dire pas de photographie ou d’imprimés), et qui sont considérés comme étant de l’intérêt et de la valeur historiques et/ou culturels.</xs:documentation>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="natural artefacts">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Tangible things that are not human-made (e.g. fossils,
-              specimens, biological remains, etc.), and are considered to be of historical and/or
-              cultural interest and value.</xs:documentation>
-            <xs:documentation xml:lang="fr">Choses tangibles qui ne sont pas fabriquées par l’homme
-              (p. ex. fossiles, spécimens, restes biologiques, etc.), et qui sont considérées comme
-              d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Tangible things that are not human-made (e.g. fossils, specimens, biological remains, etc.), and are considered to be of historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Choses tangibles qui ne sont pas fabriquées par l’homme (p. ex. fossiles, spécimens, restes biologiques, etc.), et qui sont considérées comme d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="painting">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Tangible creations whose primary medium or formal
-              characteristic is paint (e.g. oil paint, watercolours, ink, etc.) applied to a
-              secondary support (e.g. canvas, cardboard, paper, etc.), and which are considered to
-              be of historical and/or cultural interest and value.</xs:documentation>
-            <xs:documentation xml:lang="fr">Créations tangibles dont le médium ou la caractéristique
-              principal·e est la peinture (p. ex. peinture à l’huile, aquarelles, encre, etc.)
-              appliquée à un soutien secondaire (p. ex. toile, carton, papier, etc.), et qui sont
-              considérées comme d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Tangible creations whose primary medium or formal characteristic is paint (e.g. oil paint, watercolours, ink, etc.) applied to a secondary support (e.g. canvas, cardboard, paper, etc.), and which are considered to be of historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Créations tangibles dont le médium ou la caractéristique principal·e est la peinture (p. ex. peinture à l’huile, aquarelles, encre, etc.) appliquée à un soutien secondaire (p. ex. toile, carton, papier, etc.), et qui sont considérées comme d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="performing and performance arts">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Intangible creations whose primary formal
-              characteristics are their performance by beings (e.g. theatre, music, dance, art
-              happening, etc.), and which are considered to be of historical and/or cultural
-              interest and value.</xs:documentation>
-            <xs:documentation xml:lang="fr">Créations intangibles dont la principale caractéristique
-              formelle est la performance par les êtres (p. ex. théâtre, musique, danse, happening,
-              etc.), et qui sont considérées comme d’intérêt et de valeur historiques et/ou
-              culturels.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Intangible creations whose primary formal characteristics are their performance by beings (e.g. theatre, music, dance, art happening, etc.), and which are considered to be of historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Créations intangibles dont la principale caractéristique formelle est la performance par les êtres (p. ex. théâtre, musique, danse, happening, etc.), et qui sont considérées comme d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="photography">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Creations whose primary formal characteristic derives
-              from recording light (i.e. electronically or chemically), and whose entirety is
-              intended to be rendered in two dimensions (e.g. photographic film, digital pictures,
-              etc.), and which are considered to be of historical and/or cultural interest and
-              value.</xs:documentation>
-            <xs:documentation xml:lang="fr">Créations dont la caractéristique formelle principale
-              découle de l’enregistrement de la lumière (c’est-à-dire électroniquement ou
-              chimiquement), et dont l’intégralité est destinée à être rendue en deux dimensions (p.
-              ex. film photographique, images numériques, etc.), et qui sont considérées comme
-              d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Creations whose primary formal characteristic derives from recording light (i.e. electronically or chemically), and whose entirety is intended to be rendered in two dimensions (e.g. photographic film, digital pictures, etc.), and which are considered to be of historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Créations dont la caractéristique formelle principale découle de l’enregistrement de la lumière (c’est-à-dire électroniquement ou chimiquement), et dont l’intégralité est destinée à être rendue en deux dimensions (p. ex. film photographique, images numériques, etc.), et qui sont considérées comme d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="ceramics">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Objects primarily made of inorganic baked materials that
-              are not metallic (e.g. porcelain, tile, earthenware, etc.) and whose primary purpose
-              when entering the collection is artistic or archæological, and are considered to be of
-              historical and/or cultural interest and value.</xs:documentation>
-            <xs:documentation xml:lang="fr">Objets principalement fabriqués de matériaux
-              inorganiques cuits au four qui ne sont pas métalliques (p. ex. porcelaine, tuile,
-              terre cuite, etc.) et dont le but principal lors de l’introduction dans la collection
-              est artistique ou archéologique, et qui sont considérés comme d’intérêt et de valeur
-              historiques et/ou culturels.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Objects primarily made of inorganic baked materials that are not metallic (e.g. porcelain, tile, earthenware, etc.) and whose primary purpose when entering the collection is artistic or archæological, and are considered to be of historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Objets principalement fabriqués de matériaux inorganiques cuits au four qui ne sont pas métalliques (p. ex. porcelaine, tuile, terre cuite, etc.) et dont le but principal lors de l’introduction dans la collection est artistique ou archéologique, et qui sont considérés comme d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="prints and drawings">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Tangible creations whose primary formal characteristic
-              derives from manual processes that result in works whose entirety is intended to be
-              rendered in two dimensions (e.g. calligraphic renderings, aquatints, line
-              representations, etc.), and which are considered to be of historical and/or cultural
-              interest and value.</xs:documentation>
-            <xs:documentation xml:lang="fr">Créations tangibles dont la caractéristique formelle
-              principale dérive de processus manuels qui se traduisent par des œuvres dont
-              l’intégralité est destinée à être rendue en deux dimensions (p. ex. rendus
-              calligraphiques, aquatintes, dessins au trait, etc.), et qui sont considérés comme
-              d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Tangible creations whose primary formal characteristic derives from manual processes that result in works whose entirety is intended to be rendered in two dimensions (e.g. calligraphic renderings, aquatints, line representations, etc.), and which are considered to be of historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Créations tangibles dont la caractéristique formelle principale dérive de processus manuels qui se traduisent par des œuvres dont l’intégralité est destinée à être rendue en deux dimensions (p. ex. rendus calligraphiques, aquatintes, dessins au trait, etc.), et qui sont considérés comme d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="sculpture">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Tangible creations whose primary medium or formal
-              characteristic is non-moving three-dimensionality (e.g. carvings, 3D prints,
-              assemblages, etc.), and which are considered to be of historical and/or cultural
-              interest and value.</xs:documentation>
-            <xs:documentation xml:lang="fr">Créations tangibles dont le principal médium
-              caractéristique formelle est la tridimensionnalité non mobile (p. ex. sculptures,
-              imprimés 3D, assemblages, etc.), et qui sont considérés comme d’intérêt et de valeur
-              historiques et/ou culturels.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Tangible creations whose primary medium or formal characteristic is non-moving three-dimensionality (e.g. carvings, 3D prints, assemblages, etc.), and which are considered to be of historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Créations tangibles dont le principal médium caractéristique formelle est la tridimensionnalité non mobile (p. ex. sculptures, imprimés 3D, assemblages, etc.), et qui sont considérés comme d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="tools and equipments">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Supplies originally created to manage, oversee, capture,
-              harvest, or collect resources, and/or to transform or modify particular raw or
-              processed materials, and which are considered to be of historical and/or cultural
-              interest and value.</xs:documentation>
-            <xs:documentation xml:lang="fr">Fournitures à l’origine créées pour gérer, superviser,
-              capturer, récolter ou collecter des ressources, et/ou pour transformer ou modifier des
-              matériaux bruts ou traités particuliers, et qui sont considérés comme d’intérêt et de
-              valeur historiques et/ou culturels.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Supplies originally created to manage, oversee, capture, harvest, or collect resources, and/or to transform or modify particular raw or processed materials, and which are considered to be of historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Fournitures à l’origine créées pour gérer, superviser, capturer, récolter ou collecter des ressources, et/ou pour transformer ou modifier des matériaux bruts ou traités particuliers, et qui sont considérés comme d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="actors lives and stories">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Recorded accounts of specific people or groups of people
-              who are considered to be of historical and/or cultural interest and value.</xs:documentation>
-            <xs:documentation xml:lang="fr">Récits enregistrés de personnes ou de groupes
-              spécifiques de personnes qui sont considérées comme d’intérêt et de valeur historiques
-              et/ou culturels.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Recorded accounts of specific people or groups of people who are considered to be of historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Récits enregistrés de personnes ou de groupes spécifiques de personnes qui sont considérées comme d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="clothing and adornment">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Tangible objects whose primary purpose prior to entering
-              the collection was that of functionality, comfort, or adornment intended for an
-              individual (e.g. clothes, jewelry, handbags, etc.), and are considered to be of
-              historical and/or cultural interest and value.</xs:documentation>
-            <xs:documentation xml:lang="fr">Objets tangibles dont la fonction principale avant
-              d’entrer dans la collection en était une de fonctionnalité, de confort ou de parure
-              pour un individu (p. ex. vêtements, bijoux, sacs à main, etc.), et qui sont considérés
-              comme d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Tangible objects whose primary purpose prior to entering the collection was that of functionality, comfort, or adornment intended for an individual (e.g. clothes, jewelry, handbags, etc.), and are considered to be of historical and/or cultural interest and value.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Objets tangibles dont la fonction principale avant d’entrer dans la collection en était une de fonctionnalité, de confort ou de parure pour un individu (p. ex. vêtements, bijoux, sacs à main, etc.), et qui sont considérés comme d’intérêt et de valeur historiques et/ou culturels.</xs:documentation>
           </xs:annotation>
         </xs:enumeration>
         <xs:enumeration value="unspecified">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Elements of a collection whose primary characteristics
-              or nature are not described or readily available.</xs:documentation>
-            <xs:documentation xml:lang="fr">Éléments d’une collection dont la nature ou les
-              caractéristiques principales ne sont pas décrites ou facilement accessibles.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Elements of a collection whose primary characteristics or nature are not described or readily available.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Éléments d’une collection dont la nature ou les caractéristiques principales ne sont pas décrites ou facilement accessibles.</xs:documentation>
           </xs:annotation>
         </xs:enumeration>
       </xs:restriction>
     </xs:simpleType>
   </xs:element>
-
   <xs:element name="address">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Postal address of the institution.
-        Largely specific to museumscan: neither LMCO nor the OpenGLAM
-        Survey publish a structured street address in their dictionaries;
-        only region/country have a clear source counterpart (see below),
-        the rest is compiled independently by the museumscan
-        project.</xs:documentation>
-      <xs:documentation xml:lang="fr">Adresse postale de l’institution.
-        Largement propre à museumscan : ni le PCMEC ni l’OpenGLAM Survey
-        ne publient d’adresse postale structurée dans leurs dictionnaires ;
-        seuls region/country ont un correspondant source clair (voir plus
-        bas), le reste étant compilé indépendamment par le projet
-        museumscan.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Postal address of the institution. Largely specific to museumscan: neither LMCO nor the OpenGLAM Survey publish a structured street address in their dictionaries; only region/country have a clear source counterpart (see below), the rest is compiled independently by the museumscan project.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Adresse postale de l’institution. Largement propre à museumscan : ni le PCMEC ni l’OpenGLAM Survey ne publient d’adresse postale structurée dans leurs dictionnaires ; seuls region/country ont un correspondant source clair (voir plus bas), le reste étant compilé indépendamment par le projet museumscan.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <!-- Order below follows main.xml, where every address is
-           street, settlement, postCode, region, country; district (not
-           yet attested in main.xml, only sketched in model.xml) is
-           slotted in right after street. -->
+      <!-- Order below follows main.xml, where every address is street, settlement, postCode, region, country; district (not yet attested in main.xml, only sketched in model.xml) is slotted in right after street. -->
       <xs:sequence>
         <xs:element name="street" minOccurs="0" maxOccurs="1">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Street name and number.
-              Specific to museumscan.</xs:documentation>
-            <xs:documentation xml:lang="fr">Nom et numéro de rue. Propre
-              à museumscan.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Street name and number. Specific to museumscan.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Nom et numéro de rue. Propre à museumscan.</xs:documentation>
           </xs:annotation>
           <xs:complexType mixed="true">
             <xs:choice minOccurs="1" maxOccurs="unbounded">
-              <xs:element name="num" minOccurs="0" maxOccurs="1" type="xs:string" />
-              <xs:group ref="pLike" minOccurs="1" maxOccurs="unbounded" />
+              <xs:element name="num" minOccurs="0" maxOccurs="1" type="xs:string"/>
+              <xs:group ref="pLike" minOccurs="1" maxOccurs="unbounded"/>
             </xs:choice>
           </xs:complexType>
         </xs:element>
-        <xs:element ref="district" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element ref="district" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element name="settlement" minOccurs="1" maxOccurs="1" type="xs:string">
           <xs:annotation>
-            <xs:documentation xml:lang="en">City or town where the
-              institution is located. Compare to the champsDescription.md
-              draft’s "ville_fr"/"ville_eng" (there sourced to the Société
-              des musées du Québec, SMQ), not attested in the LMCO
-              dictionary reviewed here.</xs:documentation>
-            <xs:documentation xml:lang="fr">Ville où se situe
-              l’institution. À rapprocher des champs « ville_fr »/
-              « ville_eng » de l’ébauche champsDescription.md (source SMQ,
-              Société des musées du Québec), non attestés dans le
-              dictionnaire du PCMEC examiné ici.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >City or town where the institution is located. Compare to the champsDescription.md draft’s <html:code>ville_fr</html:code>/<html:code>ville_eng</html:code> (there sourced to the Société des musées du Québec, SMQ), not attested in the LMCO dictionary reviewed here.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Ville où se situe l’institution. À rapprocher des champs <html:code>ville_fr</html:code>/<html:code>ville_eng</html:code> de l’ébauche champsDescription.md (source SMQ, Société des musées du Québec), non attestés dans le dictionnaire du PCMEC examiné ici.</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="postCode" minOccurs="1" maxOccurs="1" type="xs:string">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Postal code. Specific to
-              museumscan.</xs:documentation>
-            <xs:documentation xml:lang="fr">Code postal. Propre à
-              museumscan.</xs:documentation>
+            <xs:documentation xml:lang="en">Postal code. Specific to museumscan.</xs:documentation>
+            <xs:documentation xml:lang="fr">Code postal. Propre à museumscan.</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="region" minOccurs="1" maxOccurs="1" type="xs:string">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Province or territory of the
-              institution. Source: LMCO, attribute "Province/Territory"
-              [Enum: AB, YT, NU, NT, BC, SK, MB, ON, QC, NB, NS, NL] —
-              museumscan currently records the full name rather than the
-              two-letter code, and reuses the same value to head each
-              listOrg section. Note: the champsDescription.md draft
-              additionally distinguishes a finer administrative "région"
-              (source: SMQ), not modelled separately here yet.</xs:documentation>
-            <xs:documentation xml:lang="fr">Province ou territoire de
-              l’institution. Source : PCMEC, attribut « Province /
-              Territoire » [Enum : AB, YT, NU, NT, BC, SK, MB, ON, QC, NB,
-              NS, NL] — museumscan enregistre actuellement le nom complet
-              plutôt que le code à deux lettres, et réutilise la même
-              valeur pour intituler chaque section listOrg. Remarque :
-              l’ébauche champsDescription.md distingue en outre une
-              « région » administrative plus fine (source : SMQ), non
-              encore modélisée séparément ici.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Province or territory of the institution. Source: LMCO, attribute <html:code>Province/Territory</html:code> [Enum: AB, YT, NU, NT, BC, SK, MB, ON, QC, NB, NS, NL] — museumscan currently records the full name rather than the two-letter code, and reuses the same value to head each listOrg section. Note: the champsDescription.md draft additionally distinguishes a finer administrative "région" (source: SMQ), not modelled separately here yet.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Province ou territoire de l’institution. Source : PCMEC, attribut <html:code>Province / Territoire</html:code> [Enum : AB, YT, NU, NT, BC, SK, MB, ON, QC, NB, NS, NL] — museumscan enregistre actuellement le nom complet plutôt que le code à deux lettres, et réutilise la même valeur pour intituler chaque section listOrg. Remarque : l’ébauche champsDescription.md distingue en outre une « région » administrative plus fine (source : SMQ), non encore modélisée séparément ici.</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="country" minOccurs="1" maxOccurs="1" type="xs:string">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Country where the institution
-              is located. Source: OpenGLAM Survey, field
-              "Country".</xs:documentation>
-            <xs:documentation xml:lang="fr">Pays où se situe
-              l’institution. Source : OpenGLAM Survey, champ
-              « Country ».</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Country where the institution is located. Source: OpenGLAM Survey, field <html:code>Country</html:code>.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Pays où se situe l’institution. Source : OpenGLAM Survey, champ <html:code>Country</html:code>.</xs:documentation>
           </xs:annotation>
         </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="district">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A named sub-area of the settlement
-        (e.g. a borough/"arrondissement"), typed by @type. Specific to
-        museumscan; not attested in LMCO or the OpenGLAM Survey. The
-        commented-out Schematron rule below anticipates a future
-        @type="economical" district for economic-zone analysis.</xs:documentation>
-      <xs:documentation xml:lang="fr">Une subdivision nommée de la ville
-        (p. ex. un arrondissement), typée par @type. Propre à museumscan ;
-        non attesté dans le PCMEC ni dans l’OpenGLAM Survey. La règle
-        Schematron mise en commentaire ci-dessous anticipe un futur
-        district @type="economical" pour l’analyse par zone
-        économique.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >A named sub-area of the settlement (e.g. a borough/"arrondissement"), typed by @type. Specific to museumscan; not attested in LMCO or the OpenGLAM Survey. The commented-out Schematron rule below anticipates a future @type="economical" district for economic-zone analysis.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Une subdivision nommée de la ville (p. ex. un arrondissement), typée par @type. Propre à museumscan ; non attesté dans le PCMEC ni dans l’OpenGLAM Survey. La règle Schematron mise en commentaire ci-dessous anticipe un futur district @type="economical" pour l’analyse par zone économique.</xs:documentation>
     </xs:annotation>
     <xs:complexType mixed="true">
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:group ref="pLike" minOccurs="0" maxOccurs="unbounded" />
+        <xs:group ref="pLike" minOccurs="0" maxOccurs="unbounded"/>
       </xs:choice>
       <xs:attribute name="type" type="xs:string">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Kind of district (e.g.
-            "arrondissement"). Free string for now (see @todo
-            below).</xs:documentation>
-          <xs:documentation xml:lang="fr">Type de district (p. ex.
-            « arrondissement »). Chaîne libre pour le moment (voir @todo
-            ci-dessous).</xs:documentation>
+          <xs:documentation xml:lang="en"
+            >Kind of district (e.g. "arrondissement"). Free string for now (see @todo below).</xs:documentation>
+          <xs:documentation xml:lang="fr"
+            >Type de district (p. ex. « arrondissement »). Chaîne libre pour le moment (voir @todo ci-dessous).</xs:documentation>
         </xs:annotation>
       </xs:attribute>
     </xs:complexType>
   </xs:element>
-
   <!-- @todo revoir -->
-  <!--
-  <sch:rule context="address">
-  <sch:assert test="district[@type=’economical’]">
-    Un district de type "economical" est obligatoire dans address.
-  </sch:assert>
-</sch:rule>
--->
-
+  <!-- <sch:rule context="address"> <sch:assert test="district[@type=’economical’]"> Un district de type "economical" est obligatoire dans address. </sch:assert> </sch:rule> -->
   <xs:element name="demographics">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Container for the spatial-analysis
-        and cross-dataset-matching attributes that LMCO appends to each
-        record (all marked with an asterisk in the LMCO dictionary,
-        meaning they are not subject to LMCO’s collection "Timestamp"
-        since they are generated or matched separately).</xs:documentation>
-      <xs:documentation xml:lang="fr">Conteneur pour les attributs
-        d’analyse spatiale et d’appariement à d’autres jeux de données que
-        le PCMEC ajoute à chaque enregistrement (tous marqués d’un
-        astérisque dans le dictionnaire du PCMEC, signifiant qu’ils ne
-        sont pas soumis à l’« Estampille temporelle » de collecte du
-        PCMEC puisqu’ils sont générés ou appariés
-        séparément).</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Container for the spatial-analysis and cross-dataset-matching attributes that LMCO appends to each record (all marked with an asterisk in the LMCO dictionary, meaning they are not subject to LMCO’s collection <html:code>Timestamp</html:code> since they are generated or matched separately).</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Conteneur pour les attributs d’analyse spatiale et d’appariement à d’autres jeux de données que le PCMEC ajoute à chaque enregistrement (tous marqués d’un astérisque dans le dictionnaire du PCMEC, signifiant qu’ils ne sont pas soumis à l’« Estampille temporelle » de collecte du PCMEC puisqu’ils sont générés ou appariés séparément).</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
         <xs:element name="distance" minOccurs="0" maxOccurs="1" type="xs:string">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Distance, in kilometres, to
-              the nearest other institution in the list. Source: LMCO,
-              attribute "Distance to Nearest Neighbour*" (floating point,
-              generated via QGIS spatial analysis over LMCO’s own
-              institution list — figures here may not be meaningful
-              unless computed over the same, complete
-              list).</xs:documentation>
-            <xs:documentation xml:lang="fr">Distance, en kilomètres, à
-              l’institution la plus proche dans la liste. Source : PCMEC,
-              attribut « Distance par rapport au voisin le plus proche* »
-              (virgule flottante, générée par analyse spatiale QGIS sur la
-              liste d’institutions du PCMEC — les valeurs ici ne sont
-              significatives que si elles sont calculées sur cette même
-              liste complète).</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Distance, in kilometres, to the nearest other institution in the list. Source: LMCO, attribute <html:code>Distance to Nearest Neighbour*</html:code> (floating point, generated via QGIS spatial analysis over LMCO’s own institution list — figures here may not be meaningful unless computed over the same, complete list).</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Distance, en kilomètres, à l’institution la plus proche dans la liste. Source : PCMEC, attribut <html:code>Distance par rapport au voisin le plus proche*</html:code> (virgule flottante, générée par analyse spatiale QGIS sur la liste d’institutions du PCMEC — les valeurs ici ne sont significatives que si elles sont calculées sur cette même liste complète).</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="density" minOccurs="0" maxOccurs="1" type="xs:string">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Number of other institutions
-              in the list within a 100km radius. Source: LMCO, attribute
-              "Count of institutions within 100km radius*" (integer,
-              generated via QGIS spatial analysis — same caveat as
-              distance above).</xs:documentation>
-            <xs:documentation xml:lang="fr">Nombre d’autres institutions
-              de la liste situées dans un rayon de 100 km. Source : PCMEC,
-              attribut « Nombre d’institutions dans un rayon de 100km* »
-              (nombre entier, généré par analyse spatiale QGIS — même
-              réserve que pour distance ci-dessus).</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Number of other institutions in the list within a 100km radius. Source: LMCO, attribute <html:code>Count of institutions within 100km radius*</html:code> (integer, generated via QGIS spatial analysis — same caveat as distance above).</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Nombre d’autres institutions de la liste situées dans un rayon de 100 km. Source : PCMEC, attribut <html:code>Nombre d’institutions dans un rayon de 100km*</html:code> (nombre entier, généré par analyse spatiale QGIS — même réserve que pour distance ci-dessus).</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="bdoica" minOccurs="0" maxOccurs="1" type="xs:string">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Whether the institution has
-              been matched to a record in the Open Database of Cultural
-              and Art Facilities (ODCAF). Source: LMCO, attribute
-              "ODCAF*" (boolean). Named "bdoica" here after the French
-              name of the same database, BDOICA (Base de données ouvertes
-              sur les installations culturelles et
-              artistiques).</xs:documentation>
-            <xs:documentation xml:lang="fr">Indique si l’institution a pu
-              être associée à un enregistrement de la Base de données
-              ouvertes sur les installations culturelles et artistiques
-              (BDOICA). Source : PCMEC, attribut « BDOICA* » (booléen),
-              nommé ici d’après cet acronyme français (en anglais : ODCAF,
-              Open Database of Cultural and Art
-              Facilities).</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Whether the institution has been matched to a record in the Open Database of Cultural and Art Facilities (ODCAF). Source: LMCO, attribute <html:code>ODCAF*</html:code> (boolean). Named "bdoica" here after the French name of the same database, BDOICA (Base de données ouvertes sur les installations culturelles et artistiques).</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Indique si l’institution a pu être associée à un enregistrement de la Base de données ouvertes sur les installations culturelles et artistiques (BDOICA). Source : PCMEC, attribut <html:code>BDOICA*</html:code> (booléen), nommé ici d’après cet acronyme français (en anglais : ODCAF, Open Database of Cultural and Art Facilities).</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="arc" minOccurs="0" maxOccurs="1" type="xs:string">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Whether the institution is
-              registered as a charitable organization with the Canada
-              Revenue Agency (CRA). Source: LMCO, attribute "CRA*"
-              (boolean). Named "arc" here after the French name of the
-              same agency, ARC (Agence du revenu du
-              Canada).</xs:documentation>
-            <xs:documentation xml:lang="fr">Indique si l’institution est
-              enregistrée en tant qu’organisme de bienfaisance auprès de
-              l’Agence du revenu du Canada (ARC). Source : PCMEC, attribut
-              « ARC* » (booléen).</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Whether the institution is registered as a charitable organization with the Canada Revenue Agency (CRA). Source: LMCO, attribute <html:code>CRA*</html:code> (boolean). Named "arc" here after the French name of the same agency, ARC (Agence du revenu du Canada).</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Indique si l’institution est enregistrée en tant qu’organisme de bienfaisance auprès de l’Agence du revenu du Canada (ARC). Source : PCMEC, attribut <html:code>ARC*</html:code> (booléen).</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="idusr" minOccurs="0" maxOccurs="1" type="xs:string">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Unique identifier of the
-              institution’s census subdivision, generated via spatial
-              analysis against Statistics Canada’s 2022 Census Subdivision
-              Boundary File. Source: LMCO, attribute "CSDUID*"
-              (alphanumeric). Named "idusr" here after the French name of
-              the same attribute, IDUSR (identifiant unique de subdivision
-              de recensement).</xs:documentation>
-            <xs:documentation xml:lang="fr">Identifiant unique de la
-              subdivision de recensement de l’institution, généré par
-              analyse spatiale sur la base du Fichier des limites des
-              subdivisions de recensement (2022) de Statistique Canada.
-              Source : PCMEC, attribut « IDUSR* »
-              (alphanumérique).</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Unique identifier of the institution’s census subdivision, generated via spatial analysis against Statistics Canada’s 2022 Census Subdivision Boundary File. Source: LMCO, attribute <html:code>CSDUID*</html:code> (alphanumeric). Named "idusr" here after the French name of the same attribute, IDUSR (identifiant unique de subdivision de recensement).</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Identifiant unique de la subdivision de recensement de l’institution, généré par analyse spatiale sur la base du Fichier des limites des subdivisions de recensement (2022) de Statistique Canada. Source : PCMEC, attribut <html:code>IDUSR*</html:code> (alphanumérique).</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="cnsilb" minOccurs="0" maxOccurs="1" type="xs:string">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Unique identifier (HEXuid) in
-              the National Broadband Map, maintained by Innovation,
-              Science and Economic Development Canada, associated with
-              the institution’s location. Source: LMCO, attribute
-              "National Broadband Map*" (alphanumeric). Named "cnsilb"
-              here after the French name of the same map, CNSILB (Carte
-              nationale des services Internet à large
-              bande).</xs:documentation>
-            <xs:documentation xml:lang="fr">Identifiant unique (HEXuid)
-              dans la Carte nationale des services Internet à large bande
-              (CNSILB), maintenue par Innovation, Sciences et
-              Développement économique Canada, associé à la localisation
-              de l’institution. Source : PCMEC, attribut « Carte nationale
-              des services Internet à large bande* »
-              (alphanumérique).</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Unique identifier (HEXuid) in the National Broadband Map, maintained by Innovation, Science and Economic Development Canada, associated with the institution’s location. Source: LMCO, attribute <html:code>National Broadband Map*</html:code> (alphanumeric). Named "cnsilb" here after the French name of the same map, CNSILB (Carte nationale des services Internet à large bande).</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Identifiant unique (HEXuid) dans la Carte nationale des services Internet à large bande (CNSILB), maintenue par Innovation, Sciences et Développement économique Canada, associé à la localisation de l’institution. Source : PCMEC, attribut <html:code>Carte nationale des services Internet à large bande*</html:code> (alphanumérique).</xs:documentation>
           </xs:annotation>
         </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="accessibility">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Conditions under which the
-        institution can be visited.</xs:documentation>
-      <xs:documentation xml:lang="fr">Conditions d’accès et de visite de
-        l’institution.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Conditions under which the institution can be visited.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Conditions d’accès et de visite de l’institution.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
         <xs:element name="admission" minOccurs="1" maxOccurs="1">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Current admission/operating
-              status. Source: OpenGLAM Survey, field "Admission" [Free,
-              Paid, Temporarily closed, Permanently closed, Information
-              needed]. The "on appointment" value is added by museumscan
-              from LMCO’s boolean attribute "Appointment Only" (true only
-              when LMCO’s "Seasonal Institution" is also true); it is
-              specific to the LMCO side of the mapping and still needs an
-              OpenGLAM Survey-side fallback (see the inline
-              comment).</xs:documentation>
-            <xs:documentation xml:lang="fr">Statut d’accès/d’ouverture
-              actuel. Source : OpenGLAM Survey, champ « Admission » [Free,
-              Paid, Temporarily closed, Permanently closed, Information
-              needed]. La valeur « on appointment » est ajoutée par
-              museumscan à partir de l’attribut booléen « Rendez-vous
-              seulement » du PCMEC (vrai uniquement lorsque « Institution
-              saisonnière » du PCMEC est également vrai) ; elle est propre
-              au versant PCMEC de la correspondance et nécessite encore
-              une valeur de repli côté OpenGLAM Survey (voir le
-              commentaire ci-dessous).</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Current admission/operating status. Source: OpenGLAM Survey, field <html:code>Admission</html:code> [Free, Paid, Temporarily closed, Permanently closed, Information needed]. The "on appointment" value is added by museumscan from LMCO’s boolean attribute <html:code>Appointment Only</html:code> (true only when LMCO’s <html:code>Seasonal Institution</html:code> is also true); it is specific to the LMCO side of the mapping and still needs an OpenGLAM Survey-side fallback (see the inline comment).</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Statut d’accès/d’ouverture actuel. Source : OpenGLAM Survey, champ <html:code>Admission</html:code> [Free, Paid, Temporarily closed, Permanently closed, Information needed]. La valeur « on appointment » est ajoutée par museumscan à partir de l’attribut booléen <html:code>Rendez-vous seulement</html:code> du PCMEC (vrai uniquement lorsque <html:code>Institution saisonnière</html:code> du PCMEC est également vrai) ; elle est propre au versant PCMEC de la correspondance et nécessite encore une valeur de repli côté OpenGLAM Survey (voir le commentaire ci-dessous).</xs:documentation>
           </xs:annotation>
           <xs:simpleType>
             <xs:restriction base="xs:string">
-              <xs:enumeration value="free" />
-              <xs:enumeration value="paid" />
-              <xs:enumeration value="temporarly closed" />
-              <xs:enumeration value="permanently closed" />
-              <xs:enumeration value="on appointment" />
+              <xs:enumeration value="free"/>
+              <xs:enumeration value="paid"/>
+              <xs:enumeration value="temporarly closed"/>
+              <xs:enumeration value="permanently closed"/>
+              <xs:enumeration value="on appointment"/>
               <!-- only for CHIN, add a fallback for ogs -->
-              <xs:enumeration value="information needed"></xs:enumeration>
+              <xs:enumeration value="information needed"/>
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
         <xs:element name="saisonnial" minOccurs="0" maxOccurs="1">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Container for the
-              institution’s seasonal opening period, when it does not
-              operate year-round. Its presence corresponds to LMCO’s
-              boolean attribute "Seasonal Institution" being
-              true.</xs:documentation>
-            <xs:documentation xml:lang="fr">Conteneur pour la période
-              d’ouverture saisonnière de l’institution, lorsqu’elle
-              n’opère pas à l’année. Sa présence correspond à une valeur
-              « vrai » pour l’attribut booléen « Institution saisonnière »
-              du PCMEC.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Container for the institution’s seasonal opening period, when it does not operate year-round. Its presence corresponds to LMCO’s boolean attribute <html:code>Seasonal Institution</html:code> being true.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Conteneur pour la période d’ouverture saisonnière de l’institution, lorsqu’elle n’opère pas à l’année. Sa présence correspond à une valeur « vrai » pour l’attribut booléen <html:code>Institution saisonnière</html:code> du PCMEC.</xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:choice minOccurs="1" maxOccurs="2">
               <xs:element name="start" minOccurs="1" maxOccurs="1">
                 <xs:annotation>
-                  <xs:documentation xml:lang="en">Month the season starts
-                    (01-12). Source: LMCO, attribute "Season Start" [Enum:
-                    1-12, "?" for unknown]. museumscan currently requires
-                    a zero-padded two-digit month and has no "?" fallback
-                    for the unknown case documented by LMCO (see the
-                    top-of-file @todo on date
-                    intervals).</xs:documentation>
-                  <xs:documentation xml:lang="fr">Mois de début de la
-                    saison (01-12). Source : PCMEC, attribut « Début de la
-                    saison » [Enum : 1-12, « ? » si inconnu]. museumscan
-                    exige actuellement un mois à deux chiffres et ne
-                    prévoit pas encore de valeur de repli « ? » pour le
-                    cas « inconnu » documenté par le PCMEC (voir le @todo
-                    sur les intervalles de dates en tête de
-                    fichier).</xs:documentation>
+                  <xs:documentation xml:lang="en"
+                    >Month the season starts (01-12). Source: LMCO, attribute <html:code>Season Start</html:code> [Enum: 1-12, "?" for unknown]. museumscan currently requires a zero-padded two-digit month and has no "?" fallback for the unknown case documented by LMCO (see the top-of-file @todo on date intervals).</xs:documentation>
+                  <xs:documentation xml:lang="fr"
+                    >Mois de début de la saison (01-12). Source : PCMEC, attribut <html:code>Début de la saison</html:code> [Enum : 1-12, « ? » si inconnu]. museumscan exige actuellement un mois à deux chiffres et ne prévoit pas encore de valeur de repli « ? » pour le cas « inconnu » documenté par le PCMEC (voir le @todo sur les intervalles de dates en tête de fichier).</xs:documentation>
                 </xs:annotation>
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
-                    <xs:pattern value="0[1-9]|1[0-2]" />
+                    <xs:pattern value="0[1-9]|1[0-2]"/>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
               <xs:element name="end" minOccurs="1" maxOccurs="1">
                 <xs:annotation>
-                  <xs:documentation xml:lang="en">Month the season ends
-                    (01-12). Source: LMCO, attribute "Season End" — same
-                    format and caveat as start above.</xs:documentation>
-                  <xs:documentation xml:lang="fr">Mois de fin de la
-                    saison (01-12). Source : PCMEC, attribut « Fin de la
-                    saison » — même format et même réserve que start
-                    ci-dessus.</xs:documentation>
+                  <xs:documentation xml:lang="en"
+                    >Month the season ends (01-12). Source: LMCO, attribute <html:code>Season End</html:code> — same format and caveat as start above.</xs:documentation>
+                  <xs:documentation xml:lang="fr"
+                    >Mois de fin de la saison (01-12). Source : PCMEC, attribut <html:code>Fin de la saison</html:code> — même format et même réserve que start ci-dessus.</xs:documentation>
                 </xs:annotation>
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
-                    <xs:pattern value="0[1-9]|1[0-2]" />
+                    <xs:pattern value="0[1-9]|1[0-2]"/>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
@@ -1264,75 +783,46 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="online">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Container for the institution’s
-        online offers other than the collection itself, and its social
-        media / website presence.</xs:documentation>
-      <xs:documentation xml:lang="fr">Conteneur pour les offres en ligne
-        de l’institution autres que la collection elle-même, ainsi que sa
-        présence sur les médias sociaux et le web.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Container for the institution’s online offers other than the collection itself, and its social media / website presence.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Conteneur pour les offres en ligne de l’institution autres que la collection elle-même, ainsi que sa présence sur les médias sociaux et le web.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <!-- Order below follows main.xml: exhibitions, education,
-           specialized, social, idno(website). exhibitions/education/
-           specialized are repeatable (an org may list more than one link
-           of the same kind, as MBAM does for education). -->
+      <!-- Order below follows main.xml: exhibitions, education, specialized, social, idno(website). exhibitions/education/ specialized are repeatable (an org may list more than one link of the same kind, as MBAM does for education). -->
       <xs:sequence>
         <xs:element name="exhibitions" type="xs:string" minOccurs="0" maxOccurs="unbounded">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Link to an online exhibition.
-              Source: OpenGLAM Survey, "Online Offers" value A
-              ("Exhibition": online display of an exhibit, permanent or
-              not, on the organization’s website or elsewhere).</xs:documentation>
-            <xs:documentation xml:lang="fr">Lien vers une exposition en
-              ligne. Source : OpenGLAM Survey, valeur A d’« Online
-              Offers » (« Exhibition » : présentation en ligne d’une
-              exposition, permanente ou non, sur le site de l’organisation
-              ou ailleurs).</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Link to an online exhibition. Source: OpenGLAM Survey, <html:code>Online Offers</html:code> value A (<html:code>Exhibition</html:code>: online display of an exhibit, permanent or not, on the organization’s website or elsewhere).</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Lien vers une exposition en ligne. Source : OpenGLAM Survey, valeur A d’<html:code>Online Offers</html:code> (« Exhibition » : présentation en ligne d’une exposition, permanente ou non, sur le site de l’organisation ou ailleurs).</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="education" type="xs:string" minOccurs="0" maxOccurs="unbounded">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Link to educational content.
-              Source: OpenGLAM Survey, "Online Offers" value B
-              ("Educational Programme": pedagogical or didactic content
-              pertaining to the collection or events).</xs:documentation>
-            <xs:documentation xml:lang="fr">Lien vers un contenu éducatif.
-              Source : OpenGLAM Survey, valeur B d’« Online Offers »
-              (« Educational Programme » : contenu pédagogique ou
-              didactique relatif à la collection ou à des
-              événements).</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Link to educational content. Source: OpenGLAM Survey, <html:code>Online Offers</html:code> value B (<html:code>Educational Programme</html:code>: pedagogical or didactic content pertaining to the collection or events).</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Lien vers un contenu éducatif. Source : OpenGLAM Survey, valeur B d’<html:code>Online Offers</html:code> (« Educational Programme » : contenu pédagogique ou didactique relatif à la collection ou à des événements).</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="specialized" type="xs:string" minOccurs="0" maxOccurs="unbounded">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Link to specialized/research
-              content. Source: OpenGLAM Survey, "Online Offers" value C
-              ("Specialist Programme": specialized or research content
-              pertaining to the collection or events).</xs:documentation>
-            <xs:documentation xml:lang="fr">Lien vers un contenu
-              spécialisé ou de recherche. Source : OpenGLAM Survey, valeur
-              C d’« Online Offers » (« Specialist Programme » : contenu
-              spécialisé ou de recherche relatif à la collection ou à des
-              événements).</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Link to specialized/research content. Source: OpenGLAM Survey, <html:code>Online Offers</html:code> value C (<html:code>Specialist Programme</html:code>: specialized or research content pertaining to the collection or events).</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Lien vers un contenu spécialisé ou de recherche. Source : OpenGLAM Survey, valeur C d’<html:code>Online Offers</html:code> (« Specialist Programme » : contenu spécialisé ou de recherche relatif à la collection ou à des événements).</xs:documentation>
           </xs:annotation>
         </xs:element>
         <xs:element name="social" minOccurs="0" maxOccurs="1">
           <xs:annotation>
-            <xs:documentation xml:lang="en">Container for links to the
-              institution’s own social media accounts. Source: LMCO,
-              boolean attributes "Presence on Facebook/Instagram/
-              Twitter(X)/YouTube" — museumscan records the account URL
-              itself (via a typed idno) rather than a plain
-              boolean.</xs:documentation>
-            <xs:documentation xml:lang="fr">Conteneur pour les liens vers
-              les comptes de médias sociaux propres à l’institution.
-              Source : PCMEC, attributs booléens « Présence sur
-              Facebook/Instagram/Twitter(X)/YouTube » — museumscan
-              enregistre l’URL du compte elle-même (via un idno typé)
-              plutôt qu’un simple booléen.</xs:documentation>
+            <xs:documentation xml:lang="en"
+              >Container for links to the institution’s own social media accounts. Source: LMCO, boolean attributes <html:code>Presence on Facebook/Instagram/ Twitter(X)/YouTube</html:code> — museumscan records the account URL itself (via a typed idno) rather than a plain boolean.</xs:documentation>
+            <xs:documentation xml:lang="fr"
+              >Conteneur pour les liens vers les comptes de médias sociaux propres à l’institution. Source : PCMEC, attributs booléens <html:code>Présence sur Facebook/Instagram/Twitter(X)/YouTube</html:code> — museumscan enregistre l’URL du compte elle-même (via un idno typé) plutôt qu’un simple booléen.</xs:documentation>
           </xs:annotation>
           <xs:complexType>
             <xs:sequence minOccurs="1" maxOccurs="unbounded">
@@ -1340,421 +830,261 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element ref="idno" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element ref="idno" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="desc">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A free-text, dated, bilingual
-        description block about some aspect of the institution (e.g. its
-        collections, its copyright/reuse policy), identified by @type.
-        Specific to museumscan: neither LMCO nor the OpenGLAM Survey carry
-        free descriptive text in their published datasets.</xs:documentation>
-      <xs:documentation xml:lang="fr">Un bloc de description en texte
-        libre, daté et bilingue, portant sur un aspect de l’institution
-        (p. ex. ses collections, sa politique de droits/réutilisation),
-        identifié par @type. Propre à museumscan : ni le PCMEC ni
-        l’OpenGLAM Survey ne portent de texte descriptif libre dans leur
-        jeu de données publié.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >A free-text, dated, bilingual description block about some aspect of the institution (e.g. its collections, its copyright/reuse policy), identified by @type. Specific to museumscan: neither LMCO nor the OpenGLAM Survey carry free descriptive text in their published datasets.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Un bloc de description en texte libre, daté et bilingue, portant sur un aspect de l’institution (p. ex. ses collections, sa politique de droits/réutilisation), identifié par @type. Propre à museumscan : ni le PCMEC ni l’OpenGLAM Survey ne portent de texte descriptif libre dans leur jeu de données publié.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <!-- Order below follows main.xml: one or more p, then an optional
-           trailing idno (some placeholder desc blocks in main.xml have
-           no idno yet). -->
+      <!-- Order below follows main.xml: one or more p, then an optional trailing idno (some placeholder desc blocks in main.xml have no idno yet). -->
       <xs:sequence>
         <xs:element ref="p" minOccurs="1" maxOccurs="unbounded"/>
         <xs:element ref="idno" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="type" type="xs:string">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Topic of the description (e.g.
-            "collections", "copyright"). Free string for now (see @todo
-            below).</xs:documentation>
-          <xs:documentation xml:lang="fr">Sujet de la description (p. ex.
-            « collections », « copyright »). Chaîne libre pour le moment
-            (voir @todo ci-dessous).</xs:documentation>
+          <xs:documentation xml:lang="en"
+            >Topic of the description (e.g. "collections", "copyright"). Free string for now (see @todo below).</xs:documentation>
+          <xs:documentation xml:lang="fr"
+            >Sujet de la description (p. ex. « collections », « copyright »). Chaîne libre pour le moment (voir @todo ci-dessous).</xs:documentation>
         </xs:annotation>
       </xs:attribute>
       <!-- @todo rendre le type obligatoire et prédéfinir les valeurs -->
       <xs:attribute name="when" type="dateValue">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Date the description was
-            recorded or last checked.</xs:documentation>
-          <xs:documentation xml:lang="fr">Date à laquelle la description
-            a été relevée ou dernièrement vérifiée.</xs:documentation>
+          <xs:documentation xml:lang="en"
+            >Date the description was recorded or last checked.</xs:documentation>
+          <xs:documentation xml:lang="fr"
+            >Date à laquelle la description a été relevée ou dernièrement vérifiée.</xs:documentation>
         </xs:annotation>
       </xs:attribute>
       <xs:attribute ref="xml:lang"/>
     </xs:complexType>
   </xs:element>
-
-  <!-- ============ 4. AVAILABILITY & DISSEMINATION / DISPONIBILITÉ ET DIFFUSION ============ -->
-
+  <!-- 4. AVAILABILITY & DISSEMINATION / DISPONIBILITÉ ET DIFFUSION -->
   <xs:element name="availability">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A dated snapshot of the
-        institution’s open-access status: its overall scope, plus a
-        breakdown per dissemination channel. Combines OpenGLAM Survey’s
-        "Open Access Scope"/"Open Access Policy"/"First Open Access
-        Instance" (the @when attribute) with a museumscan-specific
-        per-platform dissemination structure (see
-        dissemination).</xs:documentation>
-      <xs:documentation xml:lang="fr">Un instantané daté du statut de
-        libre accès de l’institution : sa portée générale, ainsi qu’une
-        ventilation par canal de diffusion. Combine les champs « Open
-        Access Scope »/« Open Access Policy »/« First Open Access
-        Instance » de l’OpenGLAM Survey (l’attribut @when) avec une
-        structure de diffusion par plateforme propre à museumscan (voir
-        dissemination).</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >A dated snapshot of the institution’s open-access status: its overall scope, plus a breakdown per dissemination channel. Combines OpenGLAM Survey’s <html:code>Open Access Scope</html:code>/<html:code>Open Access Policy</html:code>/<html:code>First Open Access Instance</html:code> (the @when attribute) with a museumscan-specific per-platform dissemination structure (see dissemination).</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Un instantané daté du statut de libre accès de l’institution : sa portée générale, ainsi qu’une ventilation par canal de diffusion. Combine les champs <html:code>Open Access Scope</html:code>/<html:code>Open Access Policy</html:code>/<html:code>First Open Access Instance</html:code> de l’OpenGLAM Survey (l’attribut @when) avec une structure de diffusion par plateforme propre à museumscan (voir dissemination).</xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <!-- Order below follows main.xml: scope, note, dissemination(s).
-           volume/licence/idno are not used directly under availability in
-           current data (they appear inside the nested dissemination
-           breakdown instead) but remain available here, after
-           dissemination, should a top-level summary ever be needed. -->
+      <!-- Order below follows main.xml: scope, note, dissemination(s). volume/licence/idno are not used directly under availability in current data (they appear inside the nested dissemination breakdown instead) but remain available here, after dissemination, should a top-level summary ever be needed. -->
       <xs:sequence>
         <xs:element ref="scope" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="note" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element ref="dissemination" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element ref="volume" minOccurs="0" maxOccurs="1"/>
-        <xs:element ref="licence"  minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="idno"  minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="licence" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="idno" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:attribute name="when"  type="dateValue">
+      <xs:attribute name="when" type="dateValue">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Date this availability snapshot
-            was recorded. Compare to OpenGLAM Survey’s "First Open Access
-            Instance" when used for the first/founding
-            record.</xs:documentation>
-          <xs:documentation xml:lang="fr">Date à laquelle cet instantané
-            de disponibilité a été relevé. À rapprocher du champ « First
-            Open Access Instance » de l’OpenGLAM Survey lorsqu’il s’agit
-            du tout premier constat.</xs:documentation>
+          <xs:documentation xml:lang="en"
+            >Date this availability snapshot was recorded. Compare to OpenGLAM Survey’s <html:code>First Open Access Instance</html:code> when used for the first/founding record.</xs:documentation>
+          <xs:documentation xml:lang="fr"
+            >Date à laquelle cet instantané de disponibilité a été relevé. À rapprocher du champ <html:code>First Open Access Instance</html:code> de l’OpenGLAM Survey lorsqu’il s’agit du tout premier constat.</xs:documentation>
         </xs:annotation>
       </xs:attribute>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="dissemination">
     <xs:annotation>
-      <xs:documentation xml:lang="en">One channel or platform through
-        which the institution’s data, metadata, or digital surrogates are
-        disseminated, typed by @type. Candidate @type values in use or
-        under discussion (see the project’s model.xml working notes), with
-        their grounding: "openData" and "collectionsOnline" break down
-        OpenGLAM Survey’s per-platform "Volume"/"Total" and LMCO’s "Online
-        Collection Type"; "api" corresponds to LMCO’s boolean "Public
-        API"; "artefactsCanada" to LMCO’s boolean "Artefacts Canada";
-        "donnéesQuébec" to LMCO’s Quebec-specific boolean "Données
-        Québec*"; "flickrCommons" to the "Flickr Commons" value of
-        OpenGLAM Survey’s "Platform" field; "wikidata"/"wikicommons" are
-        used under the wikimedia element (see there). "git" and "iiif"
-        have no counterpart in either source dataset and are
-        museumscan-specific candidates, not yet settled (see the
-        commented @quest notes in model.xml). @type is still an open
-        xs:string rather than a formal enumeration (see @todo
-        below).</xs:documentation>
-      <xs:documentation xml:lang="fr">Un canal ou une plateforme par
-        lequel(le) les données, métadonnées ou substituts numériques de
-        l’institution sont diffusés, typé par @type. Valeurs de @type
-        utilisées ou en discussion (voir les notes de travail du projet
-        dans model.xml), avec leur ancrage : « openData » et
-        « collectionsOnline » ventilent les champs « Volume »/« Total »
-        par plateforme de l’OpenGLAM Survey et le « Online Collection
-        Type » du PCMEC ; « api » correspond à l’attribut booléen
-        « Public API » du PCMEC ; « artefactsCanada » à l’attribut booléen
-        « Artefacts Canada » du PCMEC ; « donnéesQuébec » à l’attribut
-        booléen spécifique au Québec « Données Québec* » du PCMEC ;
-        « flickrCommons » à la valeur « Flickr Commons » du champ
-        « Platform » de l’OpenGLAM Survey ; « wikidata »/« wikicommons »
-        sont utilisés sous l’élément wikimedia (voir celui-ci). « git » et
-        « iiif » n’ont pas de correspondant dans les jeux de données
-        source et sont des valeurs candidates propres à museumscan,
-        encore non stabilisées (voir les notes @quest mises en commentaire
-        dans model.xml). @type reste pour l’instant une chaîne libre plutôt
-        qu’une énumération formelle (voir @todo ci-dessous).</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >One channel or platform through which the institution’s data, metadata, or digital surrogates are disseminated, typed by @type. Candidate @type values in use or under discussion (see the project’s model.xml working notes), with their grounding: "openData" and "collectionsOnline" break down OpenGLAM Survey’s per-platform <html:code>Volume</html:code>/<html:code>Total</html:code> and LMCO’s <html:code>Online Collection Type</html:code>; "api" corresponds to LMCO’s boolean <html:code>Public API</html:code>; "artefactsCanada" to LMCO’s boolean <html:code>Artefacts Canada</html:code>; "donnéesQuébec" to LMCO’s Quebec-specific boolean <html:code>Données Québec*</html:code>; "flickrCommons" to the <html:code>Flickr Commons</html:code> value of OpenGLAM Survey’s <html:code>Platform</html:code> field; "wikidata"/"wikicommons" are used under the wikimedia element (see there). "git" and "iiif" have no counterpart in either source dataset and are museumscan-specific candidates, not yet settled (see the commented @quest notes in model.xml). @type is still an open xs:string rather than a formal enumeration (see @todo below).</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Un canal ou une plateforme par lequel(le) les données, métadonnées ou substituts numériques de l’institution sont diffusés, typé par @type. Valeurs de @type utilisées ou en discussion (voir les notes de travail du projet dans model.xml), avec leur ancrage : « openData » et « collectionsOnline » ventilent les champs <html:code>Volume</html:code>/<html:code>Total</html:code> par plateforme de l’OpenGLAM Survey et le <html:code>Online Collection Type</html:code> du PCMEC ; « api » correspond à l’attribut booléen <html:code>Public API</html:code> du PCMEC ; « artefactsCanada » à l’attribut booléen <html:code>Artefacts Canada</html:code> du PCMEC ; « donnéesQuébec » à l’attribut booléen spécifique au Québec <html:code>Données Québec*</html:code> du PCMEC ; « flickrCommons » à la valeur <html:code>Flickr Commons</html:code> du champ <html:code>Platform</html:code> de l’OpenGLAM Survey ; « wikidata »/« wikicommons » sont utilisés sous l’élément wikimedia (voir celui-ci). « git » et « iiif » n’ont pas de correspondant dans les jeux de données source et sont des valeurs candidates propres à museumscan, encore non stabilisées (voir les notes @quest mises en commentaire dans model.xml). @type reste pour l’instant une chaîne libre plutôt qu’une énumération formelle (voir @todo ci-dessous).</xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <!-- Order below follows the dominant pattern in main.xml: scope,
-           volume, note, licence(s), idno — e.g. wikidata/wikicommons/
-           flickrCommons dissemination blocks are all scope-volume-note(-
-           licence)(-idno). Two collectionsOnline blocks in main.xml put
-           volume before scope, against their own siblings' pattern and
-           against every other dissemination in the file; that looks like
-           a data slip rather than the intended order, so the majority
-           pattern was kept here. Nested dissemination (self-reference)
-           is not currently used cleanly in main.xml; it is kept, slotted
-           after note, for future hierarchical breakdowns. -->
+      <!-- Order below follows the dominant pattern in main.xml: scope, volume, note, licence(s), idno — e.g. wikidata/wikicommons/ flickrCommons dissemination blocks are all scope-volume-note(- licence)(-idno). Two collectionsOnline blocks in main.xml put volume before scope, against their own siblings' pattern and against every other dissemination in the file; that looks like a data slip rather than the intended order, so the majority pattern was kept here. Nested dissemination (self-reference) is not currently used cleanly in main.xml; it is kept, slotted after note, for future hierarchical breakdowns. -->
       <xs:sequence>
         <xs:element ref="scope" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="volume" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="note" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element ref="dissemination" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="licence"  minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="idno"  minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="licence" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="idno" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:attribute name="type"  type="xs:string">
+      <xs:attribute name="type" type="xs:string">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Which channel/platform this
-            dissemination act concerns (see the element-level
-            documentation above for attested values and their
-            source).</xs:documentation>
-          <xs:documentation xml:lang="fr">Quel canal/quelle plateforme
-            concerne cet acte de diffusion (voir la documentation de
-            l’élément ci-dessus pour les valeurs attestées et leur
-            source).</xs:documentation>
+          <xs:documentation xml:lang="en"
+            >Which channel/platform this dissemination act concerns (see the element-level documentation above for attested values and their source).</xs:documentation>
+          <xs:documentation xml:lang="fr"
+            >Quel canal/quelle plateforme concerne cet acte de diffusion (voir la documentation de l’élément ci-dessus pour les valeurs attestées et leur source).</xs:documentation>
         </xs:annotation>
       </xs:attribute>
       <!-- @todo add values -->
-      <xs:attribute name="when"  type="dateValue">
+      <xs:attribute name="when" type="dateValue">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Date this dissemination act was
-            recorded or launched.</xs:documentation>
-          <xs:documentation xml:lang="fr">Date à laquelle cet acte de
-            diffusion a été relevé ou lancé.</xs:documentation>
+          <xs:documentation xml:lang="en"
+            >Date this dissemination act was recorded or launched.</xs:documentation>
+          <xs:documentation xml:lang="fr"
+            >Date à laquelle cet acte de diffusion a été relevé ou lancé.</xs:documentation>
         </xs:annotation>
       </xs:attribute>
     </xs:complexType>
   </xs:element>
+<<<<<<< HEAD
    <!-- mettre les commentaires pour lister d'oú viennent les différents champs-->
     <!-- reste TK et TCE, SGBD, metadata et consistance -->
 
+=======
+>>>>>>> 38e6f8a (feat: restructuration du schema)
   <xs:element name="wikimedia">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Container for the institution’s
-        presence on Wikidata and Wikimedia Commons. Adapted and expanded
-        by museumscan from LMCO’s single boolean attribute "Wikipedia*"
-        (whether the institution has been matched to a Wikipedia entry)
-        into a richer structure distinguishing Wikidata and Wikimedia
-        Commons, each with its own dissemination (scope, volume, idno).
-        Echoes, on the OpenGLAM Survey side, the "Wikidata" URL field and
-        the "Wikimedia Commons" value of the "Platform"
-        field.</xs:documentation>
-      <xs:documentation xml:lang="fr">Conteneur pour la présence de
-        l’institution sur Wikidata et Wikimedia Commons. Adapté et
-        développé par museumscan à partir de l’unique attribut booléen
-        « Wikipédia* » du PCMEC (l’institution a-t-elle été associée à une
-        entrée Wikipédia ?), vers une structure plus riche distinguant
-        Wikidata et Wikimedia Commons, chacun avec sa propre diffusion
-        (scope, volume, idno). Fait écho, côté OpenGLAM Survey, au champ
-        URL « Wikidata » et à la valeur « Wikimedia Commons » du champ
-        « Platform ».</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Container for the institution’s presence on Wikidata and Wikimedia Commons. Adapted and expanded by museumscan from LMCO’s single boolean attribute <html:code>Wikipedia*</html:code> (whether the institution has been matched to a Wikipedia entry) into a richer structure distinguishing Wikidata and Wikimedia Commons, each with its own dissemination (scope, volume, idno). Echoes, on the OpenGLAM Survey side, the <html:code>Wikidata</html:code> URL field and the <html:code>Wikimedia Commons</html:code> value of the <html:code>Platform</html:code> field.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Conteneur pour la présence de l’institution sur Wikidata et Wikimedia Commons. Adapté et développé par museumscan à partir de l’unique attribut booléen <html:code>Wikipédia*</html:code> du PCMEC (l’institution a-t-elle été associée à une entrée Wikipédia ?), vers une structure plus riche distinguant Wikidata et Wikimedia Commons, chacun avec sa propre diffusion (scope, volume, idno). Fait écho, côté OpenGLAM Survey, au champ URL <html:code>Wikidata</html:code> et à la valeur <html:code>Wikimedia Commons</html:code> du champ <html:code>Platform</html:code>.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <!-- Order below follows main.xml, where every wikimedia block is
-           note, idno(s), dissemination(s); scope/volume/licence are not
-           used directly under wikimedia in current data (only inside its
-           nested dissemination breakdown) but are kept available, before
-           note, for a future top-level summary. -->
+      <!-- Order below follows main.xml, where every wikimedia block is note, idno(s), dissemination(s); scope/volume/licence are not used directly under wikimedia in current data (only inside its nested dissemination breakdown) but are kept available, before note, for a future top-level summary. -->
       <xs:sequence>
         <xs:element ref="scope" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="volume" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="note" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="idno"  minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="idno" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element ref="dissemination" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="licence"  minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="licence" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:attribute name="when"  type="dateValue">
+      <xs:attribute name="when" type="dateValue">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Date this Wikimedia presence
-            was recorded.</xs:documentation>
-          <xs:documentation xml:lang="fr">Date à laquelle cette présence
-            Wikimedia a été relevée.</xs:documentation>
+          <xs:documentation xml:lang="en"
+            >Date this Wikimedia presence was recorded.</xs:documentation>
+          <xs:documentation xml:lang="fr"
+            >Date à laquelle cette présence Wikimedia a été relevée.</xs:documentation>
         </xs:annotation>
       </xs:attribute>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="scope">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Free-text description of what is
-        covered by the enclosing element. Directly under availability, it
-        corresponds to OpenGLAM Survey’s "Open Access Scope" field ["All
-        eligible data" / "Some eligible data"], here left as free text
-        rather than constrained to those two values. Under a nested
-        dissemination or under wikimedia, it is museumscan-specific free
-        text with no direct source counterpart.</xs:documentation>
-      <xs:documentation xml:lang="fr">Description en texte libre de ce que
-        couvre l’élément englobant. Directement sous availability, elle
-        correspond au champ « Open Access Scope » de l’OpenGLAM Survey
-        [« All eligible data » / « Some eligible data »], laissé ici en
-        texte libre plutôt que contraint à ces deux valeurs. Sous une
-        dissemination imbriquée ou sous wikimedia, il s’agit d’un texte
-        libre propre à museumscan, sans correspondant source
-        direct.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Free-text description of what is covered by the enclosing element. Directly under availability, it corresponds to OpenGLAM Survey’s <html:code>Open Access Scope</html:code> field [<html:code>All eligible data</html:code> / <html:code>Some eligible data</html:code>], here left as free text rather than constrained to those two values. Under a nested dissemination or under wikimedia, it is museumscan-specific free text with no direct source counterpart.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Description en texte libre de ce que couvre l’élément englobant. Directement sous availability, elle correspond au champ <html:code>Open Access Scope</html:code> de l’OpenGLAM Survey [<html:code>All eligible data</html:code> / <html:code>Some eligible data</html:code>], laissé ici en texte libre plutôt que contraint à ces deux valeurs. Sous une dissemination imbriquée ou sous wikimedia, il s’agit d’un texte libre propre à museumscan, sans correspondant source direct.</xs:documentation>
     </xs:annotation>
     <xs:complexType mixed="true">
       <xs:sequence minOccurs="0" maxOccurs="unbounded">
-        <xs:element ref="p" />
+        <xs:element ref="p"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="volume" type="xs:integer">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A count associated with the
-        enclosing dissemination act. Under a "collectionsOnline"
-        dissemination, corresponds to OpenGLAM Survey’s "Total" (total
-        number of open digital surrogates published) and to LMCO’s
-        "Number of Online Collection Records"; more generally corresponds
-        to OpenGLAM Survey’s per-platform "Volume" field.</xs:documentation>
-      <xs:documentation xml:lang="fr">Un décompte associé à l’acte de
-        diffusion englobant. Sous une dissemination de type
-        « collectionsOnline », correspond au champ « Total » de l’OpenGLAM
-        Survey (nombre total de substituts numériques ouverts publiés) et
-        au « Nombre d’enregistrements de collection en ligne » du PCMEC ;
-        plus généralement, correspond au champ « Volume » par plateforme
-        de l’OpenGLAM Survey.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >A count associated with the enclosing dissemination act. Under a "collectionsOnline" dissemination, corresponds to OpenGLAM Survey’s <html:code>Total</html:code> (total number of open digital surrogates published) and to LMCO’s <html:code>Number of Online Collection Records</html:code>; more generally corresponds to OpenGLAM Survey’s per-platform <html:code>Volume</html:code> field.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Un décompte associé à l’acte de diffusion englobant. Sous une dissemination de type « collectionsOnline », correspond au champ <html:code>Total</html:code> de l’OpenGLAM Survey (nombre total de substituts numériques ouverts publiés) et au <html:code>Nombre d’enregistrements de collection en ligne</html:code> du PCMEC ; plus généralement, correspond au champ <html:code>Volume</html:code> par plateforme de l’OpenGLAM Survey.</xs:documentation>
     </xs:annotation>
   </xs:element>
-
   <xs:element name="licence">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A licence or rights statement URL
-        applying to the enclosing dissemination. Source: OpenGLAM Survey,
-        "Machine-Readable Statements" (CC0, PDM, CC BY, CC BY-SA,
-        RightsStatements.org designations, national open licences, or
-        "Other").</xs:documentation>
-      <xs:documentation xml:lang="fr">Une URL de licence ou de mention de
-        droits s’appliquant à la diffusion englobante. Source : OpenGLAM
-        Survey, « Machine-Readable Statements » (CC0, PDM, CC BY, CC
-        BY-SA, mentions RightsStatements.org, licences ouvertes
-        nationales, ou « Other »).</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >A licence or rights statement URL applying to the enclosing dissemination. Source: OpenGLAM Survey, <html:code>Machine-Readable Statements</html:code> (CC0, PDM, CC BY, CC BY-SA, RightsStatements.org designations, national open licences, or "Other").</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Une URL de licence ou de mention de droits s’appliquant à la diffusion englobante. Source : OpenGLAM Survey, <html:code>Machine-Readable Statements</html:code> (CC0, PDM, CC BY, CC BY-SA, mentions RightsStatements.org, licences ouvertes nationales, ou « Other »).</xs:documentation>
     </xs:annotation>
     <xs:complexType mixed="true">
       <xs:sequence minOccurs="0" maxOccurs="unbounded">
-        <xs:element ref="p" />
+        <xs:element ref="p"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
-  <!-- ============ 5. GENERIC TEXT / MARKUP VOCABULARY / VOCABULAIRE GÉNÉRIQUE DE TEXTE ============ -->
-
+  <!-- 5. GENERIC TEXT / MARKUP VOCABULARY / VOCABULAIRE GÉNÉRIQUE DE TEXTE -->
   <xs:element name="div">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Generic block-level container
-        (heading + paragraphs/lists), for structuring longer free-text
-        zones. Generic structural markup, not tied to LMCO or the
-        OpenGLAM Survey.</xs:documentation>
-      <xs:documentation xml:lang="fr">Conteneur générique de niveau bloc
-        (intitulé + paragraphes/listes), pour structurer les zones de
-        texte libre plus longues. Balisage structurel générique, sans
-        lien avec le PCMEC ou l’OpenGLAM Survey.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Generic block-level container (heading + paragraphs/lists), for structuring longer free-text zones. Generic structural markup, not tied to LMCO or the OpenGLAM Survey.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Conteneur générique de niveau bloc (intitulé + paragraphes/listes), pour structurer les zones de texte libre plus longues. Balisage structurel générique, sans lien avec le PCMEC ou l’OpenGLAM Survey.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element ref="head" />
-        <xs:element ref="p" />
-        <xs:element ref="list" />
+        <xs:element ref="head"/>
+        <xs:element ref="p"/>
+        <xs:element ref="list"/>
       </xs:choice>
-      <xs:attributeGroup ref="globalAtts" />
+      <xs:attributeGroup ref="globalAtts"/>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="note">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A free-text annotation attached to
-        the enclosing element (e.g. caveats, methodological remarks,
-        quoted source text). Generic structural markup, not tied to LMCO
-        or the OpenGLAM Survey, used throughout to carry the kind of
-        commentary those datasets do not have room for.</xs:documentation>
-      <xs:documentation xml:lang="fr">Une annotation en texte libre
-        rattachée à l’élément englobant (p. ex. réserves, remarques
-        méthodologiques, texte de source cité). Balisage structurel
-        générique, sans lien avec le PCMEC ou l’OpenGLAM Survey, utilisé
-        dans tout le schéma pour porter le type de commentaire que ces
-        jeux de données n’ont pas la place d’accueillir.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >A free-text annotation attached to the enclosing element (e.g. caveats, methodological remarks, quoted source text). Generic structural markup, not tied to LMCO or the OpenGLAM Survey, used throughout to carry the kind of commentary those datasets do not have room for.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Une annotation en texte libre rattachée à l’élément englobant (p. ex. réserves, remarques méthodologiques, texte de source cité). Balisage structurel générique, sans lien avec le PCMEC ou l’OpenGLAM Survey, utilisé dans tout le schéma pour porter le type de commentaire que ces jeux de données n’ont pas la place d’accueillir.</xs:documentation>
     </xs:annotation>
     <xs:complexType mixed="true">
       <xs:sequence>
-        <xs:element ref="p" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element ref="p" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
-      <xs:attributeGroup ref="globalAtts" />
+      <xs:attributeGroup ref="globalAtts"/>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="list">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A generic list of items
-        (li).</xs:documentation>
-      <xs:documentation xml:lang="fr">Une liste générique
-        d’items (li).</xs:documentation>
+      <xs:documentation xml:lang="en">A generic list of items (li).</xs:documentation>
+      <xs:documentation xml:lang="fr">Une liste générique d’items (li).</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence minOccurs="1" maxOccurs="unbounded">
-        <xs:element ref="li" />
+        <xs:element ref="li"/>
       </xs:sequence>
-      <xs:attributeGroup ref="globalAtts" />
+      <xs:attributeGroup ref="globalAtts"/>
     </xs:complexType>
   </xs:element>
-
   <xs:group name="pLike">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Generic inline markup allowed inside
-        prose-like elements (orgName, acronym, title, head, li, p,
-        district, street): ref (a plain-text reference), sup
-        (superscript), em (emphasis) and strong (strong emphasis). Generic
-        structural markup, not tied to LMCO or the OpenGLAM
-        Survey.</xs:documentation>
-      <xs:documentation xml:lang="fr">Balisage en ligne générique autorisé
-        à l’intérieur des éléments de texte libre (orgName, acronym,
-        title, head, li, p, district, street) : ref (une référence en
-        texte simple), sup (exposant), em (emphase) et strong (emphase
-        forte). Balisage structurel générique, sans lien avec le PCMEC ou
-        l’OpenGLAM Survey.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Generic inline markup allowed inside prose-like elements (orgName, acronym, title, head, li, p, district, street): ref (a plain-text reference), sup (superscript), em (emphasis) and strong (strong emphasis). Generic structural markup, not tied to LMCO or the OpenGLAM Survey.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Balisage en ligne générique autorisé à l’intérieur des éléments de texte libre (orgName, acronym, title, head, li, p, district, street) : ref (une référence en texte simple), sup (exposant), em (emphase) et strong (emphase forte). Balisage structurel générique, sans lien avec le PCMEC ou l’OpenGLAM Survey.</xs:documentation>
     </xs:annotation>
     <xs:choice>
-      <xs:element name="ref" type="xs:string" />
-      <xs:element name="sup" type="xs:string" />
-      <xs:element ref="em" />
-      <xs:element ref="strong" />
+      <xs:element name="ref" type="xs:string"/>
+      <xs:element name="sup" type="xs:string"/>
+      <xs:element ref="em"/>
+      <xs:element ref="strong"/>
     </xs:choice>
   </xs:group>
-
   <xs:element name="title" type="proseContent">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Title of the museumscan document,
-        in the language given by @xml:lang. Specific to
-        museumscan.</xs:documentation>
-      <xs:documentation xml:lang="fr">Titre du document museumscan, dans
-        la langue indiquée par @xml:lang. Propre à
-        museumscan.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Title of the museumscan document, in the language given by @xml:lang. Specific to museumscan.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Titre du document museumscan, dans la langue indiquée par @xml:lang. Propre à museumscan.</xs:documentation>
     </xs:annotation>
   </xs:element>
-
   <xs:element name="head" type="proseContent">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Heading/label for the enclosing
-        list or section (e.g. a province/territory name heading a
-        listOrg). Generic structural markup.</xs:documentation>
-      <xs:documentation xml:lang="fr">Intitulé de la liste ou de la
-        section englobante (p. ex. le nom d’une province ou d’un
-        territoire en tête d’un listOrg). Balisage structurel
-        générique.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >Heading/label for the enclosing list or section (e.g. a province/territory name heading a listOrg). Generic structural markup.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Intitulé de la liste ou de la section englobante (p. ex. le nom d’une province ou d’un territoire en tête d’un listOrg). Balisage structurel générique.</xs:documentation>
     </xs:annotation>
   </xs:element>
-
   <xs:element name="li" type="proseContent">
     <xs:annotation>
       <xs:documentation xml:lang="en">A list item.</xs:documentation>
       <xs:documentation xml:lang="fr">Un élément de liste.</xs:documentation>
     </xs:annotation>
   </xs:element>
-
   <xs:element name="p" type="proseContent">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A generic paragraph of free-running
-        text, used throughout the schema wherever prose is
-        needed.</xs:documentation>
-      <xs:documentation xml:lang="fr">Un paragraphe générique de texte
-        continu, utilisé dans tout le schéma partout où du texte libre est
-        nécessaire.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >A generic paragraph of free-running text, used throughout the schema wherever prose is needed.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Un paragraphe générique de texte continu, utilisé dans tout le schéma partout où du texte libre est nécessaire.</xs:documentation>
     </xs:annotation>
   </xs:element>
-
   <xs:element name="em">
     <xs:annotation>
       <xs:documentation xml:lang="en">Inline emphasis.</xs:documentation>
@@ -1762,11 +1092,10 @@
     </xs:annotation>
     <xs:complexType mixed="true">
       <xs:sequence minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="sup" type="xs:string" />
+        <xs:element name="sup" type="xs:string"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="strong">
     <xs:annotation>
       <xs:documentation xml:lang="en">Inline strong emphasis.</xs:documentation>
@@ -1774,70 +1103,50 @@
     </xs:annotation>
     <xs:complexType mixed="true">
       <xs:sequence minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="sup" type="xs:string" />
+        <xs:element name="sup" type="xs:string"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="idno">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A URI-typed identifier or link,
-        whose @type records what it points to (e.g. "website",
-        "facebook", "institution", "collection", "dataset"). Used
-        throughout museumscan to record, as a concrete URL, information
-        LMCO and the OpenGLAM Survey often carry as a plain boolean or
-        as a dedicated single-purpose field (e.g. LMCO’s "Presence on
-        Facebook", OpenGLAM Survey’s "Website"/"Wikidata"
-        fields).</xs:documentation>
-      <xs:documentation xml:lang="fr">Un identifiant ou lien typé URI,
-        dont @type indique ce qu’il désigne (p. ex. « website »,
-        « facebook », « institution », « collection », « dataset »).
-        Utilisé dans tout museumscan pour enregistrer, sous forme d’URL
-        concrète, une information que le PCMEC et l’OpenGLAM Survey
-        portent souvent comme simple booléen ou comme champ dédié à usage
-        unique (p. ex. « Présence sur Facebook » du PCMEC, champs
-        « Website »/« Wikidata » de l’OpenGLAM Survey).</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >A URI-typed identifier or link, whose @type records what it points to (e.g. "website", "facebook", "institution", "collection", "dataset"). Used throughout museumscan to record, as a concrete URL, information LMCO and the OpenGLAM Survey often carry as a plain boolean or as a dedicated single-purpose field (e.g. LMCO’s <html:code>Presence on Facebook</html:code>, OpenGLAM Survey’s <html:code>Website</html:code>/"Wikidata" fields).</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Un identifiant ou lien typé URI, dont @type indique ce qu’il désigne (p. ex. « website », « facebook », « institution », « collection », « dataset »). Utilisé dans tout museumscan pour enregistrer, sous forme d’URL concrète, une information que le PCMEC et l’OpenGLAM Survey portent souvent comme simple booléen ou comme champ dédié à usage unique (p. ex. <html:code>Présence sur Facebook</html:code> du PCMEC, champs <html:code>Website</html:code>/<html:code>Wikidata</html:code> de l’OpenGLAM Survey).</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:simpleContent>
         <xs:extension base="xs:anyURI">
           <xs:attribute name="type" type="xs:string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">What this identifier points
-                to or represents.</xs:documentation>
-              <xs:documentation xml:lang="fr">Ce que désigne ou
-                représente cet identifiant.</xs:documentation>
+              <xs:documentation xml:lang="en"
+                >What this identifier points to or represents.</xs:documentation>
+              <xs:documentation xml:lang="fr"
+                >Ce que désigne ou représente cet identifiant.</xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:extension>
       </xs:simpleContent>
     </xs:complexType>
   </xs:element>
-
   <xs:element name="ref">
     <xs:annotation>
-      <xs:documentation xml:lang="en">An inline hyperlink for use inside
-        prose (e.g. inside source, note). Generic structural markup, not
-        tied to LMCO or the OpenGLAM Survey.</xs:documentation>
-      <xs:documentation xml:lang="fr">Un lien hypertexte en ligne, à
-        l’intérieur d’un texte libre (p. ex. dans source, note). Balisage
-        structurel générique, sans lien avec le PCMEC ou l’OpenGLAM
-        Survey.</xs:documentation>
+      <xs:documentation xml:lang="en"
+        >An inline hyperlink for use inside prose (e.g. inside source, note). Generic structural markup, not tied to LMCO or the OpenGLAM Survey.</xs:documentation>
+      <xs:documentation xml:lang="fr"
+        >Un lien hypertexte en ligne, à l’intérieur d’un texte libre (p. ex. dans source, note). Balisage structurel générique, sans lien avec le PCMEC ou l’OpenGLAM Survey.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:simpleContent>
         <xs:extension base="xs:anyURI">
           <xs:attribute name="href" type="xs:anyURI">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Target URL of the
-                link.</xs:documentation>
-              <xs:documentation xml:lang="fr">URL cible du
-                lien.</xs:documentation>
+              <xs:documentation xml:lang="en">Target URL of the link.</xs:documentation>
+              <xs:documentation xml:lang="fr">URL cible du lien.</xs:documentation>
             </xs:annotation>
           </xs:attribute>
         </xs:extension>
       </xs:simpleContent>
     </xs:complexType>
   </xs:element>
-
 </xs:schema>
