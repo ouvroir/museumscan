@@ -26,7 +26,7 @@
         <org xml:id="muse0000">
             <orgName xml:lang="fr">Musée des beaux-arts de Montréal</orgName>
             <!-- ogs: Institution -->
-            <acronym>e</acronym>
+            <acronym>MBAM</acronym>
             <orgName xml:lang="en">Montréal Museum of Fine Arts</orgName>
             <!-- ogs: ENG -->
             <operational>
@@ -39,7 +39,7 @@
                     </source>
                 </budget>
                 <administration></administration>
-                 <!-- définir les modalités d'administration ex: financement pv etc. -->
+                <!-- définir les modalités d'administration ex: financement, privé etc. -->
             </operational>
             <!-- pour les regroupements <listOrg></listOrg> -->
             <orgType>aggregator</orgType>
