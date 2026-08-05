@@ -225,7 +225,7 @@
         <xs:element ref="online" minOccurs="1" maxOccurs="1"/>
         <xs:element ref="desc" minOccurs="1" maxOccurs="unbounded"/>
         <xs:element ref="availability" minOccurs="1" maxOccurs="unbounded"/>
-        <xs:element ref="wikimedia" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="wikimedia" minOccurs="1" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attributeGroup ref="globalAtts"/>
     </xs:complexType>
@@ -274,12 +274,8 @@
       </xs:attribute>
     </xs:complexType>
   </xs:element>
-<<<<<<< HEAD
   <!-- add amount pour le budget-->
   <!-- add from="2024" to="2025"-->
-
-=======
->>>>>>> 38e6f8a (feat: restructuration du schema)
   <!-- @todo -->
   <xs:element name="administration">
     <!-- faire une liste (ouverte ou fermée?) des différents types de musée : musée national, personne morale à but non lucratif -->
@@ -880,10 +876,10 @@
       <xs:sequence>
         <xs:element ref="scope" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="note" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="dissemination" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element ref="volume" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="licence" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element ref="idno" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="dissemination" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="when" type="dateValue">
         <xs:annotation>
@@ -908,9 +904,8 @@
         <xs:element ref="scope" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="volume" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="note" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="dissemination" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="licence" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element ref="idno" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="licence" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="type" type="xs:string">
         <xs:annotation>
@@ -931,12 +926,8 @@
       </xs:attribute>
     </xs:complexType>
   </xs:element>
-<<<<<<< HEAD
    <!-- mettre les commentaires pour lister d'oú viennent les différents champs-->
     <!-- reste TK et TCE, SGBD, metadata et consistance -->
-
-=======
->>>>>>> 38e6f8a (feat: restructuration du schema)
   <xs:element name="wikimedia">
     <xs:annotation>
       <xs:documentation xml:lang="en"
