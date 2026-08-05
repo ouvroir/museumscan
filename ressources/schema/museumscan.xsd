@@ -615,6 +615,7 @@
             <xs:documentation xml:lang="fr"
               >Province ou territoire de l’institution. Source : PCMEC, attribut <html:code>Province / Territoire</html:code> [Enum : AB, YT, NU, NT, BC, SK, MB, ON, QC, NB, NS, NL] — museumscan enregistre actuellement le nom complet plutôt que le code à deux lettres, et réutilise la même valeur pour intituler chaque section listOrg. Remarque : l’ébauche champsDescription.md distingue en outre une « région » administrative plus fine (source : SMQ), non encore modélisée séparément ici.</xs:documentation>
           </xs:annotation>
+          <!-- comment on documente la région administrative ? -->
         </xs:element>
         <xs:element name="country" minOccurs="1" maxOccurs="1" type="xs:string">
           <xs:annotation>

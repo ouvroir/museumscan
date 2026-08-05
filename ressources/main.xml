@@ -859,7 +859,9 @@
                         <note><p>Première diffusion des données ouvertes du musée, sur Données Québec. Plusieurs jeux de données sont disponibles : "MAC : données sur les œuvres de la collection relevant du domaine public (avec images)" et "Données du MACrépertoire (œuvres, artistes, évènevements et publications)".</p></note>
                         <idno>https://macrepertoire.macm.org/donnees-ouvertes</idno>
                         <idno type="dataset">https://www.donneesquebec.ca/recherche/dataset/collection-musee-art-contemporain-de-montreal-oeuvres-du-domaine-public</idno>
-                        <idno when="2022-11-19" type="dataset">https://www.donneesquebec.ca/recherche/dataset/macrepertoire</idno>
+                    </dissemination>
+                    <dissemination type="openData" when="2022-11-19">
+                        <idno type="dataset">https://www.donneesquebec.ca/recherche/dataset/macrepertoire</idno>
                         <licence>https://creativecommons.org/licenses/by/4.0/</licence>
                     </dissemination>
                     <dissemination type="collectionsOnline">
@@ -919,6 +921,144 @@
                         <note><p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (collection-musée ou localisation) qui ont une image, hors événements, avec leur titre, une image et leurs types.</p></note>
                         <idno>https://commons.wikimedia.org/wiki/Category:Collections_of_the_Musée_d%27art_contemporain_de_Montréal</idno>
                         <idno>https://commons.wikimedia.org/wiki/Category:Musée_d%27art_contemporain_de_Montréal</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse0105">
+                <orgName xml:lang="fr">Musée de la Gaspésie</orgName>
+                <operational>
+                    <budget from="2024" to="2025">
+                        <note>
+                            <p>1 407 347 dollars canadiens</p>
+                            <p>il s'agit seulement des charges sur le fonds d'administration pour l'année 2025</p>
+                        </note>
+                        <source>
+                            <p>https://cdn.shopify.com/s/files/1/0553/1444/8466/files/Projet_Etats_financiers_2025.pdf</p>
+                            <p>États financiers 2025 du musée</p>
+                        </source>
+                    </budget>
+                    <administration>Musée privé à but non lucratif</administration>
+                </operational>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>social and community studies</field>
+                    <field>history</field>
+                </fields>
+                <holdings>
+                    <!-- La recherche a été effectuée et aucune information sur la taille de la collections n'est disponible sur le site du musée et sur les rapports annuels. -->
+                    <category>painting</category>
+                    <category>archival documents and books</category>
+                    <category>prints and drawings</category>
+                    <category>decorative artefacts and furnishings</category>
+                    <category>sculpture</category>
+                </holdings>
+                <address>
+                    <street><num>80</num>Boulevard Gaspé</street>
+                    <settlement>Gaspé</settlement>
+                    <postCode>G4X 1A9</postCode>
+                    <region>QC</region>
+                    <region type="administrative">Gaspésie--Îles-de-la-Madeleine</region>
+                    <!-- pour le moment j'ai indiqué la région administrative comme ça. À corriger dans le schéma -->
+                    <country>Canada</country>
+                </address>
+                <demographics>
+                    <distance>15,37</distance>
+                    <density>3</density>
+                    <bdoica>6478</bdoica>
+                    <arc>true</arc>
+                    <idusr>2403005</idusr>
+                    <cnsilb>QC48840645</cnsilb>
+                </demographics>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <!--Recherches effectuées : pas d'expositions en ligne, ni de projets d'éducations, idem pour la programmation spécialisée-->
+                    <social>
+                        <idno type="facebook">https://www.facebook.com/museegaspesie</idno>
+                        <idno type="instagram">https://www.instagram.com/museedelagaspesie</idno>
+                        <idno type="youtube">https://www.youtube.com/@museedelagaspesie1534</idno>
+                    </social>
+                    <idno type="website">https://museedelagaspesie.ca</idno>
+                </online>
+                <desc when="2026-08" type="collections" xml:lang="fr">
+                    <p>Depuis 1962, le Musée de la Gaspésie s’affaire à sauvegarder et protéger les éléments significatifs de notre patrimoine, qu’il s’agisse de livres, de documents d’archives, d’œuvres d’art ou d’objets ethnographiques.</p>
+                    <idno>https://museedelagaspesie.ca/pages/les-collections</idno>
+                </desc>
+                <desc when="2026-08" type="collections" xml:lang="en">
+                    <p>Since 1962, the Musée de la Gaspésie has been doing its utmost to safeguard and protect significant elements of our heritage – books, archival documents, works of art and ethnographic objects.</p>
+                    <idno>https://museedelagaspesie.ca/en/pages/les-collections</idno>
+                </desc>
+                <desc when="2026-08" type="copyright" xml:lang="fr">
+                    <p>Le Musée de la Gaspésie diffuse une banque d'images d'archives en ligne (archives.museedelagaspesie.ca), distincte de son site institutionnel. La politique de réutilisation superpose trois régimes que la notice ne distingue pas explicitement. Le partage de l'image de consultation est libre, à des fins personnelles et non commerciales, sans modification et avec référence complète (fonds et cote).</p>
+                    <p>La fourniture d'un fichier de reproduction numérique est tarifée dès l'usage personnel (10 $). L'autorisation de diffusion publique, soit édition, exposition ou documentaire, requiert un accord du centre d'archives et une tarification (35 $). Cette superposition rend la frontière entre usage « libre » et usage payant peu lisible.</p>
+                    <p>Aucune licence normalisée (Creative Commons ou équivalent) n'est employée, la politique étant formulée en langage propre, sans référence à un standard d'ouverture reconnu.</p>
+                    <idno>https://archives.museedelagaspesie.ca/tarifs/</idno>
+                </desc>
+                <desc when="2026-08" type="copyright" xml:lang="en">
+                    <p>The Musée de la Gaspésie runs an online archival image bank (archives.museedelagaspesie.ca), separate from its institutional website. Its reuse policy layers three regimes that the item records do not explicitly distinguish. Sharing the consultation image is free for personal, non-commercial purposes, provided the image is not altered and the full reference (fonds and call number) is cited.</p>
+                    <p>Supplying a digital reproduction file is priced even for personal use ($10). Authorization for public dissemination, such as a book, exhibition or documentary, requires the archives centre's approval and a fee ($35). This layering makes the boundary between "free" and paid use hard to read.</p>
+                    <p>No standardized licence (Creative Commons or equivalent) is used, the policy being expressed in the museum's own wording, without reference to any recognized openness standard.</p>
+                    <idno>https://archives.museedelagaspesie.ca/en/rates/</idno>
+                    <!-- La version anglaise de la banque d'images énonce une licence gratuite pour les projets personnels et non commerciaux, la diffusion d'actualité et les établissements d'enseignement, portée absente de la version française. -->
+                </desc>
+                <availability when="2026-08">
+                    <scope>aucune des valeurs proposées ne correspond</scope>
+                    <note>
+                        <p>Compliance : hors périmètre. Banque d'images d'archives sous licence gratuite "maison". Régime proche d'un CC BY-NC-ND, non qualifiable de libre accès au sens de l'OpenGLAM Survey (aucune œuvre du domaine public diffusée sous licence ouverte) ; ni « All » ni « Some eligible data ». Licence non normalisée, énoncée dans la seule version anglaise.</p>
+                    </note>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucune diffusion de données ouvertes repérée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="collectionsOnline">
+                        <note>
+                            <p>Le musée diffuse une banque d'images d'archives et de photographies sur son site (archives.museedelagaspesie.ca). Volume non chiffré par l'institution.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>Non disponible</p>
+                            <p> Pas d'API publique documentée et identifiée à ce jour sur le site institutionnel.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <note>
+                            <p>Aucune présence sur ArtefactsCanada</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination> 
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Insitution distinguée sur Wikidata.</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q3329904</idno>
+                    <dissemination type="wikidata" when="2026-08-04">
+                        <volume>0</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres de la collection qui ont une notice Wikidata</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-08-04">
+                        <volume>0</volume>
                     </dissemination>
                 </wikimedia>
             </org>
