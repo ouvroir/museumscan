@@ -956,9 +956,7 @@
                     <street><num>80</num>Boulevard Gaspé</street>
                     <settlement>Gaspé</settlement>
                     <postCode>G4X 1A9</postCode>
-                    <region>QC</region>
-                    <region type="administrative">Gaspésie--Îles-de-la-Madeleine</region>
-                    <!-- pour le moment j'ai indiqué la région administrative comme ça. À corriger dans le schéma -->
+                    <region>Gaspésie--Îles-de-la-Madeleine</region>
                     <country>Canada</country>
                 </address>
                 <demographics>
@@ -1059,6 +1057,91 @@
                     </dissemination>
                     <dissemination type="wikimedia" when="2026-08-04">
                         <volume>0</volume>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse0931">
+                <orgName xml:lang="fr">L'Association Canadienne d'Histoire Ferroviaire (Exporail, Le Musée Ferroviaire Canadien)</orgName>
+                <orgName xml:lang="en">Canadian Railroad Historical Association</orgName>
+                <acronym xml:lang="fr">ACHF</acronym>
+                <acronym xml:lang="en">CRHA</acronym>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>sciences and technology</field>
+                </fields>
+                <address>
+                    <street><num>10</num>Rue St Pierre</street>
+                    <settlement>Saint-Constant</settlement>
+                    <postCode>J5A 1G7</postCode>
+                    <region>Montérégie</region>
+                    <country>Canada</country>
+                </address>
+                <demographics></demographics>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <education>https://exporail.org/education/</education>
+                </online>
+                <desc when="2026-08" type="collections" xml:lang="fr">
+                    <p>Exporail, c’est plus de 180 véhicules dont les plus anciens témoignent de l’ère de la vapeur tandis que les plus récents illustrent un chemin de fer qui joue un rôle de plus en plus important dans la lutte aux changements climatiques.</p>
+                    <p>Mais c'est aussi plus de 14,000 autres pièces de collection de plus petites dimensions, allant des uniformes aux instruments divers, en passant par les modèles réduits, des œuvres d’art, de la vaisselle, du mobilier, des panneaux, enseignes et bien d’autres choses encore.</p>
+                    <idno>https://exporail.org/lassociation/collection/</idno>
+                </desc>
+                <desc when="2026-08" type="collections" xml:lang="en">
+                    <p>Exporail  is more than 180 vehicles, the oldest of which bear witness to the steam era, while the most recent ones illustrate a railroad that plays an increasingly important role in the fight against climate change.</p>
+                    <p>But is it also more than 14,000 other smaller collectibles, ranging from uniforms to various instruments, model railroads, artwork, tableware, furniture, signs and much more.</p>
+                    <idno>https://exporail.org/en/the-association/collection/</idno>
+                </desc>
+                <desc when="2026-08" type="copyright" xml:lang="fr">
+                    <p>Exporail (ACHF) ne publie pas de politique de libre accès ni de licence ouverte sur ses contenus numériques ou sa collection.En l'absence de mention explicite, les contenus du site sontprésumés protégés (tous droits réservés). Aucune collection enligne sous licence  n'a été repérée au moment du relevé</p>
+                </desc>
+                <desc when="2026-08" type="copyright" xml:lang="en">
+                    <p>Exporail (CRHA) publishes no open-access policy or open licence on its digital content or collection. Absent an explicitstatement, site content is presumed all-rights-reserved. Nolicence on an online collection was found at the time of recording.</p>
+                </desc>
+                <availability when="2026-08">
+                    <scope>aucune des valeurs proposées ne correspond</scope>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucune diffusion de données ouvertes repérée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="collectionsOnline">
+                        <volume>200</volume> 
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Musée identifié sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q462581</idno>
+                    <dissemination type="wikidata" when="2026-08-05">
+                        <volume>5</volume>
+                        <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou localisation) de la collection qui ont une notice Wikidata</p></note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-08-05">
+                        <volume>4</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée ou localisation) qui ont une image, hors évènements, avec leur titre, une image et leurs types.</p>
+                        </note>
+                        <idno>https://commons.wikimedia.org/wiki/Category:Canadian_Railway_Museum</idno>
                     </dissemination>
                 </wikimedia>
             </org>
