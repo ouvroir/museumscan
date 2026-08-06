@@ -293,6 +293,7 @@
       <xs:documentation xml:lang="fr"
         >Catégorie d’institution. Source : OpenGLAM Survey, champ <html:code>Type</html:code> [Aggregator, Archive, Corporation, Gallery, Government, Library, Museum, Other, Private Collection, Repository, Research Institution, University, Visitor Attraction].</xs:documentation>
     </xs:annotation>
+    <!-- peut être est-il intéressant de permettre plusieurs orgType. Par exemple, le CCA est à la fois un centre de recherche mais aussi un musée -->
     <xs:simpleType>
       <xs:restriction base="xs:string">
         <xs:enumeration value="aggregator"/>
