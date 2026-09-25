@@ -1691,6 +1691,213 @@
                     </dissemination>
                 </wikimedia>
             </org>
+            <org xml:id="muse1296">
+                <orgName xml:lang="fr">Fondation Phi Pour L'Art Contemporain</orgName>
+                <acronym xml:lang="fr">Fondation PHI</acronym>
+                <orgType>museum</orgType>
+                <!-- pas sûre que ce soit la bonne catégorie -->
+                <fields>
+                    <field>sciences and technology</field>
+                    <field>fine arts</field>
+                    <field>decorative arts and design</field>
+                </fields>
+                <address>
+                    <street><num>451 et 465</num>rue Saint-Jean</street>
+                    <settlement>Montréal</settlement>
+                    <postCode>H2Y 2R5</postCode>
+                    <region>QC</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online/>
+                <desc when="2026-09" type="collections" xml:lang="fr">
+                    <p>La Fondation PHI pour l'art contemporain ne déclare aucune collection
+                        permanente. Elle ne possède aucun catalogue en ligne.</p>
+                </desc>
+                <desc when="2026-09" type="collections" xml:lang="en">
+                    <p>The PHI Foundation for Contemporary Art does not declare any permanent
+                        collection. It has no online catalogue.</p>
+                </desc>
+                <availability when="2026-09">
+                    <scope>aucune des valeurs proposées ne correspond</scope>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucune diffusion de données ouvertes repérée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="collectionsOnline">
+                        <volume>0</volume>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q3011226</idno>
+                </wikimedia>
+            </org>
+            <org xml:id="muse0019">
+                <orgName xml:lang="fr">Musée des métiers d'art du Québec</orgName>
+                <acronym>MUMAQ</acronym>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>fine arts</field>
+                </fields>
+                <address>
+                    <street><num>615</num>Avenue Ste Croix</street>
+                    <settlement>Montréal</settlement>
+                    <postCode>H4L3X6</postCode>
+                    <region>QC</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://www.mumaq.com/expositions/</exhibitions>
+                    <education>https://www.mumaq.com/education/</education>
+                </online>
+                <desc when="2026-09" type="collections" xml:lang="fr">
+                    <p>Les riches collections du MUMAQ témoignent de l’histoire du Québec et de son
+                        évolution à travers des objets de la vie quotidienne de la Nouvelle-France à
+                        aujourd’hui, façonnés par le savoir-faire des artisan.e.s d’ici.</p>
+                    <p>Le MUMAQ, c’est une collection unique de pièces uniques. Près de 14 000
+                        objets issus des métiers d’art, anciens comme contemporains, qui façonnent
+                        l’intemporel.</p>
+                    <idno>https://www.mumaq.com/decouvrir/#collections</idno>
+                </desc>
+                <desc when="2026-09" type="collections" xml:lang="en">
+                    <p>The MUMAQ’s rich collections illustrate the history of Québec and its
+                        cultural evolution. By exploring everyday items dating from the colonial era
+                        to today, we invite you to discover how our history has been shaped by the
+                        know-how of local artisans.</p>
+                    <p>The MUMAQ is a unique collection of unique pieces. Nearly 14,000 historical
+                        and contemporary craft objects shape the timeless.</p>
+                    <idno>https://www.mumaq.com/en/decouvrir/</idno>
+                </desc>
+                <desc when="2026-09" type="copyright" xml:lang="fr">
+                    <p>Le MUMAQ ne publie ni conditions d'utilisation ni politique de droits
+                        d'auteur. Les images d'objets diffusées sur les pages de collections sont
+                        accompagnées d'une légende muséale suivie du symbole ©, sans mention du
+                        titulaire des droits ni crédit photographique. Aucune licence ouverte ni
+                        procédure de demande de reproduction n'est indiquée.</p>
+                </desc>
+                <desc when="2026-09" type="copyright" xml:lang="en">
+                    <p>MUMAQ publishes no terms of use or copyright policy. Object images shown on
+                        the collection pages carry a museum caption followed by the © symbol, with
+                        no rights holder or photo credit named. No open licence or reproduction
+                        request procedure is indicated.</p>
+                </desc>
+                <availability when="2026-09">
+                    <scope>aucune des valeurs proposées ne correspond</scope>
+                    <note>
+                        <p>Compliance : hors périmètre, faute de licence ouverte.</p>
+                        <p>Le MUMAQ ne diffuse pas de catalogue en ligne. Une sélection d'objets est
+                            présentée sur des pages éditoriales du site, regroupées en quatre
+                            ensembles (Collection Jean-Marie Gauvreau, Objets en 3D, Collection
+                            permanente, Recherche).</p>
+                    </note>
+                    <dissemination type="CollectionsOnline">
+                        <volume>15</volume>
+                        <note>
+                            <p>Les 15 enregistrements recensés correspondent à la sélection d'objets
+                                présentée sur le page "Collections" du site web du MUMAQ.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="OpenData">
+                        <note>
+                            <p>Aucune diffusion de données ouvertes repérée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="ArtefactsCanada">
+                        <volume>6000</volume>
+                        <note>
+                            <p>Selon la page des collections du site Web du MUMAQ, 6 000 œuvres
+                                seraient accessibles sur Artefacts Canada. Cette plateforme est
+                                toutefois en cours de refonte.</p>
+                        </note>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q1955726</idno>
+                    <dissemination type="wikidata" when="2026-09-24">
+                        <volume>0</volume>
+                        <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice
+                            Wikidata</p></note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-09-24">
+                        <volume>0</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                            <p>Aucune œuvre du MUMAQ n'a d'élément Wikidata. Quelques photographies
+                                d'objets de la collection sont toutefois versées sur Wikimedia
+                                Commons par un contributeur extérieur au musée. Elles sont bien
+                                documentées dans la description du fichier (collection, numéro
+                                d'inventaire), mais leurs données structurées associent le MUMAQ à
+                                la propriété « dépeint » (P180) plutôt qu'à « collection » (P195),
+                                ce qui les rend difficiles à repérer par requête</p>
+                        </note>
+                        <idno>https://commons.wikimedia.org/wiki/Institution:Mus%C3%A9e_des_m%C3%A9tiers_d%27art_du_Qu%C3%A9bec</idno>
+                        <idno>https://commons.wikimedia.org/wiki/Category:Collections_of_the_Mus%C3%A9e_des_m%C3%A9tiers_d%27art_du_Qu%C3%A9bec</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse1543">
+                <orgName xml:lang="fr">Guilde Canadienne Des Metiers D'Art</orgName>
+                <orgName xml:lang="en">Canadian Guild Of Crafts</orgName>
+                <orgType>gallery</orgType>
+                <fields>
+                    <field>fine arts</field>
+                </fields>
+                <address>
+                    <street><num>1356</num>rue Sherbrooke O</street>
+                    <settlement>Montréal</settlement>
+                    <postCode>H3G 1J1</postCode>
+                    <region>QC</region>
+                    <country>Canada</country>
+                </address>
+                <demographics></demographics>
+                <accessibility>
+                    <admission>free</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://laguilde.com/pages/expositions</exhibitions>
+                </online>
+                <desc  when="2026-09 "type="collections" xml:lang="fr">
+                    <p>Depuis le début du 20e siècle, La Guilde a développé et préservé une collection permanente d'œuvres d’art et d’objets issus des métiers d’art. Cette collection constitue un recueil de ressources pédagogiques et d’objets d’artisanat, reflétant la mission fondatrice de La Guilde : préserver et promouvoir l’artisanat ainsi que les savoir-faire qui y sont associés. Composée de plus de 1 500 objets et œuvres d’art, des lunettes de neige sculptées à la main aux chaises tissées, des sculptures aux ceintures fléchés, la collection couvre une vaste zone géographique, inclus divers médias et témoigne d’une longue période d’activité et de multiples contextes culturels et sociaux. L’objectif initial de cette collection était de garantir l'accès à des exemples de grande qualité d’artisanat traditionnel et expérimental, afin de préserver et de transmettre les techniques artisanales aux générations futures d’artistes. Au fil du temps, notre collection est devenue une ressource essentielle pour les étudiants et les chercheurs dans le domaine de l'art fait main et des métiers d’art au Canada.</p>
+                </desc>
+                
+                <availability></availability>
+                <wikimedia></wikimedia>
+            </org>
+            
         </listOrg>
         <listOrg>
             <head>Alberta</head>
