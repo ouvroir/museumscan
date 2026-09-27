@@ -1801,14 +1801,14 @@
                             ensembles (Collection Jean-Marie Gauvreau, Objets en 3D, Collection
                             permanente, Recherche).</p>
                     </note>
-                    <dissemination type="CollectionsOnline">
+                    <dissemination type="collectionsOnline">
                         <volume>15</volume>
                         <note>
                             <p>Les 15 enregistrements recensés correspondent à la sélection d'objets
                                 présentée sur le page "Collections" du site web du MUMAQ.</p>
                         </note>
                     </dissemination>
-                    <dissemination type="OpenData">
+                    <dissemination type="openData">
                         <note>
                             <p>Aucune diffusion de données ouvertes repérée à ce jour.</p>
                         </note>
@@ -1883,21 +1883,716 @@
                     <region>QC</region>
                     <country>Canada</country>
                 </address>
-                <demographics></demographics>
+                <demographics/>
                 <accessibility>
                     <admission>free</admission>
                 </accessibility>
                 <online>
                     <exhibitions>https://laguilde.com/pages/expositions</exhibitions>
                 </online>
-                <desc  when="2026-09 "type="collections" xml:lang="fr">
-                    <p>Depuis le début du 20e siècle, La Guilde a développé et préservé une collection permanente d'œuvres d’art et d’objets issus des métiers d’art. Cette collection constitue un recueil de ressources pédagogiques et d’objets d’artisanat, reflétant la mission fondatrice de La Guilde : préserver et promouvoir l’artisanat ainsi que les savoir-faire qui y sont associés. Composée de plus de 1 500 objets et œuvres d’art, des lunettes de neige sculptées à la main aux chaises tissées, des sculptures aux ceintures fléchés, la collection couvre une vaste zone géographique, inclus divers médias et témoigne d’une longue période d’activité et de multiples contextes culturels et sociaux. L’objectif initial de cette collection était de garantir l'accès à des exemples de grande qualité d’artisanat traditionnel et expérimental, afin de préserver et de transmettre les techniques artisanales aux générations futures d’artistes. Au fil du temps, notre collection est devenue une ressource essentielle pour les étudiants et les chercheurs dans le domaine de l'art fait main et des métiers d’art au Canada.</p>
+                <desc when="2026-09" type="collections" xml:lang="fr">
+                    <p>Depuis le début du 20e siècle, La Guilde a développé et préservé une
+                        collection permanente d'œuvres d’art et d’objets issus des métiers d’art.
+                        Cette collection constitue un recueil de ressources pédagogiques et d’objets
+                        d’artisanat, reflétant la mission fondatrice de La Guilde : préserver et
+                        promouvoir l’artisanat ainsi que les savoir-faire qui y sont associés.
+                        Composée de plus de 1 500 objets et œuvres d’art, des lunettes de neige
+                        sculptées à la main aux chaises tissées, des sculptures aux ceintures
+                        fléchés, la collection couvre une vaste zone géographique, inclus divers
+                        médias et témoigne d’une longue période d’activité et de multiples contextes
+                        culturels et sociaux. L’objectif initial de cette collection était de
+                        garantir l'accès à des exemples de grande qualité d’artisanat traditionnel
+                        et expérimental, afin de préserver et de transmettre les techniques
+                        artisanales aux générations futures d’artistes. Au fil du temps, notre
+                        collection est devenue une ressource essentielle pour les étudiants et les
+                        chercheurs dans le domaine de l'art fait main et des métiers d’art au
+                        Canada.</p>
+                    <idno>https://laguilde.com/blogs/la-guilde/collection</idno>
                 </desc>
-                
-                <availability></availability>
-                <wikimedia></wikimedia>
+                <desc when="2026-09" type="collections" xml:lang="en">
+                    <p>La Guilde has collected and cared for art and craft objects in a permanent
+                        collection since the beginning of the twentieth century. The collection is a
+                        compendium of educational materials and craft objects expressive of La
+                        Guilde’s founding mission to preserve and promote craft objects and
+                        knowledge. Comprising over 1 500 objects and works of art, from hand carved
+                        snow goggles to woven chairs, from sculptures to ceintures fléchées, our
+                        collection covers a vast geographic range, diverse media, a considerable
+                        time span and multiple cultural and social histories The initial objective
+                        of the collection was to ensure accessibility to high quality examples of
+                        traditional and experimental craft for the preservation and teaching of
+                        craft techniques to future generations. With time, our collection has become
+                        a vital resource for students and researchers of handmade art and craft in
+                        Canada.</p>
+                    <idno>https://laguilde.com/en/blogs/la-guilde/collection</idno>
+                </desc>
+                <desc when="2026-09" type="copyright" xml:lang="fr">
+                    <p>Aucune licence n'est appliquée, les contenus relèvent du seul droit
+                        d'auteur.</p>
+                    <idno>https://laguilde.com/policies/terms-of-service</idno>
+                </desc>
+                <desc when="2026-09" type="copyright" xml:lang="en">
+                    <p>No licence is applied, and the content is protected by copyright alone.</p>
+                    <idno>https://laguilde.com/en/policies/terms-of-service</idno>
+                </desc>
+                <availability when="2026-07">
+                    <scope>aucune des valeurs proposées ne correspond</scope>
+                    <dissemination type="collectionsOnline">
+                        <volume>0</volume>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucune diffusion de données ouvertes repérée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <note>
+                            <p>La plateforme est en cours de refonte.</p>
+                        </note>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q111668302</idno>
+                    <dissemination type="wikidata" when="2026-09-26">
+                        <volume>0</volume>
+                        <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice
+                            Wikidata</p></note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-09-26">
+                        <volume>0</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                    </dissemination>
+                </wikimedia>
             </org>
-            
+            <org xml:id="muse0024">
+                <orgName xml:lang="fr">Musée Canadien de l'Histoire</orgName>
+                <orgName xml:lang="en">Canadian Museum Of History</orgName>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>archeology</field>
+                    <field>history</field>
+                    <field>ethnography</field>
+                    <field>natural sciences</field>
+                </fields>
+                <address>
+                    <street><num>100</num>Rue Lautier</street>
+                    <settlement>Gatineau</settlement>
+                    <postCode>K1A 0M8</postCode>
+                    <region>QC</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://www.museedelhistoire.ca/expositions</exhibitions>
+                    <education>https://www.museedelhistoire.ca/pedagogues/ressources-pedagogiques</education>
+                    <specialized>https://www.museedelhistoire.ca/patrimoine-autochtone/contenus-et-recits-a-lhonneur</specialized>
+                </online>
+                <desc when="2026-09" type="collections" xml:lang="fr">
+                    <p>Le Musée canadien de l’histoire a sous sa garde environ 4 millions
+                        d’articles, aussi bien des artéfacts archéologiques que des trésors
+                        culturels, des œuvres d’art contemporaines et des témoignages oraux.</p>
+                    <idno>https://www.museedelhistoire.ca/collections</idno>
+                </desc>
+                <desc when="2026-09" type="collections" xml:lang="en">
+                    <p>The Canadian Museum of History holds some 4 million items in its care,
+                        ranging from archaeological artifacts to cultural treasures, contemporary
+                        artworks and oral histories.</p>
+                    <idno>https://www.historymuseum.ca/collections</idno>
+                </desc>
+                <desc when="2026-09" type="copyright" xml:lang="fr">
+                    <p>Les contenus du site du Musée canadien de l'histoire sont protégés par la Loi
+                        sur le droit d'auteur. Leur reproduction à des fins privées et non
+                        commerciales est permise sans frais ni autorisation, à condition de citer le
+                        Musée comme source, de conserver les avis de droit d'auteur et de ne pas
+                        présenter la reproduction comme officielle ou approuvée par le Musée. Toute
+                        reproduction commerciale exige une permission écrite
+                        (permission@museedelhistoire.ca). Certains contenus relèvent de droits
+                        détenus par des tiers, dont il faut obtenir l'autorisation. Le Musée précise
+                        aussi que les contenus associés aux communautés autochtones peuvent être
+                        soumis à des restrictions et recommande de consulter la communauté
+                        concernée, conformément à la Déclaration des Nations Unies sur les droits
+                        des peuples autochtones.</p>
+                    <idno>https://www.museedelhistoire.ca/droits-dauteur-et-permissions</idno>
+                </desc>
+                <desc when="2026-09" type="copyright" xml:lang="en">
+                    <p>Content on the Canadian Museum of History website is protected by the
+                        Copyright Act. It may be reproduced for private, non-commercial purposes
+                        free of charge and without permission, provided the Museum is credited as
+                        the source, copyright notices are retained, and the reproduction is not
+                        presented as official or endorsed by the Museum. Any commercial reproduction
+                        requires written permission (permission@historymuseum.ca). Some content is
+                        subject to third-party rights, for which authorization must be obtained. The
+                        Museum also notes that content associated with Indigenous communities may be
+                        subject to restrictions and recommends consulting the community concerned,
+                        in accordance with the United Nations Declaration on the Rights of
+                        Indigenous Peoples.</p>
+                    <idno>https://www.historymuseum.ca/copyright</idno>
+                </desc>
+                <availability when="2026-07">
+                    <scope>aucune des valeurs proposées ne correspond</scope>
+                    <note>
+                        <p>Compliance : hors périmètre, faute de licence ouverte.</p>
+                        <p>Le Musée autorise la reproduction de ses contenus à des fins privées et
+                            non commerciales sans demande préalable, avec mention de la source.
+                            Cette permission « maison », assimilable à InC-NC, exclut tout usage
+                            commercial sans autorisation écrite et ne constitue donc pas une licence
+                            ouverte. Le Musée signale en outre des restrictions possibles pour les
+                            contenus associés aux communautés autochtones.</p>
+                    </note>
+                    <dissemination type="collectionsOnline">
+                        <volume>276824</volume>
+                        <note>
+                            <p>Plus de 218 000 artefacts accessibles en ligne selon le Musée. La
+                                base de données est commune au Musée canadien de la guerre.</p>
+                        </note>
+                        <note>
+                            <p>Aucune licence ouverte. Les contenus relèvent du droit d'auteur, avec
+                                une permission "maison" pour les usages non commerciaux.</p>
+                            <p>« Protégé par le droit d'auteur, usage non commercial permis »
+                                (RightsStatements InC-NC), pour les contenus du Musée : reproduction
+                                permise à des fins privées et non commerciales, sans frais ni
+                                autorisation, avec mention du Musée comme source et conservation des
+                                avis de droit d'auteur.</p>
+                            <p>« Protégé par le droit d'auteur » (In Copyright, InC), pour les
+                                contenus détenus par des tiers et pour tout usage commercial :
+                                autorisation écrite requise auprès du Musée ou du titulaire des
+                                droits. Des frais d'utilisation et de reproduction peuvent
+                                s'appliquer, et le Musée se réserve le droit de refuser ou de
+                                restreindre l'utilisation.</p>
+                            <p>Le Musée signale des restrictions possibles pour les contenus
+                                associés aux communautés autochtones et recommande de consulter la
+                                communauté concernée.</p>
+                        </note>
+                        <idno>https://www.museedelhistoire.ca/collections/</idno>
+                        <licence>http://rightsstatements.org/vocab/InC-NC/1.0/</licence>
+                        <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucune diffusion de données ouvertes repérée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <note>
+                            <p>La plateforme est en cours de refonte.</p>
+                        </note>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q1032269</idno>
+                    <dissemination type="wikidata" when="2026-09-27">
+                        <volume>1</volume>
+                        <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice
+                            Wikidata</p></note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-09-27">
+                        <volume>2</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno>https://commons.wikimedia.org/wiki/Category:Collections_of_the_Canadian_Museum_of_History</idno>
+                        <idno>https://commons.wikimedia.org/wiki/Institution:Canadian_Museum_of_History</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse0677">
+                <orgName xml:lang="fr">Musee Du Fjord</orgName>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>archeology</field>
+                    <field>ethnography</field>
+                    <field>natural sciences</field>
+                </fields>
+                <address>
+                    <street><num>3346</num>Boulevard Grande Baie Sud</street>
+                    <settlement>La Baie</settlement>
+                    <postCode>G7B 1G2</postCode>
+                    <region>QC</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://www.museedufjord.com/exposition</exhibitions>
+                </online>
+                <desc when="2026-09" type="collections" xml:lang="fr">
+                    <p>Le Musée du Fjord conserve deux collections.</p>
+                    <p>La collection ethnologique réunit près de 2 000 objets, issus des dons de
+                        plus de 800 donateurs. Elle documente la vie quotidienne au Saguenay, des
+                        débuts de la colonisation au 20e siècle, autour des métiers traditionnels,
+                        des objets domestiques, de la vie religieuse, du vêtement et de l'art
+                        populaire. S'y rattachent un fonds d'environ 3 000 photographies consacrées
+                        surtout à 180 ans d'histoire de La Baie et du Bas-Saguenay ainsi qu'à
+                        l'évolution du Musée, 122 gravures anciennes de mammifères marins, des
+                        centaines de livres d'histoire locale et près de 500 vidéos léguées par
+                        l'ancienne télévision communautaire Baie des Ha! Ha!</p>
+                    <p>La collection de sciences naturelles compte près de 500 spécimens naturalisés
+                        (mammifères, oiseaux, poissons, crustacés, reptiles, amphibiens,
+                        invertébrés), des plantes et champignons séchés et des minéraux. Elle
+                        provient principalement des dons des Sœurs antoniennes de Marie (2015) et du
+                        Musée de la Mer (2023). En 2024, le Musée y a ajouté la collection de
+                        fossiles de Daniel Martin, qui compte plus de 1 000 spécimens, provenant
+                        surtout du Saguenay–Lac-Saint-Jean.</p>
+                    <idno>https://www.museedufjord.com/collections</idno>
+                </desc>
+                <desc when="2026-09" type="collections" xml:lang="en">
+                    <p>The Musée du Fjord holds two collections.</p>
+                    <p>The ethnological collection brings together nearly 2,000 objects donated by
+                        more than 800 donors. It documents daily life in the Saguenay from the early
+                        days of colonization to the 20th century, covering traditional trades,
+                        household objects, religious life, clothing and folk art. It also includes
+                        some 3,000 photographs devoted mainly to 180 years of history of La Baie and
+                        the Lower Saguenay and to the Museum's own development, 122 antique
+                        engravings of marine mammals, hundreds of local history books and nearly 500
+                        videos bequeathed by the former community television station Baie des Ha!
+                        Ha!</p>
+                    <p>The natural sciences collection comprises nearly 500 mounted specimens
+                        (mammals, birds, fish, crustaceans, reptiles, amphibians, invertebrates),
+                        dried plants and fungi, and minerals. It stems mainly from donations by the
+                        Sœurs antoniennes de Marie (2015) and the Musée de la Mer (2023). In 2024,
+                        the Museum added Daniel Martin's fossil collection, which includes more than
+                        1,000 specimens, mostly from the Saguenay–Lac-Saint-Jean region.</p>
+                    <idno>https://www.museedufjord.com/en/collections</idno>
+                </desc>
+                <desc when="2026-09" type="copyright" xml:lang="fr">
+                    <p>Le Musée du Fjord ne publie ni conditions d'utilisation ni politique de
+                        droits d'auteur. Le site porte seulement la mention « Copyright © Musée du
+                        Fjord » en pied de page. Aucune licence ouverte ni procédure de demande de
+                        reproduction n'est indiquée.</p>
+                </desc>
+                <desc when="2026-09" type="copyright" xml:lang="en">
+                    <p>The Musée du Fjord publishes no terms of use or copyright policy. The website
+                        only carries the notice "Copyright © Musée du Fjord" in its footer. No open
+                        licence or reproduction request procedure is indicated.</p>
+                </desc>
+                <availability when="2026-09">
+                    <scope>aucune des valeurs proposées ne correspond</scope>
+                    <note>
+                        <p>Compliance : hors périmètre, faute de licence ouverte et de collection en
+                            ligne.</p>
+                    </note>
+                    <dissemination type="collectionsOnline">
+                        <volume>0</volume>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucune diffusion de données ouvertes repérée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <note>
+                            <p>La plateforme est en cours de refonte.</p>
+                        </note>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q3330347</idno>
+                    <dissemination type="wikidata" when="2026-09-27">
+                        <volume>0</volume>
+                        <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice
+                            Wikidata</p></note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-09-27">
+                        <volume>0</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno>https://commons.wikimedia.org/wiki/Category:Mus%C3%A9e_du_Fjord</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse0134">
+                <orgName xml:lang="fr">La Corporation Du Musée Du Saguenay Lac St-Jean Et Du Site De
+                    La Pulperie (La Pulperie De Chicoutimi)</orgName>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>ethnography</field>
+                    <field>history</field>
+                    <field>social and community studies</field>
+                </fields>
+                <address>
+                    <street><num>300</num>Rue Dubuc</street>
+                    <settlement>Chicoutimi</settlement>
+                    <postCode>G7J 4M1</postCode>
+                    <region>QC</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://www.pulperie.com/expositions</exhibitions>
+                </online>
+                <desc when="2026-09" type="collections" xml:lang="fr">
+                    <p>La collection muséographique de La Pulperie de Chicoutimi / Musée régional
+                        compte environ 26 000 pièces, répertoriées dans une base de données mise à
+                        jour en 2024. Elle comprend quelque 12 350 objets ethnographiques
+                        canadiens-français, 4 000 objets de beaux-arts et 1 000 objets d'arts
+                        décoratifs (surtout du 20e siècle), 150 objets ethnographiques autochtones
+                        et inuits, 750 objets de sciences naturelles, 850 livres anciens et 5 300
+                        documents, auxquels s'ajoutent 1 600 pièces en cours de traitement. Le Musée
+                        conserve aussi un centre de documentation d'environ 2 000 livres et
+                        périodiques et vingt-quatre fonds et collections d'archives privées. Une
+                        partie de la collection est consultable sur Artefacts Canada, et la
+                        collection de jouets est présentée en ligne sur le site du Musée.</p>
+                    <idno>https://www.pulperie.com/collections</idno>
+                </desc>
+                <desc when="2026-09" type="collections" xml:lang="en">
+                    <p>The museum collection of La Pulperie de Chicoutimi / Musée régional comprises
+                        some 26,000 items, catalogued in a database updated in 2024. It includes
+                        about 12,350 French-Canadian ethnographic objects, 4,000 fine arts objects
+                        and 1,000 decorative arts objects (mostly 20th century), 150 Indigenous and
+                        Inuit ethnographic objects, 750 natural science objects, 850 rare books and
+                        5,300 documents, plus 1,600 items awaiting processing. The Museum also holds
+                        a documentation centre of about 2,000 books and periodicals and twenty-four
+                        private archival fonds and collections. Part of the collection is available
+                        on Artefacts Canada, and the toy collection is presented online on the
+                        Museum's website.</p>
+                    <idno>https://www.pulperie.com/en/#collections</idno>
+                </desc>
+                <desc when="2026-09" type="copyright" xml:lang="fr">
+                    <p>Le contenu des collections en ligne de La Pulperie de Chicoutimi est diffusé
+                        sous licence Creative Commons Attribution, Pas d'utilisation commerciale,
+                        Pas de modification 2.5 Canada (CC BY-NC-ND 2.5 CA), à des fins personnelles
+                        et de recherche. Le Musée demande de citer la source « La Pulperie de
+                        Chicoutimi / Musée du Saguenay–Lac-Saint-Jean » avec un lien vers la page
+                        des collections. Les conditions affichées ajoutent toutefois une clause de
+                        partage à l'identique, qui ne fait pas partie de cette licence. Le Musée
+                        invite également les titulaires de droits d'auteur à lui écrire pour faire
+                        retirer un contenu diffusé sur la page des collections. Le reste du site
+                        porte la mention « Tous droits réservés ».</p>
+                    <idno>https://www.pulperie.com/collections/</idno>
+                </desc>
+                <desc when="2026-09" type="copyright" xml:lang="en">
+                    <p>Content from La Pulperie de Chicoutimi's online collections is made available
+                        under the Creative Commons Attribution, NonCommercial, NoDerivatives 2.5
+                        Canada licence (CC BY-NC-ND 2.5 CA), for personal and research purposes. The
+                        Museum asks users to credit "La Pulperie de Chicoutimi / Musée du
+                        Saguenay–Lac-Saint-Jean" with a link to the collections page. However, the
+                        stated terms add a ShareAlike clause that is not part of this licence. The
+                        Museum also invites copyright holders to contact it to have content removed
+                        from the collections page. The rest of the website carries an "All rights
+                        reserved" notice.</p>
+                    <idno>https://www.pulperie.com/collections/</idno>
+                </desc>
+                <availability when="2026-09">
+                    <scope>aucune des valeurs proposées ne correspond</scope>
+                    <note>
+                        <p>Compliance : hors périmètre, la licence CC BY-NC-ND 2.5 CA exclut l'usage
+                            commercial et la modification.</p>
+                    </note>
+                    <dissemination type="collectionsOnline">
+                        <volume>645</volume>
+                        <note>
+                            <p>Seule la collection de jouets est diffusée sur le site du Musée (646
+                                fiches en septembre 2026), grâce au Plan culturel numérique du
+                                Québec. Une autre partie de la collection est consultable sur
+                                Artefacts Canada.</p>
+                        </note>
+                        <note>
+                            <p>CC BY-NC-ND 2.5 Canada, pour le contenu des collections en ligne :
+                                usage personnel et de recherche, sans modification ni usage
+                                commercial, avec mention de la source « La Pulperie de Chicoutimi /
+                                Musée du Saguenay–Lac-Saint-Jean » et lien vers la page des
+                                collections.</p>
+                            <p>Les conditions affichées ajoutent une clause de partage à
+                                l'identique, incompatible avec l'interdiction de modification de la
+                                licence.</p>
+                            <p>Le Musée invite les titulaires de droits d'auteur à lui écrire pour
+                                faire retirer un contenu diffusé.</p>
+                        </note>
+                        <idno>https://www.pulperie.com/collections/</idno>
+                        <licence>https://creativecommons.org/licenses/by-nc-nd/2.5/ca/</licence>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucune diffusion de données ouvertes repérée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <note>
+                            <p>La plateforme est en cours de refonte.</p>
+                        </note>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q3410768</idno>
+                    <dissemination type="wikidata" when="2026-09-27">
+                        <volume>1</volume>
+                        <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice
+                            Wikidata</p></note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-09-27">
+                        <volume>0</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno>https://commons.wikimedia.org/wiki/Category:Pulperie_de_Chicoutimi</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse0632">
+                <orgName xml:lang="fr">Société D'Histoire Du Lac-St-Jean Inc. (Maison Des
+                    Bâtisseurs)</orgName>
+                <!-- L'Odyssée des Bâtisseurs est l'institution muséale exploitée par la Société d'histoire du Lac-Saint-Jean (même personne morale, même adresse). À valider avec Emmanuel : documenter une seule org au nom de la Société, ou une org au nom de l'Odyssée (musée répertorié par la SMQ) avec la Société comme organisme gestionnaire. -->
+                <orgType>museum</orgType>
+                <fields>
+                    <field>social and community studies</field>
+                </fields>
+                <address>
+                    <street><num>1671</num>Avenue du Pont Nord</street>
+                    <settlement>Alma</settlement>
+                    <postCode>G8B 5G2</postCode>
+                    <region>QC</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://www.odysseedesbatisseurs.com/exposition_categories/expositions-virtuelles/</exhibitions>
+                </online>
+                <desc when="2026-09" type="collections" xml:lang="fr">
+                    <p>La Société d'histoire du Lac-Saint-Jean conserve trois ensembles.</p>
+                    <p>La collection muséale, présentée à L'Odyssée des Bâtisseurs, compte près de 3
+                        000 objets datés de 1850 à 1970. Née de l'opération Récupération 1975, elle
+                        porte principalement sur les objets électriques domestiques ou industriels
+                        d'origine régionale (1920-1970). S'y ajoutent des collections spécifiques
+                        liées à l'histoire locale (appareils photo, objets de commerces d'Alma,
+                        jouets, objets complétant un fonds d'archives) et une collection d'animation
+                        à usage pédagogique. Elle n'est pas diffusée en ligne.</p>
+                    <p>Les fonds et collections d'archives, conservés par le service d'archives
+                        privées agréé par BAnQ, comptent environ 2 000 fonds, dossiers et
+                        collections sur Alma et le Lac-Saint-Jean. Leurs descriptions sont
+                        consultables dans la base Archilog.</p>
+                    <p>Les photographies historiques, au nombre de plus d'un million, ne sont que
+                        partiellement numérisées. Une petite partie est diffusée dans l'album
+                        Archilog et une sélection de photographies libres de droits est versée sur
+                        Wikimedia Commons.</p>
+                    <idno>https://www.odysseedesbatisseurs.com/collections/</idno>
+                    <idno>https://portail.shlsj.org/archives/index.php</idno>
+                    <idno>https://portail.shlsj.org/album/</idno>
+                </desc>
+                <desc when="2026-09" type="collections" xml:lang="en">
+                    <p>The Société d'histoire du Lac-Saint-Jean holds three sets of materials.</p>
+                    <p>The museum collection, presented at L'Odyssée des Bâtisseurs, comprises
+                        nearly 3,000 objects dating from 1850 to 1970. Originating with the
+                        Récupération 1975 initiative, it focuses mainly on electrical objects for
+                        domestic or industrial use of regional origin (1920-1970). It also includes
+                        specific collections linked to local history (cameras, items from Alma
+                        businesses, toys, objects complementing an archival fonds) and a handling
+                        collection for educational use. It is not available online.</p>
+                    <p>The archival fonds and collections, held by the private archives service
+                        accredited by BAnQ, number some 2,000 fonds, files and collections on Alma
+                        and Lac-Saint-Jean. Their descriptions can be searched in the Archilog
+                        database.</p>
+                    <p>The historical photographs, numbering more than one million, are only partly
+                        digitized. A small portion is available in the Archilog photo album, and a
+                        selection of copyright-free photographs has been uploaded to Wikimedia
+                        Commons.</p>
+                    <idno>https://www.odysseedesbatisseurs.com/collections/</idno>
+                    <idno>https://portail.shlsj.org/archives/index.php</idno>
+                    <idno>https://portail.shlsj.org/album/</idno>
+                </desc>
+                <desc when="2026-09" type="copyright" xml:lang="fr">
+                    <p>Les sites de la Société d'histoire du Lac-Saint-Jean et de L'Odyssée des
+                        Bâtisseurs ne publient pas de conditions d'utilisation. Ils portent
+                        seulement la mention « Tous droits réservés ». Aucune image d'objet de la
+                        collection muséale n'est diffusée en ligne.</p>
+                    <p>Les bases Archilog portent la mention « Données : Copyright © Société
+                        d'histoire du Lac-Saint-Jean. Tous droits réservés ».</p>
+                    <idno>https://www.shlsj.org/service-darchives</idno>
+                </desc>
+                <desc when="2026-09" type="copyright" xml:lang="en">
+                    <p>The websites of the Société d'histoire du Lac-Saint-Jean and L'Odyssée des
+                        Bâtisseurs publish no terms of use. No images of objects from the museum
+                        collection are made available online.</p>
+                    <p>The Archilog databases carry the notice "Data: Copyright © Société d'histoire
+                        du Lac-Saint-Jean. All rights reserved".</p>
+                    <idno>https://www.shlsj.org/service-darchives</idno>
+                </desc>
+                <availability when="2026-09">
+                    <scope>aucune des valeurs proposées ne correspond</scope>
+                    <note>
+                        <p>Compliance : hors périmètre, faute de licence ouverte sur les bases de
+                            l'institution. Une sélection de photographies libres de droits est
+                            toutefois versée sur Wikimedia Commons.</p>
+                    </note>
+                    <dissemination type="collectionsOnline">
+                        <note>
+                            <p>Base Archilog des fonds et collections d'archives. Elle diffuse les
+                                descriptions archivistiques (fonds, dossiers, cotes) des quelque 2
+                                000 fonds et collections conservés par le service d'archives.
+                                L'accès aux documents semble limité à la consultation sur place.</p>
+                            <p>Mention affichée : « Données : Tous droits réservés - Société
+                                d'histoire du Lac-Saint-Jean ». Mention assimilée à RightsStatements
+                                InC.</p>
+                        </note>
+                        <idno>https://portail.shlsj.org/archives/index.php</idno>
+                        <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
+                        <!-- Volume à vérifier : 15 475 enregistrements en ligne (RCIP) et environ 43 000 photos (Album Archilog). Correspondance avec les bases Archilog non établie. -->
+                    </dissemination>
+                    <dissemination type="collectionsOnline">
+                        <note>
+                            <p>Album Archilog des photographies historiques. Seule une petite partie
+                                des plus d'un million de photographies conservées y est versée,
+                                issue principalement du fonds Jean le Photographe (F92), numérisé en
+                                partie grâce au soutien de Bibliothèque et Archives Canada. L'accès
+                                aux images semble limité à la consultation sur place.</p>
+                            <p>Mention affichée : « Données : Copyright © Société d'histoire du
+                                Lac-Saint-Jean. Tous droits réservés ». Mention assimilée à
+                                RightsStatements InC.</p>
+                        </note>
+                        <idno>https://portail.shlsj.org/album/</idno>
+                        <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucune diffusion de données ouvertes repérée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>1056</volume>
+                        <note>
+                            <p>1 056 fiches versées sur Artefacts Canada sous le nom de L'Odyssée
+                                des Bâtisseurs, dont 825 accompagnées d'images (septembre 2026).</p>
+                        </note>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=L%27Odyssée+des+Bâtisseurs&amp;t=0&amp;lang=fr</idno>
+                        <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution non identifiée sur Wikidata</p>
+                    </note>
+                    <note>
+                        <p>La Société d'histoire du Lac-Saint-Jean verse elle-même des photographies
+                            historiques sur Wikimedia Commons depuis 2018, dans le cadre d'un
+                            partenariat avec la Ville d'Alma. Le projet visait le téléversement de
+                            quelques centaines de photographies d'Alma et des municipalités voisines
+                            afin d'en favoriser la diffusion. Les fichiers sont regroupés dans une
+                            catégorie propre à l'institution.</p>
+                    </note>
+                    <idno>https://commons.wikimedia.org/wiki/Category:Soci%C3%A9t%C3%A9_d%27histoire_du_Lac-Saint-Jean</idno>
+                </wikimedia>
+            </org>  
         </listOrg>
         <listOrg>
             <head>Alberta</head>
