@@ -2592,7 +2592,668 @@
                     </note>
                     <idno>https://commons.wikimedia.org/wiki/Category:Soci%C3%A9t%C3%A9_d%27histoire_du_Lac-Saint-Jean</idno>
                 </wikimedia>
-            </org>  
+            </org>
+            <org xml:id="muse1258">
+                <orgName xml:lang="fr">Societe D'Histoire Et D'Archeologie De Mashteuiatsh (Musée
+                    Amérindien De Mashteuiatsh)</orgName>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>archeology</field>
+                    <field>ethnography</field>
+                </fields>
+                <address>
+                    <street><num>1787</num>Amishk Mashteuiatsh</street>
+                    <settlement>Mashteuiatsh</settlement>
+                    <postCode>G0W 2H0</postCode>
+                    <region>Saguenay-Lac-Saint-Jean</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://museeilnu.ca/programmation/expositions/</exhibitions>
+                    <specialized>https://cultureilnu.ca/langues-et-culture/</specialized>
+                </online>
+                <desc when="2026-10" type="collections" xml:lang="fr">
+                    <p>La Société d'histoire et d'archéologie de Mashteuiatsh rend accessible en
+                        ligne, sur le site de la Collection numérique des Pekuakamiulnuatsh, une
+                        partie de ses fonds d'archives et des ouvrages de son Centre de
+                        documentation, ainsi que la collection muséale du Musée amérindien de
+                        Mashteuiatsh. La collection d'objets comprend des objets artisanaux, des
+                        artefacts archéologiques, des objets utilitaires, des outils et des œuvres
+                        d'art liés à la Première Nation des Pekuakamiulnuatsh. Les collections
+                        sonores sont surtout composées de contes et de légendes racontés par des
+                        aîné·es de la Première Nation, en français ou en nehlueun. La collection
+                        audiovisuelle réunit des vidéos d'archives et des témoignages de membres de
+                        la communauté sur le patrimoine matériel et immatériel des
+                        Pekuakamiulnuatsh. La collection de photographies, anciennes et
+                        contemporaines, montre des paysages, des structures, des personnes et des
+                        activités qui ont marqué l'histoire des Pekuakamiulnuatsh et de la
+                        communauté de Mashteuiatsh.</p>
+                    <idno>https://cultureilnu.ca/collections</idno>
+                </desc>
+                <desc when="2026-10" type="collections" xml:lang="en">
+                    <p>The Société d'histoire et d'archéologie de Mashteuiatsh makes available
+                        online, through the Collection numérique des Pekuakamiulnuatsh website, part
+                        of its archival fonds and of the holdings of its documentation centre, as
+                        well as the museum collection of the Musée amérindien de Mashteuiatsh. The
+                        object collection includes handcrafted objects, archaeological artifacts,
+                        utilitarian objects, tools and works of art related to the Pekuakamiulnuatsh
+                        First Nation. The sound collections consist mainly of tales and legends told
+                        by Elders of the First Nation, in French or in Nehlueun. The audiovisual
+                        collection brings together archival videos and testimonies from community
+                        members on the tangible and intangible heritage of the Pekuakamiulnuatsh.
+                        The photograph collection, both historical and contemporary, shows
+                        landscapes, structures, people and activities that have shaped the history
+                        of the Pekuakamiulnuatsh and of the community of Mashteuiatsh.</p>
+                    <idno>https://cultureilnu.ca/collections</idno>
+                </desc>
+                <desc when="2026-10" type="copyright" xml:lang="fr">
+                    <p>Tous droits réservés (Collection numérique des Pekuakamiulnuatsh). Les
+                        photographies des collections ne peuvent être copiées ni diffusées sans
+                        autorisation. Les fiches de photographies indiquent comme source la Société
+                        d'histoire et d'archéologie de Mashteuiatsh. Les fiches d'objets ne
+                        comportent aucune mention de crédit, de source ou de licence.</p>
+                    <idno>https://cultureilnu.ca/collections</idno>
+                </desc>
+                <desc when="2026-10" type="copyright" xml:lang="en">
+                    <p>All rights reserved (Collection numérique des Pekuakamiulnuatsh). Photographs
+                        from the collections may not be copied or distributed without permission.
+                        Photograph records name the Société d'histoire et d'archéologie de
+                        Mashteuiatsh as their source. Object records include no credit line, source
+                        or licence.</p>
+                    <idno>https://cultureilnu.ca/collections</idno>
+                </desc>
+                <availability when="2026-10">
+                    <scope>aucune des valeurs proposées ne correspond</scope>
+                    <note>
+                        <p>Compliance : hors périmètre, faute de licence ouverte sur la collection
+                            numérique de l'institution. Tous les droits sont réservés et la copie ou
+                            la diffusion des photographies requiert une autorisation.</p>
+                    </note>
+                    <dissemination type="collectionsOnline">
+                        <volume>1570</volume>
+                        <note>
+                            <p>Le volume correspond au total des fiches des collections d'objets,
+                                sonore et audiovisuelle. Les fiches d'objets n'indiquent ni mention
+                                de crédit, ni source, ni licence. Les fiches de photographies
+                                mentionnent la source (Société d'histoire et d'archéologie de
+                                Mashteuiatsh), sans licence.</p>
+                            <p>La Collection numérique des Pekuakamiulnuatsh donne aussi accès à une
+                                partie des fonds d'archives et des ouvrages du Centre de
+                                documentation de la Société d'histoire et d'archéologie de
+                                Mashteuiatsh, ainsi qu'à la collection muséale du Musée de
+                                Mashteuiatsh. Le site présente des objets, des photographies, des
+                                enregistrements sonores et des documents audiovisuels. Les images ne
+                                sont pas téléchargeables.</p>
+                        </note>
+                        <idno>https://cultureilnu.ca/collections</idno>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucune diffusion de données ouvertes repérée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas d'API publique documentée identifiée à ce jour sur le site
+                                institutionnel.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>1368</volume>
+                        <note>
+                            <p>1368 fiches versées sur Artefacts Canada sous le nom de Musée
+                                amérindien de Mashteuiatsh, dont 597 accompagnées d'images (octobre
+                                2026).</p>
+                        </note>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Mus%C3%A9e+am%C3%A9rindien+de+Mashteuiatsh&amp;t=0&amp;lang=fr</idno>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Mus%C3%A9e+am%C3%A9rindien+de+Mashteuiatsh&amp;t=1&amp;lang=fr</idno>
+                        <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q21619145</idno>
+                    <dissemination type="wikidata" when="2026-10-04">
+                        <volume>0</volume>
+                        <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice
+                            Wikidata</p></note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-10-04">
+                        <volume>0</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno>https://commons.wikimedia.org/wiki/Category:Ilnu_Museum_of_Mashteuiatsh</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+        </listOrg>
+        <listOrg>
+            <head>Ontario</head>
+            <org xml:id="muse1329">
+                <orgName xml:lang="en">Canadian Museum Of Nature</orgName>
+                <orgName xml:lang="fr">Musée Canadien de la Nature</orgName>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>natural sciences</field>
+                </fields>
+                <address>
+                    <street><num>240</num>McLeod Street</street>
+                    <settlement>Ottawa</settlement>
+                    <postCode>K2P 2R1</postCode>
+                    <region>Ottawa</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://nature.ca/fr/nous-visiter/a-laffiche/expositions/</exhibitions>
+                </online>
+                <desc when="2026-10" type="collections" xml:lang="fr">
+                    <p>Les collections d'histoire naturelle du Musée canadien de la nature servent à
+                        la recherche sur le milieu naturel. Les collections de zoologie, les plus
+                        diverses et les plus nombreuses du Musée, réunissent des vertébrés et des
+                        invertébrés. Les collections de paléobiologie comptent plus de 61 620
+                        spécimens de vertébrés (reptiles, mammifères et poissons), la plus
+                        importante collection de pollen fossile au Canada ainsi que quelques plantes
+                        et champignons fossiles. Les collections de géologie (roches, minéraux et
+                        pierres précieuses) ont débuté il y a plus de 150 ans avec l'exploration
+                        géologique du Canada et continuent de s'enrichir. Les collections de
+                        botanique documentent les plantes sauvages à travers le temps, en
+                        particulier les espèces et les habitats canadiens. La Cryobanque nationale
+                        canadienne de la biodiversité conserve à -170 °C, dans l'azote liquide, des
+                        échantillons de tissus destinés à la recherche. Le Musée possède aussi des
+                        œuvres d'art et des photographies, ainsi qu'une bibliothèque et des archives
+                        d'histoire naturelle remontant à 1842 (livres, périodiques, œuvres d'art,
+                        photographies et documents historiques).</p>
+                    <idno>https://nature.ca/fr/notre-science/collections</idno>
+                </desc>
+                <desc when="2026-10" type="collections" xml:lang="en">
+                    <p>The natural history collections of the Canadian Museum of Nature are used for
+                        research on the natural environment. The zoology collections, the most
+                        diverse and numerous in the Museum, include vertebrates and invertebrates.
+                        The palaeobiology collections hold more than 61,620 vertebrate specimens
+                        (reptiles, mammals and fish), the most important fossil pollen collection in
+                        Canada, and a few fossil plants and fungi. The geology collections (rocks,
+                        minerals and gems) began more than 150 years ago with the geological
+                        exploration of Canada and continue to grow. The botany collections document
+                        wild plants over time, with a focus on Canadian species and habitats. The
+                        National Biodiversity Cryobank of Canada preserves tissue samples for
+                        research in liquid nitrogen at -170 °C. The Museum also holds artworks and
+                        photographs, as well as a natural history library and archives dating back
+                        to 1842 (books, periodicals, artworks, photographs and historical
+                        documents).</p>
+                    <idno>https://nature.ca/en/our-science/collections/</idno>
+                </desc>
+                <desc when="2026-10" type="copyright" xml:lang="fr">
+                    <p>Sauf indication contraire, le contenu de nature.ca, images comprises, est
+                        protégé par le droit d'auteur (© Musée canadien de la nature, tous droits
+                        réservés). Il peut être utilisé à des fins personnelles et non commerciales,
+                        sans modification et en citant nature.ca. Toute autre utilisation nécessite
+                        l'autorisation écrite du Musée ou du titulaire des droits</p>
+                    <idno>https://nature.ca/fr/au-sujet-du-musee/modalites-et-conditions/droit-auteur</idno>
+                </desc>
+                <desc when="2026-10" type="copyright" xml:lang="en">
+                    <p>Unless otherwise indicated, content on nature.ca, including images, is
+                        protected by copyright (© Canadian Museum of Nature, all rights reserved).
+                        It may be used for personal and non-commercial purposes, without
+                        modification and with credit to nature.ca. Any other use requires written
+                        permission from the Museum or the rights holder.</p>
+                    <idno>https://nature.ca/en/about-the-museum/terms-conditions/copyright</idno>
+                </desc>
+                <availability when="2026-10">
+                    <scope>Some eligible data</scope>
+                    <note>
+                        <p>Compliance : Open. Le Musée canadien de la nature publie les données de
+                            ses collections de botanique, de zoologie et de paléobiologie sur GBIF,
+                            en quasi-totalité sous CC BY 4.0 (une petite part sous CC0 1.0). Le
+                            contenu du site nature.ca, images comprises, reste protégé par le droit
+                            d'auteur et réservé à un usage personnel et non commercial. Les données
+                            de minéralogie ne sont accessibles que sur demande.</p>
+                    </note>
+                    <dissemination type="collectionsOnline">
+                        <volume>3043080</volume>
+                        <note>
+                            <p>Base de données de la Collection nationale de phycologie du Canada
+                                (algues et diatomées), conçue pour les collections biologiques
+                                aquatiques et leurs données environnementales associées.</p>
+                            <p>Le Musée indique plus de 3 043 080 spécimens (octobre 2026). Aucune
+                                licence ouverte n'est mentionnée.</p>
+                        </note>
+                        <idno>https://www.nature-cana.ca/databases/index.php?lang=fr</idno>
+                    </dissemination>
+                    <dissemination type="datasets">
+                        <volume>1101667</volume>
+                        <note>
+                            <p>Données des collections de botanique, de zoologie et de paléobiologie
+                                publiées sur le Global Biodiversity Information Facility (GBIF),
+                                consultables par occurrence, jeu de données ou espèce et accessibles
+                                par l'API de GBIF.</p>
+                            <p>1 101 667 occurrences publiées sur GBIF dans 19 jeux de données, dont
+                                277 966 accompagnées de médias (octobre 2026). La quasi-totalité est
+                                sous CC BY 4.0, une très petite part sous CC0 1.0</p>
+                        </note>
+                        <idno>https://www.gbif.org/publisher/a41250f0-7c3e-11d8-a19c-b8a03c50a862</idno>
+                        <licence>https://creativecommons.org/licenses/by/4.0</licence>
+                        <licence>https://creativecommons.org/publicdomain/zero/1.0</licence>
+                    </dissemination>
+                    <dissemination type="googleArts">
+                        <volume>1451</volume>
+                        <note>
+                            <p>Œuvres d'art naturaliste et photographies des collections du Musée
+                                publiées sur Google Arts et Culture, accompagnées de récits en
+                                ligne.</p>
+                            <p>1 451 éléments et 7 récits sur Google Arts et Culture. Les fiches
+                                portent la mention © Canadian Museum of Nature / Musée canadien de
+                                la nature.</p>
+                        </note>
+                        <idno>https://artsandculture.google.com/partner/canadian-museum-of-nature-mus%C3%A9e-canadien-de-la-nature</idno>
+                        <licence>http://rightsstatements.org/vocab/InC/1.0</licence>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas d'API publique documentée identifiée à ce jour sur le site
+                                institutionnel.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>0</volume>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q1032232</idno>
+                    <dissemination type="wikidata" when="2026-10-04">
+                        <volume>0</volume>
+                        <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice
+                            Wikidata</p></note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-10-04">
+                        <volume>0</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                            <p>Des images liées au Musée et à ses collections sont présentes sur
+                                Wikimedia Commons (catégories « Canadian Museum of Nature » et «
+                                Collections of the Canadian Museum of Nature »), mais elles ne sont
+                                pas rattachées à l'élément Wikidata de l'institution. Elles ne sont
+                                donc pas repérables par une requête sur les données structurées
+                                (P195 collection).</p>
+                        </note>
+                        <idno>https://commons.wikimedia.org/wiki/Category:Canadian_Museum_of_Nature</idno>
+                        <idno>https://commons.wikimedia.org/wiki/Category:Collections_of_the_Canadian_Museum_of_Nature</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse1911">
+                <orgName xml:lang="en">Canada Science And Technology Museums Corporation (3 National Museums)</orgName>
+                <orgName xml:lang="fr">Musées des sciences et de l’innovation du Canada (3 musées nationaux)</orgName>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>sciences and technology</field>
+                    <field>natural sciences</field>
+                    <field>history</field>
+                </fields>
+                <address>
+                    <street><num>1865</num>St. Laurent Blvd</street>
+                    <settlement>Ottawa</settlement>
+                    <postCode>K1G 6M7</postCode>
+                    <region><Ottawa/region>
+                    <country>Canada</country>
+                </address>
+                <demographics></demographics>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://ingenium.ca/fr/apprentissage/ressources-en-ligne-pour-la-science-chez-soi/?search=&amp;category=Expositions+virtuelles</exhibitions>     
+                </online>
+                <desc when="2026-10" type="collections" xml:lang="fr">
+                    <p>Ingenium est l'intendante de la collection nationale des sciences et de la technologie du
+                        Canada, qui comprend plus de 150 000 objets, 100 000 articles de bibliothèque et environ
+                        2 500 m de documents d'archives. La collection couvre le transport (aérien, spatial,
+                        terrestre et maritime), les sciences physiques, la médecine, les communications,
+                        l'agriculture et les ressources naturelles. Elle est conservée au Centre Ingenium, à côté
+                        du Musée des sciences et de la technologie du Canada, et au Hangar de réserve, à côté du
+                        Musée de l'aviation et de l'espace du Canada.</p>
+                    <idno>https://ingenium.ca/fr/collection-et-recherche</idno>
+                    <idno>https://ingenium.ca/fr/collection-et-recherche/collection</idno>
+                </desc>
+                <desc type="collections" xml:lang="en" when="2026-10">
+                    <p>Ingenium is the steward of Canada's national science and technology collection, which
+                        includes more than 150,000 objects, 100,000 library items and about 2,500 m of archival
+                        records. The collection covers transportation (air, space, land and marine), physical
+                        sciences, medicine, communications, agriculture and natural resources. It is housed at the
+                        Ingenium Centre, next to the Canada Science and Technology Museum, and at the Reserve
+                        Hangar, next to the Canada Aviation and Space Museum.</p>
+                    <idno>https://ingenium.ca/en/collections-research/</idno>
+                    <idno>https://ingenium.ca/en/collections-research/collection</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-10">
+                    <p>Le contenu des sites d'Ingenium est fourni pour un usage personnel et non commercial.
+                        Les images de la collection en ligne sont diffusées sous licence Creative Commons et
+                        peuvent être téléchargées et réutilisées gratuitement à des fins non commerciales, en
+                        mentionnant Ingenium et le numéro de l'artefact. Tout usage commercial est soumis à des
+                        frais de reproduction.</p>
+                    <idno>https://ingenium.ca/fr/avis/</idno>
+                    <idno>https://collection.ingenium.ca/fr/</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-10">
+                    <p>Content on Ingenium's websites is provided for personal and non-commercial use. Images in
+                        the online collection are released under a Creative Commons licence and may be downloaded
+                        and reused free of charge for non-commercial purposes, with credit to Ingenium and the
+                        artifact number. Commercial use is subject to reproduction fees.</p>
+                    <idno>https://ingenium.ca/en/terms-of-use/</idno>
+                    <idno>https://collection.ingenium.ca/en/</idno>
+                </desc>
+                <availability when="2026-10">
+                    <scope>some data eligible</scope>
+                    <note>
+                        <p>Compliance : Open pour les données, avec réserves. Ingenium publie depuis 2014 un jeu de
+                            données couvrant tous les artefacts de ses trois musées sous Licence du gouvernement
+                            ouvert du Canada, mais les fichiers ne sont plus téléchargeables en octobre 2026.
+                            L'API de la collection reste active, sans licence déclarée. Les images d'objets de la
+                            collection en ligne sont sous CC BY-NC 4.0 et réservées à un usage non commercial.
+                            Parmi les documents d'archives, seuls ceux marqués CC0 sont librement
+                            réutilisables.</p>
+                    </note>
+                    <dissemination type="collectionsOnline">
+                        <volume>134271</volume>
+                        <note>
+                            <p>La collection en ligne d'Ingenium donne accès aux objets et aux documents d'archives
+                                des trois musées (Musée des sciences et de la technologie du Canada, Musée de
+                                l'aviation et de l'espace du Canada, Musée de l'agriculture et de l'alimentation du
+                                Canada), avec fiches descriptives et images téléchargeables.</p>
+                            <p>Les images d'objets sont diffusées sous CC BY-NC 4.0 et peuvent être réutilisées
+                                gratuitement à des fins non commerciales, en mentionnant Ingenium et le numéro de
+                                l'artefact. Les fiches affichent aussi le sigle CC BY-NC-ND, en contradiction avec le
+                                libellé CC BY-NC 4.0. Les documents d'archives sont marqués soit CC0, soit CC BY-NC-ND.
+                                Tout usage commercial est soumis à des frais de reproduction.</p>
+                        </note>
+                        <idno>https://collection.ingenium.ca/fr</idno>
+                        <licence>https://creativecommons.org/licenses/by-nc/4.0/</licence>
+                        <licence>https://creativecommons.org/licenses/by-nc-nd/4.0/</licence>
+                        <licence>https://creativecommons.org/publicdomain/zero/1.0/</licence>
+                    </dissemination>
+                    <dissemination type="openData" when="2014-10-24">
+                        <note>
+                            <p>Jeu de données « SMSTC - Collection d'artefact », publié par le Musée des sciences et de
+                                la technologie du Canada sur le Portail du gouvernement ouvert. Il couvre l'ensemble des
+                                artefacts des trois musées d'Ingenium (Musée des sciences et de la technologie du
+                                Canada, Musée de l'aviation et de l'espace du Canada, Musée de l'agriculture et de
+                                l'alimentation du Canada) et comprend des images pour presque tous les artefacts. Le
+                                jeu est proposé en XML et en CSV, en versions française et anglaise,
+                                avec un dictionnaire de données et des conseils d'utilisation. Mise à jour semestrielle
+                                annoncée (dernière modification de la fiche : 18 février 2025). En octobre 2026, les
+                                fichiers, hébergés sur l'ancien domaine source.techno-science.ca, ne sont plus
+                                accessibles. Le jeu de données reste référencé sur le portail mais ne peut pas être
+                                téléchargé.</p>
+                        </note>
+                        <idno type="dataset"
+                            >https://ouvert.canada.ca/data/fr/dataset/42c640e3-5d17-4dd5-b20c-5d0176aa7344</idno>
+                        <licence>https://open.canada.ca/fr/licence-du-gouvernement-ouvert-canada</licence>
+                    </dissemination>
+                    <dissemination type="api" when="2023-03-09">
+                        <note>
+                            <p>API de la collection d'Ingenium (Collection API), de type REST et construite sur Apache
+                                Solr, lancée le 9 mars 2023 (version 1.1 en décembre 2023). L'accès requiert un jeton
+                                individuel gratuit, obtenu par inscription. Les requêtes sont limitées à 100 par
+                                seconde, Ingenium renvoyant à son portail de données ouvertes pour un accès aux données
+                                brutes. Documentation interactive et modèles de données disponibles en ligne. Aucune
+                                licence n'est précisée pour les données diffusées par l'API.</p>
+                        </note>
+                        <idno>https://api.ingeniumcanada.org/fr/</idno>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>134 002</volume>
+                        <note>
+                            <p>134 002 fiches versées sur Artefacts Canada sous le nom de Canada Science and Technology
+                                Museum (Musée des sciences et de la technologie du Canada), dont 64329 accompagnées
+                                d'images</p>
+                        </note>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Canada+Science+and+Technology+Museum&amp;t=0&amp;lang=fr</idno>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Canada+Science+and+Technology+Museum&amp;t=1&amp;lang=fr</idno>
+                        <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>297</volume>
+                        <note>
+                            <p>297 fiches versées sur Artefacts Canada sous le nom de Canadian Air &amp; Space Museum
+                                (Musée de l'aviation et de l'espace du Canada), dont 297 accompagnées d'images.</p>
+                        </note>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Canadian+Air+%26+Space+Museum&amp;t=0&amp;lang=fr</idno>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Canadian+Air+%26+Space+Museum&amp;t=1&amp;lang=fr</idno>
+                        <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="https://www.wikidata.org/wiki/Q5029429"</idno>
+                    <dissemination type="wikidata" when="2026-10-04">
+                        <volume>0</volume>
+                        <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice
+                                Wikidata</p></note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-10-04">
+                        <volume>0</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse1297">
+                <orgName xml:lang="en">National Gallery Of Canada</orgName>
+                <orgName xml:lang="fr">Musée des beaux-arts du Canada</orgName>
+                <acronym xml:lang="en">NGC</acronym>
+                <acronym xml:lang="fr">MBAC</acronym>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>fine arts</field>
+                </fields>
+                <address>
+                    <street><num>380</num>Sussex Drive</street>
+                    <settlement>Ottawa</settlement>
+                    <postCode>K1N 9N4</postCode>
+                    <region>Ottawa</region>
+                    <country>Canada</country>
+                </address>
+                <demographics></demographics>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://www.beaux-arts.ca/a-laffiche/expositions-et-salles</exhibitions>
+                </online>
+                <desc type="collections" xml:lang="fr" when="2026-10">
+                    <p>Fondé en 1880, le Musée des beaux-arts du Canada conserve l'une des plus importantes
+                        collections d'art autochtone et canadien au monde, ainsi que des œuvres d'art européen,
+                        américain et asiatique, d'art contemporain, de dessins et estampes et de photographie. La
+                        collection d'art canadien couvre les pratiques artistiques du début du XVIIIe siècle en
+                        Nouvelle-France jusqu'aux années 1990. La collection de dessins et estampes compte plus de
+                        27 000 œuvres sur papier, du XVe siècle à nos jours, et celle d'art asiatique environ 400
+                        peintures et sculptures, surtout du sous-continent indien. Le Musée abrite aussi une
+                        bibliothèque de recherche et des archives, dont de nombreux fonds et des collections
+                        d'éphémères liés à l'art.</p>
+                    <idno>https://www.beaux-arts.ca/collection/a-propos-des-collections</idno>
+                </desc>
+                <desc type="collections" xml:lang="en" when="2026-10">
+                    <p>Founded in 1880, the National Gallery of Canada holds one of the world's finest collections
+                        of Indigenous and Canadian art, as well as European, American and Asian art, contemporary
+                        art, drawings and prints, and photography. The Canadian art collection spans artistic
+                        practices from the early 18th century in New France to the 1990s. The drawings and prints
+                        collection includes more than 27,000 works on paper from the 15th century to the present,
+                        and the Asian collection about 400 paintings and sculptures, mainly from the Indian
+                        subcontinent. The Gallery also houses a research library and archives, including many
+                        fonds and collections of art-related ephemera.</p>
+                    <idno>https://www.gallery.ca/collection/collecting-areas</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-10">
+                    <p>Toute reproduction d'une image d'œuvre de la collection du Musée des beaux-arts du Canada
+                        exige une autorisation officielle du Musée, demandée au moyen d'un formulaire de commande
+                        en ligne. Les autorisations sont accordées au cas par cas et peuvent entraîner des frais.
+                        L'accord des tiers titulaires de droits, notamment les artistes, doit être obtenu
+                        séparément. Les fiches de la collection en ligne n'affichent ni licence ni mention de
+                        droits, et les images ne sont pas téléchargeables.</p>
+                    <idno>https://www.beaux-arts.ca/recherche/reproduction-dimage</idno>
+                    <idno>https://www.beaux-arts.ca/modalites-dusage</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-10">
+                    <p>Any reproduction of an image of a work from the National Gallery of Canada's collection
+                        requires official permission from the Gallery, requested through an online order form.
+                        Permissions are granted case by case and may be subject to fees. The consent of
+                        third-party rights holders, including artists, must be obtained separately. Online
+                        collection records display no licence or rights statement, and images cannot be
+                        downloaded.</p>
+                    <idno>https://www.gallery.ca/research/image-reproduction</idno>
+                    <idno>https://www.gallery.ca/terms-of-use</idno>
+                </desc>
+                <availability when="2026-10">
+                    <scope></scope>
+                    <dissemination type="collectionsOnline">
+                        <volume>87135</volume>
+                        <note>
+                            <p>Les fiches n'affichent aucune
+                              licence ni mention de droits, ni crédit photographique, y compris pour les œuvres
+                                anciennes. Les images ne sont pas téléchargeables. Les modalités d'usage du site
+                                autorisent seulement la consultation et le téléchargement à des fins non commerciales,
+                                pédagogiques et personnelles. Toute reproduction exige une autorisation officielle du
+                                Musée et, le cas échéant, des tiers titulaires de droits.</p>
+                        </note>
+                        <idno>https://www.beaux-arts.ca/collection/recherche-dans-la-collection</idno>
+                        <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>77 381</volume>
+                        <note>
+                            <p>77 381 fiches versées sur Artefacts Canada sous le nom de Canada Science and Technology
+                                Museum (Musée des sciences et de la technologie du Canada), dont 76 143 accompagnées
+                                d'images</p>
+                        </note>   <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=National+Gallery+of+Canada&amp;t=0&amp;lang=fr</idno>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=National+Gallery+of+Canada&amp;t=1&amp;lang=fr</idno>
+                        <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="https://www.wikidata.org/wiki/Q1068063"</idno>
+                    <dissemination type="wikidata" when="2026-10-04">
+                        <volume>4387</volume>
+                        <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice
+                                Wikidata</p></note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-10-04">
+                        <volume>425</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno>https://commons.wikimedia.org/wiki/Category:Collections_of_the_National_Gallery_of_Canada</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
         </listOrg>
         <listOrg>
             <head>Alberta</head>
