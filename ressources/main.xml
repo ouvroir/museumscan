@@ -3386,6 +3386,359 @@
                     </dissemination>
                 </wikimedia>       
             </org>
+            <org xml:id="muse1247">
+                <orgName xml:lang="en">Thousand Islands Boat Museum</orgName>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>social and community studies</field>
+                </fields>
+                <address>
+                    <street><num>125</num>Water Street</street>
+                    <settlement>Gananoque</settlement>
+                    <postCode>K7G 3E3</postCode>
+                    <region>Ottawa</region>
+                    <country>Canada</country>
+                </address>
+                <demographics></demographics>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <idno type="website">https://tiboatmuseum.org/explore</idno>
+                    <!-- site web n'est pas à jour dans les données du RCIP -->
+                </online>
+                <desc type="collections" when="2026-11" xml:lang="fr">
+                    <p>Le Thousand Islands Boat Museum, à Gananoque, conserve et présente une collection de bateaux
+                        anciens représentatifs de la région des Mille-Îles et du fleuve Saint-Laurent. Certains de ces
+                        bateaux naviguent sur le fleuve depuis plusieurs générations. La collection sert à illustrer
+                        l'histoire des embarcations, de la construction navale et de la vie sur le fleuve, ainsi que
+                        celle des personnes qui ont construit ces bateaux.</p>
+                    <idno>https://tiboatmuseum.org/come-visit</idno>
+                </desc>
+                <desc type="collections" when="2026-11" xml:lang="en">
+                    <p>The Thousand Islands Boat Museum, in Gananoque, preserves and presents a collection of antique
+                        boats representative of the Thousand Islands region and the St. Lawrence River. Some of these
+                        boats have been on the river for generations. The collection illustrates the history of boats,
+                        boatbuilding and river life, as well as that of the people who built these boats.</p>
+                    <idno>https://tiboatmuseum.org/come-visit</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11">
+                    <p>Le pied de page du site du Thousand Islands Boat Museum porte la mention « Thousand Islands Boat
+                        Museum © 2023 ». Les pages consultées ne présentent aucune licence ouverte, aucune condition
+                        d'utilisation ni aucune procédure de reproduction d'images. Le Musée reçoit les demandes de
+                        recherche sur l'histoire de la navigation dans les Mille-Îles au moyen d'un formulaire en
+                        ligne.</p>
+                    <idno>https://tiboatmuseum.org</idno>
+                    <idno>https://tiboatmuseum.org/explore/research-requests</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11">
+                    <p>The footer of the Thousand Islands Boat Museum website carries the notice "Thousand Islands Boat
+                        Museum © 2023". The pages consulted present no open licence, terms of use or image reproduction
+                        procedure. The Museum receives research requests on Thousand Islands boating history through an
+                        online form.</p>
+                    <idno>https://tiboatmuseum.org</idno>
+                    <idno>https://tiboatmuseum.org/explore/research-requests</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>aucune des valeurs proposées ne correspond</scope>
+                    <note>
+                        <p>Compliance : hors périmètre. Le Thousand Islands Boat Museum ne présente pas de collection en
+                            ligne (novembre 2026) : son site annonce un catalogue en ligne de ses bateaux à venir. Dans les
+                            pages consultées, aucune licence ouverte n'est déclarée. Le site affiche une mention générale
+                            de droit d'auteur dans son pied de page.</p>
+                    </note>
+                    <idno>https://tiboatmuseum.org/explore/collection/the-boats/</idno>
+                    <dissemination type="collectionsOnline">
+                        <volume>0</volume>
+                        <note>
+                            <p>Aucune fiche d'objet n'est consultable en ligne (novembre 2026). La rubrique The Boats décrit
+                                la collection de façon générale et indique que le Musée possède 36 bateaux.</p>
+                        </note>
+                        <idno>https://tiboatmuseum.org/explore/collection/</idno>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <note>Le Musée ne verse pas ses données dans Artefacts Canada.</note>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Le Musée ne dispose pas d'élément Wikidata (novembre 2026).</p>
+                    </note>
+                </wikimedia> 
+            </org>
+            <org xml:id="muse1576">
+                <orgName xml:lang="en">Canadian War Museum</orgName>
+                <orgName xml:lang="fr">Musée Canadien de la Guerre</orgName>
+                <acronym xml:lang="en">CWM</acronym>
+                <acronym xml:lang="fr">MCG</acronym>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>military</field>
+                    <field>history</field>
+                </fields>
+                <address>
+                    <street><num>1</num>Vimy Place</street>
+                    <settlement>Ottawa</settlement>
+                    <postCode>K1M 0M8</postCode>
+                    <region>Ottawa</region>
+                    <country>Canada</country>
+                </address>
+                <demographics></demographics>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://www.museedelaguerre.ca/expositions</exhibitions>
+                    <education>https://www.museedelaguerre.ca/pedagogues/programmes-educatifs-virtuels</education>
+                    <specialized>https://www.museedelaguerre.ca/vos-recits/leur-histoire</specialized>
+                </online>
+                <desc type="collections" xml:lang="fr" when="2026-11">
+                    <p>Les collections du Musée canadien de la guerre, musée national d'histoire militaire du Canada,
+                        comportent plus de 3 millions d'artefacts, d'œuvres d'art, de documents d'archives et
+                        d'enregistrements sonores et visuels. Elles comprennent des véhicules rares, des pièces
+                        d'artillerie, des uniformes, des médailles et des souvenirs personnels, ainsi que la Collection
+                        Beaverbrook d'art militaire et ses 14 000 œuvres d'art. Le Centre de recherche sur l'histoire
+                        militaire abrite la Collection d'archives George-Metcalf et la Bibliothèque Hartland-Molson.</p>
+                    <idno>https://www.museedelaguerre.ca/a-propos/notre-mission</idno>
+                </desc>
+                <desc type="collections" xml:lang="en" when="2026-11">
+                    <p>The collections of the Canadian War Museum, Canada's national museum of military history, comprise
+                        more than 3 million artifacts, works of art, archival documents, and sound and visual recordings.
+                        They include rare vehicles, artillery pieces, uniforms, medals and personal memorabilia, as well
+                        as the Beaverbrook Collection of War Art and its 14,000 works of art. The Military History
+                        Research Centre houses the George Metcalf Archival Collection and the Hartland Molson Library.</p>
+                    <idno>https://www.warmuseum.ca/about/our-purpose</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11">
+                    <p>Tout usage d'une image, d'un texte ou d'une partie des collections du Musée canadien de la guerre
+                        à des fins autres que personnelles ou de recherche exige l'autorisation écrite du Musée, demandée
+                        au moyen d'un formulaire en ligne. Des frais de reproduction et d'utilisation s'appliquent et la
+                        mention de crédit fournie par le Musée est obligatoire. L'autorisation est non exclusive et
+                        accordée pour un seul usage, sauf indication contraire. Si le Musée ne détient pas la totalité
+                        des droits sur une œuvre, l'utilisateur·rice doit obtenir l'autorisation écrite du ou de la
+                        titulaire. Sauf approbation préalable, le matériel doit être reproduit en entier et sans
+                        altération. Les pages consultées ne mentionnent aucune licence ouverte pour les collections.</p>
+                    <idno>https://www.museedelaguerre.ca/recherche-et-collections/demander-une-reproduction</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11">
+                    <p>Any use of an image, text or part of the Canadian War Museum collections for purposes other than
+                        personal use or research requires written permission from the Museum, requested through an online
+                        form. Reproduction and usage fees apply and the credit line supplied by the Museum is mandatory.
+                        Permission is non-exclusive and granted for one-time use unless otherwise advised. If the Museum
+                        does not hold full copyright in a work, the user must obtain written permission from the copyright
+                        owner. Unless approved in advance, material must be reproduced in its entirety and without
+                        alteration. The pages consulted mention no open licence for the collections.</p>
+                    <idno>https://www.warmuseum.ca/research-and-collections/request-a-reproduction</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>aucune des valeurs proposées ne correspond</scope>
+                    <dissemination type="collectionsOnline">
+                        <volume>40796</volume>
+                        <note>
+                            <p>Les fiches n'affichent aucune licence. Leur section « Droits et permissions » renvoie au formulaire de demande du Musée.</p>
+                        </note>
+                        <idno>https://www.museedelaguerre.ca/collections</idno>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <note>
+                            <p>Le Musée contribue à Artefacts Canada.</p>
+                            <p>Le nombre de fiches versées n'a pas pu être relevé, la page d'Artefacts Canada ne s'affichant
+                                pas (novembre 2026).</p>
+                        </note>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q1032442</idno>
+                    <dissemination type="wikidata" when="2026-11-09">
+                        <volume>806</volume>
+                        <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice
+                                Wikidata</p></note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-11-09">
+                        <volume>518</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno type="institution">https://commons.wikimedia.org/wiki/Canadian_War_Museum</idno>
+                        <idno type="collections">https://commons.wikimedia.org/wiki/Category:Collections_of_the_Canadian_War_Museum</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse1518">
+                <orgName xml:lang="en">Agnes Etherington Art Centre</orgName>
+                <acronym xml:lang="en">AEAC</acronym>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>history</field>
+                    <field>fine arts</field>
+                </fields>
+                <address>
+                    <street><num>36</num>University Avenue</street>
+                    <settlement>Kingston</settlement>
+                    <postCode>K7L 3N6</postCode>
+                    <region>Kingston--Pembroke</region>
+                    <country>Canada</country>
+                </address>
+                <demographics></demographics>
+                <accessibility>
+                    <admission>free</admission>
+                    <!-- Musée fermé en novembre 2026 pour transformation du bâtiment, réouverture annoncée en 2027. Entrée indiquée comme gratuite par Kingston Museums (information non datée), valeur d'admission à revoir à la réouverture. -->
+                </accessibility>
+                <online>
+                    <exhibitions>https://agnes.queensu.ca/explore/exhibitions/current/</exhibitions>
+                    <specialized>https://agnes.queensu.ca/digital-agnes/</specialized>
+                </online>
+                <desc type="collections" xml:lang="fr" when="2026-11">
+                    <p>Le Agnes Etherington Art Centre conserve plus de 17 000 œuvres d'art, avec d'importants ensembles
+                        d'art contemporain et d'art autochtone, ainsi que d'art historique canadien, européen et
+                        africain.</p>
+                    <idno>https://agnes.queensu.ca/explore/collections/overview</idno>
+                </desc>
+                <desc type="collections" xml:lang="en" when="2026-11">
+                    <p>Agnes Etherington Art Centre holds over 17,000 works of art, with major concentrations of
+                        contemporary and Indigenous art, and Canadian, European and African historical art.</p>
+                    <idno>https://agnes.queensu.ca/explore/collections/overview</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11">
+                    <p>Toute reproduction d'une image de la collection exige une autorisation du Agnes Etherington Art
+                        Centre, demandée au moyen d'un formulaire en ligne, pour un seul usage. Des frais peuvent
+                        s'appliquer. Il revient au demandeur ou à la demandeuse d'obtenir l'accord du ou de la titulaire
+                        des droits. Les fiches en ligne n'affichent ni licence ni mention de droits.</p>
+                    <idno>https://agnes.queensu.ca/explore/collections/image-reproduction/</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11">
+                    <p>Any reproduction of an image from the collection requires permission from the Agnes Etherington
+                        Art Centre, requested through an online form, for one-time use. Fees may apply. Applicants must
+                        obtain permission from the copyright holder. Online records display no licence or rights
+                        statement.</p>
+                    <idno>https://agnes.queensu.ca/explore/collections/image-reproduction</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>aucune des valeurs proposées ne correspond</scope>
+                    <dissemination type="collectionsOnline">
+                        <volume>13485</volume>
+                        <note>
+                            <p>Les fiches indiquent une mention de source, mais n'affichent ni licence ni mention de droits.
+                                Toute reproduction d'image exige une autorisation demandée au moyen du formulaire en ligne du
+                                Centre.</p>
+                        </note>
+                        <idno>https://agnes.queensu.ca/explore/collections/search-the-collection</idno>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>15765</volume>   
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Agnes+Etherington+Art+Centre&amp;t=0&amp;lang=fr</idno>
+                        <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q4693034</idno>
+                    <dissemination type="wikidata" when="2026-11-09">
+                        <volume>288</volume>
+                        <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice
+                                Wikidata</p></note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-11-09">
+                        <volume>287</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno type="institution">https://commons.wikimedia.org/wiki/Category:Agnes_Etherington_Art_Centre</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
         </listOrg>
         <listOrg>
             <head>Alberta</head>
