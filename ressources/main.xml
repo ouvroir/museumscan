@@ -2949,7 +2949,7 @@
                     <street><num>1865</num>St. Laurent Blvd</street>
                     <settlement>Ottawa</settlement>
                     <postCode>K1G 6M7</postCode>
-                    <region><Ottawa/region>
+                    <region>Ottawa</region>
                     <country>Canada</country>
                 </address>
                 <demographics></demographics>
@@ -3073,7 +3073,7 @@
                         </note>
                     </dissemination>
                     <dissemination type="artefactsCanada">
-                        <volume>134 002</volume>
+                        <volume>134002</volume>
                         <note>
                             <p>134 002 fiches versées sur Artefacts Canada sous le nom de Canada Science and Technology
                                 Museum (Musée des sciences et de la technologie du Canada), dont 64329 accompagnées
@@ -3098,7 +3098,7 @@
                     <note>
                         <p>Institution identifiée sur Wikidata</p>
                     </note>
-                    <idno type="https://www.wikidata.org/wiki/Q5029429"</idno>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q5029429</idno>
                     <dissemination type="wikidata" when="2026-10-04">
                         <volume>0</volume>
                         <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
@@ -3200,10 +3200,12 @@
                         <note>
                             <p>Aucun jeu de données ouvert identifié à ce jour</p>
                         </note>
+                    </dissemination>
                     <dissemination type="api">
                         <note>
                             <p>pas d'API identifiée à ce jour.</p>
                         </note>
+                    </dissemination>
                     <dissemination type="flickrCommons">
                         <note>
                             <p>Aucune présence sur FlickrCommons</p>
@@ -3222,7 +3224,7 @@
                         </note>
                     </dissemination>
                     <dissemination type="artefactsCanada">
-                        <volume>77 381</volume>
+                        <volume>77381</volume>
                         <note>
                             <p>77 381 fiches versées sur Artefacts Canada sous le nom de Canada Science and Technology
                                 Museum (Musée des sciences et de la technologie du Canada), dont 76 143 accompagnées
@@ -3236,7 +3238,7 @@
                     <note>
                         <p>Institution identifiée sur Wikidata</p>
                     </note>
-                    <idno type="https://www.wikidata.org/wiki/Q1068063"</idno>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q1068063</idno>
                     <dissemination type="wikidata" when="2026-10-04">
                         <volume>4387</volume>
                         <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
@@ -3253,6 +3255,136 @@
                         <idno>https://commons.wikimedia.org/wiki/Category:Collections_of_the_National_Gallery_of_Canada</idno>
                     </dissemination>
                 </wikimedia>
+            </org>
+            <org xml:id="muse0673">
+                <orgName xml:lang="fr">La Galerie D'Art D'Ottawa</orgName>
+                <orgName xml:lang="en">The Ottawa Art Gallery</orgName>
+                <acronym xml:lang="fr">GAO</acronym>
+                <acronym xml:lang="en">OAG</acronym>
+                <orgType>gallery</orgType>
+                <fields>
+                    <field>decorative arts and design</field>
+                    <field>fine arts</field>
+                </fields>
+                <address>
+                    <street><num>50</num>Mackenzie King Bridge</street>
+                    <settlement>Ottawa</settlement>
+                    <postCode>K1N 0C5</postCode>
+                    <region>Ottawa</region>
+                    <country>Canada</country>
+                </address>
+                <demographics></demographics>
+                <accessibility>
+                    <admission>free</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://oaggao.ca/fr/a-laffiche/exposition</exhibitions>
+                </online>
+                <desc type="collections" when="2026-11" xml:lang="fr">
+                    <p>Depuis notre fondation en 1988, tout ce que nous acquérons et entretenons constitue une archive des artistes de la région d’Ottawa-Gatineau et de leurs pratiques. Notre collection, toujours en pleine croissance, est amassée grâce au labeur de plusieurs œuvrant à la direction, au commissariat, à la gestion et au sein du conseil, ou encore de nos mécènes, de nos bénévoles et de notre collectivité.</p>
+                    <p>La Galerie d'art d'Ottawa conserve deux collections. La Collection permanente réunit plus de
+                        1 000 œuvres d'artistes canadien·nes historiques et contemporain·es ayant des liens étroits
+                        avec la région d'Ottawa-Gatineau, notamment des œuvres sur papier, peintures, films,
+                        sculptures, photographies et œuvres en nouveaux médias. La Collection Firestone d'art canadien,
+                        propriété de la Ville d'Ottawa, compte plus de 1 600 œuvres rassemblées par les collectionneur·euses
+                        O.J. et Isobel Firestone du début des années 1950 aux années 1970.</p>
+                    <idno>https://oaggao.ca/fr/apprendre/collections</idno>
+                </desc>
+                <desc type="collections" when="2026-11" xml:lang="en">
+                    <p>Since our founding in 1988, we have collected and cared for artwork connected to the Ottawa-Gatineau region as a record of its makers and their creative practices.</p>
+                    <p>Our growing collection has been built by many hands including our directors, curators, and collections managers as well as our board, donors, funders, volunteers, and community members.</p>
+                    <idno>https://oaggao.ca/learn/collections</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11">
+                    <p>Les pages consultées du site de la Galerie d'art d'Ottawa ne présentent aucune politique de droits
+                        d'auteur, aucune condition d'utilisation ni aucune procédure de reproduction d'images. Les fiches
+                        de la collection en ligne indiquent une ligne de crédit, mais n'affichent ni licence ni mention de
+                        droits. Les demandes d'information sur la collection permanente sont adressées au service des
+                        collections.</p>
+                    <idno>https://oaggao.ca/fr/apprendre/collections/permanente</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11">
+                    <p>The pages consulted on the Ottawa Art Gallery website present no copyright policy, terms of use or
+                        image reproduction procedure. Online collection records include a credit line but display no
+                        licence or rights statement. Enquiries about the Permanent Collection are directed to the
+                        collections department.</p>
+                    <p>The Ottawa Art Gallery holds two collections. The Permanent Collection comprises more than 1,000
+                        works by historical and contemporary Canadian artists with strong ties to the Ottawa-Gatineau
+                        region, including works on paper, paintings, films, sculptures, photographs and new media works.
+                        The Firestone Collection of Canadian Art, owned by the City of Ottawa, comprises more than 1,600
+                        works assembled by collectors O.J. and Isobel Firestone from the early 1950s to the 1970s.</p>
+                    <idno>https://oaggao.ca/learn/collections/permanent/</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>aucune des valeurs proposées ne correspond</scope>
+                    <note>
+                        <p>Compliance : hors périmètre. Dans les pages consultées, la Galerie d'art d'Ottawa ne
+                            déclare aucune licence ouverte pour ses collections. Les fiches de la collection en
+                            ligne n'affichent ni licence ni mention de droits.</p>
+                    </note>
+                    <dissemination type="collectionsOnline">
+                        <volume>3409</volume>
+                        <note>
+                            <p>Le volume additionne les 1812 fiches de la Collection permanente et les 1596 fiches de la
+                                Collection Firestone d'art canadien (novembre 2026). Les fiches indiquent une ligne de
+                                crédit, mais n'affichent ni licence ni mention de droits.</p>
+                        </note>
+                        <idno>https://oaggao.ca/fr/apprendre/collections/recherche-avancee/</idno>       
+                    </dissemination>
+                    <dissemination type="openData">
+                    <note>
+                        <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                    </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                            <note>
+                                <p>Aucune présence sur FlickrCommons</p>
+                            </note>
+                        </dissemination>
+                        <dissemination type="iiif">
+                            <note>
+                                <p>Non disponible</p>
+                                <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                            </note>
+                        </dissemination>
+                        <dissemination type="git">
+                            <note>
+                                <p>Non disponible</p>
+                                <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                            </note>
+                        </dissemination>
+                        <dissemination type="artefactsCanada">
+                            <volume>171</volume>    
+                            <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=The+Ottawa+Art+Gallery&amp;t=0&amp;lang=fr</idno>
+                            <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
+                        </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q47038408</idno>
+                    <dissemination type="wikidata" when="2026-10-08">
+                        <volume>3</volume>
+                        <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice
+                                Wikidata</p></note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-10-04">
+                        <volume>1</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno>https://commons.wikimedia.org/wiki/Category:Ottawa_Art_Gallery</idno>
+                    </dissemination>
+                </wikimedia>       
             </org>
         </listOrg>
         <listOrg>
