@@ -3739,6 +3739,283 @@
                     </dissemination>
                 </wikimedia>
             </org>
+            <org xml:id="muse1331">
+                <orgName xml:lang="en">Art Gallery Of Ontario</orgName>
+                <acronym xml:lang="en">AGO</acronym>
+                <orgType>gallery</orgType>
+                <fields>
+                    <field>fine arts</field>
+                </fields>
+                <address>
+                    <street><num>317</num>Dundas St W</street>
+                    <settlement>Toronto</settlement>
+                    <postCode>M5T 1G4</postCode>
+                    <region>Toronto</region>
+                    <country>Canada</country>
+                </address>
+                <demographics></demographics>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://ago.ca/exhibitions</exhibitions>
+                    <specialized>https://boxwood.ago.ca/about-website</specialized>
+                </online>
+                <desc type="collections" xml:lang="fr" when="2026-11">
+                    <p>La collection compte plus de 120 000 œuvres, de l'art
+                        européen du Moyen Âge à l'art contemporain international. Elle comprend un important ensemble
+                        d'art historique canadien, axé sur Toronto et l'Ontario et marqué par le Groupe des Sept, de
+                        l'art autochtone des Premières Nations, des Inuit et des Métis ainsi que d'Afrique, d'Australie
+                        et des îles du détroit de Torres, et de l'art moderne américain et européen de 1900 à 1960. La
+                        collection de photographies réunit plus de 70 000 œuvres, des années 1840 à aujourd'hui, et
+                        celle d'estampes et de dessins couvre l'histoire de l'œuvre sur papier en Occident depuis le
+                        XVe siècle. Le Musée conserve aussi la plus grande collection publique d'œuvres d'Henry Moore,
+                        des miniatures gothiques en buis, de l'art d'Afrique de l'Ouest et d'Afrique centrale, ainsi
+                        qu'une bibliothèque et des archives de plus de 380 000 volumes.</p>
+                    <idno>https://ago.ca/collection</idno>
+                </desc>
+                <desc type="collections" xml:lang="en" when="2026-11">
+                    <p>The Art Gallery of Ontario collection comprises more than 120,000 works, from European art of the
+                        Middle Ages to international contemporary art. It includes a major holding of historical Canadian
+                        art, focused on Toronto and Ontario and marked by the Group of Seven, Indigenous art from First
+                        Nations, Inuit and Métis artists as well as from Africa, Australia and the Torres Strait Islands,
+                        and American and European modern art from 1900 to 1960. The photography collection holds more
+                        than 70,000 works from the 1840s to the present, and the prints and drawings collection spans the
+                        history of Western works on paper since the 15th century. The Gallery also holds the largest
+                        public collection of works by Henry Moore, Gothic boxwood miniatures, Western and Central African
+                        art, and a library and archives of more than 380,000 volumes.</p>
+                    <idno>https://ago.ca/collection</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11">
+                    <p>Le musée concède des licences d'images de sa collection à des fins
+                        savantes, personnelles et commerciales, au moyen de son service AGO Images. Les images sont
+                        commandées en ligne à partir d'une base de données des œuvres disponibles et des œuvres peuvent
+                        être numérisées sur demande. Le service offre des conseils sur les autorisations liées au droit
+                        d'auteur. Les pages consultées ne mentionnent aucune licence ouverte pour la collection.</p>
+                    <idno>https://ago.ca/inquiries/image-licensing</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11">
+                    <p>The Art Gallery of Ontario licenses images from its collection for scholarly, personal and
+                        commercial use through its AGO Images service. Images are ordered online from a database of
+                        available works, and works can be digitized on request. The service provides advice on copyright
+                        permissions. The pages consulted mention no open licence for the collection.</p>
+                    <idno>https://ago.ca/inquiries/image-licensing</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>aucune des valeurs proposées ne correspond</scope>
+                    <dissemination type="collectionsOnline">
+                        <volume>131475</volume>
+                        <note>
+                            <p>Le site de la collection en ligne ne présente aucune licence ouverte. Les images sont
+                                concédées sous licence par le service AGO Images.</p>
+                        </note>
+                        <idno>https://art.ago.ca/objects/images</idno>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Images de la collection en ligne diffusées sous forme de manifestes IIIF, consultables et
+                                comparables dans la visionneuse Mirador du Musée.</p>
+                            <p>La collection en ligne a été lancée vers 2017-2018 avec environ 3 000 objets. La date
+                                d'intégration de la visionneuse Mirador n'a pas pu être établie. Les manifestes n'ont pas
+                                été examinés pour une éventuelle mention de licence.</p>
+                        </note>
+                        <idno>https://art.ago.ca/mirador</idno>
+                        <idno>https://volunteers.ago.ca/?p=6359</idno>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>24973</volume>   
+                        <note>
+                            <p>24 973 fiches versées dans Artefacts Canada, dont 363 accompagnées d'images (novembre 2026).</p>
+                        </note>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Art+Gallery+of+Ontario&amp;t=0&amp;lang=fr</idno>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Art+Gallery+of+Ontario&amp;t=1&amp;lang=fr</idno>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q670250</idno>
+                    <dissemination type="wikidata" when="2026-11-10">
+                        <volume>182</volume>
+                        <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice
+                                Wikidata</p></note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-11-10">
+                        <volume>120</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno type="institution">https://commons.wikimedia.org/wiki/Category:Art_Gallery_of_Ontario</idno>
+                        <idno type="collection">https://commons.wikimedia.org/wiki/Category:Collections_of_the_Art_Gallery_of_Ontario</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse1330">
+                <orgName xml:lang="en">Royal Ontario Museum</orgName>
+                <orgName xml:lang="fr">Musée royal de l'Ontario</orgName>
+                <acronym xml:lang="fr">ROM</acronym>
+                <acronym xml:lang="en">ROM</acronym>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>archeology</field>
+                    <field>history</field>
+                    <field>natural sciences</field>
+                    <field>ethnography</field>
+                    <field>fine arts</field>
+                </fields>
+                <address>
+                    <street><num>100</num>Queens Park</street>
+                    <settlement>Toronto</settlement>
+                    <postCode>M5S 2C6</postCode>
+                    <region>Toronto</region>
+                    <country>Canada</country>
+                </address>
+                <demographics></demographics>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://www.rom.on.ca/whats-on/online-exhibitions</exhibitions>
+                    <education>https://www.rom.on.ca/learn/resources/virtual-exhibition-experience-colours-kore</education>
+                </online>
+                <desc type="collections" xml:lang="fr" when="2026-11">
+                    <p>Le Musée royal de l'Ontario conserve une collection de 18 millions d'œuvres d'art, d'objets
+                        culturels et de spécimens d'histoire naturelle, présentés dans 40 salles d'exposition. Depuis
+                        2015, le système de gestion des collections Louise Hawley Stone réunit en une seule base les 44
+                        bases de données de collections du Musée, dans laquelle plus de 2 millions de fiches d'objets et
+                        de spécimens ont été migrées. La numérisation de la collection est en cours.</p>
+                    <idno>https://www.rom.on.ca/collections-research/online-collections</idno>
+                </desc>
+                <desc type="collections" xml:lang="en" when="2026-11">
+                    <p>The Royal Ontario Museum holds a collection of 18 million artworks, cultural objects and natural
+                        history specimens, featured in 40 gallery and exhibition spaces. Since 2015, the Louise Hawley
+                        Stone Collections Management System has brought the Museum's 44 collection databases together in
+                        a single system, into which more than 2 million object and specimen records have been migrated.
+                        Digitization of the collection is ongoing.</p>
+                    <idno>https://www.rom.on.ca/collections-research/online-collections</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11">
+                    <p>Les images de la collection en ligne du Musée royal de l'Ontario sont protégées par le droit
+                        d'auteur au profit du Musée et par la Loi sur le droit d'auteur. Toute reproduction exige une
+                        demande au moyen d'un formulaire en ligne et la conclusion d'un contrat de licence avec le
+                        Musée. L'autorisation est accordée au cas par cas, à la seule discrétion du Musée, pour un usage
+                        unique et non exclusif. Des frais de production et d'utilisation s'appliquent selon le type
+                        d'usage. Les fiches de la collection en ligne n'affichent ni licence ni mention de droits.</p>
+                    <idno>https://collections.rom.on.ca/rights</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11">
+                    <p>Images in the Royal Ontario Museum online collection are copyrighted to the Museum and protected
+                        by the Copyright Act. Any reproduction requires a request through an online form and a licensing
+                        agreement with the Museum. Permission is granted on a case-by-case basis, at the sole discretion
+                        of the Museum, for one-time, non-exclusive use. Production and use fees apply according to the
+                        type of use. Online collection records display no licence or rights statement.</p>
+                    <idno>https://collections.rom.on.ca/rights</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>Some eligible data</scope>
+                    <dissemination type="collectionsOnline">
+                        <volume>91888</volume>
+                        <note>
+                            <p>91 888 objets en ligne selon l'en-tête du site de la collection (novembre 2026). Les fiches
+                                n'affichent ni licence ni mention de droits. Toute reproduction d'image exige une demande
+                                et un contrat de licence avec le service Rights and Reproductions du Musée.</p>
+                        </note>
+                        <idno>https://collections.rom.on.ca</idno>
+                    </dissemination>
+                    <dissemination type="openData" when="2024-06-27">
+                        <volume>6274</volume>
+                        <note>
+                            <p>Métadonnées complètes, en français et en anglais, des objets du patrimoine canadien et
+                                autochtone et des spécimens d'histoire naturelle du Canada numérisés de 2022 à 2024 dans le
+                                cadre du Programme d'aide aux musées, publiées en un fichier téléchargeable.</p>
+                            <p>Jeu de données publié le 27 juin 2024 (date indiquée dans le nom du fichier). Il couvre
+                                6 274 objets photographiés en 14 293 vues, aussi consultables dans la collection en ligne.
+                                La page de téléchargement n'indique aucune licence.</p>
+                        </note>
+                        <idno>https://www.rom.on.ca/sites/default/files/sites/default/files/imce/ROM_MAP_2022-2024_Metadata_Records_2024_06_27.zip</idno>
+                        <idno>https://www.rom.on.ca/collections-research/rom-research/collections-digitization</idno>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Aucun manifeste IIIF repéré (novembre 2026). Les images de la collection en ligne sont
+                                servies par le système de diffusion interne d'eMuseum et consultées dans sa visionneuse
+                             avec zoom.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>52373</volume>   
+                        <note>
+                            <p>52 373 fiches versées dans Artefacts Canada, dont 317 accompagnées d'images (novembre 2026).</p>
+                        </note>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Mus%C3%A9e+royal+de+l%27Ontario&amp;t=0&amp;lang=fr</idno>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Royal+Ontario+Museum+Mus%C3%A9e+royal+de+l%27Ontario&amp;t=1&amp;lang=fr</idno>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                        <note>
+                            <p>Institution identifiée sur Wikidata</p>
+                        </note>
+                        <idno type="institution">https://www.wikidata.org/wiki/Q649250</idno>
+                    <dissemination type="wikidata" when="2026-11-10">
+                        <volume>91</volume>
+                        <note>
+                            <p>Requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou localisation) de la
+                                collection qui ont une notice Wikidata, hors évènements.</p>
+                        </note>
+                    </dissemination>
+                        <dissemination type="wikimedia" when="2026-11-10">
+                            <volume>35</volume>
+                            <note>
+                                <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                    ou localisation) qui ont une image, hors évènements, avec leur
+                                    titre, une image et leurs types.</p>
+                            </note>
+                            <idno type="institution">https://commons.wikimedia.org/wiki/Category:Royal_Ontario_Museum</idno>
+                            <idno type="collection">https://commons.wikimedia.org/wiki/Category:Collections_of_the_Royal_Ontario_Museum</idno>
+                        </dissemination>
+                </wikimedia>
+            </org>
         </listOrg>
         <listOrg>
             <head>Alberta</head>
