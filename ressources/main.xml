@@ -2937,8 +2937,10 @@
                 </wikimedia>
             </org>
             <org xml:id="muse1911">
-                <orgName xml:lang="en">Canada Science And Technology Museums Corporation (3 National Museums)</orgName>
-                <orgName xml:lang="fr">Musées des sciences et de l’innovation du Canada (3 musées nationaux)</orgName>
+                <orgName xml:lang="en">Canada Science And Technology Museums Corporation (3 National
+                    Museums)</orgName>
+                <orgName xml:lang="fr">Musées des sciences et de l’innovation du Canada (3 musées
+                    nationaux)</orgName>
                 <orgType>museum</orgType>
                 <fields>
                     <field>sciences and technology</field>
@@ -2952,73 +2954,80 @@
                     <region>Ottawa</region>
                     <country>Canada</country>
                 </address>
-                <demographics></demographics>
+                <demographics/>
                 <accessibility>
                     <admission>paid</admission>
                 </accessibility>
                 <online>
-                    <exhibitions>https://ingenium.ca/fr/apprentissage/ressources-en-ligne-pour-la-science-chez-soi/?search=&amp;category=Expositions+virtuelles</exhibitions>     
+                    <exhibitions>https://ingenium.ca/fr/apprentissage/ressources-en-ligne-pour-la-science-chez-soi/?search=&amp;category=Expositions+virtuelles</exhibitions>
                 </online>
                 <desc when="2026-10" type="collections" xml:lang="fr">
-                    <p>Ingenium est l'intendante de la collection nationale des sciences et de la technologie du
-                        Canada, qui comprend plus de 150 000 objets, 100 000 articles de bibliothèque et environ
-                        2 500 m de documents d'archives. La collection couvre le transport (aérien, spatial,
-                        terrestre et maritime), les sciences physiques, la médecine, les communications,
-                        l'agriculture et les ressources naturelles. Elle est conservée au Centre Ingenium, à côté
-                        du Musée des sciences et de la technologie du Canada, et au Hangar de réserve, à côté du
+                    <p>Ingenium est l'intendante de la collection nationale des sciences et de la
+                        technologie du Canada, qui comprend plus de 150 000 objets, 100 000 articles
+                        de bibliothèque et environ 2 500 m de documents d'archives. La collection
+                        couvre le transport (aérien, spatial, terrestre et maritime), les sciences
+                        physiques, la médecine, les communications, l'agriculture et les ressources
+                        naturelles. Elle est conservée au Centre Ingenium, à côté du Musée des
+                        sciences et de la technologie du Canada, et au Hangar de réserve, à côté du
                         Musée de l'aviation et de l'espace du Canada.</p>
                     <idno>https://ingenium.ca/fr/collection-et-recherche</idno>
                     <idno>https://ingenium.ca/fr/collection-et-recherche/collection</idno>
                 </desc>
                 <desc type="collections" xml:lang="en" when="2026-10">
-                    <p>Ingenium is the steward of Canada's national science and technology collection, which
-                        includes more than 150,000 objects, 100,000 library items and about 2,500 m of archival
-                        records. The collection covers transportation (air, space, land and marine), physical
-                        sciences, medicine, communications, agriculture and natural resources. It is housed at the
-                        Ingenium Centre, next to the Canada Science and Technology Museum, and at the Reserve
-                        Hangar, next to the Canada Aviation and Space Museum.</p>
+                    <p>Ingenium is the steward of Canada's national science and technology
+                        collection, which includes more than 150,000 objects, 100,000 library items
+                        and about 2,500 m of archival records. The collection covers transportation
+                        (air, space, land and marine), physical sciences, medicine, communications,
+                        agriculture and natural resources. It is housed at the Ingenium Centre, next
+                        to the Canada Science and Technology Museum, and at the Reserve Hangar, next
+                        to the Canada Aviation and Space Museum.</p>
                     <idno>https://ingenium.ca/en/collections-research/</idno>
                     <idno>https://ingenium.ca/en/collections-research/collection</idno>
                 </desc>
                 <desc type="copyright" xml:lang="fr" when="2026-10">
-                    <p>Le contenu des sites d'Ingenium est fourni pour un usage personnel et non commercial.
-                        Les images de la collection en ligne sont diffusées sous licence Creative Commons et
-                        peuvent être téléchargées et réutilisées gratuitement à des fins non commerciales, en
-                        mentionnant Ingenium et le numéro de l'artefact. Tout usage commercial est soumis à des
-                        frais de reproduction.</p>
+                    <p>Le contenu des sites d'Ingenium est fourni pour un usage personnel et non
+                        commercial. Les images de la collection en ligne sont diffusées sous licence
+                        Creative Commons et peuvent être téléchargées et réutilisées gratuitement à
+                        des fins non commerciales, en mentionnant Ingenium et le numéro de
+                        l'artefact. Tout usage commercial est soumis à des frais de
+                        reproduction.</p>
                     <idno>https://ingenium.ca/fr/avis/</idno>
                     <idno>https://collection.ingenium.ca/fr/</idno>
                 </desc>
                 <desc type="copyright" xml:lang="en" when="2026-10">
-                    <p>Content on Ingenium's websites is provided for personal and non-commercial use. Images in
-                        the online collection are released under a Creative Commons licence and may be downloaded
-                        and reused free of charge for non-commercial purposes, with credit to Ingenium and the
-                        artifact number. Commercial use is subject to reproduction fees.</p>
+                    <p>Content on Ingenium's websites is provided for personal and non-commercial
+                        use. Images in the online collection are released under a Creative Commons
+                        licence and may be downloaded and reused free of charge for non-commercial
+                        purposes, with credit to Ingenium and the artifact number. Commercial use is
+                        subject to reproduction fees.</p>
                     <idno>https://ingenium.ca/en/terms-of-use/</idno>
                     <idno>https://collection.ingenium.ca/en/</idno>
                 </desc>
                 <availability when="2026-10">
                     <scope>some data eligible</scope>
                     <note>
-                        <p>Compliance : Open pour les données, avec réserves. Ingenium publie depuis 2014 un jeu de
-                            données couvrant tous les artefacts de ses trois musées sous Licence du gouvernement
-                            ouvert du Canada, mais les fichiers ne sont plus téléchargeables en octobre 2026.
-                            L'API de la collection reste active, sans licence déclarée. Les images d'objets de la
-                            collection en ligne sont sous CC BY-NC 4.0 et réservées à un usage non commercial.
+                        <p>Compliance : Open pour les données, avec réserves. Ingenium publie depuis
+                            2014 un jeu de données couvrant tous les artefacts de ses trois musées
+                            sous Licence du gouvernement ouvert du Canada, mais les fichiers ne sont
+                            plus téléchargeables en octobre 2026. L'API de la collection reste
+                            active, sans licence déclarée. Les images d'objets de la collection en
+                            ligne sont sous CC BY-NC 4.0 et réservées à un usage non commercial.
                             Parmi les documents d'archives, seuls ceux marqués CC0 sont librement
                             réutilisables.</p>
                     </note>
                     <dissemination type="collectionsOnline">
                         <volume>134271</volume>
                         <note>
-                            <p>La collection en ligne d'Ingenium donne accès aux objets et aux documents d'archives
-                                des trois musées (Musée des sciences et de la technologie du Canada, Musée de
-                                l'aviation et de l'espace du Canada, Musée de l'agriculture et de l'alimentation du
-                                Canada), avec fiches descriptives et images téléchargeables.</p>
-                            <p>Les images d'objets sont diffusées sous CC BY-NC 4.0 et peuvent être réutilisées
-                                gratuitement à des fins non commerciales, en mentionnant Ingenium et le numéro de
-                                l'artefact. Les fiches affichent aussi le sigle CC BY-NC-ND, en contradiction avec le
-                                libellé CC BY-NC 4.0. Les documents d'archives sont marqués soit CC0, soit CC BY-NC-ND.
+                            <p>La collection en ligne d'Ingenium donne accès aux objets et aux
+                                documents d'archives des trois musées (Musée des sciences et de la
+                                technologie du Canada, Musée de l'aviation et de l'espace du Canada,
+                                Musée de l'agriculture et de l'alimentation du Canada), avec fiches
+                                descriptives et images téléchargeables.</p>
+                            <p>Les images d'objets sont diffusées sous CC BY-NC 4.0 et peuvent être
+                                réutilisées gratuitement à des fins non commerciales, en mentionnant
+                                Ingenium et le numéro de l'artefact. Les fiches affichent aussi le
+                                sigle CC BY-NC-ND, en contradiction avec le libellé CC BY-NC 4.0.
+                                Les documents d'archives sont marqués soit CC0, soit CC BY-NC-ND.
                                 Tout usage commercial est soumis à des frais de reproduction.</p>
                         </note>
                         <idno>https://collection.ingenium.ca/fr</idno>
@@ -3028,16 +3037,19 @@
                     </dissemination>
                     <dissemination type="openData" when="2014-10-24">
                         <note>
-                            <p>Jeu de données « SMSTC - Collection d'artefact », publié par le Musée des sciences et de
-                                la technologie du Canada sur le Portail du gouvernement ouvert. Il couvre l'ensemble des
-                                artefacts des trois musées d'Ingenium (Musée des sciences et de la technologie du
-                                Canada, Musée de l'aviation et de l'espace du Canada, Musée de l'agriculture et de
-                                l'alimentation du Canada) et comprend des images pour presque tous les artefacts. Le
-                                jeu est proposé en XML et en CSV, en versions française et anglaise,
-                                avec un dictionnaire de données et des conseils d'utilisation. Mise à jour semestrielle
-                                annoncée (dernière modification de la fiche : 18 février 2025). En octobre 2026, les
-                                fichiers, hébergés sur l'ancien domaine source.techno-science.ca, ne sont plus
-                                accessibles. Le jeu de données reste référencé sur le portail mais ne peut pas être
+                            <p>Jeu de données « SMSTC - Collection d'artefact », publié par le Musée
+                                des sciences et de la technologie du Canada sur le Portail du
+                                gouvernement ouvert. Il couvre l'ensemble des artefacts des trois
+                                musées d'Ingenium (Musée des sciences et de la technologie du
+                                Canada, Musée de l'aviation et de l'espace du Canada, Musée de
+                                l'agriculture et de l'alimentation du Canada) et comprend des images
+                                pour presque tous les artefacts. Le jeu est proposé en XML et en
+                                CSV, en versions française et anglaise, avec un dictionnaire de
+                                données et des conseils d'utilisation. Mise à jour semestrielle
+                                annoncée (dernière modification de la fiche : 18 février 2025). En
+                                octobre 2026, les fichiers, hébergés sur l'ancien domaine
+                                source.techno-science.ca, ne sont plus accessibles. Le jeu de
+                                données reste référencé sur le portail mais ne peut pas être
                                 téléchargé.</p>
                         </note>
                         <idno type="dataset"
@@ -3046,12 +3058,14 @@
                     </dissemination>
                     <dissemination type="api" when="2023-03-09">
                         <note>
-                            <p>API de la collection d'Ingenium (Collection API), de type REST et construite sur Apache
-                                Solr, lancée le 9 mars 2023 (version 1.1 en décembre 2023). L'accès requiert un jeton
-                                individuel gratuit, obtenu par inscription. Les requêtes sont limitées à 100 par
-                                seconde, Ingenium renvoyant à son portail de données ouvertes pour un accès aux données
-                                brutes. Documentation interactive et modèles de données disponibles en ligne. Aucune
-                                licence n'est précisée pour les données diffusées par l'API.</p>
+                            <p>API de la collection d'Ingenium (Collection API), de type REST et
+                                construite sur Apache Solr, lancée le 9 mars 2023 (version 1.1 en
+                                décembre 2023). L'accès requiert un jeton individuel gratuit, obtenu
+                                par inscription. Les requêtes sont limitées à 100 par seconde,
+                                Ingenium renvoyant à son portail de données ouvertes pour un accès
+                                aux données brutes. Documentation interactive et modèles de données
+                                disponibles en ligne. Aucune licence n'est précisée pour les données
+                                diffusées par l'API.</p>
                         </note>
                         <idno>https://api.ingeniumcanada.org/fr/</idno>
                     </dissemination>
@@ -3075,9 +3089,9 @@
                     <dissemination type="artefactsCanada">
                         <volume>134002</volume>
                         <note>
-                            <p>134 002 fiches versées sur Artefacts Canada sous le nom de Canada Science and Technology
-                                Museum (Musée des sciences et de la technologie du Canada), dont 64329 accompagnées
-                                d'images</p>
+                            <p>134 002 fiches versées sur Artefacts Canada sous le nom de Canada
+                                Science and Technology Museum (Musée des sciences et de la
+                                technologie du Canada), dont 64329 accompagnées d'images</p>
                         </note>
                         <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Canada+Science+and+Technology+Museum&amp;t=0&amp;lang=fr</idno>
                         <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Canada+Science+and+Technology+Museum&amp;t=1&amp;lang=fr</idno>
@@ -3086,8 +3100,9 @@
                     <dissemination type="artefactsCanada">
                         <volume>297</volume>
                         <note>
-                            <p>297 fiches versées sur Artefacts Canada sous le nom de Canadian Air &amp; Space Museum
-                                (Musée de l'aviation et de l'espace du Canada), dont 297 accompagnées d'images.</p>
+                            <p>297 fiches versées sur Artefacts Canada sous le nom de Canadian Air
+                                &amp; Space Museum (Musée de l'aviation et de l'espace du Canada),
+                                dont 297 accompagnées d'images.</p>
                         </note>
                         <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Canadian+Air+%26+Space+Museum&amp;t=0&amp;lang=fr</idno>
                         <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Canadian+Air+%26+Space+Museum&amp;t=1&amp;lang=fr</idno>
@@ -3103,7 +3118,7 @@
                         <volume>0</volume>
                         <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
                                 localisation) de la collection qui ont une notice
-                                Wikidata</p></note>
+                            Wikidata</p></note>
                     </dissemination>
                     <dissemination type="wikimedia" when="2026-10-04">
                         <volume>0</volume>
@@ -3131,7 +3146,7 @@
                     <region>Ottawa</region>
                     <country>Canada</country>
                 </address>
-                <demographics></demographics>
+                <demographics/>
                 <accessibility>
                     <admission>paid</admission>
                 </accessibility>
@@ -3139,59 +3154,64 @@
                     <exhibitions>https://www.beaux-arts.ca/a-laffiche/expositions-et-salles</exhibitions>
                 </online>
                 <desc type="collections" xml:lang="fr" when="2026-10">
-                    <p>Fondé en 1880, le Musée des beaux-arts du Canada conserve l'une des plus importantes
-                        collections d'art autochtone et canadien au monde, ainsi que des œuvres d'art européen,
-                        américain et asiatique, d'art contemporain, de dessins et estampes et de photographie. La
-                        collection d'art canadien couvre les pratiques artistiques du début du XVIIIe siècle en
-                        Nouvelle-France jusqu'aux années 1990. La collection de dessins et estampes compte plus de
-                        27 000 œuvres sur papier, du XVe siècle à nos jours, et celle d'art asiatique environ 400
-                        peintures et sculptures, surtout du sous-continent indien. Le Musée abrite aussi une
-                        bibliothèque de recherche et des archives, dont de nombreux fonds et des collections
-                        d'éphémères liés à l'art.</p>
+                    <p>Fondé en 1880, le Musée des beaux-arts du Canada conserve l'une des plus
+                        importantes collections d'art autochtone et canadien au monde, ainsi que des
+                        œuvres d'art européen, américain et asiatique, d'art contemporain, de
+                        dessins et estampes et de photographie. La collection d'art canadien couvre
+                        les pratiques artistiques du début du XVIIIe siècle en Nouvelle-France
+                        jusqu'aux années 1990. La collection de dessins et estampes compte plus de
+                        27 000 œuvres sur papier, du XVe siècle à nos jours, et celle d'art
+                        asiatique environ 400 peintures et sculptures, surtout du sous-continent
+                        indien. Le Musée abrite aussi une bibliothèque de recherche et des archives,
+                        dont de nombreux fonds et des collections d'éphémères liés à l'art.</p>
                     <idno>https://www.beaux-arts.ca/collection/a-propos-des-collections</idno>
                 </desc>
                 <desc type="collections" xml:lang="en" when="2026-10">
-                    <p>Founded in 1880, the National Gallery of Canada holds one of the world's finest collections
-                        of Indigenous and Canadian art, as well as European, American and Asian art, contemporary
-                        art, drawings and prints, and photography. The Canadian art collection spans artistic
-                        practices from the early 18th century in New France to the 1990s. The drawings and prints
-                        collection includes more than 27,000 works on paper from the 15th century to the present,
-                        and the Asian collection about 400 paintings and sculptures, mainly from the Indian
-                        subcontinent. The Gallery also houses a research library and archives, including many
-                        fonds and collections of art-related ephemera.</p>
+                    <p>Founded in 1880, the National Gallery of Canada holds one of the world's
+                        finest collections of Indigenous and Canadian art, as well as European,
+                        American and Asian art, contemporary art, drawings and prints, and
+                        photography. The Canadian art collection spans artistic practices from the
+                        early 18th century in New France to the 1990s. The drawings and prints
+                        collection includes more than 27,000 works on paper from the 15th century to
+                        the present, and the Asian collection about 400 paintings and sculptures,
+                        mainly from the Indian subcontinent. The Gallery also houses a research
+                        library and archives, including many fonds and collections of art-related
+                        ephemera.</p>
                     <idno>https://www.gallery.ca/collection/collecting-areas</idno>
                 </desc>
                 <desc type="copyright" xml:lang="fr" when="2026-10">
-                    <p>Toute reproduction d'une image d'œuvre de la collection du Musée des beaux-arts du Canada
-                        exige une autorisation officielle du Musée, demandée au moyen d'un formulaire de commande
-                        en ligne. Les autorisations sont accordées au cas par cas et peuvent entraîner des frais.
-                        L'accord des tiers titulaires de droits, notamment les artistes, doit être obtenu
-                        séparément. Les fiches de la collection en ligne n'affichent ni licence ni mention de
-                        droits, et les images ne sont pas téléchargeables.</p>
+                    <p>Toute reproduction d'une image d'œuvre de la collection du Musée des
+                        beaux-arts du Canada exige une autorisation officielle du Musée, demandée au
+                        moyen d'un formulaire de commande en ligne. Les autorisations sont accordées
+                        au cas par cas et peuvent entraîner des frais. L'accord des tiers titulaires
+                        de droits, notamment les artistes, doit être obtenu séparément. Les fiches
+                        de la collection en ligne n'affichent ni licence ni mention de droits, et
+                        les images ne sont pas téléchargeables.</p>
                     <idno>https://www.beaux-arts.ca/recherche/reproduction-dimage</idno>
                     <idno>https://www.beaux-arts.ca/modalites-dusage</idno>
                 </desc>
                 <desc type="copyright" xml:lang="en" when="2026-10">
-                    <p>Any reproduction of an image of a work from the National Gallery of Canada's collection
-                        requires official permission from the Gallery, requested through an online order form.
-                        Permissions are granted case by case and may be subject to fees. The consent of
-                        third-party rights holders, including artists, must be obtained separately. Online
-                        collection records display no licence or rights statement, and images cannot be
-                        downloaded.</p>
+                    <p>Any reproduction of an image of a work from the National Gallery of Canada's
+                        collection requires official permission from the Gallery, requested through
+                        an online order form. Permissions are granted case by case and may be
+                        subject to fees. The consent of third-party rights holders, including
+                        artists, must be obtained separately. Online collection records display no
+                        licence or rights statement, and images cannot be downloaded.</p>
                     <idno>https://www.gallery.ca/research/image-reproduction</idno>
                     <idno>https://www.gallery.ca/terms-of-use</idno>
                 </desc>
                 <availability when="2026-10">
-                    <scope></scope>
+                    <scope/>
                     <dissemination type="collectionsOnline">
                         <volume>87135</volume>
                         <note>
-                            <p>Les fiches n'affichent aucune
-                              licence ni mention de droits, ni crédit photographique, y compris pour les œuvres
-                                anciennes. Les images ne sont pas téléchargeables. Les modalités d'usage du site
-                                autorisent seulement la consultation et le téléchargement à des fins non commerciales,
-                                pédagogiques et personnelles. Toute reproduction exige une autorisation officielle du
-                                Musée et, le cas échéant, des tiers titulaires de droits.</p>
+                            <p>Les fiches n'affichent aucune licence ni mention de droits, ni crédit
+                                photographique, y compris pour les œuvres anciennes. Les images ne
+                                sont pas téléchargeables. Les modalités d'usage du site autorisent
+                                seulement la consultation et le téléchargement à des fins non
+                                commerciales, pédagogiques et personnelles. Toute reproduction exige
+                                une autorisation officielle du Musée et, le cas échéant, des tiers
+                                titulaires de droits.</p>
                         </note>
                         <idno>https://www.beaux-arts.ca/collection/recherche-dans-la-collection</idno>
                         <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
@@ -3226,10 +3246,11 @@
                     <dissemination type="artefactsCanada">
                         <volume>77381</volume>
                         <note>
-                            <p>77 381 fiches versées sur Artefacts Canada sous le nom de Canada Science and Technology
-                                Museum (Musée des sciences et de la technologie du Canada), dont 76 143 accompagnées
-                                d'images</p>
-                        </note>   <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=National+Gallery+of+Canada&amp;t=0&amp;lang=fr</idno>
+                            <p>77 381 fiches versées sur Artefacts Canada sous le nom de Canada
+                                Science and Technology Museum (Musée des sciences et de la
+                                technologie du Canada), dont 76 143 accompagnées d'images</p>
+                        </note>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=National+Gallery+of+Canada&amp;t=0&amp;lang=fr</idno>
                         <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=National+Gallery+of+Canada&amp;t=1&amp;lang=fr</idno>
                         <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
                     </dissemination>
@@ -3243,7 +3264,7 @@
                         <volume>4387</volume>
                         <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
                                 localisation) de la collection qui ont une notice
-                                Wikidata</p></note>
+                            Wikidata</p></note>
                     </dissemination>
                     <dissemination type="wikimedia" when="2026-10-04">
                         <volume>425</volume>
@@ -3273,7 +3294,7 @@
                     <region>Ottawa</region>
                     <country>Canada</country>
                 </address>
-                <demographics></demographics>
+                <demographics/>
                 <accessibility>
                     <admission>free</admission>
                 </accessibility>
@@ -3281,60 +3302,77 @@
                     <exhibitions>https://oaggao.ca/fr/a-laffiche/exposition</exhibitions>
                 </online>
                 <desc type="collections" when="2026-11" xml:lang="fr">
-                    <p>Depuis notre fondation en 1988, tout ce que nous acquérons et entretenons constitue une archive des artistes de la région d’Ottawa-Gatineau et de leurs pratiques. Notre collection, toujours en pleine croissance, est amassée grâce au labeur de plusieurs œuvrant à la direction, au commissariat, à la gestion et au sein du conseil, ou encore de nos mécènes, de nos bénévoles et de notre collectivité.</p>
-                    <p>La Galerie d'art d'Ottawa conserve deux collections. La Collection permanente réunit plus de
-                        1 000 œuvres d'artistes canadien·nes historiques et contemporain·es ayant des liens étroits
-                        avec la région d'Ottawa-Gatineau, notamment des œuvres sur papier, peintures, films,
-                        sculptures, photographies et œuvres en nouveaux médias. La Collection Firestone d'art canadien,
-                        propriété de la Ville d'Ottawa, compte plus de 1 600 œuvres rassemblées par les collectionneur·euses
-                        O.J. et Isobel Firestone du début des années 1950 aux années 1970.</p>
+                    <p>Depuis notre fondation en 1988, tout ce que nous acquérons et entretenons
+                        constitue une archive des artistes de la région d’Ottawa-Gatineau et de
+                        leurs pratiques. Notre collection, toujours en pleine croissance, est
+                        amassée grâce au labeur de plusieurs œuvrant à la direction, au
+                        commissariat, à la gestion et au sein du conseil, ou encore de nos mécènes,
+                        de nos bénévoles et de notre collectivité.</p>
+                    <p>La Galerie d'art d'Ottawa conserve deux collections. La Collection permanente
+                        réunit plus de 1 000 œuvres d'artistes canadien·nes historiques et
+                        contemporain·es ayant des liens étroits avec la région d'Ottawa-Gatineau,
+                        notamment des œuvres sur papier, peintures, films, sculptures, photographies
+                        et œuvres en nouveaux médias. La Collection Firestone d'art canadien,
+                        propriété de la Ville d'Ottawa, compte plus de 1 600 œuvres rassemblées par
+                        les collectionneur·euses O.J. et Isobel Firestone du début des années 1950
+                        aux années 1970.</p>
                     <idno>https://oaggao.ca/fr/apprendre/collections</idno>
                 </desc>
                 <desc type="collections" when="2026-11" xml:lang="en">
-                    <p>Since our founding in 1988, we have collected and cared for artwork connected to the Ottawa-Gatineau region as a record of its makers and their creative practices.</p>
-                    <p>Our growing collection has been built by many hands including our directors, curators, and collections managers as well as our board, donors, funders, volunteers, and community members.</p>
+                    <p>Since our founding in 1988, we have collected and cared for artwork connected
+                        to the Ottawa-Gatineau region as a record of its makers and their creative
+                        practices.</p>
+                    <p>Our growing collection has been built by many hands including our directors,
+                        curators, and collections managers as well as our board, donors, funders,
+                        volunteers, and community members.</p>
                     <idno>https://oaggao.ca/learn/collections</idno>
                 </desc>
                 <desc type="copyright" xml:lang="fr" when="2026-11">
-                    <p>Les pages consultées du site de la Galerie d'art d'Ottawa ne présentent aucune politique de droits
-                        d'auteur, aucune condition d'utilisation ni aucune procédure de reproduction d'images. Les fiches
-                        de la collection en ligne indiquent une ligne de crédit, mais n'affichent ni licence ni mention de
-                        droits. Les demandes d'information sur la collection permanente sont adressées au service des
-                        collections.</p>
+                    <p>Les pages consultées du site de la Galerie d'art d'Ottawa ne présentent
+                        aucune politique de droits d'auteur, aucune condition d'utilisation ni
+                        aucune procédure de reproduction d'images. Les fiches de la collection en
+                        ligne indiquent une ligne de crédit, mais n'affichent ni licence ni mention
+                        de droits. Les demandes d'information sur la collection permanente sont
+                        adressées au service des collections.</p>
                     <idno>https://oaggao.ca/fr/apprendre/collections/permanente</idno>
                 </desc>
                 <desc type="copyright" xml:lang="en" when="2026-11">
-                    <p>The pages consulted on the Ottawa Art Gallery website present no copyright policy, terms of use or
-                        image reproduction procedure. Online collection records include a credit line but display no
-                        licence or rights statement. Enquiries about the Permanent Collection are directed to the
-                        collections department.</p>
-                    <p>The Ottawa Art Gallery holds two collections. The Permanent Collection comprises more than 1,000
-                        works by historical and contemporary Canadian artists with strong ties to the Ottawa-Gatineau
-                        region, including works on paper, paintings, films, sculptures, photographs and new media works.
-                        The Firestone Collection of Canadian Art, owned by the City of Ottawa, comprises more than 1,600
-                        works assembled by collectors O.J. and Isobel Firestone from the early 1950s to the 1970s.</p>
+                    <p>The pages consulted on the Ottawa Art Gallery website present no copyright
+                        policy, terms of use or image reproduction procedure. Online collection
+                        records include a credit line but display no licence or rights statement.
+                        Enquiries about the Permanent Collection are directed to the collections
+                        department.</p>
+                    <p>The Ottawa Art Gallery holds two collections. The Permanent Collection
+                        comprises more than 1,000 works by historical and contemporary Canadian
+                        artists with strong ties to the Ottawa-Gatineau region, including works on
+                        paper, paintings, films, sculptures, photographs and new media works. The
+                        Firestone Collection of Canadian Art, owned by the City of Ottawa, comprises
+                        more than 1,600 works assembled by collectors O.J. and Isobel Firestone from
+                        the early 1950s to the 1970s.</p>
                     <idno>https://oaggao.ca/learn/collections/permanent/</idno>
                 </desc>
                 <availability when="2026-11">
                     <scope>aucune des valeurs proposées ne correspond</scope>
                     <note>
-                        <p>Compliance : hors périmètre. Dans les pages consultées, la Galerie d'art d'Ottawa ne
-                            déclare aucune licence ouverte pour ses collections. Les fiches de la collection en
-                            ligne n'affichent ni licence ni mention de droits.</p>
+                        <p>Compliance : hors périmètre. Dans les pages consultées, la Galerie d'art
+                            d'Ottawa ne déclare aucune licence ouverte pour ses collections. Les
+                            fiches de la collection en ligne n'affichent ni licence ni mention de
+                            droits.</p>
                     </note>
                     <dissemination type="collectionsOnline">
                         <volume>3409</volume>
                         <note>
-                            <p>Le volume additionne les 1812 fiches de la Collection permanente et les 1596 fiches de la
-                                Collection Firestone d'art canadien (novembre 2026). Les fiches indiquent une ligne de
-                                crédit, mais n'affichent ni licence ni mention de droits.</p>
+                            <p>Le volume additionne les 1812 fiches de la Collection permanente et
+                                les 1596 fiches de la Collection Firestone d'art canadien (novembre
+                                2026). Les fiches indiquent une ligne de crédit, mais n'affichent ni
+                                licence ni mention de droits.</p>
                         </note>
-                        <idno>https://oaggao.ca/fr/apprendre/collections/recherche-avancee/</idno>       
+                        <idno>https://oaggao.ca/fr/apprendre/collections/recherche-avancee/</idno>
                     </dissemination>
                     <dissemination type="openData">
-                    <note>
-                        <p>Aucun jeu de données ouvert identifié à ce jour</p>
-                    </note>
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
                     </dissemination>
                     <dissemination type="api">
                         <note>
@@ -3342,27 +3380,27 @@
                         </note>
                     </dissemination>
                     <dissemination type="flickrCommons">
-                            <note>
-                                <p>Aucune présence sur FlickrCommons</p>
-                            </note>
-                        </dissemination>
-                        <dissemination type="iiif">
-                            <note>
-                                <p>Non disponible</p>
-                                <p>Pas de manifeste IIIF identifié à ce jour.</p>
-                            </note>
-                        </dissemination>
-                        <dissemination type="git">
-                            <note>
-                                <p>Non disponible</p>
-                                <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
-                            </note>
-                        </dissemination>
-                        <dissemination type="artefactsCanada">
-                            <volume>171</volume>    
-                            <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=The+Ottawa+Art+Gallery&amp;t=0&amp;lang=fr</idno>
-                            <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
-                        </dissemination>
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>171</volume>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=The+Ottawa+Art+Gallery&amp;t=0&amp;lang=fr</idno>
+                        <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
+                    </dissemination>
                 </availability>
                 <wikimedia>
                     <note>
@@ -3373,7 +3411,7 @@
                         <volume>3</volume>
                         <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
                                 localisation) de la collection qui ont une notice
-                                Wikidata</p></note>
+                            Wikidata</p></note>
                     </dissemination>
                     <dissemination type="wikimedia" when="2026-10-04">
                         <volume>1</volume>
@@ -3384,7 +3422,7 @@
                         </note>
                         <idno>https://commons.wikimedia.org/wiki/Category:Ottawa_Art_Gallery</idno>
                     </dissemination>
-                </wikimedia>       
+                </wikimedia>
             </org>
             <org xml:id="muse1247">
                 <orgName xml:lang="en">Thousand Islands Boat Museum</orgName>
@@ -3399,7 +3437,7 @@
                     <region>Ottawa</region>
                     <country>Canada</country>
                 </address>
-                <demographics></demographics>
+                <demographics/>
                 <accessibility>
                     <admission>paid</admission>
                 </accessibility>
@@ -3408,51 +3446,57 @@
                     <!-- site web n'est pas à jour dans les données du RCIP -->
                 </online>
                 <desc type="collections" when="2026-11" xml:lang="fr">
-                    <p>Le Thousand Islands Boat Museum, à Gananoque, conserve et présente une collection de bateaux
-                        anciens représentatifs de la région des Mille-Îles et du fleuve Saint-Laurent. Certains de ces
-                        bateaux naviguent sur le fleuve depuis plusieurs générations. La collection sert à illustrer
-                        l'histoire des embarcations, de la construction navale et de la vie sur le fleuve, ainsi que
-                        celle des personnes qui ont construit ces bateaux.</p>
+                    <p>Le Thousand Islands Boat Museum, à Gananoque, conserve et présente une
+                        collection de bateaux anciens représentatifs de la région des Mille-Îles et
+                        du fleuve Saint-Laurent. Certains de ces bateaux naviguent sur le fleuve
+                        depuis plusieurs générations. La collection sert à illustrer l'histoire des
+                        embarcations, de la construction navale et de la vie sur le fleuve, ainsi
+                        que celle des personnes qui ont construit ces bateaux.</p>
                     <idno>https://tiboatmuseum.org/come-visit</idno>
                 </desc>
                 <desc type="collections" when="2026-11" xml:lang="en">
-                    <p>The Thousand Islands Boat Museum, in Gananoque, preserves and presents a collection of antique
-                        boats representative of the Thousand Islands region and the St. Lawrence River. Some of these
-                        boats have been on the river for generations. The collection illustrates the history of boats,
-                        boatbuilding and river life, as well as that of the people who built these boats.</p>
+                    <p>The Thousand Islands Boat Museum, in Gananoque, preserves and presents a
+                        collection of antique boats representative of the Thousand Islands region
+                        and the St. Lawrence River. Some of these boats have been on the river for
+                        generations. The collection illustrates the history of boats, boatbuilding
+                        and river life, as well as that of the people who built these boats.</p>
                     <idno>https://tiboatmuseum.org/come-visit</idno>
                 </desc>
                 <desc type="copyright" xml:lang="fr" when="2026-11">
-                    <p>Le pied de page du site du Thousand Islands Boat Museum porte la mention « Thousand Islands Boat
-                        Museum © 2023 ». Les pages consultées ne présentent aucune licence ouverte, aucune condition
-                        d'utilisation ni aucune procédure de reproduction d'images. Le Musée reçoit les demandes de
-                        recherche sur l'histoire de la navigation dans les Mille-Îles au moyen d'un formulaire en
+                    <p>Le pied de page du site du Thousand Islands Boat Museum porte la mention «
+                        Thousand Islands Boat Museum © 2023 ». Les pages consultées ne présentent
+                        aucune licence ouverte, aucune condition d'utilisation ni aucune procédure
+                        de reproduction d'images. Le Musée reçoit les demandes de recherche sur
+                        l'histoire de la navigation dans les Mille-Îles au moyen d'un formulaire en
                         ligne.</p>
                     <idno>https://tiboatmuseum.org</idno>
                     <idno>https://tiboatmuseum.org/explore/research-requests</idno>
                 </desc>
                 <desc type="copyright" xml:lang="en" when="2026-11">
-                    <p>The footer of the Thousand Islands Boat Museum website carries the notice "Thousand Islands Boat
-                        Museum © 2023". The pages consulted present no open licence, terms of use or image reproduction
-                        procedure. The Museum receives research requests on Thousand Islands boating history through an
-                        online form.</p>
+                    <p>The footer of the Thousand Islands Boat Museum website carries the notice
+                        "Thousand Islands Boat Museum © 2023". The pages consulted present no open
+                        licence, terms of use or image reproduction procedure. The Museum receives
+                        research requests on Thousand Islands boating history through an online
+                        form.</p>
                     <idno>https://tiboatmuseum.org</idno>
                     <idno>https://tiboatmuseum.org/explore/research-requests</idno>
                 </desc>
                 <availability when="2026-11">
                     <scope>aucune des valeurs proposées ne correspond</scope>
                     <note>
-                        <p>Compliance : hors périmètre. Le Thousand Islands Boat Museum ne présente pas de collection en
-                            ligne (novembre 2026) : son site annonce un catalogue en ligne de ses bateaux à venir. Dans les
-                            pages consultées, aucune licence ouverte n'est déclarée. Le site affiche une mention générale
-                            de droit d'auteur dans son pied de page.</p>
+                        <p>Compliance : hors périmètre. Le Thousand Islands Boat Museum ne présente
+                            pas de collection en ligne (novembre 2026) : son site annonce un
+                            catalogue en ligne de ses bateaux à venir. Dans les pages consultées,
+                            aucune licence ouverte n'est déclarée. Le site affiche une mention
+                            générale de droit d'auteur dans son pied de page.</p>
                     </note>
                     <idno>https://tiboatmuseum.org/explore/collection/the-boats/</idno>
                     <dissemination type="collectionsOnline">
                         <volume>0</volume>
                         <note>
-                            <p>Aucune fiche d'objet n'est consultable en ligne (novembre 2026). La rubrique The Boats décrit
-                                la collection de façon générale et indique que le Musée possède 36 bateaux.</p>
+                            <p>Aucune fiche d'objet n'est consultable en ligne (novembre 2026). La
+                                rubrique The Boats décrit la collection de façon générale et indique
+                                que le Musée possède 36 bateaux.</p>
                         </note>
                         <idno>https://tiboatmuseum.org/explore/collection/</idno>
                     </dissemination>
@@ -3491,7 +3535,7 @@
                     <note>
                         <p>Le Musée ne dispose pas d'élément Wikidata (novembre 2026).</p>
                     </note>
-                </wikimedia> 
+                </wikimedia>
             </org>
             <org xml:id="muse1576">
                 <orgName xml:lang="en">Canadian War Museum</orgName>
@@ -3510,7 +3554,7 @@
                     <region>Ottawa</region>
                     <country>Canada</country>
                 </address>
-                <demographics></demographics>
+                <demographics/>
                 <accessibility>
                     <admission>paid</admission>
                 </accessibility>
@@ -3520,41 +3564,50 @@
                     <specialized>https://www.museedelaguerre.ca/vos-recits/leur-histoire</specialized>
                 </online>
                 <desc type="collections" xml:lang="fr" when="2026-11">
-                    <p>Les collections du Musée canadien de la guerre, musée national d'histoire militaire du Canada,
-                        comportent plus de 3 millions d'artefacts, d'œuvres d'art, de documents d'archives et
-                        d'enregistrements sonores et visuels. Elles comprennent des véhicules rares, des pièces
-                        d'artillerie, des uniformes, des médailles et des souvenirs personnels, ainsi que la Collection
-                        Beaverbrook d'art militaire et ses 14 000 œuvres d'art. Le Centre de recherche sur l'histoire
-                        militaire abrite la Collection d'archives George-Metcalf et la Bibliothèque Hartland-Molson.</p>
+                    <p>Les collections du Musée canadien de la guerre, musée national d'histoire
+                        militaire du Canada, comportent plus de 3 millions d'artefacts, d'œuvres
+                        d'art, de documents d'archives et d'enregistrements sonores et visuels.
+                        Elles comprennent des véhicules rares, des pièces d'artillerie, des
+                        uniformes, des médailles et des souvenirs personnels, ainsi que la
+                        Collection Beaverbrook d'art militaire et ses 14 000 œuvres d'art. Le Centre
+                        de recherche sur l'histoire militaire abrite la Collection d'archives
+                        George-Metcalf et la Bibliothèque Hartland-Molson.</p>
                     <idno>https://www.museedelaguerre.ca/a-propos/notre-mission</idno>
                 </desc>
                 <desc type="collections" xml:lang="en" when="2026-11">
-                    <p>The collections of the Canadian War Museum, Canada's national museum of military history, comprise
-                        more than 3 million artifacts, works of art, archival documents, and sound and visual recordings.
-                        They include rare vehicles, artillery pieces, uniforms, medals and personal memorabilia, as well
-                        as the Beaverbrook Collection of War Art and its 14,000 works of art. The Military History
-                        Research Centre houses the George Metcalf Archival Collection and the Hartland Molson Library.</p>
+                    <p>The collections of the Canadian War Museum, Canada's national museum of
+                        military history, comprise more than 3 million artifacts, works of art,
+                        archival documents, and sound and visual recordings. They include rare
+                        vehicles, artillery pieces, uniforms, medals and personal memorabilia, as
+                        well as the Beaverbrook Collection of War Art and its 14,000 works of art.
+                        The Military History Research Centre houses the George Metcalf Archival
+                        Collection and the Hartland Molson Library.</p>
                     <idno>https://www.warmuseum.ca/about/our-purpose</idno>
                 </desc>
                 <desc type="copyright" xml:lang="fr" when="2026-11">
-                    <p>Tout usage d'une image, d'un texte ou d'une partie des collections du Musée canadien de la guerre
-                        à des fins autres que personnelles ou de recherche exige l'autorisation écrite du Musée, demandée
-                        au moyen d'un formulaire en ligne. Des frais de reproduction et d'utilisation s'appliquent et la
-                        mention de crédit fournie par le Musée est obligatoire. L'autorisation est non exclusive et
-                        accordée pour un seul usage, sauf indication contraire. Si le Musée ne détient pas la totalité
-                        des droits sur une œuvre, l'utilisateur·rice doit obtenir l'autorisation écrite du ou de la
-                        titulaire. Sauf approbation préalable, le matériel doit être reproduit en entier et sans
-                        altération. Les pages consultées ne mentionnent aucune licence ouverte pour les collections.</p>
+                    <p>Tout usage d'une image, d'un texte ou d'une partie des collections du Musée
+                        canadien de la guerre à des fins autres que personnelles ou de recherche
+                        exige l'autorisation écrite du Musée, demandée au moyen d'un formulaire en
+                        ligne. Des frais de reproduction et d'utilisation s'appliquent et la mention
+                        de crédit fournie par le Musée est obligatoire. L'autorisation est non
+                        exclusive et accordée pour un seul usage, sauf indication contraire. Si le
+                        Musée ne détient pas la totalité des droits sur une œuvre,
+                        l'utilisateur·rice doit obtenir l'autorisation écrite du ou de la titulaire.
+                        Sauf approbation préalable, le matériel doit être reproduit en entier et
+                        sans altération. Les pages consultées ne mentionnent aucune licence ouverte
+                        pour les collections.</p>
                     <idno>https://www.museedelaguerre.ca/recherche-et-collections/demander-une-reproduction</idno>
                 </desc>
                 <desc type="copyright" xml:lang="en" when="2026-11">
-                    <p>Any use of an image, text or part of the Canadian War Museum collections for purposes other than
-                        personal use or research requires written permission from the Museum, requested through an online
-                        form. Reproduction and usage fees apply and the credit line supplied by the Museum is mandatory.
-                        Permission is non-exclusive and granted for one-time use unless otherwise advised. If the Museum
-                        does not hold full copyright in a work, the user must obtain written permission from the copyright
-                        owner. Unless approved in advance, material must be reproduced in its entirety and without
-                        alteration. The pages consulted mention no open licence for the collections.</p>
+                    <p>Any use of an image, text or part of the Canadian War Museum collections for
+                        purposes other than personal use or research requires written permission
+                        from the Museum, requested through an online form. Reproduction and usage
+                        fees apply and the credit line supplied by the Museum is mandatory.
+                        Permission is non-exclusive and granted for one-time use unless otherwise
+                        advised. If the Museum does not hold full copyright in a work, the user must
+                        obtain written permission from the copyright owner. Unless approved in
+                        advance, material must be reproduced in its entirety and without alteration.
+                        The pages consulted mention no open licence for the collections.</p>
                     <idno>https://www.warmuseum.ca/research-and-collections/request-a-reproduction</idno>
                 </desc>
                 <availability when="2026-11">
@@ -3562,7 +3615,8 @@
                     <dissemination type="collectionsOnline">
                         <volume>40796</volume>
                         <note>
-                            <p>Les fiches n'affichent aucune licence. Leur section « Droits et permissions » renvoie au formulaire de demande du Musée.</p>
+                            <p>Les fiches n'affichent aucune licence. Leur section « Droits et
+                                permissions » renvoie au formulaire de demande du Musée.</p>
                         </note>
                         <idno>https://www.museedelaguerre.ca/collections</idno>
                     </dissemination>
@@ -3596,8 +3650,8 @@
                     <dissemination type="artefactsCanada">
                         <note>
                             <p>Le Musée contribue à Artefacts Canada.</p>
-                            <p>Le nombre de fiches versées n'a pas pu être relevé, la page d'Artefacts Canada ne s'affichant
-                                pas (novembre 2026).</p>
+                            <p>Le nombre de fiches versées n'a pas pu être relevé, la page
+                                d'Artefacts Canada ne s'affichant pas (novembre 2026).</p>
                         </note>
                     </dissemination>
                 </availability>
@@ -3610,7 +3664,7 @@
                         <volume>806</volume>
                         <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
                                 localisation) de la collection qui ont une notice
-                                Wikidata</p></note>
+                            Wikidata</p></note>
                     </dissemination>
                     <dissemination type="wikimedia" when="2026-11-09">
                         <volume>518</volume>
@@ -3619,8 +3673,10 @@
                                 ou localisation) qui ont une image, hors évènements, avec leur
                                 titre, une image et leurs types.</p>
                         </note>
-                        <idno type="institution">https://commons.wikimedia.org/wiki/Canadian_War_Museum</idno>
-                        <idno type="collections">https://commons.wikimedia.org/wiki/Category:Collections_of_the_Canadian_War_Museum</idno>
+                        <idno type="institution"
+                            >https://commons.wikimedia.org/wiki/Canadian_War_Museum</idno>
+                        <idno type="collections"
+                            >https://commons.wikimedia.org/wiki/Category:Collections_of_the_Canadian_War_Museum</idno>
                     </dissemination>
                 </wikimedia>
             </org>
@@ -3639,7 +3695,7 @@
                     <region>Kingston--Pembroke</region>
                     <country>Canada</country>
                 </address>
-                <demographics></demographics>
+                <demographics/>
                 <accessibility>
                     <admission>free</admission>
                     <!-- Musée fermé en novembre 2026 pour transformation du bâtiment, réouverture annoncée en 2027. Entrée indiquée comme gratuite par Kingston Museums (information non datée), valeur d'admission à revoir à la réouverture. -->
@@ -3649,28 +3705,30 @@
                     <specialized>https://agnes.queensu.ca/digital-agnes/</specialized>
                 </online>
                 <desc type="collections" xml:lang="fr" when="2026-11">
-                    <p>Le Agnes Etherington Art Centre conserve plus de 17 000 œuvres d'art, avec d'importants ensembles
-                        d'art contemporain et d'art autochtone, ainsi que d'art historique canadien, européen et
-                        africain.</p>
+                    <p>Le Agnes Etherington Art Centre conserve plus de 17 000 œuvres d'art, avec
+                        d'importants ensembles d'art contemporain et d'art autochtone, ainsi que
+                        d'art historique canadien, européen et africain.</p>
                     <idno>https://agnes.queensu.ca/explore/collections/overview</idno>
                 </desc>
                 <desc type="collections" xml:lang="en" when="2026-11">
-                    <p>Agnes Etherington Art Centre holds over 17,000 works of art, with major concentrations of
-                        contemporary and Indigenous art, and Canadian, European and African historical art.</p>
+                    <p>Agnes Etherington Art Centre holds over 17,000 works of art, with major
+                        concentrations of contemporary and Indigenous art, and Canadian, European
+                        and African historical art.</p>
                     <idno>https://agnes.queensu.ca/explore/collections/overview</idno>
                 </desc>
                 <desc type="copyright" xml:lang="fr" when="2026-11">
-                    <p>Toute reproduction d'une image de la collection exige une autorisation du Agnes Etherington Art
-                        Centre, demandée au moyen d'un formulaire en ligne, pour un seul usage. Des frais peuvent
-                        s'appliquer. Il revient au demandeur ou à la demandeuse d'obtenir l'accord du ou de la titulaire
-                        des droits. Les fiches en ligne n'affichent ni licence ni mention de droits.</p>
+                    <p>Toute reproduction d'une image de la collection exige une autorisation du
+                        Agnes Etherington Art Centre, demandée au moyen d'un formulaire en ligne,
+                        pour un seul usage. Des frais peuvent s'appliquer. Il revient au demandeur
+                        ou à la demandeuse d'obtenir l'accord du ou de la titulaire des droits. Les
+                        fiches en ligne n'affichent ni licence ni mention de droits.</p>
                     <idno>https://agnes.queensu.ca/explore/collections/image-reproduction/</idno>
                 </desc>
                 <desc type="copyright" xml:lang="en" when="2026-11">
-                    <p>Any reproduction of an image from the collection requires permission from the Agnes Etherington
-                        Art Centre, requested through an online form, for one-time use. Fees may apply. Applicants must
-                        obtain permission from the copyright holder. Online records display no licence or rights
-                        statement.</p>
+                    <p>Any reproduction of an image from the collection requires permission from the
+                        Agnes Etherington Art Centre, requested through an online form, for one-time
+                        use. Fees may apply. Applicants must obtain permission from the copyright
+                        holder. Online records display no licence or rights statement.</p>
                     <idno>https://agnes.queensu.ca/explore/collections/image-reproduction</idno>
                 </desc>
                 <availability when="2026-11">
@@ -3678,9 +3736,9 @@
                     <dissemination type="collectionsOnline">
                         <volume>13485</volume>
                         <note>
-                            <p>Les fiches indiquent une mention de source, mais n'affichent ni licence ni mention de droits.
-                                Toute reproduction d'image exige une autorisation demandée au moyen du formulaire en ligne du
-                                Centre.</p>
+                            <p>Les fiches indiquent une mention de source, mais n'affichent ni
+                                licence ni mention de droits. Toute reproduction d'image exige une
+                                autorisation demandée au moyen du formulaire en ligne du Centre.</p>
                         </note>
                         <idno>https://agnes.queensu.ca/explore/collections/search-the-collection</idno>
                     </dissemination>
@@ -3712,7 +3770,7 @@
                         </note>
                     </dissemination>
                     <dissemination type="artefactsCanada">
-                        <volume>15765</volume>   
+                        <volume>15765</volume>
                         <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Agnes+Etherington+Art+Centre&amp;t=0&amp;lang=fr</idno>
                         <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
                     </dissemination>
@@ -3726,7 +3784,7 @@
                         <volume>288</volume>
                         <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
                                 localisation) de la collection qui ont une notice
-                                Wikidata</p></note>
+                            Wikidata</p></note>
                     </dissemination>
                     <dissemination type="wikimedia" when="2026-11-09">
                         <volume>287</volume>
@@ -3735,7 +3793,8 @@
                                 ou localisation) qui ont une image, hors évènements, avec leur
                                 titre, une image et leurs types.</p>
                         </note>
-                        <idno type="institution">https://commons.wikimedia.org/wiki/Category:Agnes_Etherington_Art_Centre</idno>
+                        <idno type="institution"
+                            >https://commons.wikimedia.org/wiki/Category:Agnes_Etherington_Art_Centre</idno>
                     </dissemination>
                 </wikimedia>
             </org>
@@ -3753,7 +3812,7 @@
                     <region>Toronto</region>
                     <country>Canada</country>
                 </address>
-                <demographics></demographics>
+                <demographics/>
                 <accessibility>
                     <admission>paid</admission>
                 </accessibility>
@@ -3762,43 +3821,50 @@
                     <specialized>https://boxwood.ago.ca/about-website</specialized>
                 </online>
                 <desc type="collections" xml:lang="fr" when="2026-11">
-                    <p>La collection compte plus de 120 000 œuvres, de l'art
-                        européen du Moyen Âge à l'art contemporain international. Elle comprend un important ensemble
-                        d'art historique canadien, axé sur Toronto et l'Ontario et marqué par le Groupe des Sept, de
-                        l'art autochtone des Premières Nations, des Inuit et des Métis ainsi que d'Afrique, d'Australie
-                        et des îles du détroit de Torres, et de l'art moderne américain et européen de 1900 à 1960. La
-                        collection de photographies réunit plus de 70 000 œuvres, des années 1840 à aujourd'hui, et
-                        celle d'estampes et de dessins couvre l'histoire de l'œuvre sur papier en Occident depuis le
-                        XVe siècle. Le Musée conserve aussi la plus grande collection publique d'œuvres d'Henry Moore,
-                        des miniatures gothiques en buis, de l'art d'Afrique de l'Ouest et d'Afrique centrale, ainsi
-                        qu'une bibliothèque et des archives de plus de 380 000 volumes.</p>
+                    <p>La collection compte plus de 120 000 œuvres, de l'art européen du Moyen Âge à
+                        l'art contemporain international. Elle comprend un important ensemble d'art
+                        historique canadien, axé sur Toronto et l'Ontario et marqué par le Groupe
+                        des Sept, de l'art autochtone des Premières Nations, des Inuit et des Métis
+                        ainsi que d'Afrique, d'Australie et des îles du détroit de Torres, et de
+                        l'art moderne américain et européen de 1900 à 1960. La collection de
+                        photographies réunit plus de 70 000 œuvres, des années 1840 à aujourd'hui,
+                        et celle d'estampes et de dessins couvre l'histoire de l'œuvre sur papier en
+                        Occident depuis le XVe siècle. Le Musée conserve aussi la plus grande
+                        collection publique d'œuvres d'Henry Moore, des miniatures gothiques en
+                        buis, de l'art d'Afrique de l'Ouest et d'Afrique centrale, ainsi qu'une
+                        bibliothèque et des archives de plus de 380 000 volumes.</p>
                     <idno>https://ago.ca/collection</idno>
                 </desc>
                 <desc type="collections" xml:lang="en" when="2026-11">
-                    <p>The Art Gallery of Ontario collection comprises more than 120,000 works, from European art of the
-                        Middle Ages to international contemporary art. It includes a major holding of historical Canadian
-                        art, focused on Toronto and Ontario and marked by the Group of Seven, Indigenous art from First
-                        Nations, Inuit and Métis artists as well as from Africa, Australia and the Torres Strait Islands,
-                        and American and European modern art from 1900 to 1960. The photography collection holds more
-                        than 70,000 works from the 1840s to the present, and the prints and drawings collection spans the
-                        history of Western works on paper since the 15th century. The Gallery also holds the largest
-                        public collection of works by Henry Moore, Gothic boxwood miniatures, Western and Central African
-                        art, and a library and archives of more than 380,000 volumes.</p>
+                    <p>The Art Gallery of Ontario collection comprises more than 120,000 works, from
+                        European art of the Middle Ages to international contemporary art. It
+                        includes a major holding of historical Canadian art, focused on Toronto and
+                        Ontario and marked by the Group of Seven, Indigenous art from First Nations,
+                        Inuit and Métis artists as well as from Africa, Australia and the Torres
+                        Strait Islands, and American and European modern art from 1900 to 1960. The
+                        photography collection holds more than 70,000 works from the 1840s to the
+                        present, and the prints and drawings collection spans the history of Western
+                        works on paper since the 15th century. The Gallery also holds the largest
+                        public collection of works by Henry Moore, Gothic boxwood miniatures,
+                        Western and Central African art, and a library and archives of more than
+                        380,000 volumes.</p>
                     <idno>https://ago.ca/collection</idno>
                 </desc>
                 <desc type="copyright" xml:lang="fr" when="2026-11">
-                    <p>Le musée concède des licences d'images de sa collection à des fins
-                        savantes, personnelles et commerciales, au moyen de son service AGO Images. Les images sont
-                        commandées en ligne à partir d'une base de données des œuvres disponibles et des œuvres peuvent
-                        être numérisées sur demande. Le service offre des conseils sur les autorisations liées au droit
-                        d'auteur. Les pages consultées ne mentionnent aucune licence ouverte pour la collection.</p>
+                    <p>Le musée concède des licences d'images de sa collection à des fins savantes,
+                        personnelles et commerciales, au moyen de son service AGO Images. Les images
+                        sont commandées en ligne à partir d'une base de données des œuvres
+                        disponibles et des œuvres peuvent être numérisées sur demande. Le service
+                        offre des conseils sur les autorisations liées au droit d'auteur. Les pages
+                        consultées ne mentionnent aucune licence ouverte pour la collection.</p>
                     <idno>https://ago.ca/inquiries/image-licensing</idno>
                 </desc>
                 <desc type="copyright" xml:lang="en" when="2026-11">
-                    <p>The Art Gallery of Ontario licenses images from its collection for scholarly, personal and
-                        commercial use through its AGO Images service. Images are ordered online from a database of
-                        available works, and works can be digitized on request. The service provides advice on copyright
-                        permissions. The pages consulted mention no open licence for the collection.</p>
+                    <p>The Art Gallery of Ontario licenses images from its collection for scholarly,
+                        personal and commercial use through its AGO Images service. Images are
+                        ordered online from a database of available works, and works can be
+                        digitized on request. The service provides advice on copyright permissions.
+                        The pages consulted mention no open licence for the collection.</p>
                     <idno>https://ago.ca/inquiries/image-licensing</idno>
                 </desc>
                 <availability when="2026-11">
@@ -3806,8 +3872,9 @@
                     <dissemination type="collectionsOnline">
                         <volume>131475</volume>
                         <note>
-                            <p>Le site de la collection en ligne ne présente aucune licence ouverte. Les images sont
-                                concédées sous licence par le service AGO Images.</p>
+                            <p>Le site de la collection en ligne ne présente aucune licence ouverte.
+                                Les images sont concédées sous licence par le service AGO
+                                Images.</p>
                         </note>
                         <idno>https://art.ago.ca/objects/images</idno>
                     </dissemination>
@@ -3828,11 +3895,13 @@
                     </dissemination>
                     <dissemination type="iiif">
                         <note>
-                            <p>Images de la collection en ligne diffusées sous forme de manifestes IIIF, consultables et
-                                comparables dans la visionneuse Mirador du Musée.</p>
-                            <p>La collection en ligne a été lancée vers 2017-2018 avec environ 3 000 objets. La date
-                                d'intégration de la visionneuse Mirador n'a pas pu être établie. Les manifestes n'ont pas
-                                été examinés pour une éventuelle mention de licence.</p>
+                            <p>Images de la collection en ligne diffusées sous forme de manifestes
+                                IIIF, consultables et comparables dans la visionneuse Mirador du
+                                Musée.</p>
+                            <p>La collection en ligne a été lancée vers 2017-2018 avec environ 3 000
+                                objets. La date d'intégration de la visionneuse Mirador n'a pas pu
+                                être établie. Les manifestes n'ont pas été examinés pour une
+                                éventuelle mention de licence.</p>
                         </note>
                         <idno>https://art.ago.ca/mirador</idno>
                         <idno>https://volunteers.ago.ca/?p=6359</idno>
@@ -3844,9 +3913,10 @@
                         </note>
                     </dissemination>
                     <dissemination type="artefactsCanada">
-                        <volume>24973</volume>   
+                        <volume>24973</volume>
                         <note>
-                            <p>24 973 fiches versées dans Artefacts Canada, dont 363 accompagnées d'images (novembre 2026).</p>
+                            <p>24 973 fiches versées dans Artefacts Canada, dont 363 accompagnées
+                                d'images (novembre 2026).</p>
                         </note>
                         <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Art+Gallery+of+Ontario&amp;t=0&amp;lang=fr</idno>
                         <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Art+Gallery+of+Ontario&amp;t=1&amp;lang=fr</idno>
@@ -3861,7 +3931,7 @@
                         <volume>182</volume>
                         <note><p>requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
                                 localisation) de la collection qui ont une notice
-                                Wikidata</p></note>
+                            Wikidata</p></note>
                     </dissemination>
                     <dissemination type="wikimedia" when="2026-11-10">
                         <volume>120</volume>
@@ -3870,8 +3940,10 @@
                                 ou localisation) qui ont une image, hors évènements, avec leur
                                 titre, une image et leurs types.</p>
                         </note>
-                        <idno type="institution">https://commons.wikimedia.org/wiki/Category:Art_Gallery_of_Ontario</idno>
-                        <idno type="collection">https://commons.wikimedia.org/wiki/Category:Collections_of_the_Art_Gallery_of_Ontario</idno>
+                        <idno type="institution"
+                            >https://commons.wikimedia.org/wiki/Category:Art_Gallery_of_Ontario</idno>
+                        <idno type="collection"
+                            >https://commons.wikimedia.org/wiki/Category:Collections_of_the_Art_Gallery_of_Ontario</idno>
                     </dissemination>
                 </wikimedia>
             </org>
@@ -3895,7 +3967,7 @@
                     <region>Toronto</region>
                     <country>Canada</country>
                 </address>
-                <demographics></demographics>
+                <demographics/>
                 <accessibility>
                     <admission>paid</admission>
                 </accessibility>
@@ -3904,36 +3976,43 @@
                     <education>https://www.rom.on.ca/learn/resources/virtual-exhibition-experience-colours-kore</education>
                 </online>
                 <desc type="collections" xml:lang="fr" when="2026-11">
-                    <p>Le Musée royal de l'Ontario conserve une collection de 18 millions d'œuvres d'art, d'objets
-                        culturels et de spécimens d'histoire naturelle, présentés dans 40 salles d'exposition. Depuis
-                        2015, le système de gestion des collections Louise Hawley Stone réunit en une seule base les 44
-                        bases de données de collections du Musée, dans laquelle plus de 2 millions de fiches d'objets et
-                        de spécimens ont été migrées. La numérisation de la collection est en cours.</p>
+                    <p>Le Musée royal de l'Ontario conserve une collection de 18 millions d'œuvres
+                        d'art, d'objets culturels et de spécimens d'histoire naturelle, présentés
+                        dans 40 salles d'exposition. Depuis 2015, le système de gestion des
+                        collections Louise Hawley Stone réunit en une seule base les 44 bases de
+                        données de collections du Musée, dans laquelle plus de 2 millions de fiches
+                        d'objets et de spécimens ont été migrées. La numérisation de la collection
+                        est en cours.</p>
                     <idno>https://www.rom.on.ca/collections-research/online-collections</idno>
                 </desc>
                 <desc type="collections" xml:lang="en" when="2026-11">
-                    <p>The Royal Ontario Museum holds a collection of 18 million artworks, cultural objects and natural
-                        history specimens, featured in 40 gallery and exhibition spaces. Since 2015, the Louise Hawley
-                        Stone Collections Management System has brought the Museum's 44 collection databases together in
-                        a single system, into which more than 2 million object and specimen records have been migrated.
-                        Digitization of the collection is ongoing.</p>
+                    <p>The Royal Ontario Museum holds a collection of 18 million artworks, cultural
+                        objects and natural history specimens, featured in 40 gallery and exhibition
+                        spaces. Since 2015, the Louise Hawley Stone Collections Management System
+                        has brought the Museum's 44 collection databases together in a single
+                        system, into which more than 2 million object and specimen records have been
+                        migrated. Digitization of the collection is ongoing.</p>
                     <idno>https://www.rom.on.ca/collections-research/online-collections</idno>
                 </desc>
                 <desc type="copyright" xml:lang="fr" when="2026-11">
-                    <p>Les images de la collection en ligne du Musée royal de l'Ontario sont protégées par le droit
-                        d'auteur au profit du Musée et par la Loi sur le droit d'auteur. Toute reproduction exige une
-                        demande au moyen d'un formulaire en ligne et la conclusion d'un contrat de licence avec le
-                        Musée. L'autorisation est accordée au cas par cas, à la seule discrétion du Musée, pour un usage
-                        unique et non exclusif. Des frais de production et d'utilisation s'appliquent selon le type
-                        d'usage. Les fiches de la collection en ligne n'affichent ni licence ni mention de droits.</p>
+                    <p>Les images de la collection en ligne du Musée royal de l'Ontario sont
+                        protégées par le droit d'auteur au profit du Musée et par la Loi sur le
+                        droit d'auteur. Toute reproduction exige une demande au moyen d'un
+                        formulaire en ligne et la conclusion d'un contrat de licence avec le Musée.
+                        L'autorisation est accordée au cas par cas, à la seule discrétion du Musée,
+                        pour un usage unique et non exclusif. Des frais de production et
+                        d'utilisation s'appliquent selon le type d'usage. Les fiches de la
+                        collection en ligne n'affichent ni licence ni mention de droits.</p>
                     <idno>https://collections.rom.on.ca/rights</idno>
                 </desc>
                 <desc type="copyright" xml:lang="en" when="2026-11">
-                    <p>Images in the Royal Ontario Museum online collection are copyrighted to the Museum and protected
-                        by the Copyright Act. Any reproduction requires a request through an online form and a licensing
-                        agreement with the Museum. Permission is granted on a case-by-case basis, at the sole discretion
-                        of the Museum, for one-time, non-exclusive use. Production and use fees apply according to the
-                        type of use. Online collection records display no licence or rights statement.</p>
+                    <p>Images in the Royal Ontario Museum online collection are copyrighted to the
+                        Museum and protected by the Copyright Act. Any reproduction requires a
+                        request through an online form and a licensing agreement with the Museum.
+                        Permission is granted on a case-by-case basis, at the sole discretion of the
+                        Museum, for one-time, non-exclusive use. Production and use fees apply
+                        according to the type of use. Online collection records display no licence
+                        or rights statement.</p>
                     <idno>https://collections.rom.on.ca/rights</idno>
                 </desc>
                 <availability when="2026-11">
@@ -3941,21 +4020,25 @@
                     <dissemination type="collectionsOnline">
                         <volume>91888</volume>
                         <note>
-                            <p>91 888 objets en ligne selon l'en-tête du site de la collection (novembre 2026). Les fiches
-                                n'affichent ni licence ni mention de droits. Toute reproduction d'image exige une demande
-                                et un contrat de licence avec le service Rights and Reproductions du Musée.</p>
+                            <p>91 888 objets en ligne selon l'en-tête du site de la collection
+                                (novembre 2026). Les fiches n'affichent ni licence ni mention de
+                                droits. Toute reproduction d'image exige une demande et un contrat
+                                de licence avec le service Rights and Reproductions du Musée.</p>
                         </note>
                         <idno>https://collections.rom.on.ca</idno>
                     </dissemination>
                     <dissemination type="openData" when="2024-06-27">
                         <volume>6274</volume>
                         <note>
-                            <p>Métadonnées complètes, en français et en anglais, des objets du patrimoine canadien et
-                                autochtone et des spécimens d'histoire naturelle du Canada numérisés de 2022 à 2024 dans le
-                                cadre du Programme d'aide aux musées, publiées en un fichier téléchargeable.</p>
-                            <p>Jeu de données publié le 27 juin 2024 (date indiquée dans le nom du fichier). Il couvre
-                                6 274 objets photographiés en 14 293 vues, aussi consultables dans la collection en ligne.
-                                La page de téléchargement n'indique aucune licence.</p>
+                            <p>Métadonnées complètes, en français et en anglais, des objets du
+                                patrimoine canadien et autochtone et des spécimens d'histoire
+                                naturelle du Canada numérisés de 2022 à 2024 dans le cadre du
+                                Programme d'aide aux musées, publiées en un fichier
+                                téléchargeable.</p>
+                            <p>Jeu de données publié le 27 juin 2024 (date indiquée dans le nom du
+                                fichier). Il couvre 6 274 objets photographiés en 14 293 vues, aussi
+                                consultables dans la collection en ligne. La page de téléchargement
+                                n'indique aucune licence.</p>
                         </note>
                         <idno>https://www.rom.on.ca/sites/default/files/sites/default/files/imce/ROM_MAP_2022-2024_Metadata_Records_2024_06_27.zip</idno>
                         <idno>https://www.rom.on.ca/collections-research/rom-research/collections-digitization</idno>
@@ -3972,9 +4055,9 @@
                     </dissemination>
                     <dissemination type="iiif">
                         <note>
-                            <p>Aucun manifeste IIIF repéré (novembre 2026). Les images de la collection en ligne sont
-                                servies par le système de diffusion interne d'eMuseum et consultées dans sa visionneuse
-                             avec zoom.</p>
+                            <p>Aucun manifeste IIIF repéré (novembre 2026). Les images de la
+                                collection en ligne sont servies par le système de diffusion interne
+                                d'eMuseum et consultées dans sa visionneuse avec zoom.</p>
                         </note>
                     </dissemination>
                     <dissemination type="git">
@@ -3984,36 +4067,585 @@
                         </note>
                     </dissemination>
                     <dissemination type="artefactsCanada">
-                        <volume>52373</volume>   
+                        <volume>52373</volume>
                         <note>
-                            <p>52 373 fiches versées dans Artefacts Canada, dont 317 accompagnées d'images (novembre 2026).</p>
+                            <p>52 373 fiches versées dans Artefacts Canada, dont 317 accompagnées
+                                d'images (novembre 2026).</p>
                         </note>
                         <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Mus%C3%A9e+royal+de+l%27Ontario&amp;t=0&amp;lang=fr</idno>
                         <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Royal+Ontario+Museum+Mus%C3%A9e+royal+de+l%27Ontario&amp;t=1&amp;lang=fr</idno>
                     </dissemination>
                 </availability>
                 <wikimedia>
-                        <note>
-                            <p>Institution identifiée sur Wikidata</p>
-                        </note>
-                        <idno type="institution">https://www.wikidata.org/wiki/Q649250</idno>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q649250</idno>
                     <dissemination type="wikidata" when="2026-11-10">
                         <volume>91</volume>
                         <note>
-                            <p>Requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou localisation) de la
-                                collection qui ont une notice Wikidata, hors évènements.</p>
+                            <p>Requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice Wikidata, hors
+                                évènements.</p>
                         </note>
                     </dissemination>
-                        <dissemination type="wikimedia" when="2026-11-10">
-                            <volume>35</volume>
-                            <note>
-                                <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
-                                    ou localisation) qui ont une image, hors évènements, avec leur
-                                    titre, une image et leurs types.</p>
-                            </note>
-                            <idno type="institution">https://commons.wikimedia.org/wiki/Category:Royal_Ontario_Museum</idno>
-                            <idno type="collection">https://commons.wikimedia.org/wiki/Category:Collections_of_the_Royal_Ontario_Museum</idno>
-                        </dissemination>
+                    <dissemination type="wikimedia" when="2026-11-10">
+                        <volume>35</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno type="institution"
+                            >https://commons.wikimedia.org/wiki/Category:Royal_Ontario_Museum</idno>
+                        <idno type="collection"
+                            >https://commons.wikimedia.org/wiki/Category:Collections_of_the_Royal_Ontario_Museum</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse1319">
+                <orgName xml:lang="en">Aga Khan Museum </orgName>
+                <orgName xml:lang="fr">Musée Aga Khan</orgName>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>history</field>
+                    <field>fine arts</field>
+                    <field>social and community studies</field>
+                </fields>
+                <address>
+                    <street><num>77</num>Wynford Dr</street>
+                    <settlement>Toronto</settlement>
+                    <postCode>M3C 1K1</postCode>
+                    <region>Toronto</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://agakhanmuseum.org/#exhibitions</exhibitions>
+                    <specialized>https://agakhanmuseum.org/explore-at-home/</specialized>
+                </online>
+                <desc xml:lang="en" when="2026-11">
+                    <p>The Aga Khan Museum, which opened in Toronto in 2014, holds a growing
+                        Permanent Collection of more than 1,200 works dating from the 9th to the
+                        21st century. The collection is made up of manuscripts, paintings, ceramics
+                        and textiles from historic Muslim civilizations, from the Iberian Peninsula
+                        and North Africa through the Middle East to South Asia and China. It also
+                        includes art from contemporary Muslim communities and diasporas.</p>
+                    <p>The core of the collection was assembled by Prince Sadruddin Aga Khan
+                        (1933-2003), who began collecting in the 1950s as a student at Harvard
+                        University and continued with his wife, Princess Catherine Aga Khan.</p>
+                    <idno>https://agakhanmuseum.org/collections/</idno>
+                </desc>
+                <desc xml:lang="fr" when="2026-11">
+                    <p>Ouvert à Toronto en 2014, le Musée Aga Khan conserve une collection
+                        permanente en croissance de plus de 1 200 œuvres datant du IXe au XXIe
+                        siècle. Elle réunit des manuscrits, des peintures, des céramiques et des
+                        textiles issus des civilisations musulmanes historiques, de la péninsule
+                        Ibérique et de l'Afrique du Nord jusqu'à l'Asie du Sud et la Chine, en
+                        passant par le Moyen-Orient. Elle comprend aussi des œuvres de communautés
+                        et de diasporas musulmanes contemporaines.</p>
+                    <p>Le noyau de la collection a été constitué par le prince Sadruddin Aga Khan
+                        (1933-2003), qui a commencé à collectionner dans les années 1950 alors qu'il
+                        étudiait à l'Université Harvard, puis a poursuivi avec son épouse, la
+                        princesse Catherine Aga Khan.</p>
+                    <idno>https://agakhanmuseum.org/collections/</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11-19">
+                    <p>Images of the collection published online by the Aga Khan Museum are made
+                        available under a Creative Commons Attribution-NonCommercial 4.0 licence (CC
+                        BY-NC 4.0). The Museum encourages their non-commercial use, provided users
+                        follow the principles of its copyright policy.</p>
+                    <p>Commercial use, including publications and exhibitions, and access to
+                        high-resolution files require a separate request. Requests are made through
+                        one of six forms (publication, online, exhibition, broadcast, research or
+                        presentation, other reproduction) sent to imagerequest@agakhanmuseum.org,
+                        with a processing time of three to four weeks. The Museum reserves the right
+                        to terminate licences that do not comply with these requirements.</p>
+                    <idno>https://agakhanmuseum.org/collection-requests/</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11-19">
+                    <p>Les images de la collection diffusées en ligne par le Musée Aga Khan sont
+                        offertes sous licence Creative Commons Attribution - Pas d'utilisation
+                        commerciale 4.0 (CC BY-NC 4.0). Le Musée encourage leur utilisation non
+                        commerciale, dans le respect des principes de sa politique sur le droit
+                        d'auteur.</p>
+                    <p>Toute utilisation commerciale, notamment pour des publications ou des
+                        expositions, ainsi que l'obtention de fichiers en haute résolution,
+                        nécessitent une demande distincte. Celle-ci se fait au moyen de l'un des six
+                        formulaires prévus (publication, en ligne, exposition, diffusion, recherche
+                        ou présentation, autre reproduction), à transmettre à
+                        imagerequest@agakhanmuseum.org, avec un délai de traitement de trois à
+                        quatre semaines. Le Musée se réserve le droit de résilier les licences qui
+                        ne respectent pas ces conditions.</p>
+                    <idno>https://agakhanmuseum.org/collection-requests/</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>Some eligible data</scope>
+                    <dissemination type="collectionsOnline">
+                        <volume>720</volume>
+                        <idno>https://collections.agakhanmuseum.org</idno>
+                        <licence>https://creativecommons.org/licenses/by-nc/4.0/</licence>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <note>
+                            <p>Ne contribue pas.</p>
+                        </note>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q4690937</idno>
+                    <dissemination type="wikidata" when="2026-11-19">
+                        <volume>27</volume>
+                        <note>
+                            <p>Requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice Wikidata, hors
+                                évènements.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-11-19">
+                        <volume>27</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno type="collection"
+                            >https://commons.wikimedia.org/wiki/Category:Collections_of_the_Aga_Khan_Museum</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse1303">
+                <orgName xml:lang="en">Museum Of Contemporary Art Toronto Canada</orgName>
+                <orgName xml:lang="fr">Musée D'Art Contemporain Toronto Canada</orgName>
+                <orgName xml:lang="en">MOCA</orgName>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>fine arts</field>
+                </fields>
+                <address>
+                    <street><num>158</num>Sterling Road</street>
+                    <settlement>Toronto</settlement>
+                    <postCode>M6R 2B7</postCode>
+                    <region>Toronto</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://moca.ca/exhibitions/</exhibitions>
+                </online>
+                <desc xml:lang="en" when="2026-11">
+                    <p>Formerly known as the Museum of Contemporary Canadian Art (MOCCA), the Museum
+                        of Contemporary Art Toronto Canada (MOCA) presents itself as a gathering
+                        space for artists to experiment and respond to the current cultural moment,
+                        with an artist-centric approach to programming. At its former Queen West
+                        location, MOCCA presented the work of more than 1,100 Canadian and
+                        international artists in over 200 exhibitions and welcomed some 40,000
+                        visitors a year. In September 2018, the Museum moved to the Auto BLDG, a
+                        former industrial building in the Lower Junction.</p>
+                    <p>The Museum's website makes no mention of a collection. MOCA presents its
+                        activities solely through temporary exhibitions, commissions and public
+                        programming.</p>
+                    <idno>https://moca.ca/about/</idno>
+                </desc>
+                <desc xml:lang="fr" when="2026-11">
+                    <p>Anciennement Museum of Contemporary Canadian Art (MOCCA), le Musée d'art
+                        contemporain Toronto Canada (MOCA) se présente comme un lieu de
+                        rassemblement où les artistes expérimentent et répondent au moment culturel
+                        actuel, avec une programmation centrée sur les artistes. À son ancienne
+                        adresse de Queen West, le MOCCA a présenté le travail de plus de 1 100
+                        artistes canadien·nes et internationaux·ales dans plus de 200 expositions et
+                        accueilli quelque 40 000 visiteur·euses par année. En septembre 2018, le
+                        Musée s'est installé dans l'Auto BLDG, un ancien bâtiment industriel du
+                        quartier Lower Junction.</p>
+                    <p>Le site du Musée ne fait aucune mention d'une collection. Le MOCA présente
+                        ses activités uniquement à travers ses expositions temporaires, ses
+                        commandes d'œuvres et sa programmation publique.</p>
+                    <idno>https://moca.ca/about/</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11">
+                    <p>The Museum of Contemporary Art does not offer an online collection.</p>
+                    <idno>https://moca.ca/</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11-19">
+                    <p>Le Musée d'art contemporain n'offre pas de collection en ligne. Son site ne
+                        publie ni politique de droit d'auteur, ni licence d'images, ni conditions de
+                        réutilisation.</p>
+                    <idno>https://moca.ca/</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>Pas de données.</scope>
+                    <dissemination type="collectionsOnline">
+                        <volume>0</volume>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <note>
+                            <p>Ne contribue pas.</p>
+                        </note>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q6940822</idno>
+                    <dissemination type="wikidata" when="2026-11-19">
+                        <volume>0</volume>
+                        <note>
+                            <p>Requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice Wikidata, hors
+                                évènements.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-11-19">
+                        <volume>0</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno type="institution"
+                            >https://commons.wikimedia.org/wiki/Category:Museum_of_Contemporary_Art_Toronto_Canada</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse1299">
+                <orgName xml:lang="en">Pickering Museum Village</orgName>
+                <acronym xml:lang="en">PMV</acronym>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>social and community studies</field>
+                </fields>
+                <address>
+                    <street><num>2365</num>6th Concession Road</street>
+                    <settlement>Greenwood</settlement>
+                    <postCode>L0H 1H0</postCode>
+                    <region>Toronto</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://www.pickeringmuseumvillage.ca/collections-and-exhibits/exhibits/</exhibitions>
+                    <idno type="website">https://www.pickeringmuseumvillage.ca</idno>
+                </online>
+                <desc xml:lang="en" when="2026-11-19">
+                    <p>Pickering Museum Village is a living history museum that collects, preserves
+                        and interprets the material and social culture of Pickering Township, from
+                        1810 up to 40 years before the present year. The Museum maintains two
+                        collections, a Core Artifact Collection and an Education Collection, built
+                        largely through donations from the public. It currently seeks objects,
+                        photographs and ephemera relating to Pickering Township in areas such as
+                        business, sports and leisure, arts and culture, service organizations,
+                        emergency services, the two World Wars, founding families, and science and
+                        technology. A portion of the collection can be viewed online.</p>
+                    <idno>https://www.pickeringmuseumvillage.ca/collections-and-exhibits/donate-an-artifact/</idno>
+                    <idno>https://www.pickering.ca/parks-recreation-culture/arts-and-culture/heritage-and-history/</idno>
+                </desc>
+                <desc xml:lang="fr" when="2026-11-19">
+                    <p>Musée d'histoire vivante, le Pickering Museum Village collectionne, conserve
+                        et interprète la culture matérielle et sociale du canton de Pickering, de
+                        1810 jusqu'à 40 ans avant l'année en cours. Le Musée gère deux collections,
+                        une collection principale d'artefacts (Core Artifact Collection) et une
+                        collection éducative (Education Collection), constituées en grande partie de
+                        dons du public. Il recherche actuellement des objets, des photographies et
+                        des éphémères liés au canton de Pickering dans des domaines comme le
+                        commerce, les sports et loisirs, les arts et la culture, les organismes de
+                        services, les services d'urgence, les deux guerres mondiales, les familles
+                        fondatrices ainsi que les sciences et technologies. Une partie de la
+                        collection est consultable en ligne.</p>
+                    <idno>https://www.pickeringmuseumvillage.ca/collections-and-exhibits/donate-an-artifact/</idno>
+                    <idno>https://www.pickering.ca/parks-recreation-culture/arts-and-culture/heritage-and-history/</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11-19">
+                    <p>The Pickering Museum Village online collection does not display any licence
+                        or rights statement. Images on object records are low resolution and
+                        watermarked "Property of Pickering Museum Village". Any image reproduction
+                        requires a request through the form available on each record.</p>
+                    <idno>https://pickering.pastperfectonline.com/</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11-19">
+                    <p>La collection en ligne du Pickering Museum Village n'affiche aucune licence
+                        ni mention de droits. Les images des fiches sont en basse résolution et
+                        portent le filigrane « Property of Pickering Museum Village ». Toute
+                        reproduction d'image passe par une demande au moyen du formulaire offert sur
+                        chaque fiche.</p>
+                    <idno>https://pickering.pastperfectonline.com/</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>Les données ne sont pas éligibles.</scope>
+                    <dissemination type="collectionsOnline">
+                        <volume>950</volume>
+                        <note>
+                            <p>950 fiches en ligne (novembre 2026) sur la plateforme PastPerfect
+                                Online, soit 653 objets et 297 photographies. Les fiches n'affichent
+                                aucune licence ni mention de droits. Les images portent le filigrane
+                                « Property of Pickering Museum Village » et toute reproduction passe
+                                par un formulaire de demande au Musée.</p>
+                        </note>
+                        <idno>https://pickering.pastperfectonline.com</idno>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>20</volume>
+                        <note>
+                            <p>20 fiches versées dans Artefacts Canada, dont 14 accompagnées
+                                d'images (novembre 2026).</p>
+                        </note>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Pickering+Museum+Village&amp;t=0&amp;lang=fr</idno>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Pickering+Museum+Village&amp;t=1&amp;lang=fr</idno>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution non identifiée sur Wikidata</p>
+                    </note>
+                </wikimedia>
+            </org>
+            <org xml:id="muse1274">
+                <orgName xml:lang="en">The George R. Gardiner Museum Of Ceramic Art</orgName>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>decorative arts and design</field>
+                </fields>
+                <address>
+                    <street><num>111</num>Queen'S Park</street>
+                    <settlement>Toronto</settlement>
+                    <postCode>M5S 2C7</postCode>
+                    <region>Toronto</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://www.gardinermuseum.on.ca/whats-on/exhibitions/</exhibitions>
+                </online>
+                <desc xml:lang="en" when="2026-11-19">
+                    <p>The Gardiner Museum, founded in 1984 by George and Helen Gardiner, is one of
+                        the few museums in the world dedicated to ceramics, with a collection of
+                        more than 5,000 objects. Rather than an encyclopedic approach, the founders
+                        collected selected areas of ceramic excellence in depth: earthenwares from
+                        Ancestral Abiayala (formerly referred to as the Ancient Americas), Italian
+                        Renaissance maiolica and English delftware, as well as 18th-century European
+                        porcelain, including specialized collections of Commedia dell'Arte figures
+                        and scent bottles.</p>
+                    <p>Over the past thirty years, the European holdings have expanded to include
+                        creamware, French faïence and 19th-century ceramics, with a focus on Minton
+                        and on wares made for the Canadian market. The collection also includes
+                        Chinese and Japanese ceramics dating back to the Neolithic period, modern
+                        and contemporary ceramics with an emphasis on Canadian work, and non-ceramic
+                        works related to the collection. The collection can be searched online.</p>
+                    <idno>https://www.gardinermuseum.on.ca/collections-research/</idno>
+                </desc>
+                <desc xml:lang="fr" when="2026-11-19">
+                    <p>Fondé en 1984 par George et Helen Gardiner, le Gardiner Museum est l'un des
+                        rares musées au monde consacrés à la céramique, avec une collection de plus
+                        de 5 000 objets. Plutôt que de viser l'encyclopédisme, les fondateur·rices
+                        ont collectionné en profondeur certains domaines d'excellence de la
+                        céramique : les terres cuites de l'Abiayala ancestral (autrefois désigné
+                        comme les Amériques anciennes), la majolique italienne de la Renaissance et
+                        la faïence anglaise de type delft, ainsi que la porcelaine européenne du
+                        XVIIIe siècle, dont des collections spécialisées de figurines de la commedia
+                        dell'arte et de flacons à parfum.</p>
+                    <p>Au cours des trente dernières années, les fonds européens se sont élargis à
+                        la faïence fine (creamware), à la faïence française et à la céramique du
+                        XIXe siècle, avec un accent sur Minton et sur les pièces produites pour le
+                        marché canadien. La collection comprend aussi des céramiques chinoises et
+                        japonaises remontant au Néolithique, des céramiques modernes et
+                        contemporaines centrées sur la production canadienne, ainsi que des œuvres
+                        non céramiques liées à la collection. La collection est consultable en
+                        ligne.</p>
+                    <idno>https://www.gardinermuseum.on.ca/collections-research/</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11-19">
+                    <p>Unless otherwise noted, the Gardiner Museum holds the copyright in images of
+                        its permanent collection. Any reproduction requires permission from the
+                        Museum and, where applicable, from the copyright holder of the object.
+                     </p>
+                    <p>The Museum supports fair dealing for research, private study, criticism,
+                        review and news reporting, provided the artist, title, date and credit line
+                        given in the online collection record are cited. No open licence applies to
+                        the collection images.</p>
+                    <idno>https://www.gardinermuseum.on.ca/collections-research/rights-and-reproductions/</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11-19">
+                    <p>Sauf mention contraire, le Gardiner Museum détient le droit d'auteur sur les
+                        images de sa collection permanente. Toute reproduction exige l'autorisation
+                        du Musée et, le cas échéant, celle du ou de la titulaire des droits sur
+                        l'objet.</p>
+                    <p>Le Musée reconnaît l'utilisation équitable à des fins de recherche, d'étude
+                        privée, de critique, de compte rendu et de communication des nouvelles, à
+                        condition de citer l'artiste, le titre, la date et la mention de crédit
+                        indiqués dans la fiche de la collection en ligne. Aucune licence ouverte ne
+                        s'applique aux images de la collection.</p>
+                    <idno>https://www.gardinermuseum.on.ca/collections-research/rights-and-reproductions/</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>Les données ne sont pas éligibles</scope>
+                    <dissemination type="collectionsOnline">
+                        <volume>4842</volume>
+                        <note>
+                            <p>4 842 fiches dans la collection en ligne (novembre 2026). Les fiches n'affichent
+                                aucune licence ouverte ni mention de droits, mais les images sont téléchargeables
+                                directement depuis chaque fiche, en plusieurs résolutions. Les métadonnées de chaque
+                                fiche sont aussi offertes en formats structurés RDF, XML et JSON. Toute reproduction
+                                reste soumise à une demande d'autorisation et à un contrat de licence non exclusive
+                                avec le Musée.</p>
+                        </note>
+                        <idno>https://emuseum.gardinermuseum.com/objects/images</idno>
+                        <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>2317</volume>
+                        <note>
+                            <p>2317 fiches versées dans Artefacts Canada, dont 2118 accompagnées
+                                d'images (novembre 2026).</p>
+                        </note>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=The+Gardiner+Museum+of+Ceramic+Art&amp;t=0&amp;lang=fr</idno>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=The+Gardiner+Museum+of+Ceramic+Art&amp;t=1&amp;lang=fr</idno>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q2043270</idno>
+                    <dissemination type="wikidata" when="2026-11-19">
+                        <volume>0</volume>
+                        <note>
+                            <p>Requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice Wikidata, hors
+                                évènements.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-11-19">
+                        <volume>0</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno type="institution">https://commons.wikimedia.org/wiki/Category:Gardiner_Museum</idno>
+                    </dissemination>
                 </wikimedia>
             </org>
         </listOrg>
