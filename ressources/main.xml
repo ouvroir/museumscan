@@ -4492,7 +4492,7 @@
                     </note>
                 </wikimedia>
             </org>
-            <org xml:id="muse1274">
+            <org xml:id="muse1668">
                 <orgName xml:lang="en">The George R. Gardiner Museum Of Ceramic Art</orgName>
                 <orgType>museum</orgType>
                 <fields>
@@ -4552,8 +4552,7 @@
                 <desc type="copyright" xml:lang="en" when="2026-11-19">
                     <p>Unless otherwise noted, the Gardiner Museum holds the copyright in images of
                         its permanent collection. Any reproduction requires permission from the
-                        Museum and, where applicable, from the copyright holder of the object.
-                     </p>
+                        Museum and, where applicable, from the copyright holder of the object. </p>
                     <p>The Museum supports fair dealing for research, private study, criticism,
                         review and news reporting, provided the artist, title, date and credit line
                         given in the online collection record are cited. No open licence applies to
@@ -4577,12 +4576,13 @@
                     <dissemination type="collectionsOnline">
                         <volume>4842</volume>
                         <note>
-                            <p>4 842 fiches dans la collection en ligne (novembre 2026). Les fiches n'affichent
-                                aucune licence ouverte ni mention de droits, mais les images sont téléchargeables
-                                directement depuis chaque fiche, en plusieurs résolutions. Les métadonnées de chaque
-                                fiche sont aussi offertes en formats structurés RDF, XML et JSON. Toute reproduction
-                                reste soumise à une demande d'autorisation et à un contrat de licence non exclusive
-                                avec le Musée.</p>
+                            <p>4 842 fiches dans la collection en ligne (novembre 2026). Les fiches
+                                n'affichent aucune licence ouverte ni mention de droits, mais les
+                                images sont téléchargeables directement depuis chaque fiche, en
+                                plusieurs résolutions. Les métadonnées de chaque fiche sont aussi
+                                offertes en formats structurés RDF, XML et JSON. Toute reproduction
+                                reste soumise à une demande d'autorisation et à un contrat de
+                                licence non exclusive avec le Musée.</p>
                         </note>
                         <idno>https://emuseum.gardinermuseum.com/objects/images</idno>
                         <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
@@ -4644,7 +4644,633 @@
                                 ou localisation) qui ont une image, hors évènements, avec leur
                                 titre, une image et leurs types.</p>
                         </note>
-                        <idno type="institution">https://commons.wikimedia.org/wiki/Category:Gardiner_Museum</idno>
+                        <idno type="institution"
+                            >https://commons.wikimedia.org/wiki/Category:Gardiner_Museum</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse1274">
+                <orgName xml:lang="en">Royal Canadian Military Institute</orgName>
+                <orgName xml:lang="fr">Institut Royal Militaire Canadien</orgName>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>military</field>
+                </fields>
+                <address>
+                    <street><num>426</num>University Avenue</street>
+                    <settlement>Toronto</settlement>
+                    <postCode>M5G 1S9</postCode>
+                    <region>Toronto</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>on appointment</admission>
+                </accessibility>
+                <online/>
+                <desc xml:lang="en" when="2026-11">
+                    <p>The Museum of the Royal Canadian Military Institute (RCMI), formally
+                        established in 1909, is the largest military history museum in Toronto and
+                        one of the largest in Canada, with over 15,000 artifacts and 10,000 archival
+                        materials. Specializing in Canadian military history from 1855 to the
+                        present, it holds firearms, uniforms, medal sets and other militaria,
+                        including an extensive collection of Canadian First World War uniforms and
+                        militaria. Each year, students in the museum's internship program create an
+                        exhibition within the RCMI. Part of the collection can be browsed online on
+                        the CatalogIt HUB platform.</p>
+                    <p>The Institute also maintains a library of over 15,000 volumes on military
+                        history, science and art, the largest privately funded and maintained
+                        military library in Canada. It is open to the public for reference use, by
+                        appointment, and its catalogue can be searched online.</p>
+                    <idno>https://www.rcmi.org/Collections/Museum</idno>
+                    <idno>https://hub.catalogit.app/royal-canadian-military-institute</idno>
+                </desc>
+                <desc xml:lang="fr" when="2026-11">
+                    <p>Officiellement créé en 1909, le musée du Royal Canadian Military Institute
+                        (RCMI) est le plus grand musée d'histoire militaire de Toronto et l'un des
+                        plus importants au Canada, avec plus de 15 000 artefacts et 10 000 documents
+                        d'archives. Spécialisé dans l'histoire militaire canadienne de 1855 à
+                        aujourd'hui, il conserve des armes à feu, des uniformes, des ensembles de
+                        médailles et d'autres objets militaires, dont une importante collection
+                        d'uniformes et d'objets militaires canadiens de la Première Guerre mondiale.
+                        Chaque année, les stagiaires du programme de stages du musée y conçoivent
+                        une exposition. Une partie de la collection est consultable en ligne sur la
+                        plateforme CatalogIt HUB.</p>
+                    <p>L'Institut possède aussi une bibliothèque de plus de 15 000 volumes sur
+                        l'histoire, la science et l'art militaires, la plus grande bibliothèque
+                        militaire financée et gérée par des fonds privés au Canada. Elle est ouverte
+                        au public pour consultation sur place, sur rendez-vous, et son catalogue est
+                        interrogeable en ligne.</p>
+                    <idno>https://www.rcmi.org/Collections/Museum</idno>
+                    <idno>https://hub.catalogit.app/royal-canadian-military-institute</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11">
+                    <p>The Royal Canadian Military Institute publishes no copyright policy, image
+                        licence or terms of reuse for its collection. The part of the collection
+                        published on the CatalogIt HUB platform is presented without any statement
+                        on rights, licensing or reproduction.</p>
+                    <idno>https://www.rcmi.org</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11">
+                    <p>Le Royal Canadian Military Institute ne publie aucune politique de droit
+                        d'auteur, licence d'images ou condition de réutilisation pour sa collection.
+                        La partie de la collection publiée sur la plateforme CatalogIt HUB est
+                        présentée sans aucune mention de droits, de licence ou de reproduction.</p>
+                    <idno>https://www.rcmi.org</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>Les données ne sont pas éligibles</scope>
+                    <dissemination type="collectionsOnline">
+                        <volume>1269</volume>
+                        <note>
+                            <p>4 842 fiches dans la collection en ligne (novembre 2026). Les fiches
+                                n'affichent aucune licence ouverte ni mention de droits, mais les
+                                images sont téléchargeables directement depuis chaque fiche, en
+                                plusieurs résolutions. Les métadonnées de chaque fiche sont aussi
+                                offertes en formats structurés RDF, XML et JSON. Toute reproduction
+                                reste soumise à une demande d'autorisation et à un contrat de
+                                licence non exclusive avec le Musée.</p>
+                        </note>
+                        <idno>https://hub.catalogit.app/royal-canadian-military-institute</idno>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <note>
+                            <p>Pas de versement sur artefacts Canada.</p>
+                        </note>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q7373898</idno>
+                    <dissemination type="wikidata" when="2026-11-22">
+                        <volume>0</volume>
+                        <note>
+                            <p>Requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice Wikidata, hors
+                                évènements.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-11-22">
+                        <volume>0</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno type="institution"
+                            >https://commons.wikimedia.org/wiki/Category:Royal_Canadian_Military_Institute</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse0489">
+                <orgName xml:lang="en">Peel Art Gallery Museum + Archives</orgName>
+                <acronym xml:lang="en">PAMA</acronym>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>history</field>
+                </fields>
+                <address>
+                    <street><num>9</num>Wellington St. E.</street>
+                    <settlement>Brampton</settlement>
+                    <postCode>L6W 1Y1</postCode>
+                    <region>Toronto</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://www.pama.peelregion.ca/exhibitions/virtual-exhibitions</exhibitions>
+                </online>
+                <desc xml:lang="en" when="2026-11-22">
+                    <p>PAMA's Art Gallery Collection holds over 6,000 artworks by more than 900
+                        artists, mostly Canadian, centred on Peel Region and beyond. It is mainly a
+                        20th-century collection, with some 19th- and 21st-century works, and about
+                        75% of it consists of works on paper (collages, drawings, paintings,
+                        photographs and prints). It includes the largest public collection in the
+                        world of works by Caroline Helena Wilkinson (1875-1939) and Franklin Milton
+                        Armington (1876-1941), with nearly 700 pieces, as well as a important number
+                        of abstract works by Toronto's Painters Eleven, the Quebec Automatistes and
+                        the Quebec Plasticiens. New acquisitions focus on works that reflect the
+                        diverse and evolving communities of Peel and Canada.</p>
+                    <p>The Museum Collection holds over 16,000 cultural objects and 29,000
+                        archaeological objects connected to Peel Region, including the Cities of
+                        Brampton and Mississauga, the Town of Caledon, the former County of Peel and
+                        its historical townships. It documents everyday life, industry, immigration
+                        and traditions, as well as the people, places, events and businesses of the
+                        region. Both collections can be searched online.</p>
+                    <idno>https://www.pama.peelregion.ca/collections/art-gallery-collection</idno>
+                    <idno>https://www.pama.peelregion.ca/collections/museum-collection</idno>
+                </desc>
+                <desc xml:lang="fr" when="2026-11-22">
+                    <p>La collection d'art de PAMA compte plus de 6 000 œuvres de plus de 900
+                        artistes, majoritairement canadien·nes, centrées sur la région de Peel et
+                        au-delà. Il s'agit surtout d'une collection du XXe siècle, avec quelques
+                        œuvres des XIXe et XXIe siècles, et environ 75 % de ses œuvres sont sur
+                        papier (collages, dessins, peintures, photographies et estampes). Elle
+                        comprend la plus importante collection publique au monde d'œuvres de
+                        Caroline Helena Wilkinson (1875-1939) et de Franklin Milton Armington
+                        (1876-1941), avec près de 700 pièces, ainsi qu'un nombre important d'œuvres
+                        abstraites des Painters Eleven de Toronto, des Automatistes et des
+                        Plasticiens québécois. Les nouvelles acquisitions privilégient les œuvres
+                        qui reflètent la diversité et l'évolution des communautés de Peel et du
+                        Canada.</p>
+                    <p>La collection du musée réunit plus de 16 000 objets culturels et 29 000
+                        objets archéologiques liés à la région de Peel, dont les villes de Brampton
+                        et de Mississauga, la ville de Caledon, l'ancien comté de Peel et ses
+                        cantons historiques. Elle documente la vie quotidienne, l'industrie,
+                        l'immigration et les traditions, ainsi que les personnes, les lieux, les
+                        événements et les entreprises de la région. Les deux collections sont
+                        consultables en ligne.</p>
+                    <idno>https://www.pama.peelregion.ca/collections/art-gallery-collection</idno>
+                    <idno>https://www.pama.peelregion.ca/collections/museum-collection</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11">
+                    <p>PAMA provides photographs of objects in its collection for commercial and
+                        non-commercial publications, educational use and research, at its
+                        discretion. Any use of images of collection objects without PAMA's written
+                        permission is prohibited. Requests are made through an image request form.
+                        Images may not be cropped or altered without written permission, and the
+                        credit line provided must accompany every reproduction.</p>
+                    <p>When PAMA does not hold copyright and the work is not in the public domain,
+                        the requester must obtain permission and proof of licensing from the
+                        copyright holder and pay any applicable fees. For culturally sensitive
+                        images, PAMA may also require permission or guidance from the maker or their
+                        community. Photography and staff time are charged to the requester, and a
+                        copy of the publication must be provided to PAMA.</p>
+                    <idno>https://www.pama.peelregion.ca/collections/research-and-image-requests</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11">
+                    <p>PAMA fournit, à sa discrétion, des photographies des objets de sa collection
+                        pour des publications commerciales et non commerciales, un usage éducatif et
+                        la recherche. Toute utilisation d'images d'objets de la collection sans
+                        l'autorisation écrite de PAMA est interdite. Les demandes se font au moyen
+                        d'un formulaire. Les images ne peuvent être recadrées ni modifiées sans
+                        autorisation écrite, et la ligne de crédit fournie doit accompagner chaque
+                        reproduction.</p>
+                    <p>Lorsque PAMA ne détient pas le droit d'auteur et que l'œuvre n'est pas dans
+                        le domaine public, la personne requérante doit obtenir l'autorisation et une
+                        preuve de licence auprès de la personne titulaire des droits et payer les
+                        frais applicables. Pour les images culturellement sensibles, PAMA peut aussi
+                        exiger l'autorisation ou l'avis de la personne créatrice ou de sa
+                        communauté. Les frais de photographie et de temps du personnel sont à la
+                        charge de la personne requérante, qui doit aussi remettre un exemplaire de
+                        la publication à PAMA.</p>
+                    <idno>https://www.pama.peelregion.ca/collections/research-and-image-requests</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>Les données ne sont pas éligibles</scope>
+                    <dissemination type="collectionsOnline">
+                        <note>
+                            <p>Portail en ligne réunissant les catalogues de la collection d'art, de
+                                la collection du musée et des archives (novembre 2026). Le portail
+                                n'affiche pas le nombre total de fiches. Toute utilisation d'images
+                                d'objets de la collection sans l'autorisation écrite de PAMA est
+                                interdite. Les reproductions sont accordées à la discrétion de PAMA,
+                                sur demande par formulaire, pour une utilisation unique et avec une
+                                ligne de crédit obligatoire.</p>
+                        </note>
+                        <idno>https://pama.minisisinc.com/scripts/mwimain.dll?logon&amp;application=UNION_VIEW&amp;LANGUAGE=144&amp;file=[PAMA_ROOT]home.html</idno>
+                        <licence>http://rightsstatements.org/vocab/InC/1.0/</licence>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>77</volume>
+                        <note>
+                            <p>77 fiches versées dans Artefacts Canada, dont 74 accompagnées
+                                d'images (novembre 2026).</p>
+                        </note>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Peel+Heritage+Complex&amp;t=0&amp;lang=fr</idno>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Peel+Heritage+Complex&amp;t=1&amp;lang=fr</idno>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q7160202</idno>
+                    <dissemination type="wikidata" when="2026-11-22">
+                        <volume>0</volume>
+                        <note>
+                            <p>Requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice Wikidata, hors
+                                évènements.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-11-22">
+                        <volume>0</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse1269">
+                <orgName xml:lang="en">The Robert Mclaughlin Gallery</orgName>
+                <orgName xml:lang="en">RMG</orgName>
+                <orgType>gallery</orgType>
+                <fields>
+                    <field>fine arts</field>
+                </fields>
+                <address>
+                    <street><num>72</num>Queen St</street>
+                    <settlement>Oshawa</settlement>
+                    <postCode>L1H 3Z3</postCode>
+                    <region>Toronto</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>free</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://rmg.on.ca/exhibitions/</exhibitions>
+                </online>
+                <desc xml:lang="en" when="2026-11">
+                    <p>The Robert McLaughlin Gallery's Permanent Collection holds over 4,700
+                        artworks, including nationally significant works of modern Canadian
+                        abstraction, an expanding contemporary art collection and public art. It
+                        holds the largest collection of works by Painters Eleven in the world, the
+                        first collective of abstract artists in Ontario, founded in 1953 at
+                        Alexandra Luke's cottage on the Oshawa/Whitby border. The collection began
+                        in 1967 with Luke's gift of 37 works, including works by every member of the
+                        group, and its Painters Eleven holdings now exceed 1,000 paintings,
+                        drawings, sculptures and prints. The gallery also holds the Thomas Bouckley
+                        Collection, over 3,500 photographs documenting the visual history of Oshawa.
+                        The collection can be searched online, where users can also create their own
+                        public or private collections.</p>
+                    <idno>https://rmg.on.ca/collections/</idno>
+                </desc>
+                <desc xml:lang="fr" when="2026-11">
+                    <p>La collection permanente de la Robert McLaughlin Gallery compte plus de 4 700
+                        œuvres, dont des œuvres d'abstraction canadienne moderne d'importance
+                        nationale, une collection d'art contemporain en expansion et des œuvres
+                        d'art public. Elle réunit la plus importante collection au monde d'œuvres
+                        des Painters Eleven, premier collectif d'artistes abstrait·es de l'Ontario,
+                        fondé en 1953 au chalet d'Alexandra Luke, à la limite d'Oshawa et de Whitby.
+                        La collection est née en 1967 du don par Luke de 37 œuvres, dont des œuvres
+                        de chaque membre du groupe, et le fonds Painters Eleven dépasse aujourd'hui
+                        1 000 peintures, dessins, sculptures et estampes. La galerie conserve aussi
+                        la collection Thomas Bouckley, plus de 3 500 photographies documentant
+                        l'histoire visuelle d'Oshawa. La collection est consultable en ligne, où les
+                        personnes utilisatrices peuvent aussi créer leurs propres collections,
+                        publiques ou privées.</p>
+                    <idno>https://rmg.on.ca/collections/</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11-22">
+                    <p>The Robert McLaughlin Gallery publishes no specific policy on image rights or
+                        the reproduction of works in its collection. The terms and conditions of its
+                        website state that its materials are protected by applicable copyright and
+                        trademark law. They allow a single temporary download for personal,
+                        non-commercial use only, and prohibit any commercial use, public display,
+                        modification, copying or transfer of the materials. The gallery also has a
+                        notice and takedown policy for reporting allegedly infringing material. Its
+                        online collection, hosted on a separate platform, carries no statement on
+                        rights, licensing or reproduction.</p>
+                    <idno>https://rmg.on.ca/policy/</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11-22">
+                    <p>La Robert McLaughlin Gallery ne publie aucune politique propre aux droits des
+                        images ou à la reproduction des œuvres de sa collection. Les conditions
+                        d'utilisation de son site indiquent que ses contenus sont protégés par le
+                        droit d'auteur et le droit des marques. Elles autorisent un seul
+                        téléchargement temporaire pour un usage personnel et non commercial, et
+                        interdisent tout usage commercial, tout affichage public, toute
+                        modification, copie ou cession des contenus. La galerie dispose aussi d'une
+                        procédure de signalement et de retrait des contenus présumés contrefaisants.
+                        Sa collection en ligne, hébergée sur une plateforme distincte, ne porte
+                        aucune mention de droits, de licence ou de reproduction.</p>
+                    <idno>https://rmg.on.ca/policy/</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>Les données ne sont pas éligibles</scope>
+                    <dissemination type="collectionsOnline">
+                        <note>
+                            <p>Portail en ligne réunissant plusieurs collections de la galerie
+                                (novembre 2026) : les œuvres de la collection permanente (Artworks),
+                                la collection Thomas Bouckley de photographies historiques d'Oshawa
+                                et la bibliothèque d'art (Art Library). Le portail permet aussi de
+                                parcourir les œuvres actuellement exposées, et les personnes
+                                utilisatrices peuvent y créer leurs propres collections, publiques
+                                ou privées. Le portail n'affiche pas le nombre total de fiches, et
+                                le volume n'a pas pu être établi. Les fiches des œuvres n'affichent
+                                aucune mention de droits d'auteur ni licence ouverte. Les conditions
+                                d'utilisation du site de la galerie autorisent seulement un
+                                téléchargement temporaire pour un usage personnel et non
+                                commercial.</p>
+                        </note>
+                        <idno>http://rmg.minisisinc.com</idno>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>4019</volume>
+                        <note>
+                            <p>4019 fiches versées dans Artefacts Canada, dont 0 accompagnées
+                                d'images (novembre 2026).</p>
+                        </note>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=The+Robert+McLaughlin+Gallery&amp;t=0&amp;lang=fr</idno>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q7761208</idno>
+                    <dissemination type="wikidata" when="2026-11-22">
+                        <volume>2</volume>
+                        <note>
+                            <p>Requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice Wikidata, hors
+                                évènements.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-11-22">
+                        <volume>1</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno type="institution"
+                            >https://commons.wikimedia.org/wiki/Category:Royal_Canadian_Military_Institute</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse0647">
+                <orgName xml:lang="en">The Art Gallery Of Hamilton</orgName>
+                <acronym xml:lang="en">AGH</acronym>
+                <orgType>gallery</orgType>
+                <fields>
+                    <field>fine arts</field>
+                </fields>
+                <address>
+                    <street><num>123</num>King St W</street>
+                    <settlement>Hamilton</settlement>
+                    <postCode>L8P 4S8</postCode>
+                    <region>Hamilton--Niagara Peninsula</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://www.artgalleryofhamilton.com/exhibitions/current-exhibitions/</exhibitions>
+                </online>
+                <desc xml:lang="en" when="2026-11-22">
+                    <p>Built over more than 110 years, the permanent collection of the Art Gallery
+                        of Hamilton (AGH) holds over 11,000 objects in three areas. The Canadian
+                        collection includes many iconic works, such as Alex Colville's Horse and
+                        Train (1954), and current acquisitions focus on Indigenous artists and
+                        artists from the Hamilton region. The contemporary collection covers
+                        Canadian and international practice in photography, painting, drawing,
+                        sculpture, installation, video and new media. The international collection
+                        spans five centuries, with strong holdings of historical American, African,
+                        Asian and European art (mainly French, British, Dutch and Italian),
+                        transformed by major gifts from collectors Joey and Toby Tanenbaum in 2002
+                        and 2010. The collection can be searched online.</p>
+                    <idno>https://www.artgalleryofhamilton.com/collections/</idno>
+                </desc>
+                <desc xml:lang="fr" when="2026-11-22">
+                    <p>Constituée depuis plus de 110 ans, la collection permanente de l'Art Gallery
+                        of Hamilton (AGH) compte plus de 11 000 objets répartis en trois volets. La
+                        collection canadienne comprend de nombreuses œuvres emblématiques, comme
+                        Horse and Train (1954) d'Alex Colville, et les acquisitions actuelles
+                        privilégient les artistes autochtones et les artistes de la région de
+                        Hamilton. La collection contemporaine couvre les pratiques canadiennes et
+                        internationales en photographie, peinture, dessin, sculpture, installation,
+                        vidéo et nouveaux médias. La collection internationale s'étend sur cinq
+                        siècles, avec d'importants fonds d'art historique américain, africain,
+                        asiatique et européen (surtout français, britannique, néerlandais et
+                        italien), transformés par les dons majeurs des collectionneur·euses Joey et
+                        Toby Tanenbaum en 2002 et en 2010. La collection est consultable en
+                        ligne.</p>
+                    <idno>https://www.artgalleryofhamilton.com/collections/</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11-22">
+                    <p>The Art Gallery of Hamilton publishes no copyright policy, image licence or
+                        terms of reuse for its collection. Images on object records in the online
+                        collection carry a copyright line, "© Art Gallery of Hamilton" followed by
+                        the photographer's name, including for works in the public domain, while
+                        works still under copyright are credited to the artist or their estate. No
+                        download option or reproduction terms are offered. The website has a
+                        reproduction requests page with a request form, but the page contains no
+                        information on conditions, fees or permissions, and requests are directed to
+                        gallery staff.</p>
+                    <idno>https://www.artgalleryofhamilton.com/collections/reproduction-requests/</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11-22">
+                    <p>L'Art Gallery of Hamilton ne publie aucune politique de droit d'auteur,
+                        licence d'images ou condition de réutilisation pour sa collection. Les
+                        images des fiches de la collection en ligne portent une mention « © Art
+                        Gallery of Hamilton » suivie du nom du ou de la photographe, y compris pour
+                        des œuvres du domaine public, tandis que les œuvres encore protégées sont
+                        créditées à l'artiste ou à sa succession. Aucune option de téléchargement ni
+                        condition de reproduction n'est proposée. Le site comporte une page de
+                        demandes de reproduction avec un formulaire, mais la page ne donne aucune
+                        information sur les conditions, les frais ou les autorisations, et les
+                        demandes sont dirigées vers le personnel de la galerie.</p>
+                    <idno>https://www.artgalleryofhamilton.com/collections/reproduction-requests/</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>Les données ne sont pas éligibles</scope>
+                    <dissemination type="collectionsOnline">
+                        <volume>11409</volume>
+                        <note>
+                            <p>11 409 fiches dans la collection en ligne (novembre 2026). Le portail
+                                permet aussi de parcourir des ensembles thématiques, dont la William
+                                Blair Bruce Memorial Collection, la Chedoke Collection of Inuit Art
+                                et les deux collections Joey and Toby Tanenbaum (art du XIXe siècle,
+                                art africain et océanien). Les fiches donnent certains champs en
+                                français (titre, crédits). Les images portent une mention « © Art
+                                Gallery of Hamilton » suivie du nom du ou de la photographe, y
+                                compris pour des œuvres du domaine public. Aucune licence ouverte,
+                                option de téléchargement ni condition de réutilisation n'est
+                                indiquée.</p>
+                        </note>
+                        <idno>https://tms.artgalleryofhamilton.com/objects/images</idno>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>5637</volume>
+                        <note>
+                            <p>5637 fiches versées dans Artefacts Canada, dont 0 accompagnées
+                                d'images (novembre 2026).</p>
+                        </note>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Art+Gallery+of+Hamilton&amp;t=0&amp;lang=fr</idno>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q4796830</idno>
+                    <dissemination type="wikidata" when="2026-11-22">
+                        <volume>66</volume>
+                        <note>
+                            <p>Requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice Wikidata, hors
+                                évènements.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-11-22">
+                        <volume>14</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno type="institution">https://commons.wikimedia.org/wiki/Category:Art_Gallery_of_Hamilton</idno>
                     </dissemination>
                 </wikimedia>
             </org>
