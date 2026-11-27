@@ -5270,7 +5270,605 @@
                                 ou localisation) qui ont une image, hors évènements, avec leur
                                 titre, une image et leurs types.</p>
                         </note>
-                        <idno type="institution">https://commons.wikimedia.org/wiki/Category:Art_Gallery_of_Hamilton</idno>
+                        <idno type="institution"
+                            >https://commons.wikimedia.org/wiki/Category:Art_Gallery_of_Hamilton</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse1293">
+                <orgName xml:lang="en">Woodland Cultural Centre</orgName>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>archeology</field>
+                    <field>ethnography</field>
+                </fields>
+                <address>
+                    <street><num>184</num>Mohawk Street</street>
+                    <settlement>Brantford</settlement>
+                    <postCode>N3S 2X2</postCode>
+                    <region>Hamilton-Niagara Peninsula</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://woodlandculturalcentre.ca/woodland-cultural-centre-exhibitions/</exhibitions>
+                </online>
+                <desc xml:lang="en" type="collections" when="2026-11">
+                    <p>The Woodland Cultural Centre's museum collections are made up of artifacts,
+                        photographs and archival documents, and works of art. The artifact
+                        collection includes archaeological material from registered archaeological
+                        sites in Southern Ontario (among them a 2,000-year-old reconstructed
+                        Princess Point ceramic pot), ethnographic collections and historical
+                        material. Some of this material comes from families, such as the
+                        Sky/Jamieson and Thomas V. Hill families, and from researchers, such as
+                        Gertrude Kurath and Trudy Nicks. A limited number of amateur archaeological
+                        collections are included when they have been evaluated and verified by
+                        licensed professional archaeologists.</p>
+                    <p>The photographic and archival collection holds hundreds of images and
+                        documents, originals and reproductions, from the 1840s to the twenty-first
+                        century. It includes historic books (some translated into Haudenosaunee
+                        languages), personal journals, land deeds, wills and organizational minutes.
+                        Some of the documents have been transcribed and are available for research.
+                        The art collection brings together historic works, such as those of James
+                        Beaver (late nineteenth to early twentieth century), and contemporary works
+                        by Indigenous artists including Norval Morrisseau, Daphne Odjig, Carl Beam,
+                        Blake Debassige, Lorna Hill and Arnold Jacobs.</p>
+                    <idno>https://woodlandculturalcentre.ca/indigenous-artifacts/</idno>
+                </desc>
+                <desc xml:lang="fr" type="collections" when="2026-11">
+                    <p>Les collections muséales du Woodland Cultural Centre se composent
+                        d'artefacts, de photographies et de documents d'archives, ainsi que d'œuvres
+                        d'art. La collection d'artefacts comprend du matériel archéologique issu de
+                        sites archéologiques enregistrés du sud de l'Ontario (dont un vase en
+                        céramique de Princess Point reconstitué, vieux de 2 000 ans), des
+                        collections ethnographiques et du matériel historique. Une partie de ce
+                        matériel provient de familles, comme les familles Sky/Jamieson et Thomas V.
+                        Hill, et de chercheuses, comme Gertrude Kurath et Trudy Nicks. Un nombre
+                        limité de collections archéologiques amateures y est intégré lorsqu'elles
+                        ont été évaluées et vérifiées par des archéologues professionnel·les
+                        titulaires d'un permis.</p>
+                    <p>La collection photographique et archivistique réunit des centaines d'images
+                        et de documents, originaux et reproductions, des années 1840 au XXIe siècle.
+                        On y trouve des livres anciens (dont certains traduits en langues
+                        haudenosaunee), des journaux personnels, des actes fonciers, des testaments
+                        et des procès-verbaux d'organismes. Certains documents ont été transcrits et
+                        sont accessibles pour la recherche. La collection d'art rassemble des œuvres
+                        historiques, comme celles de James Beaver (fin du XIXe siècle et début du
+                        XXe siècle), et des œuvres contemporaines d'artistes autochtones, dont
+                        Norval Morrisseau, Daphne Odjig, Carl Beam, Blake Debassige, Lorna Hill et
+                        Arnold Jacobs.</p>
+                    <idno>https://woodlandculturalcentre.ca/indigenous-artifacts/</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11">
+                    <p>The Woodland Cultural Centre does not offer an online collection, and no open
+                        licence applies to its holdings. Images belonging to the Centre may be used
+                        in a publication, website, video or other medium only after submitting a
+                        photo/image request form. Permission to reuse an image is not guaranteed,
+                        and fees apply (subject to change).</p>
+                    <p>The Centre does not hold copyright on most archival images of the Mohawk
+                        Institute Indian Residential School. Requests for these images must be sent
+                        to the copyright holders, namely the Brant County Museum and Archives or
+                        Library and Archives Canada.</p>
+                    <idno>https://woodlandculturalcentre.ca/?p=664793</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11">
+                    <p>Le Woodland Cultural Centre ne propose pas de collection en ligne, et aucune
+                        licence ouverte ne s'applique à ses fonds. Les images appartenant au Centre
+                        ne peuvent être utilisées dans une publication, un site Web, une vidéo ou un
+                        autre support qu'après l'envoi d'un formulaire de demande de photo ou
+                        d'image. L'autorisation de réutiliser une image n'est pas garantie, et des
+                        frais s'appliquent (sujets à changement).</p>
+                    <p>Le Centre ne détient pas le droit d'auteur sur la plupart des images
+                        d'archives du pensionnat indien Mohawk Institute. Les demandes pour ces
+                        images doivent être adressées aux titulaires des droits, soit le Brant
+                        County Museum and Archives, soit Bibliothèque et Archives Canada.</p>
+                    <idno>https://woodlandculturalcentre.ca/?p=664793</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>Les données ne sont pas éligibles</scope>
+                    <dissemination type="collectionsOnline">
+                        <volume>0</volume>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>0</volume>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q105900744</idno>
+                    <dissemination type="wikidata" when="2026-11-27">
+                        <volume>0</volume>
+                        <note>
+                            <p>Requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice Wikidata, hors
+                                évènements.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-11-27">
+                        <volume>0</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse0401">
+                <orgName xml:lang="en">Canadian Warplane Heritage (Canadian Warplane Heritage
+                    Museum)</orgName>
+                <acronym xml:lang="en">CWHM</acronym>
+                <orgType>museum</orgType>
+                <fields>
+                    <field>history</field>
+                </fields>
+                <address>
+                    <street><num>9280</num>Airport Rd</street>
+                    <settlement>Mount Hope</settlement>
+                    <postCode>L0R 1W0</postCode>
+                    <region>Hamilton-Niagara Peninsula</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://www.warplane.com/events/upcoming.aspx</exhibitions>
+                    <education>https://www.warplane.com/education/virtual-field-trip.aspx</education>
+                </online>
+                <desc xml:lang="en" type="collections" when="2026-11">
+                    <p>The Canadian Warplane Heritage Museum's collection is made up of Canadian
+                        military aircraft, from then to now. The museum houses over forty aircraft,
+                        and its online aircraft list has 48 entries, including the de Havilland
+                        Tiger Moth, Avro Lancaster, Supermarine Spitfire, North American B-25
+                        Mitchell, Avro Canada CF-100 Canuck, Lockheed CF-104 Starfighter and
+                        Westland Lysander, as well as a Boeing 727 nose section and a Hawker
+                        Hurricane replica. The collection began in 1972 with the acquisition of a
+                        Fairey Firefly. The museum's Avro Lancaster, acquired in 1977, first flew in
+                        1988 and is dedicated to Andrew Mynarski, VC. The museum restores its
+                        aircraft as airworthy examples, and the federal government has certified it
+                        as a Cultural Property Institution in recognition of its role in preserving
+                        aircraft of outstanding historical significance.</p>
+                    <idno>https://www.warplane.com/aircraft/collection.aspx</idno>
+                    <idno>https://www.warplane.com/about/museum-history.aspx</idno>
+                </desc>
+                <desc xml:lang="fr" type="collections" when="2026-11">
+                    <p>La collection du Canadian Warplane Heritage Museum se compose d'aéronefs
+                        militaires canadiens, d'hier à aujourd'hui. Le musée abrite plus de quarante
+                        aéronefs, et sa liste en ligne compte 48 entrées, dont le de Havilland Tiger
+                        Moth, l'Avro Lancaster, le Supermarine Spitfire, le North American B-25
+                        Mitchell, l'Avro Canada CF-100 Canuck, le Lockheed CF-104 Starfighter et le
+                        Westland Lysander, ainsi qu'une section avant de Boeing 727 et une réplique
+                        de Hawker Hurricane. La collection a vu le jour en 1972 avec l'acquisition
+                        d'un Fairey Firefly. L'Avro Lancaster du musée, acquis en 1977, a volé pour
+                        la première fois en 1988 et est dédié à Andrew Mynarski, VC. Le musée
+                        restaure ses aéronefs pour qu'ils restent en état de vol, et le gouvernement
+                        fédéral l'a désigné établissement de biens culturels, en reconnaissance de
+                        son rôle dans la préservation d'aéronefs d'une importance historique
+                        exceptionnelle.</p>
+                    <idno>https://www.warplane.com/aircraft/collection.aspx</idno>
+                    <idno>https://www.warplane.com/about/museum-history.aspx</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11">
+                    <p>The Canadian Warplane Heritage Museum's legal notice applies to its entire
+                        website. It states that all materials on the site, including articles,
+                        interviews and pictures, are the copyrighted property of Canadian Warplane
+                        Heritage, and that some of this content comes from archived material donated
+                        to the museum. Users may view and download material from the website only
+                        for personal, non-commercial home use, and any reproduction, republication,
+                        transmission, distribution or public display requires written permission
+                        from Canadian Warplane Heritage. The museum provides no specific information
+                        on the rights or reproduction of images of the aircraft in its
+                        collection.</p>
+                    <idno>https://www.warplane.com/legal.aspx</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11">
+                    <p>L'avis juridique du Canadian Warplane Heritage Museum s'applique à l'ensemble
+                        de son site Web. Il précise que tout le contenu du site, y compris les
+                        articles, les entrevues et les images, est la propriété de Canadian Warplane
+                        Heritage et est protégé par le droit d'auteur, et qu'une partie de ce
+                        contenu provient de documents d'archives donnés au musée. Le contenu peut
+                        être consulté et téléchargé uniquement pour un usage personnel et non
+                        commercial à domicile, et toute reproduction, republication, transmission,
+                        distribution ou présentation publique exige l'autorisation écrite de
+                        Canadian Warplane Heritage. Le musée ne donne aucune information
+                        particulière sur les droits ou la reproduction des images des aéronefs de sa
+                        collection.</p>
+                    <idno>https://www.warplane.com/legal.aspx</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>Les données ne sont pas éligibles</scope>
+                    <dissemination type="collectionsOnline">
+                        <volume>48</volume>
+                        <note>
+                            <p>48 aéronefs présentés sur la page Aircraft Collection du site du
+                                musée (novembre 2026), dont 46 ont une page de détail. Il s'agit
+                                d'une liste de présentation de la flotte plutôt que d'un catalogue
+                                de collection. Aucune licence ouverte ni mention de droits propre
+                                aux images des aéronefs n'est affichée. Seul l'avis juridique, qui
+                                couvre l'ensemble du site, s'applique. Il limite la consultation et
+                                le téléchargement à un usage personnel et non commercial à domicile,
+                                et toute reproduction exige l'autorisation écrite de Canadian
+                                Warplane Heritage.</p>
+                        </note>
+                        <idno>https://www.warplane.com/aircraft/collection.aspx</idno>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>42</volume>
+                        <note>
+                            <p>42 fiches versées dans Artefacts Canada, dont 42 accompagnées
+                                d'images (novembre 2026).</p>
+                        </note>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Canadian+Warplane+Heritage+Museum&amp;t=0&amp;lang=fr</idno>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Canadian+Warplane+Heritage+Museum&amp;t=1&amp;lang=fr</idno>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q5030675</idno>
+                    <dissemination type="wikidata" when="2026-11-27">
+                        <volume>0</volume>
+                        <note>
+                            <p>Requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice Wikidata, hors
+                                évènements.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-11-27">
+                        <volume>0</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno type="institution"
+                            >https://commons.wikimedia.org/wiki/Category:Canadian_Warplane_Heritage_Museum</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse0156">
+                <orgName xml:lang="en">Art Gallery Of Burlington (Burlington Art Centre)</orgName>
+                <acronym xml:lang="en">AGB</acronym>
+                <orgType>gallery</orgType>
+                <fields>
+                    <field>decorative arts and design</field>
+                </fields>
+                <address>
+                    <street><num>1333</num>Lakeshore Rd</street>
+                    <settlement>Burlington</settlement>
+                    <postCode>L7S 1A9</postCode>
+                    <region>Hamilton-Niagara Peninsula</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>free</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://agb.life/exhibitions/</exhibitions>
+                </online>
+                <desc xml:lang="en" type="collections" when="2026-11">
+                    <p>The Art Gallery of Burlington holds the largest comprehensive collection of
+                        contemporary Canadian ceramics in the world, totaling more than 4,000 works.
+                        Since 1983, the Gallery has aimed to collect the work of artists who have
+                        played an important role in the development of Canadian ceramic arts, and to
+                        present a broad and diverse spectrum of national clay-based work. The
+                        collection includes both functional and sculptural works and has grown
+                        through donations from collectors and clay enthusiasts. The Gallery is
+                        currently in a collecting moratorium and is not accepting new donations, but
+                        its acquisitions fund allows it to purchase work directly from artists. Its
+                        Research Library can be consulted by appointment through the Collections
+                        Manager.</p>
+                    <p>The Gallery is gradually bringing more of the collection online. The
+                        collection digitization project has been made possible in part by the
+                        Government of Canada through the Museum Assistance Program, the City of
+                        Burlington's Burlington 150+ Fund, and the Ontario Trillium Foundation
+                        Resilient Communities Fund.</p>
+                    <idno>https://hub.catalogit.app/art-gallery-of-burlington</idno>
+                    <idno>https://agb.life/collection/</idno>
+                </desc>
+                <desc xml:lang="fr" type="collections" when="2026-11">
+                    <p>L'Art Gallery of Burlington possède la plus importante collection d'ensemble
+                        de céramiques canadiennes contemporaines au monde, soit plus de 4 000
+                        œuvres. Depuis 1983, la galerie s'efforce de collectionner les œuvres
+                        d'artistes qui ont joué un rôle important dans le développement des arts
+                        céramiques canadiens et de présenter un éventail large et diversifié
+                        d'œuvres nationales créées à partir de l'argile. La collection comprend des
+                        œuvres fonctionnelles et sculpturales, et elle s'est enrichie grâce aux dons
+                        de collectionneur·euses et d'amateur·trices de céramique. La galerie observe
+                        actuellement un moratoire sur les acquisitions et n'accepte plus de nouveaux
+                        dons, mais son fonds d'acquisition lui permet d'acheter des œuvres
+                        directement aux artistes. Sa bibliothèque de recherche peut être consultée
+                        sur rendez-vous auprès de la personne responsable des collections.</p>
+                    <p>La galerie met progressivement en ligne une plus grande partie de sa
+                        collection. Le projet de numérisation de la collection a été rendu possible
+                        en partie grâce au gouvernement du Canada par l'entremise du Programme
+                        d'aide aux musées, au Burlington 150+ Fund de la Ville de Burlington et au
+                        Fonds pour les communautés résilientes de la Fondation Trillium de
+                        l'Ontario.</p>
+                    <idno>https://hub.catalogit.app/art-gallery-of-burlington</idno>
+                    <idno>https://agb.life/collection/</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11">
+                    <p>The Art Gallery of Burlington has no web page dedicated to copyright, terms
+                        of use or image reproduction requests. Rights information appears only on
+                        the records of its online collection on CatalogIt, where each image carries
+                        a copyright notice in the artist's name and a photo credit. Images are
+                        watermarked "Art Gallery of Burlington". No open licence is indicated.</p>
+                    <idno>https://hub.catalogit.app/art-gallery-of-burlington</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11">
+                    <p>L'Art Gallery of Burlington n'a pas de page Web consacrée au droit d'auteur,
+                        aux conditions d'utilisation ou aux demandes de reproduction d'images. Les
+                        informations sur les droits figurent seulement dans les fiches de sa
+                        collection en ligne sur CatalogIt, où chaque image porte une mention de
+                        droit d'auteur au nom de l'artiste et un crédit photographique. Les images
+                        portent un filigrane « Art Gallery of Burlington ». Aucune licence ouverte
+                        n'est indiquée.</p>
+                    <idno>https://hub.catalogit.app/art-gallery-of-burlington</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>Les données ne sont pas éligibles</scope>
+                    <dissemination type="collectionsOnline">
+                        <volume>159</volume>
+                        <note>
+                            <p>159 fiches dans la collection en ligne sur le HUB de CatalogIt
+                                (novembre 2026), réparties en trois dossiers : Collection
+                                contemporaine canadienne (136), Collection historique (23) et
+                                Sheridan College (22). La somme des dossiers (181) dépasse le total
+                                affiché, sans explication? Les fiches sont bilingues. Aucune licence
+                                ouverte n'est affichée. Chaque image porte une mention de droit
+                                d'auteur au nom de l'artiste, un crédit photographique et un
+                                filigrane « Art Gallery of Burlington ». La galerie n'a pas de page
+                                consacrée aux conditions de reproduction.</p>
+                        </note>
+                        <idno>https://hub.catalogit.app/art-gallery-of-burlington</idno>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>210</volume>
+                        <note>
+                            <p>42 fiches versées dans Artefacts Canada, dont 210 accompagnées
+                                d'images (novembre 2026).</p>
+                        </note>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Burlington+Art+Centre&amp;t=0&amp;lang=fr</idno>
+                        <idno>https://app.pch.gc.ca/application/artefacts_hum/liste_list.app?in=Burlington+Art+Centre&amp;t=1&amp;lang=fr</idno>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q4999199</idno>
+                    <dissemination type="wikidata" when="2026-11-27">
+                        <volume>0</volume>
+                        <note>
+                            <p>Requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice Wikidata, hors
+                                évènements.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-11-27">
+                        <volume>0</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno type="institution"
+                            >https://commons.wikimedia.org/wiki/Category:Art_Gallery_of_Burlington</idno>
+                    </dissemination>
+                </wikimedia>
+            </org>
+            <org xml:id="muse1266">
+                <orgName xml:lang="en">The Art Gallery Of Windsor</orgName>
+                <acronym xml:lang="en">AWE</acronym>
+                <orgType>gallery</orgType>
+                <fields>
+                    <field>fine arts</field>
+                </fields>
+                <address>
+                    <street><num>401</num>Riverside Drive West</street>
+                    <settlement>Windsor</settlement>
+                    <postCode>N9A 7J1</postCode>
+                    <region>Windsor-Sarnia</region>
+                    <country>Canada</country>
+                </address>
+                <demographics/>
+                <accessibility>
+                    <admission>paid</admission>
+                </accessibility>
+                <online>
+                    <exhibitions>https://artwindsoressex.ca/whatson/exhibitions-displays/</exhibitions>
+                </online>
+                <desc xml:lang="en" type="collections" when="2026-11">
+                    <p>Art Windsor-Essex (AWE), formerly the Art Gallery of Windsor, has been
+                        collecting since 1943. Its collection holds close to 4,000 works of art by
+                        Canadian artists. The collection is focused on Indigenous art, historical
+                        Canadian art and contemporary art, and mainly concentrates on art of the
+                        modern era, from the late 18th to the 20th century. The collection can be
+                        explored online through AWE's Collection Portal.</p>
+                    <idno>https://artwindsoressex.ca/collection/</idno>
+                    <idno>https://awe-ais.axiellhosting.com/search/simple</idno>
+                </desc>
+                <desc xml:lang="fr" type="collections" when="2026-11">
+                    <p>Art Windsor-Essex (AWE), anciennement l'Art Gallery of Windsor, collectionne
+                        depuis 1943. Sa collection réunit près de 4 000 œuvres d'artistes
+                        canadien·nes. Elle est axée sur l'art autochtone, l'art canadien historique
+                        et l'art contemporain, et porte principalement sur l'art de l'époque
+                        moderne, de la fin du XVIIIe siècle au XXe siècle. La collection peut être
+                        explorée en ligne au moyen du portail des collections d'AWE.</p>
+                    <idno>https://artwindsoressex.ca/collection/</idno>
+                    <idno>https://awe-ais.axiellhosting.com/search/simple</idno>
+                </desc>
+                <desc type="copyright" xml:lang="en" when="2026-11">
+                    <p>Art Windsor-Essex makes images from its collection available for personal
+                        use, except where indicated, and asks users to respect the rights of artists
+                        and their representatives under Canadian copyright law. Commercial use or
+                        reproduction of any photograph or image taken from AWE's website without the
+                        express written permission of the copyright holder is strictly prohibited.
+                        AWE gives no specific procedure for permission or image requests and invites
+                        users to contact it with any further questions.</p>
+                    <idno>https://artwindsoressex.ca/collection/</idno>
+                </desc>
+                <desc type="copyright" xml:lang="fr" when="2026-11">
+                    <p>Art Windsor-Essex rend les images de sa collection accessibles pour un usage
+                        personnel, sauf indication contraire, et demande de respecter les droits des
+                        artistes et de leurs représentant·es en vertu de la loi canadienne sur le
+                        droit d'auteur. Toute utilisation commerciale ou reproduction d'une
+                        photographie ou d'une image tirée du site Web d'AWE sans l'autorisation
+                        écrite expresse de la personne titulaire des droits est strictement
+                        interdite. AWE ne précise aucune procédure de demande d'autorisation ou
+                        d'images et invite à la contacter pour toute autre question.</p>
+                    <idno>https://artwindsoressex.ca/collection/</idno>
+                </desc>
+                <availability when="2026-11">
+                    <scope>Les données ne sont pas éligibles</scope>
+                    <dissemination type="collectionsOnline">
+                        <volume>4028</volume>
+                        <idno>https://awe-ais.axiellhosting.com/results</idno>
+                    </dissemination>
+                    <dissemination type="openData">
+                        <note>
+                            <p>Aucun jeu de données ouvert identifié à ce jour</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="api">
+                        <note>
+                            <p>pas d'API identifiée à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="flickrCommons">
+                        <note>
+                            <p>Aucune présence sur FlickrCommons</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="iiif">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Pas de manifeste IIIF identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="git">
+                        <note>
+                            <p>Non disponible</p>
+                            <p>Aucun dépôt GitHub institutionnel identifié à ce jour.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="artefactsCanada">
+                        <volume>0</volume>
+                    </dissemination>
+                </availability>
+                <wikimedia>
+                    <note>
+                        <p>Institution identifiée sur Wikidata</p>
+                    </note>
+                    <idno type="institution">https://www.wikidata.org/wiki/Q4796834</idno>
+                    <dissemination type="wikidata" when="2026-11-27">
+                        <volume>0</volume>
+                        <note>
+                            <p>Requête SPARQL sur Wikidata pour voir le nombre d'œuvres (musée ou
+                                localisation) de la collection qui ont une notice Wikidata, hors
+                                évènements.</p>
+                        </note>
+                    </dissemination>
+                    <dissemination type="wikimedia" when="2026-11-27">
+                        <volume>0</volume>
+                        <note>
+                            <p>requête SPARQL sur Wikidata listant toutes les œuvres du musée (musée
+                                ou localisation) qui ont une image, hors évènements, avec leur
+                                titre, une image et leurs types.</p>
+                        </note>
+                        <idno type="institution">https://commons.wikimedia.org/wiki/Category:Art_Gallery_of_Windsor</idno>
+                        <idno type="collection">https://commons.wikimedia.org/wiki/Category:Collections_of_the_Art_Gallery_of_Windsor</idno>
                     </dissemination>
                 </wikimedia>
             </org>
